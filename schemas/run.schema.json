@@ -1,0 +1,499 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run.schema.json",
+  "type": "object",
+  "properties": {
+    "build": {
+      "type": "object",
+      "properties": {
+        "compiler": {
+          "type": "string"
+        },
+        "eigen": {
+          "type": "string"
+        },
+        "flags": {
+          "type": "string"
+        },
+        "precision": {
+          "type": "string"
+        },
+        "executable_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_files": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      },
+      "required": [
+        "compiler",
+        "eigen",
+        "flags",
+        "precision",
+        "executable_sha256",
+        "source_files"
+      ],
+      "additionalProperties": false
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "case_input_sha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "completion": {
+      "type": "object",
+      "properties": {
+        "requested_samples": {
+          "type": "integer"
+        },
+        "state": {
+          "type": "string"
+        },
+        "written_samples": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "requested_samples",
+        "state",
+        "written_samples"
+      ],
+      "additionalProperties": false
+    },
+    "diagnostics": {
+      "type": "object",
+      "properties": {
+        "backward_error": {
+          "type": "object",
+          "properties": {
+            "available": {
+              "type": "boolean"
+            },
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "available",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "block": {
+          "type": "integer"
+        },
+        "increment_norm": {
+          "type": "object",
+          "properties": {
+            "available": {
+              "type": "boolean"
+            },
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "available",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "iterations": {
+          "type": "integer"
+        },
+        "rank": {
+          "type": "integer"
+        },
+        "rcond": {
+          "type": "object",
+          "properties": {
+            "available": {
+              "type": "boolean"
+            },
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "available",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "reason": {
+          "type": "string"
+        },
+        "residual_norm": {
+          "type": "object",
+          "properties": {
+            "available": {
+              "type": "boolean"
+            },
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "available",
+            "value"
+          ],
+          "additionalProperties": false
+        },
+        "row": {
+          "type": "integer"
+        },
+        "trials": {
+          "type": "integer"
+        },
+        "wet_switch_voltage_max_abs_V": {
+          "type": "object",
+          "properties": {
+            "available": {
+              "type": "boolean"
+            },
+            "coverage": {
+              "type": "string"
+            },
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "available",
+            "coverage",
+            "value"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "backward_error",
+        "block",
+        "increment_norm",
+        "iterations",
+        "rank",
+        "rcond",
+        "reason",
+        "residual_norm",
+        "row",
+        "trials",
+        "wet_switch_voltage_max_abs_V"
+      ],
+      "additionalProperties": false
+    },
+    "execution_config": {
+      "type": "object",
+      "properties": {
+        "boundary_count": {
+          "type": "integer"
+        },
+        "formulation_id": {
+          "type": "string"
+        },
+        "interior_counts": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "ordered_unknowns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "purpose": {
+          "type": "string"
+        },
+        "rate_Hz": {
+          "type": "integer"
+        },
+        "solver": {
+          "type": "object",
+          "properties": {
+            "armijo_c1": {
+              "type": "number"
+            },
+            "atol_current_A": {
+              "type": "number"
+            },
+            "atol_increment_current_A": {
+              "type": "number"
+            },
+            "atol_increment_voltage_V": {
+              "type": "number"
+            },
+            "atol_voltage_V": {
+              "type": "number"
+            },
+            "current_scale_A": {
+              "type": "number"
+            },
+            "max_line_search": {
+              "type": "integer"
+            },
+            "max_newton_dc": {
+              "type": "integer"
+            },
+            "max_newton_transient": {
+              "type": "integer"
+            },
+            "maximum_backward_error": {
+              "type": "number"
+            },
+            "maximum_schur_difference": {
+              "type": "number"
+            },
+            "minimum_rcond": {
+              "type": "number"
+            },
+            "pivot_epsilon_factor": {
+              "type": "number"
+            },
+            "row_scaling": {
+              "type": "string"
+            },
+            "rtol_increment": {
+              "type": "number"
+            },
+            "rtol_residual": {
+              "type": "number"
+            },
+            "voltage_scale_V": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "armijo_c1",
+            "atol_current_A",
+            "atol_increment_current_A",
+            "atol_increment_voltage_V",
+            "atol_voltage_V",
+            "current_scale_A",
+            "max_line_search",
+            "max_newton_dc",
+            "max_newton_transient",
+            "maximum_backward_error",
+            "maximum_schur_difference",
+            "minimum_rcond",
+            "pivot_epsilon_factor",
+            "row_scaling",
+            "rtol_increment",
+            "rtol_residual",
+            "voltage_scale_V"
+          ],
+          "additionalProperties": false
+        },
+        "unknown_count": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "boundary_count",
+        "formulation_id",
+        "interior_counts",
+        "ordered_unknowns",
+        "purpose",
+        "rate_Hz",
+        "solver",
+        "unknown_count"
+      ],
+      "additionalProperties": false
+    },
+    "model_id": {
+      "type": "string"
+    },
+    "physical_case_sha256": {
+      "type": "string"
+    },
+    "reference_identity": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "response": {
+      "type": "object",
+      "properties": {
+        "byte_length": {
+          "type": "integer"
+        },
+        "columns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "dtype": {
+          "type": "string"
+        },
+        "filename": {
+          "type": "string"
+        },
+        "integrity": {
+          "type": "string"
+        },
+        "order": {
+          "type": "string"
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shape": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      },
+      "required": [
+        "byte_length",
+        "columns",
+        "dtype",
+        "filename",
+        "integrity",
+        "order",
+        "sha256",
+        "shape"
+      ],
+      "additionalProperties": false
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "trace": {
+      "type": "object",
+      "properties": {
+        "byte_length": {
+          "type": "integer"
+        },
+        "columns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "orientation": {
+                "type": "string"
+              },
+              "quantity": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "orientation",
+              "quantity",
+              "unit"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "dtype": {
+          "type": "string"
+        },
+        "filename": {
+          "type": "string"
+        },
+        "integrity": {
+          "type": "string"
+        },
+        "order": {
+          "type": "string"
+        },
+        "sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "shape": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      },
+      "required": [
+        "byte_length",
+        "columns",
+        "dtype",
+        "filename",
+        "integrity",
+        "order",
+        "sha256",
+        "shape"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "build",
+    "case_id",
+    "case_input_sha256",
+    "completion",
+    "diagnostics",
+    "execution_config",
+    "model_id",
+    "physical_case_sha256",
+    "reference_identity",
+    "run_id",
+    "schema_version",
+    "trace"
+  ],
+  "additionalProperties": false
+}

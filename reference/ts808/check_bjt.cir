@@ -1,0 +1,55 @@
+Reduced 1N914 current-law fixture
+.include models.lib
+.temp 25
+.options tnom=25 numdgt=15 plotwinsize=0 reltol=1e-6 abstol=1e-12 vntol=1e-9 gminsteps=0 srcsteps=0
+Vc0 c0 0 1
+Ve0 e0 0 0.20000000000000001
+Xq0 c0 0 e0 reduced_npn
+Vc1 c1 0 0.20000000000000001
+Ve1 e1 0 0.20000000000000001
+Xq1 c1 0 e1 reduced_npn
+Vc2 c2 0 -0
+Ve2 e2 0 0.20000000000000001
+Xq2 c2 0 e2 reduced_npn
+Vc3 c3 0 -0.5
+Ve3 e3 0 0.20000000000000001
+Xq3 c3 0 e3 reduced_npn
+Vc4 c4 0 1
+Ve4 e4 0 -0
+Xq4 c4 0 e4 reduced_npn
+Vc5 c5 0 0.20000000000000001
+Ve5 e5 0 -0
+Xq5 c5 0 e5 reduced_npn
+Vc6 c6 0 -0
+Ve6 e6 0 -0
+Xq6 c6 0 e6 reduced_npn
+Vc7 c7 0 -0.5
+Ve7 e7 0 -0
+Xq7 c7 0 e7 reduced_npn
+Vc8 c8 0 1
+Ve8 e8 0 -0.59999999999999998
+Xq8 c8 0 e8 reduced_npn
+Vc9 c9 0 0.20000000000000001
+Ve9 e9 0 -0.59999999999999998
+Xq9 c9 0 e9 reduced_npn
+Vc10 c10 0 -0
+Ve10 e10 0 -0.59999999999999998
+Xq10 c10 0 e10 reduced_npn
+Vc11 c11 0 -0.5
+Ve11 e11 0 -0.59999999999999998
+Xq11 c11 0 e11 reduced_npn
+Vc12 c12 0 1
+Ve12 e12 0 -0.69999999999999996
+Xq12 c12 0 e12 reduced_npn
+Vc13 c13 0 0.20000000000000001
+Ve13 e13 0 -0.69999999999999996
+Xq13 c13 0 e13 reduced_npn
+Vc14 c14 0 -0
+Ve14 e14 0 -0.69999999999999996
+Xq14 c14 0 e14 reduced_npn
+Vc15 c15 0 -0.5
+Ve15 e15 0 -0.69999999999999996
+Xq15 c15 0 e15 reduced_npn
+.op
+.save I(Vc0) I(Ve0) I(Vc1) I(Ve1) I(Vc2) I(Ve2) I(Vc3) I(Ve3) I(Vc4) I(Ve4) I(Vc5) I(Ve5) I(Vc6) I(Ve6) I(Vc7) I(Ve7) I(Vc8) I(Ve8) I(Vc9) I(Ve9) I(Vc10) I(Ve10) I(Vc11) I(Ve11) I(Vc12) I(Ve12) I(Vc13) I(Ve13) I(Vc14) I(Ve14) I(Vc15) I(Ve15)
+.end

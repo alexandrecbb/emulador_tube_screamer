@@ -1,0 +1,688 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "case.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+$"
+    },
+    "physical_case_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "physical_descriptor": {
+      "type": "object",
+      "properties": {
+        "analysis_kind": {
+          "enum": [
+            "dc",
+            "ac",
+            "transient"
+          ]
+        },
+        "circuit": {
+          "$ref": "#/$defs/circuit"
+        },
+        "stimulus": {
+          "$ref": "#/$defs/stimulus"
+        },
+        "time": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "properties": {
+                "origin_s": {
+                  "const": 0
+                },
+                "duration_s": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                }
+              },
+              "required": [
+                "origin_s",
+                "duration_s"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "windows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "start_s": {
+                "type": "number",
+                "minimum": 0
+              },
+              "stop_s": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "role": {
+                "enum": [
+                  "steady",
+                  "onset",
+                  "recovery",
+                  "listening"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "start_s",
+              "stop_s",
+              "role"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "analysis_kind",
+        "circuit",
+        "stimulus",
+        "time",
+        "windows"
+      ],
+      "additionalProperties": false
+    },
+    "analysis_kind": {
+      "enum": [
+        "dc",
+        "ac",
+        "transient"
+      ]
+    },
+    "circuit": {
+      "$ref": "#/$defs/circuit"
+    },
+    "stimulus": {
+      "$ref": "#/$defs/stimulus"
+    },
+    "analysis": {
+      "type": "object",
+      "properties": {
+        "windows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "start_s": {
+                "type": "number",
+                "minimum": 0
+              },
+              "stop_s": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "role": {
+                "enum": [
+                  "steady",
+                  "onset",
+                  "recovery",
+                  "listening"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "start_s",
+              "stop_s",
+              "role"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required_checks": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "time": {
+          "type": "object",
+          "properties": {
+            "origin_s": {
+              "const": 0
+            },
+            "duration_s": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "sample_count": {
+              "type": "integer",
+              "minimum": 2
+            }
+          },
+          "required": [
+            "origin_s",
+            "duration_s",
+            "sample_count"
+          ],
+          "additionalProperties": false
+        },
+        "frequencies_Hz": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "minItems": 301,
+          "maxItems": 301
+        }
+      },
+      "required": [
+        "windows",
+        "required_checks"
+      ],
+      "additionalProperties": false
+    },
+    "execution": {
+      "type": "object",
+      "properties": {
+        "rate_Hz": {
+          "enum": [
+            192000,
+            384000,
+            768000
+          ]
+        },
+        "formulation_id": {
+          "const": "control-branch-v1"
+        },
+        "solver": {
+          "type": "object",
+          "properties": {
+            "atol_current_A": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "atol_voltage_V": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "rtol_residual": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "atol_increment_current_A": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "atol_increment_voltage_V": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "rtol_increment": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "max_newton_dc": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "max_newton_transient": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 32
+            },
+            "max_line_search": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9
+            },
+            "armijo_c1": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "voltage_scale_V": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "current_scale_A": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "pivot_epsilon_factor": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "minimum_rcond": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1
+            },
+            "maximum_backward_error": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "maximum_schur_difference": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "row_scaling": {
+              "const": "max_abs_after_physical"
+            }
+          },
+          "required": [
+            "atol_current_A",
+            "atol_voltage_V",
+            "rtol_residual",
+            "atol_increment_current_A",
+            "atol_increment_voltage_V",
+            "rtol_increment",
+            "max_newton_dc",
+            "max_newton_transient",
+            "max_line_search",
+            "armijo_c1",
+            "voltage_scale_V",
+            "current_scale_A",
+            "pivot_epsilon_factor",
+            "minimum_rcond",
+            "maximum_backward_error",
+            "maximum_schur_difference",
+            "row_scaling"
+          ],
+          "additionalProperties": false
+        },
+        "purpose": {
+          "enum": [
+            "target",
+            "pilot"
+          ]
+        }
+      },
+      "required": [
+        "rate_Hz",
+        "formulation_id",
+        "solver",
+        "purpose"
+      ],
+      "additionalProperties": false
+    },
+    "trace_columns": {
+      "const": [
+        "time",
+        "input",
+        "input_cap",
+        "input_base",
+        "dry_send",
+        "clip_plus",
+        "clip_minus",
+        "gain_rc",
+        "drive_end",
+        "z_clip",
+        "i_drive",
+        "tone_in",
+        "tone_minus",
+        "tone_wiper",
+        "tone_rc",
+        "tone_out",
+        "volume_cap",
+        "volume_top",
+        "z_tone",
+        "i_tone_low",
+        "i_tone_high",
+        "i_volume_high",
+        "switch_common",
+        "output_base",
+        "output_emitter",
+        "output_cap",
+        "output",
+        "input_emitter",
+        "clip_out",
+        "wet_send",
+        "vref",
+        "i_volume_low"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "case_id",
+    "physical_case_sha256",
+    "physical_descriptor",
+    "analysis_kind",
+    "circuit",
+    "stimulus",
+    "analysis",
+    "execution",
+    "trace_columns"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "controls": {
+      "type": "object",
+      "properties": {
+        "drive": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "tone": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "volume": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "drive",
+        "tone",
+        "volume"
+      ],
+      "additionalProperties": false
+    },
+    "circuit": {
+      "type": "object",
+      "properties": {
+        "model_id": {
+          "const": "ts808-cerutti-reduced-v1"
+        },
+        "component_map_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "device_spec_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "controls": {
+          "$ref": "#/$defs/controls"
+        },
+        "supply_V": {
+          "const": 9.0
+        },
+        "temperature_K": {
+          "const": 298.15
+        },
+        "source_Ohm": {
+          "const": 1000.0
+        },
+        "load_Ohm": {
+          "const": 1000000.0
+        },
+        "R_on_Ohm": {
+          "const": 383.29731360711594
+        }
+      },
+      "required": [
+        "model_id",
+        "component_map_sha256",
+        "device_spec_sha256",
+        "controls",
+        "supply_V",
+        "temperature_K",
+        "source_Ohm",
+        "load_Ohm",
+        "R_on_Ohm"
+      ],
+      "additionalProperties": false
+    },
+    "stimulus": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "dc"
+            },
+            "dc_V": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "type",
+            "dc_V"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "ac_small_signal"
+            },
+            "dc_V": {
+              "type": "number"
+            },
+            "ac_V": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "type",
+            "dc_V",
+            "ac_V"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "tone"
+            },
+            "frequency_Hz": {
+              "type": "number"
+            },
+            "peak_V": {
+              "type": "number"
+            },
+            "phase_rad": {
+              "type": "number"
+            },
+            "onset_s": {
+              "type": "number"
+            },
+            "rise_s": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "type",
+            "frequency_Hz",
+            "peak_V",
+            "phase_rad",
+            "onset_s",
+            "rise_s"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "overload"
+            },
+            "frequency_Hz": {
+              "type": "number"
+            },
+            "peak_V": {
+              "type": "number"
+            },
+            "phase_rad": {
+              "type": "number"
+            },
+            "onset_s": {
+              "type": "number"
+            },
+            "duration_s": {
+              "type": "number"
+            },
+            "rise_s": {
+              "type": "number"
+            },
+            "fall_s": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "type",
+            "frequency_Hz",
+            "peak_V",
+            "phase_rad",
+            "onset_s",
+            "duration_s",
+            "rise_s",
+            "fall_s"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "type": {
+              "const": "listening"
+            },
+            "onsets_s": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "frequencies_Hz": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "note_duration_s": {
+              "type": "number"
+            },
+            "decay_s": {
+              "type": "number"
+            },
+            "coefficient_V": {
+              "type": "number"
+            },
+            "harmonic_coefficients": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 3,
+              "maxItems": 3
+            },
+            "phase_rad": {
+              "type": "number"
+            },
+            "rise_s": {
+              "type": "number"
+            },
+            "fall_s": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "type",
+            "onsets_s",
+            "frequencies_Hz",
+            "note_duration_s",
+            "decay_s",
+            "coefficient_V",
+            "harmonic_coefficients",
+            "phase_rad",
+            "rise_s",
+            "fall_s"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "analysis_kind": {
+            "const": "transient"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "analysis": {
+            "required": [
+              "time"
+            ],
+            "not": {
+              "required": [
+                "frequencies_Hz"
+              ]
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "analysis": {
+            "not": {
+              "required": [
+                "time"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "analysis_kind": {
+            "const": "ac"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "analysis": {
+            "required": [
+              "frequencies_Hz"
+            ]
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "analysis": {
+            "not": {
+              "required": [
+                "frequencies_Hz"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools==84.2.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ts808-validation"
+version = "0.1.0"
+requires-python = "==3.14.4"
+dependencies = [
+  "numpy==2.5.4",
+  "scipy==1.18.1",
+  "spicelib==1.6.4",
+  "matplotlib==3.11.2",
+  "pytest==9.2.0",
+  "jsonschema==4.26.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ts808_validation*"]

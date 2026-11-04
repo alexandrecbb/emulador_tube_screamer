@@ -1,0 +1,37 @@
+* ts808-cerutti-reduced-v1. Prepared at 298.15 K, no native D/Q defaults.
+* Branch currents positive into device; reduced laws only, no semiconductor charge.
+.param VT808={1.380649e-23*298.15/1.602176634e-19}
+.func em808(x) {exp(x)-1}
+.subckt reduced_diode a k
+Bjunction a k I={3.0193620074088285e-9*em808(V(a,k)/(1.94*VT808))}
+.ends reduced_diode
+
+.subckt reduced_npn c b e
+.param IS808=1.1792496052020765e-14 BF808=271.5505716517182 BR808=4.2141277418153207
+.param AF808={BF808/(BF808+1)} AR808={BR808/(BR808+1)}
+.func f808(x) {IS808/AF808*em808(x/(0.99569*VT808))}
+.func r808(x) {IS808/AR808*em808(x/VT808)}
+Bcollector c e I={AF808*f808(V(b,e))-r808(V(b,c))}
+Bbase b e I={(1-AF808)*f808(V(b,e))+(1-AR808)*r808(V(b,c))}
+.ends reduced_npn
+
+* Explicit pins: plus minus output positive_supply negative_supply.
+* Both channels use this law with distinct internal z state nodes.
+.subckt reduced_4558 plus minus out vp vn
+.param A808=100000 GBW808=3e6 SR808=1e6 R808={10000/51} TAU808=10u
+.param W808=0.25 HR808={37/51}
+.func sat808(z,h) {if(z>h-W808,h-W808+W808*tanh((z-h+W808)/W808),if(z<-(h-W808),-h+W808-W808*tanh((-z-h+W808)/W808),z))}
+.func drive808(e,z,h) {2*pi*GBW808/A808*(A808*e-z)-(z-sat808(z,h))/TAU808}
+Rid plus minus 5meg
+Ibplus plus vn 25n
+Ibminus minus vn 25n
+* Exact state-law decomposition: Rstate removes a structural floating-node warning.
+* Its 1e-9*z current is compensated in Bstate; no physical shunt is added.
+* Numerical row scale 1e-6: C and behavioral current scaled together.
+* z remains volts; the differential equation is unchanged.
+Cstate z vn 1u
+Rstate z vn 1e9
+Bstate vn z I={1e-6*SR808*tanh(drive808(V(plus,minus),V(z,vn),V(vp,vn)/2-HR808)/SR808)+1e-9*V(z,vn)}
+Bdrive internal vn V={V(vp,vn)/2+sat808(V(z,vn),V(vp,vn)/2-HR808)}
+Rout out internal {R808}
+.ends reduced_4558

@@ -1,0 +1,10 @@
+/build/
+/.tools/
+/.venv/
+/validation/.venv/
+__pycache__/
+*.py[cod]
+/.pytest_cache/
+/validation/.pytest_cache/
+/runs/
+/reports/

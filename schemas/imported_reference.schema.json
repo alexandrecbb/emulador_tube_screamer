@@ -1,0 +1,390 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "imported_reference.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "reference_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+$"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+$"
+    },
+    "physical_case_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "case_input_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "analysis_kind": {
+      "enum": [
+        "dc",
+        "ac",
+        "transient"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "request": {
+          "type": "object",
+          "properties": {
+            "locator": {
+              "type": "object",
+              "properties": {
+                "windows_path": {
+                  "type": "string"
+                },
+                "wsl_path": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "windows_path",
+                "wsl_path"
+              ],
+              "additionalProperties": false
+            },
+            "size_bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "locator",
+            "size_bytes",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "result": {
+          "type": "object",
+          "properties": {
+            "locator": {
+              "type": "object",
+              "properties": {
+                "windows_path": {
+                  "type": "string"
+                },
+                "wsl_path": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "windows_path",
+                "wsl_path"
+              ],
+              "additionalProperties": false
+            },
+            "size_bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "locator",
+            "size_bytes",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "raw": {
+          "type": "object",
+          "properties": {
+            "locator": {
+              "type": "object",
+              "properties": {
+                "windows_path": {
+                  "type": "string"
+                },
+                "wsl_path": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "windows_path",
+                "wsl_path"
+              ],
+              "additionalProperties": false
+            },
+            "size_bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "locator",
+            "size_bytes",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "log": {
+          "type": "object",
+          "properties": {
+            "locator": {
+              "type": "object",
+              "properties": {
+                "windows_path": {
+                  "type": "string"
+                },
+                "wsl_path": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "windows_path",
+                "wsl_path"
+              ],
+              "additionalProperties": false
+            },
+            "size_bytes": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "locator",
+            "size_bytes",
+            "sha256"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "request",
+        "result",
+        "raw",
+        "log"
+      ],
+      "additionalProperties": false
+    },
+    "selection": {
+      "type": "object",
+      "properties": {
+        "plot_index": {
+          "const": 0
+        },
+        "plot_name": {
+          "type": "string"
+        },
+        "analysis_kind": {
+          "enum": [
+            "dc",
+            "ac",
+            "transient"
+          ]
+        },
+        "step_index": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "step_parameters": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number"
+          }
+        },
+        "traces": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "quantity_id": {
+                "type": "string"
+              },
+              "native_expression": {
+                "type": "string"
+              },
+              "unit": {
+                "type": "string"
+              },
+              "orientation": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "quantity_id",
+              "native_expression",
+              "unit",
+              "orientation"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "plot_index",
+        "plot_name",
+        "analysis_kind",
+        "step_index",
+        "step_parameters",
+        "traces"
+      ],
+      "additionalProperties": false
+    },
+    "validation": {
+      "type": "object",
+      "properties": {
+        "encoding": {
+          "enum": [
+            "float64le",
+            "complex128le"
+          ]
+        },
+        "point_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "domain_start": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "domain_stop": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9_.-]+$"
+              },
+              "applicable": {
+                "type": "boolean"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "status": {
+                "enum": [
+                  "passed",
+                  "failed",
+                  "not_evaluated"
+                ]
+              },
+              "metric": {
+                "type": "string"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "type": "string"
+              },
+              "limit": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "applicable",
+              "required",
+              "status",
+              "metric",
+              "value",
+              "unit",
+              "limit",
+              "reason"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "encoding",
+        "point_count",
+        "domain_start",
+        "domain_stop",
+        "checks"
+      ],
+      "additionalProperties": false
+    },
+    "completion": {
+      "enum": [
+        "completed",
+        "incomplete"
+      ]
+    },
+    "integrity": {
+      "enum": [
+        "verified",
+        "pending"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "reference_id",
+    "case_id",
+    "physical_case_sha256",
+    "case_input_sha256",
+    "analysis_kind",
+    "source",
+    "selection",
+    "validation",
+    "completion",
+    "integrity"
+  ],
+  "additionalProperties": false
+}

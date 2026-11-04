@@ -1,0 +1,1151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "component_map.schema.json",
+  "title": "TS808 effect-on component map v1",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "model_id": {
+      "const": "ts808-cerutti-reduced-v1"
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "attribution": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "url",
+        "sha256",
+        "attribution"
+      ],
+      "additionalProperties": false
+    },
+    "known_nodes": {
+      "type": "object",
+      "properties": {
+        "gnd": {
+          "const": 0
+        },
+        "v9": {
+          "const": 9
+        },
+        "generator": {
+          "const": "case stimulus"
+        }
+      },
+      "required": [
+        "gnd",
+        "v9",
+        "generator"
+      ],
+      "additionalProperties": false
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/component"
+      },
+      "minItems": 1
+    },
+    "device_parameters": {
+      "type": "object",
+      "properties": {
+        "diode_25c": {
+          "type": "object",
+          "properties": {
+            "temperature_K": {
+              "const": 298.15
+            },
+            "Is_A": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "n": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "required": [
+            "temperature_K",
+            "Is_A",
+            "n"
+          ],
+          "additionalProperties": false
+        },
+        "bjt_25c": {
+          "type": "object",
+          "properties": {
+            "temperature_K": {
+              "const": 298.15
+            },
+            "Is_A": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "BF": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "BR": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "NF": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "NR": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "required": [
+            "temperature_K",
+            "Is_A",
+            "BF",
+            "BR",
+            "NF",
+            "NR"
+          ],
+          "additionalProperties": false
+        },
+        "opamp_25c": {
+          "type": "object",
+          "properties": {
+            "temperature_K": {
+              "const": 298.15
+            },
+            "A0": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "GBW_Hz": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "SR_V_per_s": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "R_id_Ohm": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "I_bias_plus_A": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "I_bias_minus_A": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "V_os_V": {
+              "type": "number"
+            },
+            "R_o_Ohm": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "headroom_plus_V": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "headroom_minus_V": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "W_plus_V": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "W_minus_V": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "tau_r_s": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
+          },
+          "required": [
+            "temperature_K",
+            "A0",
+            "GBW_Hz",
+            "SR_V_per_s",
+            "R_id_Ohm",
+            "I_bias_plus_A",
+            "I_bias_minus_A",
+            "V_os_V",
+            "R_o_Ohm",
+            "headroom_plus_V",
+            "headroom_minus_V",
+            "W_plus_V",
+            "W_minus_V",
+            "tau_r_s"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "diode_25c",
+        "bjt_25c",
+        "opamp_25c"
+      ],
+      "additionalProperties": false
+    },
+    "controls": {
+      "type": "object",
+      "properties": {
+        "drive": {
+          "$ref": "#/$defs/control"
+        },
+        "tone": {
+          "$ref": "#/$defs/control"
+        },
+        "volume": {
+          "$ref": "#/$defs/control"
+        }
+      },
+      "required": [
+        "drive",
+        "tone",
+        "volume"
+      ],
+      "additionalProperties": false
+    },
+    "extraction": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "treatment": {
+            "enum": [
+              "retained",
+              "replaced",
+              "omitted"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "treatment",
+          "reason"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "trace_map": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "input_cap": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "input_base": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "dry_send": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "clip_plus": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "clip_minus": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "gain_rc": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "drive_end": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "z_clip": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "i_drive": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "A"
+                }
+              }
+            }
+          ]
+        },
+        "tone_in": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "tone_minus": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "tone_wiper": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "tone_rc": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "tone_out": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "volume_cap": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "volume_top": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "z_tone": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "i_tone_low": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "A"
+                }
+              }
+            }
+          ]
+        },
+        "i_tone_high": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "A"
+                }
+              }
+            }
+          ]
+        },
+        "i_volume_high": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "A"
+                }
+              }
+            }
+          ]
+        },
+        "switch_common": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "output_base": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "output_emitter": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "output_cap": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "output": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "input_emitter": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "clip_out": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "wet_send": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "vref": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "V"
+                }
+              }
+            }
+          ]
+        },
+        "i_volume_low": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/trace"
+            },
+            {
+              "properties": {
+                "unit": {
+                  "const": "A"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "input",
+        "input_cap",
+        "input_base",
+        "dry_send",
+        "clip_plus",
+        "clip_minus",
+        "gain_rc",
+        "drive_end",
+        "z_clip",
+        "i_drive",
+        "tone_in",
+        "tone_minus",
+        "tone_wiper",
+        "tone_rc",
+        "tone_out",
+        "volume_cap",
+        "volume_top",
+        "z_tone",
+        "i_tone_low",
+        "i_tone_high",
+        "i_volume_high",
+        "switch_common",
+        "output_base",
+        "output_emitter",
+        "output_cap",
+        "output",
+        "input_emitter",
+        "clip_out",
+        "wet_send",
+        "vref",
+        "i_volume_low"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "model_id",
+    "source",
+    "known_nodes",
+    "components",
+    "device_parameters",
+    "controls",
+    "extraction",
+    "trace_map"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "component": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "resistor",
+            "capacitor",
+            "potentiometer",
+            "npn",
+            "diode",
+            "opamp"
+          ]
+        },
+        "terminals": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          },
+          "minItems": 2,
+          "maxItems": 5,
+          "uniqueItems": true
+        },
+        "value_SI": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "unit": {
+          "enum": [
+            "Ohm",
+            "F"
+          ]
+        },
+        "law": {
+          "enum": [
+            "diode_25c",
+            "bjt_25c",
+            "opamp_25c"
+          ]
+        },
+        "owner": {
+          "enum": [
+            "input",
+            "clipping",
+            "tone_volume",
+            "output",
+            "fixture",
+            "bias"
+          ]
+        },
+        "provenance": {
+          "enum": [
+            "case_fixture",
+            "schematic_transcription",
+            "approved_reduced_model",
+            "conditional_static_equivalent"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "terminals",
+        "owner",
+        "provenance"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "resistor",
+                  "capacitor",
+                  "potentiometer"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "value_SI",
+              "unit"
+            ],
+            "not": {
+              "required": [
+                "law"
+              ]
+            }
+          },
+          "else": {
+            "required": [
+              "law"
+            ],
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "value_SI"
+                  ]
+                },
+                {
+                  "required": [
+                    "unit"
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "capacitor"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "unit": {
+                "const": "F"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "unit": {
+                "const": "Ohm"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "resistor"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "terminals": {
+                "minItems": 2,
+                "maxItems": 2
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "capacitor"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "terminals": {
+                "minItems": 2,
+                "maxItems": 2
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "npn"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "terminals": {
+                "minItems": 3,
+                "maxItems": 3
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "diode"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "terminals": {
+                "minItems": 2,
+                "maxItems": 2
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "opamp"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "terminals": {
+                "minItems": 5,
+                "maxItems": 5
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "potentiometer"
+              }
+            }
+          },
+          "then": {
+            "if": {
+              "properties": {
+                "id": {
+                  "const": "P_drive"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "terminals": {
+                  "minItems": 2,
+                  "maxItems": 2
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "terminals": {
+                  "minItems": 3,
+                  "maxItems": 3
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "npn"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "law": {
+                "const": "bjt_25c"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "diode"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "law": {
+                "const": "diode_25c"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "opamp"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "law": {
+                "const": "opamp_25c"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "control": {
+      "type": "object",
+      "properties": {
+        "total_Ohm": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "minimum": {
+          "const": 0
+        },
+        "maximum": {
+          "const": 1
+        },
+        "coordinate": {
+          "const": "resistance_track_fraction"
+        },
+        "segments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "current_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "terminals": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9_]*$"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "factor": {
+                "enum": [
+                  "fraction",
+                  "1-fraction"
+                ]
+              }
+            },
+            "required": [
+              "current_id",
+              "terminals",
+              "factor"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "maxItems": 2
+        },
+        "endpoint_equation": {
+          "const": "v_a-v_b-R*i=0"
+        }
+      },
+      "required": [
+        "total_Ohm",
+        "minimum",
+        "maximum",
+        "coordinate",
+        "segments",
+        "endpoint_equation"
+      ],
+      "additionalProperties": false
+    },
+    "trace": {
+      "type": "object",
+      "properties": {
+        "expression": {
+          "type": "string",
+          "minLength": 1
+        },
+        "zero_resistance_expression": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "unit": {
+          "enum": [
+            "V",
+            "A"
+          ]
+        },
+        "orientation": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "expression",
+        "zero_resistance_expression",
+        "unit",
+        "orientation"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

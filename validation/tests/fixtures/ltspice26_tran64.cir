@@ -1,0 +1,9 @@
+RC reader fixture: tran64
+.temp 25
+.options tnom=25 plotwinsize=0 reltol=1e-6 abstol=1e-12 vntol=1e-9 chgtol=1e-16 trtol=1 method=trap gminsteps=0 srcsteps=0 numdgt=15
+Bgen in 0 V={if(time<0.001,0,0.1)}
+Rseries in output 1000
+Cload output 0 1u
+.tran 0 0.004 0 3.2552083333333332e-07
+.save V(in) V(output)
+.end

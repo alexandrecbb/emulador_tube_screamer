@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "abx_session.schema.json",
+  "oneOf": [
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "kind": {
+          "const": "session"
+        },
+        "session_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_.-]+$"
+        },
+        "physical_case_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "condition_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_.-]+$"
+        },
+        "trial_count": {
+          "const": 20
+        },
+        "artifacts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "listener_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "trials": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "trial_id": {
+                "type": "string",
+                "pattern": "^[a-z0-9_.-]+$"
+              },
+              "presented_file_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "response": {
+                "anyOf": [
+                  {
+                    "enum": [
+                      "A",
+                      "B"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "trial_id",
+              "presented_file_ids",
+              "response"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 20,
+          "maxItems": 20
+        },
+        "completion": {
+          "enum": [
+            "pending",
+            "completed"
+          ]
+        },
+        "family_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_.-]+$"
+        }
+      },
+      "required": [
+        "schema_version",
+        "kind",
+        "session_id",
+        "physical_case_sha256",
+        "condition_id",
+        "trial_count",
+        "artifacts",
+        "listener_id",
+        "trials",
+        "completion",
+        "family_id"
+      ],
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": 1
+        },
+        "kind": {
+          "const": "key"
+        },
+        "session_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_.-]+$"
+        },
+        "physical_case_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "condition_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_.-]+$"
+        },
+        "trial_count": {
+          "const": 20
+        },
+        "artifacts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "seed": {
+          "type": "string",
+          "pattern": "^[0-9]+$"
+        },
+        "generator": {
+          "const": "NumPy PCG64"
+        },
+        "mapping": {
+          "type": "object",
+          "properties": {
+            "A": {
+              "enum": [
+                "cpp",
+                "reference"
+              ]
+            },
+            "B": {
+              "enum": [
+                "cpp",
+                "reference"
+              ]
+            }
+          },
+          "required": [
+            "A",
+            "B"
+          ],
+          "additionalProperties": false
+        },
+        "assignments": {
+          "type": "array",
+          "minItems": 20,
+          "maxItems": 20,
+          "items": {
+            "type": "object",
+            "properties": {
+              "trial_id": {
+                "type": "string"
+              },
+              "answer": {
+                "enum": [
+                  "A",
+                  "B"
+                ]
+              }
+            },
+            "required": [
+              "trial_id",
+              "answer"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "family_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_.-]+$"
+        }
+      },
+      "required": [
+        "schema_version",
+        "kind",
+        "session_id",
+        "physical_case_sha256",
+        "condition_id",
+        "trial_count",
+        "artifacts",
+        "seed",
+        "generator",
+        "mapping",
+        "assignments",
+        "family_id"
+      ],
+      "additionalProperties": false
+    }
+  ]
+}

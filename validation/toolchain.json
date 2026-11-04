@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "execution_profile": "wsl2-windows-native-v1",
+  "linux": {
+    "distribution": {
+      "NAME": "Ubuntu",
+      "ID": "ubuntu",
+      "PRETTY_NAME": "Ubuntu 26.04.1 LTS",
+      "VERSION_ID": "26.04",
+      "VERSION": "26.04.1 LTS (Resolute Raccoon)",
+      "VERSION_CODENAME": "resolute",
+      "ID_LIKE": "debian",
+      "HOME_URL": "https://www.ubuntu.com/",
+      "SUPPORT_URL": "https://help.ubuntu.com/",
+      "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+      "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+      "UBUNTU_CODENAME": "resolute",
+      "LOGO": "ubuntu-logo"
+    },
+    "kernel": "6.18.33.2-microsoft-standard-WSL2",
+    "architecture": "x86_64",
+    "python_packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "spicelib": "1.6.4",
+      "matplotlib": "3.11.2",
+      "pytest": "9.2.0",
+      "jsonschema": "4.26.0",
+      "pip": "26.2.2",
+      "pip-tools": "7.6.2"
+    }
+  },
+  "wsl": {
+    "interop": true,
+    "kernel": "6.18.33.2-microsoft-standard-WSL2"
+  },
+  "windows": {
+    "build": "10.0.26300.0",
+    "powershell_version": "5.1.26100.9818",
+    "architecture": "x64"
+  },
+  "tools": {
+    "gcc": {
+      "path": "/home/alexandre/projetos/emulador_tube_screamer/.tools/gcc/bin/x86_64-conda-linux-gnu-g++",
+      "version": "15.3.0",
+      "sha256": "e802ef021bccd09d2ae1dae3f9400e53ab2c2c7bc2b4e47dc29a81c7ec3bcd31"
+    },
+    "cmake": {
+      "path": "/home/alexandre/projetos/emulador_tube_screamer/.tools/cmake-4.4.5-linux-x86_64/bin/cmake",
+      "version": "4.4.5",
+      "sha256": "556cd627cb9f88bee5572bd3ccc55d8549945f685584aa8f4f1692a4e538b918"
+    },
+    "ctest": {
+      "path": "/home/alexandre/projetos/emulador_tube_screamer/.tools/cmake-4.4.5-linux-x86_64/bin/ctest",
+      "version": "4.4.5",
+      "sha256": "8649b58bc430fe1d80021ad18359dc2278cfe6366c8edfbd1baf2c0a386104c8"
+    },
+    "ninja": {
+      "path": "/home/alexandre/projetos/emulador_tube_screamer/.tools/bin/ninja",
+      "version": "1.13.2",
+      "sha256": "607e668f90dd6cd82e1a42ae572647ad1b1fd43063964295b9547836d8c15d99"
+    },
+    "python": {
+      "path": "/home/alexandre/projetos/emulador_tube_screamer/.venv/bin/python",
+      "version": "3.14.4",
+      "sha256": "52e0a13e60a981d8c4b6478be2ba5176f69da07948a056bf49cf6f077e30cb41"
+    },
+    "ltspice": {
+      "path": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/ltspice-26.1.1/LTspice.exe",
+      "version": "26.1.1",
+      "sha256": "3c144a2b3ec6a30baac6761c502d99b95aaa40b947ff5eca25b8fbd80d68af72"
+    }
+  },
+  "workspace": {
+    "wsl_root": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs",
+    "windows_root": "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\runs"
+  },
+  "reference_policy": {
+    "timeout_s": 1800,
+    "parallel_processes": 1,
+    "version": "26.1.1",
+    "integration": "trap",
+    "plotwinsize": 0,
+    "numdgt": 15,
+    "nominal_maxstep_s": 3.255208333333333e-07,
+    "qualification": "pending_native_fixtures_and_uncertainty"
+  }
+}

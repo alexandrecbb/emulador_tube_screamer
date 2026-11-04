@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "producer": "LTspice 26.1.1 Windows x64",
+  "scope": "RC export mechanics; not pedal acceptance",
+  "files": [
+    {
+      "path": "wav_qualified_pcm192_deck.cir",
+      "size_bytes": 412,
+      "sha256": "7deeecf55fc1c5d1d3298782bcb237693b76388ada29b8ec622f417284b6de6d"
+    },
+    {
+      "path": "wav_qualified_pcm192_deck.log",
+      "size_bytes": 707,
+      "sha256": "ad536537377d284d5140bb611d942cc0abd93353c2fe61c5a4817e3a8295b191"
+    },
+    {
+      "path": "wav_qualified_pcm192_deck.raw",
+      "size_bytes": 397622,
+      "sha256": "237eb56b4bb72ba6eb10f12f381f3e53e69b14143b29da31c4bf445eb115b80d"
+    },
+    {
+      "path": "wav_qualified_pcm192_pcm.wav",
+      "size_bytes": 3116,
+      "sha256": "406b05df7ed22cbbd36374027b97e62371351eb050287ec95e742c9160addadf"
+    },
+    {
+      "path": "wav_qualified_pcm384_deck.cir",
+      "size_bytes": 412,
+      "sha256": "4ebf04f976984493bd055be6210abfd42191837235356a91448a6f7764beaadb"
+    },
+    {
+      "path": "wav_qualified_pcm384_deck.log",
+      "size_bytes": 707,
+      "sha256": "ef4391a193bdf022e7d7b98e78ca3674f66ac4aab2e5cf3062294e7cfd5025ef"
+    },
+    {
+      "path": "wav_qualified_pcm384_deck.raw",
+      "size_bytes": 397750,
+      "sha256": "fa2bb021265a1bc723c2d29410abfa1d0822f5efe496d979696c4b11e78bf8f4"
+    },
+    {
+      "path": "wav_qualified_pcm384_pcm.wav",
+      "size_bytes": 6188,
+      "sha256": "d0f9cb35bd53d6585032d15e757e9ba61d9cb0b1582f5c260e3a1b4c3d4c58c9"
+    },
+    {
+      "path": "wav_rc_deck.cir",
+      "size_bytes": 440,
+      "sha256": "28b11fe34d39c1ef3319b038a518a36fdaedb50f110335a1f95fc73fee56fa16"
+    },
+    {
+      "path": "wav_rc_deck.log",
+      "size_bytes": 679,
+      "sha256": "295839155290e0a25d91efba180d17ab5a7053a9b8dd6d68244563b1ec28a315"
+    },
+    {
+      "path": "wav_rc_deck.raw",
+      "size_bytes": 397850,
+      "sha256": "966a5295cb46359abed48db4e18f18e04c49df08eadd17faf6082f11dc617045"
+    },
+    {
+      "path": "wav_rc_pcm192.wav",
+      "size_bytes": 3120,
+      "sha256": "c176b8df2f6a992aadb54ad7b431d2b432ebb92073d90f92cb73bada25bbe309"
+    },
+    {
+      "path": "wav_rc_pcm384.wav",
+      "size_bytes": 6188,
+      "sha256": "d0f9cb35bd53d6585032d15e757e9ba61d9cb0b1582f5c260e3a1b4c3d4c58c9"
+    }
+  ]
+}

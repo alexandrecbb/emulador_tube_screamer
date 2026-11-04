@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "reference_request.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "request_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+$"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+$"
+    },
+    "physical_case_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "analysis_kind": {
+      "enum": [
+        "dc",
+        "ac",
+        "transient"
+      ]
+    },
+    "reference_settings": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "enum": [
+            "nominal",
+            "refined"
+          ]
+        },
+        "maxstep_s": {
+          "type": "number"
+        },
+        "dc_protocol": {
+          "type": "string"
+        },
+        "wav": {
+          "type": "object",
+          "properties": {
+            "rate_Hz": {
+              "enum": [
+                192000,
+                384000
+              ]
+            },
+            "encoding": {
+              "const": "signed PCM32 mono"
+            },
+            "frame_count": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "origin_s": {
+              "const": 0
+            },
+            "duration_s": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "transient_stop_s": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "scale_V_per_FS": {
+              "const": 8
+            }
+          },
+          "required": [
+            "rate_Hz",
+            "encoding",
+            "frame_count",
+            "origin_s",
+            "duration_s",
+            "transient_stop_s",
+            "scale_V_per_FS"
+          ],
+          "additionalProperties": false
+        },
+        "native_options": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "level",
+        "maxstep_s",
+        "dc_protocol"
+      ],
+      "additionalProperties": false
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "path",
+          "size_bytes",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "expected_outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "trace_map": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "expression": {
+            "type": "string"
+          },
+          "zero_resistance_expression": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "unit": {
+            "type": "string"
+          },
+          "orientation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "expression",
+          "zero_resistance_expression",
+          "unit",
+          "orientation"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "request_id",
+    "case_id",
+    "physical_case_sha256",
+    "analysis_kind",
+    "reference_settings",
+    "inputs",
+    "expected_outputs",
+    "trace_map"
+  ],
+  "additionalProperties": false
+}

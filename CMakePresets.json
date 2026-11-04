@@ -1,0 +1,30 @@
+{
+  "version": 10,
+  "cmakeMinimumRequired": {"major": 4, "minor": 4, "patch": 5},
+  "configurePresets": [
+    {
+      "name": "offline-release",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/offline-release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CXX_COMPILER": "${sourceDir}/.tools/gcc/bin/x86_64-conda-linux-gnu-g++",
+        "CMAKE_MAKE_PROGRAM": "${sourceDir}/.tools/bin/ninja"
+      }
+    },
+    {
+      "name": "offline-checks",
+      "inherits": "offline-release",
+      "binaryDir": "${sourceDir}/build/offline-checks",
+      "cacheVariables": {"TS808_CHECKED": "ON"}
+    }
+  ],
+  "buildPresets": [
+    {"name": "offline-release", "configurePreset": "offline-release", "jobs": 2},
+    {"name": "offline-checks", "configurePreset": "offline-checks", "jobs": 2}
+  ],
+  "testPresets": [
+    {"name": "offline-release", "configurePreset": "offline-release", "output": {"outputOnFailure": true}},
+    {"name": "offline-checks", "configurePreset": "offline-checks", "output": {"outputOnFailure": true}}
+  ]
+}

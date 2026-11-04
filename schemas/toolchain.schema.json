@@ -1,0 +1,412 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "execution_profile": {
+      "const": "wsl2-windows-native-v1"
+    },
+    "linux": {
+      "type": "object",
+      "properties": {
+        "distribution": {
+          "type": "object",
+          "properties": {
+            "NAME": {
+              "type": "string",
+              "minLength": 1
+            },
+            "ID": {
+              "type": "string",
+              "minLength": 1
+            },
+            "PRETTY_NAME": {
+              "type": "string",
+              "minLength": 1
+            },
+            "VERSION_ID": {
+              "type": "string",
+              "minLength": 1
+            },
+            "VERSION": {
+              "type": "string",
+              "minLength": 1
+            },
+            "VERSION_CODENAME": {
+              "type": "string",
+              "minLength": 1
+            },
+            "ID_LIKE": {
+              "type": "string",
+              "minLength": 1
+            },
+            "HOME_URL": {
+              "type": "string",
+              "minLength": 1
+            },
+            "SUPPORT_URL": {
+              "type": "string",
+              "minLength": 1
+            },
+            "BUG_REPORT_URL": {
+              "type": "string",
+              "minLength": 1
+            },
+            "PRIVACY_POLICY_URL": {
+              "type": "string",
+              "minLength": 1
+            },
+            "UBUNTU_CODENAME": {
+              "type": "string",
+              "minLength": 1
+            },
+            "LOGO": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "NAME",
+            "ID",
+            "PRETTY_NAME",
+            "VERSION_ID",
+            "VERSION",
+            "VERSION_CODENAME",
+            "ID_LIKE",
+            "HOME_URL",
+            "SUPPORT_URL",
+            "BUG_REPORT_URL",
+            "PRIVACY_POLICY_URL",
+            "UBUNTU_CODENAME",
+            "LOGO"
+          ],
+          "additionalProperties": false
+        },
+        "kernel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "architecture": {
+          "type": "string",
+          "minLength": 1
+        },
+        "python_packages": {
+          "type": "object",
+          "properties": {
+            "numpy": {
+              "type": "string",
+              "minLength": 1
+            },
+            "scipy": {
+              "type": "string",
+              "minLength": 1
+            },
+            "spicelib": {
+              "type": "string",
+              "minLength": 1
+            },
+            "matplotlib": {
+              "type": "string",
+              "minLength": 1
+            },
+            "pytest": {
+              "type": "string",
+              "minLength": 1
+            },
+            "jsonschema": {
+              "type": "string",
+              "minLength": 1
+            },
+            "pip": {
+              "type": "string",
+              "minLength": 1
+            },
+            "pip-tools": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "numpy",
+            "scipy",
+            "spicelib",
+            "matplotlib",
+            "pytest",
+            "jsonschema",
+            "pip",
+            "pip-tools"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "distribution",
+        "kernel",
+        "architecture",
+        "python_packages"
+      ],
+      "additionalProperties": false
+    },
+    "wsl": {
+      "type": "object",
+      "properties": {
+        "interop": {
+          "type": "boolean"
+        },
+        "kernel": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "interop",
+        "kernel"
+      ],
+      "additionalProperties": false
+    },
+    "windows": {
+      "type": "object",
+      "properties": {
+        "build": {
+          "type": "string",
+          "minLength": 1
+        },
+        "powershell_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "architecture": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "build",
+        "powershell_version",
+        "architecture"
+      ],
+      "additionalProperties": false
+    },
+    "tools": {
+      "type": "object",
+      "properties": {
+        "gcc": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "const": "15.3.0"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "cmake": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "const": "4.4.5"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "ctest": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "const": "4.4.5"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "ninja": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "const": "1.13.2"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "python": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "const": "3.14.4"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        },
+        "ltspice": {
+          "type": "object",
+          "properties": {
+            "path": {
+              "type": "string",
+              "minLength": 1
+            },
+            "version": {
+              "const": "26.1.1"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "path",
+            "version",
+            "sha256"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "gcc",
+        "cmake",
+        "ctest",
+        "ninja",
+        "python",
+        "ltspice"
+      ],
+      "additionalProperties": false
+    },
+    "workspace": {
+      "type": "object",
+      "properties": {
+        "wsl_root": {
+          "type": "string",
+          "minLength": 1
+        },
+        "windows_root": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "wsl_root",
+        "windows_root"
+      ],
+      "additionalProperties": false
+    },
+    "reference_policy": {
+      "type": "object",
+      "properties": {
+        "timeout_s": {
+          "type": "integer"
+        },
+        "parallel_processes": {
+          "type": "integer"
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "integration": {
+          "type": "string",
+          "minLength": 1
+        },
+        "plotwinsize": {
+          "type": "integer"
+        },
+        "numdgt": {
+          "type": "integer"
+        },
+        "nominal_maxstep_s": {
+          "type": "number"
+        },
+        "qualification": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "timeout_s",
+        "parallel_processes",
+        "version",
+        "integration",
+        "plotwinsize",
+        "numdgt",
+        "nominal_maxstep_s",
+        "qualification"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "execution_profile",
+    "linux",
+    "wsl",
+    "windows",
+    "tools",
+    "workspace",
+    "reference_policy"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "toolchain.schema.json"
+}

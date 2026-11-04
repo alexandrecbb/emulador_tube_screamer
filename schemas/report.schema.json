@@ -1,0 +1,694 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "report.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "comparison_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+$"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+$"
+    },
+    "physical_case_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "inputs": {
+      "type": "object",
+      "properties": {
+        "case_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "run_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "validator_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "case_sha256",
+        "run_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "execution_config": {
+      "type": "object",
+      "properties": {
+        "boundary_count": {
+          "type": "integer"
+        },
+        "formulation_id": {
+          "type": "string"
+        },
+        "interior_counts": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "ordered_unknowns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "purpose": {
+          "type": "string"
+        },
+        "rate_Hz": {
+          "type": "integer"
+        },
+        "solver": {
+          "type": "object",
+          "properties": {
+            "armijo_c1": {
+              "type": "number"
+            },
+            "atol_current_A": {
+              "type": "number"
+            },
+            "atol_increment_current_A": {
+              "type": "number"
+            },
+            "atol_increment_voltage_V": {
+              "type": "number"
+            },
+            "atol_voltage_V": {
+              "type": "number"
+            },
+            "current_scale_A": {
+              "type": "number"
+            },
+            "max_line_search": {
+              "type": "integer"
+            },
+            "max_newton_dc": {
+              "type": "integer"
+            },
+            "max_newton_transient": {
+              "type": "integer"
+            },
+            "maximum_backward_error": {
+              "type": "number"
+            },
+            "maximum_schur_difference": {
+              "type": "number"
+            },
+            "minimum_rcond": {
+              "type": "number"
+            },
+            "pivot_epsilon_factor": {
+              "type": "number"
+            },
+            "row_scaling": {
+              "type": "string"
+            },
+            "rtol_increment": {
+              "type": "number"
+            },
+            "rtol_residual": {
+              "type": "number"
+            },
+            "voltage_scale_V": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "armijo_c1",
+            "atol_current_A",
+            "atol_increment_current_A",
+            "atol_increment_voltage_V",
+            "atol_voltage_V",
+            "current_scale_A",
+            "max_line_search",
+            "max_newton_dc",
+            "max_newton_transient",
+            "maximum_backward_error",
+            "maximum_schur_difference",
+            "minimum_rcond",
+            "pivot_epsilon_factor",
+            "row_scaling",
+            "rtol_increment",
+            "rtol_residual",
+            "voltage_scale_V"
+          ],
+          "additionalProperties": false
+        },
+        "unknown_count": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "boundary_count",
+        "formulation_id",
+        "interior_counts",
+        "ordered_unknowns",
+        "purpose",
+        "rate_Hz",
+        "solver",
+        "unknown_count"
+      ],
+      "additionalProperties": false
+    },
+    "reference_qualification": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "passed",
+            "failed",
+            "not_evaluated"
+          ]
+        },
+        "nominal": {
+          "type": "object",
+          "properties": {
+            "reference_id": {
+              "type": "string",
+              "pattern": "^[a-z0-9_.-]+$"
+            },
+            "manifest_path": {
+              "type": "object",
+              "properties": {
+                "windows_path": {
+                  "type": "string"
+                },
+                "wsl_path": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "windows_path",
+                "wsl_path"
+              ],
+              "additionalProperties": false
+            },
+            "manifest_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "request_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "result_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "raw_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "log_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "reference_id",
+            "manifest_path",
+            "manifest_sha256",
+            "request_sha256",
+            "result_sha256",
+            "raw_sha256",
+            "log_sha256"
+          ],
+          "additionalProperties": false
+        },
+        "refined": {
+          "type": "object",
+          "properties": {
+            "reference_id": {
+              "type": "string",
+              "pattern": "^[a-z0-9_.-]+$"
+            },
+            "manifest_path": {
+              "type": "object",
+              "properties": {
+                "windows_path": {
+                  "type": "string"
+                },
+                "wsl_path": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "windows_path",
+                "wsl_path"
+              ],
+              "additionalProperties": false
+            },
+            "manifest_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "request_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "result_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "raw_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "log_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "reference_id",
+            "manifest_path",
+            "manifest_sha256",
+            "request_sha256",
+            "result_sha256",
+            "raw_sha256",
+            "log_sha256"
+          ],
+          "additionalProperties": false
+        },
+        "settings": {
+          "type": "object",
+          "properties": {
+            "nominal": {
+              "type": "object",
+              "properties": {
+                "level": {
+                  "type": "string"
+                },
+                "maxstep_s": {
+                  "type": "number"
+                },
+                "dc_protocol": {
+                  "type": "string"
+                },
+                "native_options": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "level",
+                "maxstep_s",
+                "dc_protocol"
+              ],
+              "additionalProperties": false
+            },
+            "refined": {
+              "type": "object",
+              "properties": {
+                "level": {
+                  "type": "string"
+                },
+                "maxstep_s": {
+                  "type": "number"
+                },
+                "dc_protocol": {
+                  "type": "string"
+                },
+                "native_options": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "level",
+                "maxstep_s",
+                "dc_protocol"
+              ],
+              "additionalProperties": false
+            },
+            "target_rate_Hz": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "nominal",
+            "refined",
+            "target_rate_Hz"
+          ],
+          "additionalProperties": false
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9_.-]+$"
+              },
+              "applicable": {
+                "type": "boolean"
+              },
+              "required": {
+                "type": "boolean"
+              },
+              "status": {
+                "enum": [
+                  "passed",
+                  "failed",
+                  "not_evaluated"
+                ]
+              },
+              "metric": {
+                "type": "string"
+              },
+              "value": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "unit": {
+                "type": "string"
+              },
+              "limit": {
+                "anyOf": [
+                  {
+                    "type": "number"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "applicable",
+              "required",
+              "status",
+              "metric",
+              "value",
+              "unit",
+              "limit",
+              "reason"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "status",
+        "nominal",
+        "refined",
+        "settings",
+        "checks"
+      ],
+      "additionalProperties": false
+    },
+    "reconstruction": {
+      "type": "object",
+      "properties": {
+        "method": {
+          "type": "string"
+        },
+        "alignment": {
+          "type": "string"
+        },
+        "wav": {
+          "type": "object",
+          "properties": {
+            "input_rate_Hz": {
+              "type": "integer"
+            },
+            "decimation": {
+              "type": "integer"
+            },
+            "fir_length": {
+              "type": "integer"
+            },
+            "delay_samples": {
+              "type": "integer"
+            },
+            "first_k": {
+              "type": "integer"
+            },
+            "stop_k": {
+              "type": "integer"
+            },
+            "start_s": {
+              "type": "number"
+            },
+            "stop_s": {
+              "type": "number"
+            },
+            "scale_V_per_FS": {
+              "type": "number"
+            },
+            "encoding": {
+              "type": "string"
+            },
+            "playback_gain": {
+              "type": "number"
+            },
+            "dc_removal": {
+              "type": "string"
+            },
+            "coefficient_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "input_rate_Hz",
+            "decimation",
+            "fir_length",
+            "delay_samples",
+            "first_k",
+            "stop_k",
+            "start_s",
+            "stop_s",
+            "scale_V_per_FS",
+            "encoding",
+            "playback_gain",
+            "dc_removal",
+            "coefficient_sha256"
+          ],
+          "additionalProperties": false
+        },
+        "bode_masked_frequencies_Hz": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        }
+      },
+      "required": [
+        "method",
+        "alignment"
+      ],
+      "additionalProperties": false
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_.-]+$"
+          },
+          "applicable": {
+            "type": "boolean"
+          },
+          "required": {
+            "type": "boolean"
+          },
+          "status": {
+            "enum": [
+              "passed",
+              "failed",
+              "not_evaluated"
+            ]
+          },
+          "metric": {
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "unit": {
+            "type": "string"
+          },
+          "limit": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "applicable",
+          "required",
+          "status",
+          "metric",
+          "value",
+          "unit",
+          "limit",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "status": {
+            "enum": [
+              "generated",
+              "missing",
+              "not_applicable"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "status",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "outcomes": {
+      "type": "object",
+      "properties": {
+        "reference": {
+          "enum": [
+            "passed",
+            "failed",
+            "pending",
+            "not_applicable"
+          ]
+        },
+        "numerical": {
+          "enum": [
+            "passed",
+            "failed",
+            "pending",
+            "not_applicable"
+          ]
+        },
+        "wav": {
+          "enum": [
+            "passed",
+            "failed",
+            "pending",
+            "not_applicable"
+          ]
+        },
+        "listening": {
+          "enum": [
+            "passed",
+            "failed",
+            "pending",
+            "not_applicable"
+          ]
+        },
+        "combined": {
+          "enum": [
+            "passed",
+            "failed",
+            "pending",
+            "not_applicable"
+          ]
+        }
+      },
+      "required": [
+        "reference",
+        "numerical",
+        "wav",
+        "listening",
+        "combined"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "comparison_id",
+    "case_id",
+    "physical_case_sha256",
+    "inputs",
+    "execution_config",
+    "reference_qualification",
+    "reconstruction",
+    "checks",
+    "artifacts",
+    "outcomes"
+  ],
+  "additionalProperties": false
+}

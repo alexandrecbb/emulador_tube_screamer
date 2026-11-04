@@ -1,0 +1,13 @@
+Reduced JRC4558 loaded DC follower law fixture
+.include models.lib
+.temp 25
+.options tnom=25 plotwinsize=0 numdgt=15 method=trap reltol=1e-6 abstol=1e-12 vntol=1e-9 chgtol=1e-16 trtol=1 gminsteps=0 srcsteps=0
+Vsupply v9 0 9
+Vin plus 0 4.5
+Xa plus out2k out2k v9 0 reduced_4558
+Xb plus out10k out10k v9 0 reduced_4558
+R2 out2k 0 2000
+R10 out10k 0 10000
+.op
+.save V(plus) V(out2k) V(out10k) V(xa:z) V(xb:z)
+.end

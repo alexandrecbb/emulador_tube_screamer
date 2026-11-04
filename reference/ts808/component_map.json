@@ -1,0 +1,1061 @@
+{
+  "schema_version": 1,
+  "model_id": "ts808-cerutti-reduced-v1",
+  "source": {
+    "url": "https://generalguitargadgets.com/wp-content/uploads/ts-808.jpg",
+    "sha256": "22ea2b084b4248a26a303557e18c8f35968bc1fa73a2a6bcf5edce0d349a12ad",
+    "attribution": "Steve Cerutti; published by General Guitar Gadgets"
+  },
+  "known_nodes": {
+    "gnd": 0,
+    "v9": 9,
+    "generator": "case stimulus"
+  },
+  "components": [
+    {
+      "id": "R_source",
+      "kind": "resistor",
+      "terminals": [
+        "generator",
+        "input"
+      ],
+      "value_SI": 1000.0,
+      "unit": "Ohm",
+      "owner": "fixture",
+      "provenance": "case_fixture"
+    },
+    {
+      "id": "C_input",
+      "kind": "capacitor",
+      "terminals": [
+        "input",
+        "input_cap"
+      ],
+      "value_SI": 2e-08,
+      "unit": "F",
+      "owner": "input",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_input",
+      "kind": "resistor",
+      "terminals": [
+        "input_cap",
+        "input_base"
+      ],
+      "value_SI": 1000.0,
+      "unit": "Ohm",
+      "owner": "input",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_input_bias",
+      "kind": "resistor",
+      "terminals": [
+        "input_base",
+        "vref"
+      ],
+      "value_SI": 510000.0,
+      "unit": "Ohm",
+      "owner": "input",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_input_emitter",
+      "kind": "resistor",
+      "terminals": [
+        "input_emitter",
+        "gnd"
+      ],
+      "value_SI": 10000.0,
+      "unit": "Ohm",
+      "owner": "input",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "C_clip_input",
+      "kind": "capacitor",
+      "terminals": [
+        "input_emitter",
+        "clip_plus"
+      ],
+      "value_SI": 1e-06,
+      "unit": "F",
+      "owner": "clipping",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_clip_bias",
+      "kind": "resistor",
+      "terminals": [
+        "clip_plus",
+        "vref"
+      ],
+      "value_SI": 10000.0,
+      "unit": "Ohm",
+      "owner": "clipping",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_gain_lower",
+      "kind": "resistor",
+      "terminals": [
+        "vref",
+        "gain_rc"
+      ],
+      "value_SI": 4700.0,
+      "unit": "Ohm",
+      "owner": "clipping",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "C_gain_lower",
+      "kind": "capacitor",
+      "terminals": [
+        "gain_rc",
+        "clip_minus"
+      ],
+      "value_SI": 4.7000000000000004e-08,
+      "unit": "F",
+      "owner": "clipping",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_feedback",
+      "kind": "resistor",
+      "terminals": [
+        "clip_minus",
+        "drive_end"
+      ],
+      "value_SI": 51000.0,
+      "unit": "Ohm",
+      "owner": "clipping",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "P_drive",
+      "kind": "potentiometer",
+      "terminals": [
+        "drive_end",
+        "clip_out"
+      ],
+      "value_SI": 500000.0,
+      "unit": "Ohm",
+      "owner": "clipping",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "C_feedback",
+      "kind": "capacitor",
+      "terminals": [
+        "clip_minus",
+        "clip_out"
+      ],
+      "value_SI": 5.1e-11,
+      "unit": "F",
+      "owner": "clipping",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_tone_input",
+      "kind": "resistor",
+      "terminals": [
+        "clip_out",
+        "tone_in"
+      ],
+      "value_SI": 1000.0,
+      "unit": "Ohm",
+      "owner": "tone_volume",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_tone_bias",
+      "kind": "resistor",
+      "terminals": [
+        "tone_in",
+        "vref"
+      ],
+      "value_SI": 10000.0,
+      "unit": "Ohm",
+      "owner": "tone_volume",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "C_tone_lowpass",
+      "kind": "capacitor",
+      "terminals": [
+        "tone_in",
+        "gnd"
+      ],
+      "value_SI": 2.2e-07,
+      "unit": "F",
+      "owner": "tone_volume",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "P_tone",
+      "kind": "potentiometer",
+      "terminals": [
+        "tone_in",
+        "tone_minus",
+        "tone_wiper"
+      ],
+      "value_SI": 20000.0,
+      "unit": "Ohm",
+      "owner": "tone_volume",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_tone_feedback",
+      "kind": "resistor",
+      "terminals": [
+        "tone_minus",
+        "tone_out"
+      ],
+      "value_SI": 1000.0,
+      "unit": "Ohm",
+      "owner": "tone_volume",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "C_tone_shelf",
+      "kind": "capacitor",
+      "terminals": [
+        "tone_wiper",
+        "tone_rc"
+      ],
+      "value_SI": 2.2e-07,
+      "unit": "F",
+      "owner": "tone_volume",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_tone_shelf",
+      "kind": "resistor",
+      "terminals": [
+        "tone_rc",
+        "gnd"
+      ],
+      "value_SI": 220.0,
+      "unit": "Ohm",
+      "owner": "tone_volume",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "C_volume_input",
+      "kind": "capacitor",
+      "terminals": [
+        "tone_out",
+        "volume_cap"
+      ],
+      "value_SI": 1e-06,
+      "unit": "F",
+      "owner": "tone_volume",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_volume_input",
+      "kind": "resistor",
+      "terminals": [
+        "volume_cap",
+        "volume_top"
+      ],
+      "value_SI": 1000.0,
+      "unit": "Ohm",
+      "owner": "tone_volume",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "P_volume",
+      "kind": "potentiometer",
+      "terminals": [
+        "vref",
+        "volume_top",
+        "wet_send"
+      ],
+      "value_SI": 100000.0,
+      "unit": "Ohm",
+      "owner": "tone_volume",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "C_dry",
+      "kind": "capacitor",
+      "terminals": [
+        "input_emitter",
+        "dry_send"
+      ],
+      "value_SI": 1.0000000000000001e-07,
+      "unit": "F",
+      "owner": "input",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_dry_bias",
+      "kind": "resistor",
+      "terminals": [
+        "dry_send",
+        "vref"
+      ],
+      "value_SI": 510000.0,
+      "unit": "Ohm",
+      "owner": "input",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_switch_common_bias",
+      "kind": "resistor",
+      "terminals": [
+        "switch_common",
+        "vref"
+      ],
+      "value_SI": 510000.0,
+      "unit": "Ohm",
+      "owner": "output",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "C_output_input",
+      "kind": "capacitor",
+      "terminals": [
+        "switch_common",
+        "output_base"
+      ],
+      "value_SI": 1.0000000000000001e-07,
+      "unit": "F",
+      "owner": "output",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_output_bias",
+      "kind": "resistor",
+      "terminals": [
+        "output_base",
+        "vref"
+      ],
+      "value_SI": 510000.0,
+      "unit": "Ohm",
+      "owner": "output",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_output_emitter",
+      "kind": "resistor",
+      "terminals": [
+        "output_emitter",
+        "gnd"
+      ],
+      "value_SI": 10000.0,
+      "unit": "Ohm",
+      "owner": "output",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_output_series",
+      "kind": "resistor",
+      "terminals": [
+        "output_emitter",
+        "output_cap"
+      ],
+      "value_SI": 100.0,
+      "unit": "Ohm",
+      "owner": "output",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "C_output",
+      "kind": "capacitor",
+      "terminals": [
+        "output_cap",
+        "output"
+      ],
+      "value_SI": 9.999999999999999e-06,
+      "unit": "F",
+      "owner": "output",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_output_shunt",
+      "kind": "resistor",
+      "terminals": [
+        "output",
+        "gnd"
+      ],
+      "value_SI": 10000.0,
+      "unit": "Ohm",
+      "owner": "output",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_load",
+      "kind": "resistor",
+      "terminals": [
+        "output",
+        "gnd"
+      ],
+      "value_SI": 1000000.0,
+      "unit": "Ohm",
+      "owner": "fixture",
+      "provenance": "case_fixture"
+    },
+    {
+      "id": "R_bias_upper",
+      "kind": "resistor",
+      "terminals": [
+        "v9",
+        "vref"
+      ],
+      "value_SI": 10000.0,
+      "unit": "Ohm",
+      "owner": "bias",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "R_bias_lower",
+      "kind": "resistor",
+      "terminals": [
+        "vref",
+        "gnd"
+      ],
+      "value_SI": 10000.0,
+      "unit": "Ohm",
+      "owner": "bias",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "C_bias",
+      "kind": "capacitor",
+      "terminals": [
+        "vref",
+        "gnd"
+      ],
+      "value_SI": 4.7e-05,
+      "unit": "F",
+      "owner": "bias",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "C_supply",
+      "kind": "capacitor",
+      "terminals": [
+        "v9",
+        "gnd"
+      ],
+      "value_SI": 9.999999999999999e-05,
+      "unit": "F",
+      "owner": "bias",
+      "provenance": "schematic_transcription"
+    },
+    {
+      "id": "Q_input",
+      "kind": "npn",
+      "terminals": [
+        "v9",
+        "input_base",
+        "input_emitter"
+      ],
+      "law": "bjt_25c",
+      "owner": "input",
+      "provenance": "approved_reduced_model"
+    },
+    {
+      "id": "Q_output",
+      "kind": "npn",
+      "terminals": [
+        "v9",
+        "output_base",
+        "output_emitter"
+      ],
+      "law": "bjt_25c",
+      "owner": "output",
+      "provenance": "approved_reduced_model"
+    },
+    {
+      "id": "D_feedback_positive",
+      "kind": "diode",
+      "terminals": [
+        "clip_minus",
+        "clip_out"
+      ],
+      "law": "diode_25c",
+      "owner": "clipping",
+      "provenance": "approved_reduced_model"
+    },
+    {
+      "id": "D_feedback_negative",
+      "kind": "diode",
+      "terminals": [
+        "clip_out",
+        "clip_minus"
+      ],
+      "law": "diode_25c",
+      "owner": "clipping",
+      "provenance": "approved_reduced_model"
+    },
+    {
+      "id": "U_clip",
+      "kind": "opamp",
+      "terminals": [
+        "clip_plus",
+        "clip_minus",
+        "clip_out",
+        "v9",
+        "gnd"
+      ],
+      "law": "opamp_25c",
+      "owner": "clipping",
+      "provenance": "approved_reduced_model"
+    },
+    {
+      "id": "U_tone",
+      "kind": "opamp",
+      "terminals": [
+        "tone_in",
+        "tone_minus",
+        "tone_out",
+        "v9",
+        "gnd"
+      ],
+      "law": "opamp_25c",
+      "owner": "tone_volume",
+      "provenance": "approved_reduced_model"
+    },
+    {
+      "id": "J_wet",
+      "kind": "resistor",
+      "terminals": [
+        "wet_send",
+        "switch_common"
+      ],
+      "value_SI": 383.29731360711594,
+      "unit": "Ohm",
+      "owner": "output",
+      "provenance": "conditional_static_equivalent"
+    }
+  ],
+  "device_parameters": {
+    "diode_25c": {
+      "temperature_K": 298.15,
+      "Is_A": 3.0193620074088285e-09,
+      "n": 1.94
+    },
+    "bjt_25c": {
+      "temperature_K": 298.15,
+      "Is_A": 1.1792496052020765e-14,
+      "BF": 271.5505716517182,
+      "BR": 4.214127741815321,
+      "NF": 0.99569,
+      "NR": 1
+    },
+    "opamp_25c": {
+      "temperature_K": 298.15,
+      "A0": 100000,
+      "GBW_Hz": 3000000.0,
+      "SR_V_per_s": 1000000.0,
+      "R_id_Ohm": 5000000.0,
+      "I_bias_plus_A": 2.5e-08,
+      "I_bias_minus_A": 2.5e-08,
+      "V_os_V": 0,
+      "R_o_Ohm": 196.07843137254903,
+      "headroom_plus_V": 0.7254901960784313,
+      "headroom_minus_V": 0.7254901960784313,
+      "W_plus_V": 0.25,
+      "W_minus_V": 0.25,
+      "tau_r_s": 1e-05
+    }
+  },
+  "controls": {
+    "drive": {
+      "total_Ohm": 500000,
+      "minimum": 0,
+      "maximum": 1,
+      "coordinate": "resistance_track_fraction",
+      "segments": [
+        {
+          "current_id": "i_drive",
+          "terminals": [
+            "drive_end",
+            "clip_out"
+          ],
+          "factor": "fraction"
+        }
+      ],
+      "endpoint_equation": "v_a-v_b-R*i=0"
+    },
+    "tone": {
+      "total_Ohm": 20000,
+      "minimum": 0,
+      "maximum": 1,
+      "coordinate": "resistance_track_fraction",
+      "segments": [
+        {
+          "current_id": "i_tone_low",
+          "terminals": [
+            "tone_in",
+            "tone_wiper"
+          ],
+          "factor": "fraction"
+        },
+        {
+          "current_id": "i_tone_high",
+          "terminals": [
+            "tone_wiper",
+            "tone_minus"
+          ],
+          "factor": "1-fraction"
+        }
+      ],
+      "endpoint_equation": "v_a-v_b-R*i=0"
+    },
+    "volume": {
+      "total_Ohm": 100000,
+      "minimum": 0,
+      "maximum": 1,
+      "coordinate": "resistance_track_fraction",
+      "segments": [
+        {
+          "current_id": "i_volume_low",
+          "terminals": [
+            "vref",
+            "wet_send"
+          ],
+          "factor": "fraction"
+        },
+        {
+          "current_id": "i_volume_high",
+          "terminals": [
+            "wet_send",
+            "volume_top"
+          ],
+          "factor": "1-fraction"
+        }
+      ],
+      "endpoint_equation": "v_a-v_b-R*i=0"
+    }
+  },
+  "extraction": [
+    {
+      "id": "R_source",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "C_input",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_input",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_input_bias",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_input_emitter",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "C_clip_input",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_clip_bias",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_gain_lower",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "C_gain_lower",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_feedback",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "P_drive",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "C_feedback",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_tone_input",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_tone_bias",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "C_tone_lowpass",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "P_tone",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_tone_feedback",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "C_tone_shelf",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_tone_shelf",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "C_volume_input",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_volume_input",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "P_volume",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "C_dry",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_dry_bias",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_switch_common_bias",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "C_output_input",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_output_bias",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_output_emitter",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_output_series",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "C_output",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_output_shunt",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_load",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_bias_upper",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "R_bias_lower",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "C_bias",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "C_supply",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "Q_input",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "Q_output",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "D_feedback_positive",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "D_feedback_negative",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "U_clip",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "U_tone",
+      "treatment": "retained",
+      "reason": "Audited audio, supply/bias or external fixture connection"
+    },
+    {
+      "id": "J_wet",
+      "treatment": "replaced",
+      "reason": "T21-A finite effect-on channel equivalent"
+    },
+    {
+      "id": "J_dry",
+      "treatment": "omitted",
+      "reason": "Open dry channel in effect-on state; C_dry and R_dry_bias remain"
+    },
+    {
+      "id": "gate_control_networks",
+      "treatment": "omitted",
+      "reason": "Static switching approximation; no gate dynamics"
+    },
+    {
+      "id": "flip_flop_LED_footswitch",
+      "treatment": "omitted",
+      "reason": "Logic reaches ideal supply/ground; no additional direct vref load in selected drawing"
+    },
+    {
+      "id": "reverse_polarity_diode",
+      "treatment": "omitted",
+      "reason": "Across prescribed ideal supply; reverse polarity outside baseline"
+    }
+  ],
+  "trace_map": {
+    "input": {
+      "expression": "V(input)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "input_cap": {
+      "expression": "V(input_cap)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "input_base": {
+      "expression": "V(input_base)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "dry_send": {
+      "expression": "V(dry_send)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "clip_plus": {
+      "expression": "V(clip_plus)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "clip_minus": {
+      "expression": "V(clip_minus)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "gain_rc": {
+      "expression": "V(gain_rc)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "drive_end": {
+      "expression": "V(drive_end)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "z_clip": {
+      "expression": "V(xclip:z)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "i_drive": {
+      "expression": "I(R_drive)",
+      "zero_resistance_expression": "I(V_drive)",
+      "unit": "A",
+      "orientation": "drive_end -> clip_out"
+    },
+    "tone_in": {
+      "expression": "V(tone_in)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "tone_minus": {
+      "expression": "V(tone_minus)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "tone_wiper": {
+      "expression": "V(tone_wiper)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "tone_rc": {
+      "expression": "V(tone_rc)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "tone_out": {
+      "expression": "V(tone_out)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "volume_cap": {
+      "expression": "V(volume_cap)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "volume_top": {
+      "expression": "V(volume_top)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "z_tone": {
+      "expression": "V(xtone:z)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "i_tone_low": {
+      "expression": "I(R_tone_low)",
+      "zero_resistance_expression": "I(V_tone_low)",
+      "unit": "A",
+      "orientation": "tone_in -> tone_wiper"
+    },
+    "i_tone_high": {
+      "expression": "I(R_tone_high)",
+      "zero_resistance_expression": "I(V_tone_high)",
+      "unit": "A",
+      "orientation": "tone_wiper -> tone_minus"
+    },
+    "i_volume_high": {
+      "expression": "I(R_volume_high)",
+      "zero_resistance_expression": "I(V_volume_high)",
+      "unit": "A",
+      "orientation": "wet_send -> volume_top"
+    },
+    "switch_common": {
+      "expression": "V(switch_common)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "output_base": {
+      "expression": "V(output_base)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "output_emitter": {
+      "expression": "V(output_emitter)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "output_cap": {
+      "expression": "V(output_cap)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "output": {
+      "expression": "V(output)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "input_emitter": {
+      "expression": "V(input_emitter)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "clip_out": {
+      "expression": "V(clip_out)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "wet_send": {
+      "expression": "V(wet_send)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "vref": {
+      "expression": "V(vref)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "i_volume_low": {
+      "expression": "I(R_volume_low)",
+      "zero_resistance_expression": "I(V_volume_low)",
+      "unit": "A",
+      "orientation": "vref -> wet_send"
+    }
+  }
+}

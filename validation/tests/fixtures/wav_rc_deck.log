@@ -1,0 +1,21 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\Users\Alexandre\AppData\Local\ts808-reference\runs\wav-rc-7efa78cb722643a5bcfacd0c3a91d7ec\deck.cir
+Start Time: Sun Nov  1 15:56:42 2026
+Options:tnom=25 plotwinsize=0 reltol=1e-6 abstol=1e-12 vntol=1e-9 chgtol=1e-16 trtol=1 method=trap gminsteps=0 srcsteps=0 numdgt=15
+solver = Normal
+Maximum thread count: 16
+tnom = 25
+temp = 25
+method = trap
+reltol = 1e-06
+chgtol = 1e-16
+trtol = 1
+volttol = 1e-09
+.OP point found by inspection.
+.OP point found by inspection.
+Total elapsed time: 0.097 seconds.
+Total iterations: 29074
+
+Files loaded:
+C:\Users\Alexandre\AppData\Local\ts808-reference\runs\wav-rc-7efa78cb722643a5bcfacd0c3a91d7ec\deck.cir
+

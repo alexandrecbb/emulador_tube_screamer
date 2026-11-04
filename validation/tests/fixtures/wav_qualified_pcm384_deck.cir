@@ -1,0 +1,11 @@
+RC reader fixture: tran64
+.temp 25
+.options tnom=25 plotwinsize=0 reltol=1e-6 abstol=1e-12 vntol=1e-9 chgtol=1e-16 trtol=1 method=trap gminsteps=0 srcsteps=0 numdgt=15
+Bgen in 0 V={if(time<0.001,0,0.1)}
+Rseries in output 1000
+Cload output 0 1u
+.tran 0 0.0039986979166666669 0 3.2552083333333332e-07
+.save V(wav_export) V(in) V(output)
+Bwav wav_export 0 V={V(output)/8}
+.wave pcm.wav 32 384000 V(wav_export)
+.end

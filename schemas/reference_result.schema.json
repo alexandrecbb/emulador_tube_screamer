@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "reference_result.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "physical_case_sha256": {
+      "type": "string"
+    },
+    "invocation": {
+      "type": "object",
+      "properties": {
+        "exit_code": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "start_utc": {
+          "type": "string"
+        },
+        "pid": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "working_directory": {
+          "type": "string"
+        },
+        "argv": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "elapsed_s": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "exit_code",
+        "start_utc",
+        "pid",
+        "working_directory",
+        "argv",
+        "elapsed_s"
+      ],
+      "additionalProperties": false
+    },
+    "completion": {
+      "enum": [
+        "completed",
+        "failed",
+        "timed_out",
+        "incomplete"
+      ]
+    },
+    "producer": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "windows_version": {
+          "type": "string"
+        },
+        "executable_sha256": {
+          "type": "string"
+        },
+        "executable_path": {
+          "type": "string"
+        },
+        "powershell_version": {
+          "type": "string"
+        },
+        "execution_profile": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "version",
+        "windows_version",
+        "executable_sha256",
+        "executable_path",
+        "powershell_version",
+        "execution_profile"
+      ],
+      "additionalProperties": false
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "path",
+          "size_bytes",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "request_sha256": {
+      "type": "string"
+    },
+    "reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "request_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "physical_case_sha256",
+    "invocation",
+    "completion",
+    "producer",
+    "files",
+    "request_sha256",
+    "reason",
+    "request_id"
+  ],
+  "additionalProperties": false
+}

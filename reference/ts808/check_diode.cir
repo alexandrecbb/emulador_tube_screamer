@@ -1,0 +1,19 @@
+Reduced 1N914 current-law fixture
+.include models.lib
+.temp 25
+.options tnom=25 numdgt=15 plotwinsize=0 reltol=1e-6 abstol=1e-12 vntol=1e-9 gminsteps=0 srcsteps=0
+Vd0 d0 0 -.2
+Xd0 d0 0 reduced_diode
+Vd1 d1 0 0
+Xd1 d1 0 reduced_diode
+Vd2 d2 0 .1
+Xd2 d2 0 reduced_diode
+Vd3 d3 0 .3
+Xd3 d3 0 reduced_diode
+Vd4 d4 0 .6
+Xd4 d4 0 reduced_diode
+Vd5 d5 0 .8
+Xd5 d5 0 reduced_diode
+.op
+.save I(Vd0) I(Vd1) I(Vd2) I(Vd3) I(Vd4) I(Vd5)
+.end

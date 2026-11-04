@@ -1,0 +1,19 @@
+Reduced JRC4558 signed slew overload and recovery law fixture
+.include models.lib
+.temp 25
+.options tnom=25 plotwinsize=0 numdgt=15 method=trap reltol=1e-6 abstol=1e-12 vntol=1e-9 chgtol=1e-16 trtol=1 gminsteps=0 srcsteps=0
+Vsupply v9 0 9
+Vmid midpoint 0 4.5
+Bp plus_p 0 V={4.5+0.1*(if(time<0.1,0,if(time<0.105,(1-cos(pi*(time-0.1)/0.005))/2,if(time<0.195,1,if(time<0.2,(1-cos(pi*(0.2-time)/0.005))/2,0)))))}
+Bn plus_n 0 V={4.5-0.1*(if(time<0.1,0,if(time<0.105,(1-cos(pi*(time-0.1)/0.005))/2,if(time<0.195,1,if(time<0.2,(1-cos(pi*(0.2-time)/0.005))/2,0)))))}
+Xp2000 plus_p midpoint out_p2000 v9 0 reduced_4558
+Rp2000 out_p2000 0 2000
+Xp10000 plus_p midpoint out_p10000 v9 0 reduced_4558
+Rp10000 out_p10000 0 10000
+Xn2000 plus_n midpoint out_n2000 v9 0 reduced_4558
+Rn2000 out_n2000 0 2000
+Xn10000 plus_n midpoint out_n10000 v9 0 reduced_4558
+Rn10000 out_n10000 0 10000
+.tran 0 0.5 0 3.2552083333333332e-07
+.save V(plus_p) V(plus_n) V(out_p2000) V(xp2000:z) V(out_p10000) V(xp10000:z) V(out_n2000) V(xn2000:z) V(out_n10000) V(xn10000:z)
+.end

@@ -1,0 +1,56 @@
+TS808 Cerutti effect-on extraction; center DC fixture
+* ts808-cerutti-reduced-v1; controls are resistance fractions
+.include models.lib
+.temp 25
+.options tnom=25
+.options plotwinsize=0 numdgt=15 method=trap reltol=1e-6 abstol=1e-12 vntol=1e-9 chgtol=1e-16 trtol=1 gmin=1e-12 gminsteps=0 srcsteps=0
+Vsupply v9 0 9
+Vgenerator generator 0 DC 0 AC 1
+R_source generator input 1000
+C_input input input_cap 2e-08
+R_input input_cap input_base 1000
+R_input_bias input_base vref 510000
+R_input_emitter input_emitter 0 10000
+C_clip_input input_emitter clip_plus 9.9999999999999995e-07
+R_clip_bias clip_plus vref 10000
+R_gain_lower vref gain_rc 4700
+C_gain_lower gain_rc clip_minus 4.7000000000000004e-08
+R_feedback clip_minus drive_end 51000
+C_feedback clip_minus clip_out 5.0999999999999998e-11
+R_tone_input clip_out tone_in 1000
+R_tone_bias tone_in vref 10000
+C_tone_lowpass tone_in 0 2.2000000000000001e-07
+R_tone_feedback tone_minus tone_out 1000
+C_tone_shelf tone_wiper tone_rc 2.2000000000000001e-07
+R_tone_shelf tone_rc 0 220
+C_volume_input tone_out volume_cap 9.9999999999999995e-07
+R_volume_input volume_cap volume_top 1000
+C_dry input_emitter dry_send 1.0000000000000001e-07
+R_dry_bias dry_send vref 510000
+R_switch_common_bias switch_common vref 510000
+C_output_input switch_common output_base 1.0000000000000001e-07
+R_output_bias output_base vref 510000
+R_output_emitter output_emitter 0 10000
+R_output_series output_emitter output_cap 100
+C_output output_cap output 9.9999999999999991e-06
+R_output_shunt output 0 10000
+R_load output 0 1000000
+R_bias_upper v9 vref 10000
+R_bias_lower vref 0 10000
+C_bias vref 0 4.6999999999999997e-05
+C_supply v9 0 9.9999999999999991e-05
+XQ_input v9 input_base input_emitter reduced_npn
+XQ_output v9 output_base output_emitter reduced_npn
+XD_feedback_positive clip_minus clip_out reduced_diode
+XD_feedback_negative clip_out clip_minus reduced_diode
+Xclip clip_plus clip_minus clip_out v9 0 reduced_4558
+Xtone tone_in tone_minus tone_out v9 0 reduced_4558
+R_wet wet_send switch_common 383.29731360711594
+R_drive drive_end clip_out 250000.0
+R_tone_low tone_in tone_wiper 10000.0
+R_tone_high tone_wiper tone_minus 10000.0
+R_volume_low vref wet_send 50000.0
+R_volume_high wet_send volume_top 50000.0
+.op
+.save V(input) V(input_cap) V(input_base) V(dry_send) V(clip_plus) V(clip_minus) V(gain_rc) V(drive_end) V(Xclip:z) V(tone_in) V(tone_minus) V(tone_wiper) V(tone_rc) V(tone_out) V(volume_cap) V(volume_top) V(Xtone:z) V(switch_common) V(output_base) V(output_emitter) V(output_cap) V(output) V(input_emitter) V(clip_out) V(wet_send) V(vref)
+.end

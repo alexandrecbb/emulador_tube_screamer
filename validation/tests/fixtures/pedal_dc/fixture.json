@@ -1,0 +1,16 @@
+{
+  "original_directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/audit-scaled-normal-false-3e5da699a70f41cf87e96c309ff5f38d",
+  "purpose": "Byte-preserved producer fixtures; relocated test copies are not live reference acceptance",
+  "files": {
+    "run_reference.ps1": "1fa9757ad2ee77af135325c386227d1b450c821c3d5dc347905b6a4b6a001988",
+    "component_map.json": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+    "request.json": "b3085d2c7d3c1233b886c3ebab18fd21dee891f71f259e0802c9a34029e41158",
+    "case.json": "a0600cfbefc39fc8db3c71448494f80a3b97649db7e421707a3c0c74c2fe46c6",
+    "deck.raw": "63a89ec0657743d3624f98312df2b98e2d7da46bff8431e1a63876bfa820374c",
+    "models.lib": "aa34518576e4accb761fcf81f813be3889eb551210e428c3377d6275314f5a68",
+    "deck.cir": "ad1b1907d7d9c88371f7776fd9f455e4b4f4c8df2d2bb513119fa2d3b7f72022",
+    "deck.log": "8f22b92c02c1f15d5b8cc9a153843d2d7402570f42719cab32f0889cca57f80c",
+    "device_spec.md": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+    "reference_result.json": "b59b8f6b998ec86c9ffc01dead6fe6b9d54270090036031547fa5b0f4f691322"
+  }
+}
