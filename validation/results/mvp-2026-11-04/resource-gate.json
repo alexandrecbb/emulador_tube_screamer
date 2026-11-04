@@ -1,0 +1,21 @@
+{
+  "recorded_at_utc": "2026-11-04T03:46:42.331696+00:00",
+  "status": "failed",
+  "qualified_roots": [
+    {
+      "path": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs",
+      "free_bytes": 8176840704
+    },
+    {
+      "path": "/mnt/f/ts808-reference/runs",
+      "free_bytes": 73636880384
+    }
+  ],
+  "baseline_duration_sum_s": 39.7,
+  "baseline_minimum_reference_bytes": 93664051200.0,
+  "active_two_revisions_duration_sum_s": 42.7,
+  "active_minimum_reference_bytes": 100741939200.0,
+  "all_tones_warmup2s_minimum_reference_bytes": 192754483200.0,
+  "headroom_factor": 1.1,
+  "reason": "Neither qualified Windows root can retain the matrix; bounds exclude adaptive overhead, export-only runs, WAVs and C++ traces. Numerical pilot gates also fail independently."
+}

@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/caminho d'\u00e1udio com espa\u00e7o \u00e7 1514ae69e8f64f7a951cd77afdba5e5c",
+  "windows_directory": "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\runs\\caminho d'\u00e1udio com espa\u00e7o \u00e7 1514ae69e8f64f7a951cd77afdba5e5c",
+  "result": {
+    "schema_version": 1,
+    "physical_case_sha256": "40d4bc6784288be8df5194ab869df534c46b84a437112c8c1e94e5a499343896",
+    "invocation": {
+      "exit_code": 0,
+      "start_utc": "2026-11-04T02:54:52.6996392Z",
+      "pid": 15672,
+      "working_directory": "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\runs\\caminho d'\u00e1udio com espa\u00e7o \u00e7 1514ae69e8f64f7a951cd77afdba5e5c",
+      "argv": [
+        "-b",
+        "deck.cir"
+      ],
+      "elapsed_s": 1.0650344
+    },
+    "completion": "completed",
+    "producer": {
+      "version": "26.1.1.0",
+      "windows_version": "Microsoft Windows NT 10.0.26300.0",
+      "executable_sha256": "3c144a2b3ec6a30baac6761c502d99b95aaa40b947ff5eca25b8fbd80d68af72",
+      "executable_path": "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\ltspice-26.1.1\\LTspice.exe",
+      "powershell_version": "5.1.26100.9818",
+      "execution_profile": "wsl2-windows-native-v1"
+    },
+    "files": [
+      {
+        "path": "deck.raw",
+        "sha256": "a0562eafd578ecae0669415e531d652ce34c234f2f33f9cf59a97d89e5583a58",
+        "size_bytes": 298596
+      },
+      {
+        "path": "deck.log",
+        "sha256": "3347adcb416798f28f85e60ae7b2b24dc49262f635cc06d45e39aef752152bb6",
+        "size_bytes": 729
+      }
+    ],
+    "request_sha256": "63be75abe4ecf740a635d5368ed769170425007e7aaed54a642869ad390ec7b8",
+    "reason": null,
+    "request_id": "path-roundtrip-a601b5f1952e438e87b6e6af4ccf3998"
+  }
+}

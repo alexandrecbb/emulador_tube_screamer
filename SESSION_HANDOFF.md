@@ -1,3 +1,46 @@
+## Encerramento desta sessão — 2026-11-04
+
+Todos os produtores, comparações, arquivamento e testes desta sessão concluíram.
+O pacote versionável é `validation/results/mvp-2026-11-04/`, com nove relatórios,
+plots, metadados, logs de verificação e índice de suíte de 128 entradas.
+Centro/alto drive warmup2s passaram nas três taxas. Sobrecarga falhou em
+192/384 kHz (recuperação 33/7 amostras), 768 kHz passou como diagnóstico.
+Newton 10x não alterou a reprovação. Não há aceitação de MVP nem pares ABX.
+A matriz completa não foi iniciada. Faltam precisão da recuperação e armazenamento.
+
+Verificação final registrada: 39 testes Python com produtor nativo e 30 subtests
+passaram; CTest checked/release e doctor das duas raízes passaram. Foram movidos
+5,84 GB de RAWs rejeitados/cancelados para F: após conferir hashes; logs preservados
+em C: e referências válidas intactas. C: recuperou aproximadamente 7,7 GB livres.
+As duas medições centrais perdidas foram repetidas com traces bit a bit idênticos.
+
+O usuário autorizou commit/push para origin/main e, depois, desligamento do
+WINDOWS hospedeiro. O encerramento deve verificar push e deixar a árvore limpa
+antes do pedido. Estado local do desligamento será registrado em
+`runs/mvp-qualification/shutdown-plan.json`; o recibo nativo ficará em
+`C:\Users\Alexandre\AppData\Local\ts808-reference\shutdown-receipt.json`.
+Esse é um pedido desta sessão, não uma preferência para desligar a cada turno
+futuro; não repetir automaticamente um desligamento já solicitado/atendido.
+
+## Ordem adicional: commit e push ANTES do desligamento
+
+O usuário pediu commit e push em https://github.com/alexandrecbb/emulador_tube_screamer.git
+antes de desligar. Já existe repositório main rastreando origin/main e o commit
+inicial 9a9a714 está no remoto. Finalizar relatório/evidências, commit, push e
+verificação do hash remoto antes de solicitar shutdown do WINDOWS. Não desligar
+se o push necessário não tiver sido concluído. GitHub plugin indisponível;
+usar Git CLI e credenciais existentes, sem expor tokens.
+
+## Instrução final do usuário — desligar o hospedeiro
+
+O usuário pediu explicitamente desligar o computador WINDOWS hospedeiro quando
+terminar o working, lembrando que estamos no WSL. Após concluir/salvar os jobs e
+relatórios, solicitar o desligamento ao Windows (não apenas wsl --shutdown).
+Não precisa pedir confirmação: autorização explícita já foi dada. Preferir
+shutdown normal sem /f, via pequeno script PowerShell Windows desacoplado com
+atraso curto para publicar a resposta final, e registrar o pedido antes disso.
+Não desligar enquanto arquivos/arquivamento/testes ainda estiverem em execução.
+
 ## Estado medido — madrugada de 2026-11-04
 
 A sobrecarga com referências válidas em F: foi comparada nas três taxas.

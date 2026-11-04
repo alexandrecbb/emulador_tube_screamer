@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "report_sha256": "be64d1a3f7a56e7e258ca7a277c1840ca60be8c7471bf10f93664bad7f44645d",
+  "native_options": {
+    "nominal": {
+      "temp": "25",
+      "solver": "alt",
+      "tnom": "25",
+      "plotwinsize": "0",
+      "numdgt": "15",
+      "method": "trap",
+      "reltol": "1e-6",
+      "abstol": "1e-12",
+      "vntol": "1e-9",
+      "chgtol": "1e-16",
+      "trtol": "1",
+      "gmin": "1e-12",
+      "gminsteps": "0",
+      "srcsteps": "0"
+    },
+    "refined": {
+      "temp": "25",
+      "solver": "alt",
+      "tnom": "25",
+      "plotwinsize": "0",
+      "numdgt": "15",
+      "method": "trap",
+      "reltol": "1e-7",
+      "abstol": "1e-13",
+      "vntol": "1e-10",
+      "chgtol": "1e-17",
+      "trtol": "1",
+      "gmin": "1e-12",
+      "gminsteps": "0",
+      "srcsteps": "0"
+    }
+  },
+  "scope": "Independent audit of actual hashed producer options; waveform metrics remain from the closed original report"
+}

@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "reference_id": "overload-high-alt-guard-refined-021f63f891bf4878b87bba07567474b7",
+  "case_id": "overload_high",
+  "physical_case_sha256": "50bbe9315ca36e1860475a5b27c3e8360e590b943efc74249f5eec90e6aa46e5",
+  "case_input_sha256": "8047c59c1718004fa5194d2f26fd1b04626bb842ae5d2493be626fd577e58721",
+  "analysis_kind": "transient",
+  "source": {
+    "request": {
+      "locator": {
+        "wsl_path": "/mnt/f/ts808-reference/runs/overload-high-alt-guard-refined-021f63f891bf4878b87bba07567474b7/request.json",
+        "windows_path": "F:\\ts808-reference\\runs\\overload-high-alt-guard-refined-021f63f891bf4878b87bba07567474b7\\request.json"
+      },
+      "size_bytes": 6710,
+      "sha256": "27dd857882a9bb48950f2d15af16fae07fa6babd3a7ce8e7947eac1874d17739"
+    },
+    "result": {
+      "locator": {
+        "wsl_path": "/mnt/f/ts808-reference/runs/overload-high-alt-guard-refined-021f63f891bf4878b87bba07567474b7/reference_result.json",
+        "windows_path": "F:\\ts808-reference\\runs\\overload-high-alt-guard-refined-021f63f891bf4878b87bba07567474b7\\reference_result.json"
+      },
+      "size_bytes": 1953,
+      "sha256": "3bc86a9cbbad7f58dcd0bec57a07aef747269a01c1ef269fde252b83c4f80516"
+    },
+    "raw": {
+      "locator": {
+        "wsl_path": "/mnt/f/ts808-reference/runs/overload-high-alt-guard-refined-021f63f891bf4878b87bba07567474b7/deck.raw",
+        "windows_path": "F:\\ts808-reference\\runs\\overload-high-alt-guard-refined-021f63f891bf4878b87bba07567474b7\\deck.raw"
+      },
+      "size_bytes": 2366926918,
+      "sha256": "d9f0cbd512c4613923aba57d0368f16fba1881d91e94f952790798dddffe6b15"
+    },
+    "log": {
+      "locator": {
+        "wsl_path": "/mnt/f/ts808-reference/runs/overload-high-alt-guard-refined-021f63f891bf4878b87bba07567474b7/deck.log",
+        "windows_path": "F:\\ts808-reference\\runs\\overload-high-alt-guard-refined-021f63f891bf4878b87bba07567474b7\\deck.log"
+      },
+      "size_bytes": 1060,
+      "sha256": "0ec2b56fb6bbacd38b653e0efc30862237ec7958c288433bd9135b89fbb87ad8"
+    }
+  },
+  "selection": {
+    "plot_index": 0,
+    "plot_name": "Transient Analysis",
+    "analysis_kind": "transient",
+    "step_index": null,
+    "step_parameters": {},
+    "traces": [
+      {
+        "quantity_id": "input",
+        "native_expression": "V(input)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "input_cap",
+        "native_expression": "V(input_cap)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "input_base",
+        "native_expression": "V(input_base)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "dry_send",
+        "native_expression": "V(dry_send)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "clip_plus",
+        "native_expression": "V(clip_plus)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "clip_minus",
+        "native_expression": "V(clip_minus)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "gain_rc",
+        "native_expression": "V(gain_rc)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "drive_end",
+        "native_expression": "V(drive_end)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "z_clip",
+        "native_expression": "V(xclip:z)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "i_drive",
+        "native_expression": "I(R_drive)",
+        "unit": "A",
+        "orientation": "drive_end -> clip_out"
+      },
+      {
+        "quantity_id": "tone_in",
+        "native_expression": "V(tone_in)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "tone_minus",
+        "native_expression": "V(tone_minus)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "tone_wiper",
+        "native_expression": "V(tone_wiper)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "tone_rc",
+        "native_expression": "V(tone_rc)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "tone_out",
+        "native_expression": "V(tone_out)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "volume_cap",
+        "native_expression": "V(volume_cap)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "volume_top",
+        "native_expression": "V(volume_top)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "z_tone",
+        "native_expression": "V(xtone:z)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "i_tone_low",
+        "native_expression": "I(R_tone_low)",
+        "unit": "A",
+        "orientation": "tone_in -> tone_wiper"
+      },
+      {
+        "quantity_id": "i_tone_high",
+        "native_expression": "I(R_tone_high)",
+        "unit": "A",
+        "orientation": "tone_wiper -> tone_minus"
+      },
+      {
+        "quantity_id": "i_volume_high",
+        "native_expression": "I(R_volume_high)",
+        "unit": "A",
+        "orientation": "wet_send -> volume_top"
+      },
+      {
+        "quantity_id": "switch_common",
+        "native_expression": "V(switch_common)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "output_base",
+        "native_expression": "V(output_base)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "output_emitter",
+        "native_expression": "V(output_emitter)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "output_cap",
+        "native_expression": "V(output_cap)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "output",
+        "native_expression": "V(output)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "input_emitter",
+        "native_expression": "V(input_emitter)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "clip_out",
+        "native_expression": "V(clip_out)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "wet_send",
+        "native_expression": "V(wet_send)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "vref",
+        "native_expression": "V(vref)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "i_volume_low",
+        "native_expression": "I(R_volume_low)",
+        "unit": "A",
+        "orientation": "vref -> wet_send"
+      }
+    ]
+  },
+  "validation": {
+    "encoding": "float64le",
+    "point_count": 9245799,
+    "domain_start": 0.0,
+    "domain_stop": 1.500000227526799,
+    "checks": [
+      {
+        "id": "producer_completion",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "producer_completion",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      },
+      {
+        "id": "precision",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "precision",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      },
+      {
+        "id": "file_integrity",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "file_integrity",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      },
+      {
+        "id": "selection",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "selection",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      },
+      {
+        "id": "finite_data",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "finite_data",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      },
+      {
+        "id": "axis_grid",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "axis_grid",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      },
+      {
+        "id": "coverage",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "coverage",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      }
+    ]
+  },
+  "completion": "completed",
+  "integrity": "verified"
+}

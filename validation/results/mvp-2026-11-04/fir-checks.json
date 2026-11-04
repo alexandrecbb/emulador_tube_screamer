@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "rate_Hz": 192000,
+      "coefficient_sha256": "a99fd24f57bca45d2506e65eeda7c1c3414b85024d9c9a0eb2f5808710081bd6",
+      "checks": [
+        {
+          "id": "wav_filter_passband",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_filter_passband",
+          "value": 0.00018403583861631887,
+          "unit": "dB",
+          "limit": 0.01,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_filter_stopband",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_filter_stopband",
+          "value": 2.2172263837214138e-05,
+          "unit": "linear",
+          "limit": 0.0001,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "rate_Hz": 384000,
+      "coefficient_sha256": "09a7f23887ed2b4496c4aecb212f84b28ba859e32478d7280c87d9de1991d060",
+      "checks": [
+        {
+          "id": "wav_filter_passband",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_filter_passband",
+          "value": 0.00018370819268012105,
+          "unit": "dB",
+          "limit": 0.01,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_filter_stopband",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_filter_stopband",
+          "value": 2.226491425975639e-05,
+          "unit": "linear",
+          "limit": 0.0001,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    }
+  ]
+}

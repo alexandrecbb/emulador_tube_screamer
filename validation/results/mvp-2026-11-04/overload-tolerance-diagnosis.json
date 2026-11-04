@@ -1,0 +1,8 @@
+{
+  "maximum_output_difference_V": 8.719675778949207e-13,
+  "baseline_recovery_error_samples": 33,
+  "tighter10_recovery_error_samples": 33,
+  "inference": "Newton tolerance change is negligible; observed target-rate error is consistent with temporal discretization and is not resolved by tighter nonlinear tolerances",
+  "target_acceptance": "failed",
+  "pilot_768000": "diagnostic only; cannot substitute for target-rate acceptance"
+}

@@ -1,0 +1,74 @@
+{
+  "directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/opamp-ac-e0f69bea676e4acd82915b77ee835a11",
+  "point_count": 601,
+  "scope": "Independent finite-A0, GBW and loaded follower/state AC law; not complete pedal AC",
+  "checks": [
+    {
+      "id": "out2k_magnitude_error",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "out2k_magnitude_error",
+      "value": 5.785964799319721e-15,
+      "unit": "dB",
+      "limit": 0.02,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "out2k_phase_error",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "out2k_phase_error",
+      "value": 1.61457956992107e-14,
+      "unit": "deg",
+      "limit": 0.2,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "out2k_state_complex_relative",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "out2k_state_complex_relative",
+      "value": 2.7958356610422945e-11,
+      "unit": "relative",
+      "limit": 1e-06,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "out10k_magnitude_error",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "out10k_magnitude_error",
+      "value": 3.857309866213149e-15,
+      "unit": "dB",
+      "limit": 0.02,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "out10k_phase_error",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "out10k_phase_error",
+      "value": 1.3991838045781438e-14,
+      "unit": "deg",
+      "limit": 0.2,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "out10k_state_complex_relative",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "out10k_state_complex_relative",
+      "value": 2.8486920623061032e-11,
+      "unit": "relative",
+      "limit": 1e-06,
+      "reason": "Measured without gain, delay or DC fitting"
+    }
+  ],
+  "status": "passed"
+}

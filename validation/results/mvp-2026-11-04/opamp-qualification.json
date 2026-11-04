@@ -1,0 +1,119 @@
+{
+  "source_directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/opamp-scaled-transient-ea76876479654db69316e0e1342b9c2b",
+  "point_count": 1536157,
+  "dc_solver": "direct",
+  "checks": [
+    {
+      "id": "independent_ode_refinement_rms",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "independent_ode_refinement_rms",
+      "value": 1.0506624294775994e-08,
+      "unit": "V",
+      "limit": 1e-07,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "independent_ode_refinement_peak",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "independent_ode_refinement_peak",
+      "value": 8.9338080044854e-08,
+      "unit": "V",
+      "limit": 1e-06,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "p2000_state_peak",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "p2000_state_peak",
+      "value": 8.458233172525809e-06,
+      "unit": "V",
+      "limit": 1e-05,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "p2000_output_peak",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "p2000_output_peak",
+      "value": 3.642506920087385e-06,
+      "unit": "V",
+      "limit": 1e-05,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "p10000_state_peak",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "p10000_state_peak",
+      "value": 8.458233172525809e-06,
+      "unit": "V",
+      "limit": 1e-05,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "p10000_output_peak",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "p10000_output_peak",
+      "value": 3.922699763236892e-06,
+      "unit": "V",
+      "limit": 1e-05,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "n2000_state_peak",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "n2000_state_peak",
+      "value": 8.458256033350153e-06,
+      "unit": "V",
+      "limit": 1e-05,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "n2000_output_peak",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "n2000_output_peak",
+      "value": 3.6425169366305354e-06,
+      "unit": "V",
+      "limit": 1e-05,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "n10000_state_peak",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "n10000_state_peak",
+      "value": 8.458256033350153e-06,
+      "unit": "V",
+      "limit": 1e-05,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "n10000_output_peak",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "n10000_output_peak",
+      "value": 3.92271054683313e-06,
+      "unit": "V",
+      "limit": 1e-05,
+      "reason": "Measured without gain, delay or DC fitting"
+    }
+  ],
+  "status": "passed",
+  "scope": "Independent state integration, signed overload/recovery and 2k/10k loading; not full pedal acceptance"
+}

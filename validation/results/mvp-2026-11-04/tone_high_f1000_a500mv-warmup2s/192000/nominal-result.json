@@ -1,0 +1,39 @@
+{
+    "schema_version":  1,
+    "physical_case_sha256":  "1c8caede0be83d25e4eb543810a66a2da6fadf0555c7f1920505889568e6351a",
+    "invocation":  {
+                       "exit_code":  0,
+                       "start_utc":  "2026-11-04T03:06:31.7288383Z",
+                       "pid":  6704,
+                       "working_directory":  "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\runs\\tone_high_f1000_a500mv-warmup2s-nominal-bf1179e7cf54482daa89e8e42b7f61ae",
+                       "argv":  [
+                                    "-b",
+                                    "deck.cir"
+                                ],
+                       "elapsed_s":  158.86099059999998
+                   },
+    "completion":  "completed",
+    "producer":  {
+                     "version":  "26.1.1.0",
+                     "windows_version":  "Microsoft Windows NT 10.0.26300.0",
+                     "executable_sha256":  "3c144a2b3ec6a30baac6761c502d99b95aaa40b947ff5eca25b8fbd80d68af72",
+                     "executable_path":  "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\ltspice-26.1.1\\LTspice.exe",
+                     "powershell_version":  "5.1.26100.9818",
+                     "execution_profile":  "wsl2-windows-native-v1"
+                 },
+    "files":  [
+                  {
+                      "path":  "deck.raw",
+                      "sha256":  "0b495ff5c382d5c1996148111a1dd534688c63f0ee8ba8a6b7f02cd971249268",
+                      "size_bytes":  2040034154
+                  },
+                  {
+                      "path":  "deck.log",
+                      "sha256":  "e4d61e56ee69680ebac64f0696d7d2a9913a69340a5a107a7a62d2b8f449af15",
+                      "size_bytes":  1246
+                  }
+              ],
+    "request_sha256":  "3f3b79bdc618bdb74698f8276cbe1620535b32fee0ec47c494656cd5286ae6f5",
+    "reason":  null,
+    "request_id":  "tone_high_f1000_a500mv-warmup2s-nominal-bf1179e7cf54482daa89e8e42b7f61ae"
+}

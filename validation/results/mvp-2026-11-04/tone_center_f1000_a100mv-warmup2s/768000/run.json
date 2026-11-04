@@ -1,0 +1,340 @@
+{
+  "build": {
+    "compiler": "15.3.0",
+    "eigen": "5.0.1",
+    "flags": "-O2 -fno-fast-math -ffp-contract=off",
+    "precision": "binary64",
+    "executable_sha256": "d49e5416d29e65c05bac038f3c4d75826dd2f687163bd620409fed9c11d64955",
+    "source_files": {
+      "src/block_solve.cpp": "0f58da4b2935d4f20a6227fef5abae7e8f09367787903012260c879a8715f757",
+      "src/devices.cpp": "9c0ab76b54814b38870371a11aa8bc5edf8123e3667a6ca7357ff6b37361f420",
+      "src/linear_response.cpp": "428d6a3713eda8c78027d5848ad3cd27c8ccf267a10c721c02a8ec2bb7167953",
+      "src/model.cpp": "57486f2aa0f1aa5f65173613d0c6516fc7a267579edfa6b97a8b2453601cc24d",
+      "src/newton.cpp": "56e0f821a1d208189911e0cb44c625356e8313795769d83814118652771da7e0",
+      "src/stages.cpp": "2ab37e4ddb8ff0610dce24f8662c6ba598206651bb962bd52eaf57a4357c9d14",
+      "include/ts808/block_solve.hpp": "0556def10854208fd99d1bfbad306aabd697ce270d5d9bcd02702b4d4f3fe3e2",
+      "include/ts808/devices.hpp": "800a01bdb5bdf92f997c471c30032c809a965b496e1ca34d8e37b469bf6b862d",
+      "include/ts808/linear_response.hpp": "08504947577c1333688a6e08b9580c0c99dbffbbff317448d0cac7dd559428e3",
+      "include/ts808/model.hpp": "a39b7f5fa944f46bf5cc18ccad4cce7318dd9c543a6a5cc349a8913cb0aa54ca",
+      "include/ts808/newton.hpp": "4561646a6c087b4cbdcdc60bf033578d1982c6c91f9504e0d9cc7eeeef8eba1e",
+      "include/ts808/parameters.hpp": "82d2d7e56aa6f3e83350adad42c8fb050f07f29db8f03aea0019bb227bcef8f2",
+      "include/ts808/stages.hpp": "a7a71edac67b16f95b1c0b84e894efc01a8a35b749631e552ec9ea89302a49a2",
+      "include/ts808/types.hpp": "cdac0d3cbf5cf050225c5f2290873786db88eb1e7a1915ad3e736d03f6b87d57",
+      "app/offline_main.cpp": "0577e82e1e669085928f8f48bc9910164bc81aeb74fe4961debbb4217a683187",
+      "app/run_io.cpp": "107f82a02332e39da91424afbf557b4e7a0d58278950551168e67e8727744fe7",
+      "app/run_io.hpp": "261b4354e130eb9c1bd556285fa22ae890cfd41911247bb92ee8aae00566e3fc"
+    }
+  },
+  "case_id": "tone_center_f1000_a100mv-warmup2s",
+  "case_input_sha256": "a1af58d71786eb036f86196f201b480a61594cd221510cff43422ee5a7a8901f",
+  "completion": {
+    "requested_samples": 1920001,
+    "state": "completed",
+    "written_samples": 1920001
+  },
+  "diagnostics": {
+    "backward_error": {
+      "available": true,
+      "value": 7.859976784023138e-20
+    },
+    "block": -1,
+    "increment_norm": {
+      "available": true,
+      "value": 0.02449713675604439
+    },
+    "iterations": 3,
+    "rank": 0,
+    "rcond": {
+      "available": false,
+      "value": null
+    },
+    "reason": "none",
+    "residual_norm": {
+      "available": true,
+      "value": 0.008506143742176519
+    },
+    "row": -1,
+    "trials": 3,
+    "wet_switch_voltage_max_abs_V": {
+      "available": true,
+      "coverage": "complete",
+      "value": 0.00029071748938935826
+    }
+  },
+  "execution_config": {
+    "boundary_count": 5,
+    "formulation_id": "control-branch-v1",
+    "interior_counts": [
+      4,
+      6,
+      11,
+      5
+    ],
+    "ordered_unknowns": [
+      "input",
+      "input_cap",
+      "input_base",
+      "dry_send",
+      "clip_plus",
+      "clip_minus",
+      "gain_rc",
+      "drive_end",
+      "z_clip",
+      "i_drive",
+      "tone_in",
+      "tone_minus",
+      "tone_wiper",
+      "tone_rc",
+      "tone_out",
+      "volume_cap",
+      "volume_top",
+      "z_tone",
+      "i_tone_low",
+      "i_tone_high",
+      "i_volume_high",
+      "switch_common",
+      "output_base",
+      "output_emitter",
+      "output_cap",
+      "output",
+      "input_emitter",
+      "clip_out",
+      "wet_send",
+      "vref",
+      "i_volume_low"
+    ],
+    "purpose": "pilot",
+    "rate_Hz": 768000,
+    "solver": {
+      "armijo_c1": 0.0001,
+      "atol_current_A": 1e-12,
+      "atol_increment_current_A": 1e-12,
+      "atol_increment_voltage_V": 1e-09,
+      "atol_voltage_V": 1e-09,
+      "current_scale_A": 0.001,
+      "max_line_search": 9,
+      "max_newton_dc": 100,
+      "max_newton_transient": 32,
+      "maximum_backward_error": 1e-10,
+      "maximum_schur_difference": 1e-09,
+      "minimum_rcond": 1e-12,
+      "pivot_epsilon_factor": 64.0,
+      "row_scaling": "max_abs_after_physical",
+      "rtol_increment": 1e-09,
+      "rtol_residual": 1e-09,
+      "voltage_scale_V": 1.0
+    },
+    "unknown_count": 31
+  },
+  "model_id": "ts808-cerutti-reduced-v1",
+  "physical_case_sha256": "d8d2cd1cf30722351280881fee24f987af23e2447e8c365dda2abbc36685c09b",
+  "reference_identity": null,
+  "run_id": "tone_center_f1000_a100mv-warmup2s-768000",
+  "schema_version": 1,
+  "trace": {
+    "byte_length": 491520256,
+    "columns": [
+      {
+        "id": "time",
+        "orientation": "origin + index/rate",
+        "quantity": "time",
+        "unit": "s"
+      },
+      {
+        "id": "input",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "input_cap",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "input_base",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "dry_send",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "clip_plus",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "clip_minus",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "gain_rc",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "drive_end",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "z_clip",
+        "orientation": "relative to gnd",
+        "quantity": "state",
+        "unit": "V"
+      },
+      {
+        "id": "i_drive",
+        "orientation": "component-map segment orientation",
+        "quantity": "branch_current",
+        "unit": "A"
+      },
+      {
+        "id": "tone_in",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "tone_minus",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "tone_wiper",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "tone_rc",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "tone_out",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "volume_cap",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "volume_top",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "z_tone",
+        "orientation": "relative to gnd",
+        "quantity": "state",
+        "unit": "V"
+      },
+      {
+        "id": "i_tone_low",
+        "orientation": "component-map segment orientation",
+        "quantity": "branch_current",
+        "unit": "A"
+      },
+      {
+        "id": "i_tone_high",
+        "orientation": "component-map segment orientation",
+        "quantity": "branch_current",
+        "unit": "A"
+      },
+      {
+        "id": "i_volume_high",
+        "orientation": "component-map segment orientation",
+        "quantity": "branch_current",
+        "unit": "A"
+      },
+      {
+        "id": "switch_common",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "output_base",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "output_emitter",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "output_cap",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "output",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "input_emitter",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "clip_out",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "wet_send",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "vref",
+        "orientation": "relative to gnd",
+        "quantity": "node_voltage",
+        "unit": "V"
+      },
+      {
+        "id": "i_volume_low",
+        "orientation": "component-map segment orientation",
+        "quantity": "branch_current",
+        "unit": "A"
+      }
+    ],
+    "dtype": "<f8",
+    "filename": "traces.f64le",
+    "integrity": "verified",
+    "order": "C",
+    "sha256": "767f5c40f07d308ddcb9dddb3fa6bc4c80cfbea435e06bb2f188395edcc441c6",
+    "shape": [
+      1920001,
+      32
+    ]
+  }
+}

@@ -1,6 +1,6 @@
-# Qualificação automática do MVP — execução em andamento
+# Qualificação automática do MVP — resultados e gates de bloqueio
 
-Atualizado em 2026-11-03. A aceitação combinada ainda não foi obtida.
+Atualizado em 2026-11-04. A execução encerrou no gate dos pilotos; a aceitação combinada ainda não foi obtida.
 Os limites T18/T22/T23 permanecem vigentes. Nenhuma resposta humana foi gerada.
 
 ## DC nativo e inicialização
@@ -62,12 +62,10 @@ Os resultados originais continuam reprovados e não serão promovidos.
 Conforme a regra de revisão explícita de duração em T18,
 `reference/ts808/case_revisions.json` registra novos IDs com 2 s de aquecimento
 e janela [2,2.5) s, preservando os casos originais. O C++ central revisado
-mediu mudança DC de 0,168 uV. A qualificação nominal/refinada e as demais
-verificações desses novos casos estão em execução em `runs/mvp-revised-pilots-norm`.
+mediu mudança DC de 0,168 uV. A qualificação nominal/refinada e os gates numéricos desses novos casos passaram nas três taxas em `runs/mvp-revised-pilots-norm`. Os arquivos originais de 1 s continuam reprovados.
 
 O C++ de sobrecarga completou as três taxas. A referência normal falhou no
-início do transiente com matriz singular; uma nova execução efetivamente
-`solver=alt` está em andamento. As tentativas e logs permanecem preservados.
+início do transiente com matriz singular; as execuções efetivamente em `solver=alt` completaram e foram comparadas, com a falha numérica de recuperação detalhada abaixo. As tentativas e logs permanecem preservados.
 
 A matriz completa exige no mínimo 93,66 GB somente para RAWs nominal/refinados
 nos tempos originais, sem overhead adaptativo, WAV ou margens. O diretório
@@ -160,3 +158,41 @@ completou, mas a diferença máxima de saída contra o baseline foi somente
 com erro temporal de discretização, não resolvido por apertar Newton. Não foi
 usado 768 kHz como substituto de uma taxa alvo. Nenhum resultado ABX pode promover
 a aceitação combinada enquanto essas reprovações automáticas persistirem.
+
+## Fechamento e evidências versionadas
+
+Os nove relatórios finais dos três pilotos nas três taxas, gráficos, metadados,
+logs nativos, auditoria das diretivas reais e hashes estão no
+[pacote de evidências](../validation/results/mvp-2026-11-04/README.md).
+Os RAWs e traces grandes ficam retidos localmente; os snapshots não os substituem.
+
+Os casos central e alto drive com aquecimento explícito de 2 s passaram em
+192/384 kHz e no diagnóstico 768 kHz. No alto drive, o nominal mediu 7.968.874
+pontos / 2.040.035.400 bytes / 158,86 s e o refinado 16.016.868 pontos /
+4.100.321.935 bytes / 293,86 s. C++: 20,69 / 37,90 / 71,24 s.
+As medições centrais perdidas em retomadas foram repetidas em diretório temporário:
+19,85 / 36,06 s em 192/384 kHz, com SHA-256 dos traces idêntico aos originais;
+a duplicata temporária foi removida após a conferência. O centro em 768 kHz mediu
+69,62 s. São tempos offline com I/O, não resultados de CPU/latência em tempo real.
+
+O AC standalone adicional do op-amp, de 10 Hz a 10 MHz, passou contra a solução
+complexa independente do follower carregado, incluindo Rid/Ro e o estado z:
+erros de magnitude/ângulo abaixo de 6e-15 dB / 2e-14 graus e erro relativo do
+estado abaixo de 2,9e-11. Não substitui o Bode do pedal nas 27 posições.
+
+Doctor em C:/F:, CTest checked/release, caminhos Windows com espaço/acento/apóstrofo,
+cancelamento e timeout passaram. A verificação Python final com produtor real
+registrou **39 passed / 30 subtests passed**, com logs versionados. As passagens
+da infraestrutura não promovem os gates numéricos reprovados.
+
+Foram movidos de forma reversível 5,84 GB de RAWs de pedidos rejeitados/cancelados
+para F:, depois de conferir os hashes das duas cópias. Os logs ficaram em C:;
+referências válidas não foram movidas. O manifesto do arquivo permite restauração.
+A mudança aliviou C:, mas não cria a capacidade necessária à matriz completa.
+
+**Pendências:** recuperação da sobrecarga nas duas taxas alvo, espaço para a
+matriz completa, comparação dos demais casos DC/Bode/transientes, qualificação
+WAV de todos os casos e pares de escuta. O ABX humano continua não realizado.
+Nenhum limite foi relaxado, nenhum resultado humano foi simulado e o diagnóstico
+768 kHz não foi promovido a substituto de 192/384 kHz. A grade completa não foi
+iniciada porque o pré-requisito dos pilotos não passou.

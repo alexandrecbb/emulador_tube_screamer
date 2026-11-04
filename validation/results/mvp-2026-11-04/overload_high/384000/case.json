@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "case_id": "overload_high",
+  "physical_case_sha256": "50bbe9315ca36e1860475a5b27c3e8360e590b943efc74249f5eec90e6aa46e5",
+  "physical_descriptor": {
+    "analysis_kind": "transient",
+    "circuit": {
+      "model_id": "ts808-cerutti-reduced-v1",
+      "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+      "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+      "controls": {
+        "drive": 1.0,
+        "tone": 0.5,
+        "volume": 0.5
+      },
+      "supply_V": 9.0,
+      "temperature_K": 298.15,
+      "source_Ohm": 1000.0,
+      "load_Ohm": 1000000.0,
+      "R_on_Ohm": 383.29731360711594
+    },
+    "stimulus": {
+      "type": "overload",
+      "frequency_Hz": 1000.0,
+      "peak_V": 2.0,
+      "phase_rad": 0.0,
+      "onset_s": 0.1,
+      "duration_s": 0.1,
+      "rise_s": 0.005,
+      "fall_s": 0.005
+    },
+    "time": {
+      "origin_s": 0.0,
+      "duration_s": 1.5
+    },
+    "windows": [
+      {
+        "id": "onset",
+        "start_s": 0.1,
+        "stop_s": 0.2,
+        "role": "onset"
+      },
+      {
+        "id": "recovery",
+        "start_s": 0.2,
+        "stop_s": 1.5,
+        "role": "recovery"
+      }
+    ]
+  },
+  "analysis_kind": "transient",
+  "circuit": {
+    "model_id": "ts808-cerutti-reduced-v1",
+    "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+    "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+    "controls": {
+      "drive": 1.0,
+      "tone": 0.5,
+      "volume": 0.5
+    },
+    "supply_V": 9.0,
+    "temperature_K": 298.15,
+    "source_Ohm": 1000.0,
+    "load_Ohm": 1000000.0,
+    "R_on_Ohm": 383.29731360711594
+  },
+  "stimulus": {
+    "type": "overload",
+    "frequency_Hz": 1000.0,
+    "peak_V": 2.0,
+    "phase_rad": 0.0,
+    "onset_s": 0.1,
+    "duration_s": 0.1,
+    "rise_s": 0.005,
+    "fall_s": 0.005
+  },
+  "analysis": {
+    "required_checks": [
+      "local_windows",
+      "recovery"
+    ],
+    "windows": [
+      {
+        "id": "onset",
+        "start_s": 0.1,
+        "stop_s": 0.2,
+        "role": "onset"
+      },
+      {
+        "id": "recovery",
+        "start_s": 0.2,
+        "stop_s": 1.5,
+        "role": "recovery"
+      }
+    ],
+    "time": {
+      "origin_s": 0.0,
+      "duration_s": 1.5,
+      "sample_count": 576001
+    }
+  },
+  "execution": {
+    "rate_Hz": 384000,
+    "formulation_id": "control-branch-v1",
+    "solver": {
+      "atol_current_A": 1e-12,
+      "atol_voltage_V": 1e-09,
+      "rtol_residual": 1e-09,
+      "atol_increment_current_A": 1e-12,
+      "atol_increment_voltage_V": 1e-09,
+      "rtol_increment": 1e-09,
+      "max_newton_dc": 100,
+      "max_newton_transient": 32,
+      "max_line_search": 9,
+      "armijo_c1": 0.0001,
+      "voltage_scale_V": 1.0,
+      "current_scale_A": 0.001,
+      "pivot_epsilon_factor": 64.0,
+      "minimum_rcond": 1e-12,
+      "maximum_backward_error": 1e-10,
+      "maximum_schur_difference": 1e-09,
+      "row_scaling": "max_abs_after_physical"
+    },
+    "purpose": "pilot"
+  },
+  "trace_columns": [
+    "time",
+    "input",
+    "input_cap",
+    "input_base",
+    "dry_send",
+    "clip_plus",
+    "clip_minus",
+    "gain_rc",
+    "drive_end",
+    "z_clip",
+    "i_drive",
+    "tone_in",
+    "tone_minus",
+    "tone_wiper",
+    "tone_rc",
+    "tone_out",
+    "volume_cap",
+    "volume_top",
+    "z_tone",
+    "i_tone_low",
+    "i_tone_high",
+    "i_volume_high",
+    "switch_common",
+    "output_base",
+    "output_emitter",
+    "output_cap",
+    "output",
+    "input_emitter",
+    "clip_out",
+    "wet_send",
+    "vref",
+    "i_volume_low"
+  ]
+}

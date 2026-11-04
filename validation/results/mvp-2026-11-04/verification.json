@@ -1,0 +1,75 @@
+{
+  "recorded_at_utc": "2026-11-04T03:39:09.251861+00:00",
+  "checks": [
+    {
+      "name": "doctor-c",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "ts808_validation",
+        "doctor",
+        "--toolchain",
+        "validation/toolchain.json"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 1.1340058660007344,
+      "log": "doctor-c.log",
+      "sha256": "92ab5939d7cf83a1ce86f2e06b3afac40068aad79f0fe82d91a4bce3769b47cd"
+    },
+    {
+      "name": "doctor-f",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "ts808_validation",
+        "doctor",
+        "--toolchain",
+        "validation/toolchain-pilot-f.json"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 1.0103381279996029,
+      "log": "doctor-f.log",
+      "sha256": "1a751fc0b01ce0e642ad047e82870dbe2d3034aa2bda546a9f8ec3e20003db7b"
+    },
+    {
+      "name": "ctest-checked",
+      "command": [
+        ".tools/cmake-4.4.5-linux-x86_64/bin/ctest",
+        "--preset",
+        "offline-checks"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 2.317845018999833,
+      "log": "ctest-checked.log",
+      "sha256": "69965c977936e33481639e18e8eda930e903dab5df7eae0700f1b85e9392c6b3"
+    },
+    {
+      "name": "ctest-release",
+      "command": [
+        ".tools/cmake-4.4.5-linux-x86_64/bin/ctest",
+        "--preset",
+        "offline-release"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 2.2291124859993943,
+      "log": "ctest-release.log",
+      "sha256": "d05e638872059b16ffaa2353339262709a629251d116d2b953762aba3b63991c"
+    },
+    {
+      "name": "pytest-native",
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "validation/tests",
+        "-q"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 9.297671592999905,
+      "log": "pytest-native.log",
+      "sha256": "a4adb67e986af5c8bc14d64eeb63dc5f07932c2178a6df2a858bbd9d00d926ea"
+    }
+  ],
+  "status": "passed",
+  "scope": "Tests/environment only; numerical MVP outcomes are recorded separately"
+}

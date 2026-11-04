@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "request_id": "overload-high-alt-guard-refined-021f63f891bf4878b87bba07567474b7",
+  "case_id": "overload_high",
+  "physical_case_sha256": "50bbe9315ca36e1860475a5b27c3e8360e590b943efc74249f5eec90e6aa46e5",
+  "analysis_kind": "transient",
+  "reference_settings": {
+    "level": "refined",
+    "maxstep_s": 1.6276041666666666e-07,
+    "dc_protocol": "solver=alt; gminsteps=0 srcsteps=0; endpoint guard of one maxstep"
+  },
+  "inputs": [
+    {
+      "path": "deck.cir",
+      "size_bytes": 3201,
+      "sha256": "4ad2cca57402bc7d4ebabf28127f8368d592e8d5a3a1712993b82d3629946808"
+    },
+    {
+      "path": "models.lib",
+      "size_bytes": 1803,
+      "sha256": "aa34518576e4accb761fcf81f813be3889eb551210e428c3377d6275314f5a68"
+    },
+    {
+      "path": "case.json",
+      "size_bytes": 3682,
+      "sha256": "8047c59c1718004fa5194d2f26fd1b04626bb842ae5d2493be626fd577e58721"
+    },
+    {
+      "path": "component_map.json",
+      "size_bytes": 26004,
+      "sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32"
+    },
+    {
+      "path": "device_spec.md",
+      "size_bytes": 3292,
+      "sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e"
+    },
+    {
+      "path": "run_reference.ps1",
+      "size_bytes": 5207,
+      "sha256": "55d7a892c2ed6421acf468479f750b948c0f105a5a0468c870fb5afc7b70cfe6"
+    }
+  ],
+  "expected_outputs": [
+    "deck.raw",
+    "deck.log"
+  ],
+  "trace_map": {
+    "input": {
+      "expression": "V(input)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "input_cap": {
+      "expression": "V(input_cap)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "input_base": {
+      "expression": "V(input_base)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "dry_send": {
+      "expression": "V(dry_send)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "clip_plus": {
+      "expression": "V(clip_plus)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "clip_minus": {
+      "expression": "V(clip_minus)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "gain_rc": {
+      "expression": "V(gain_rc)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "drive_end": {
+      "expression": "V(drive_end)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "z_clip": {
+      "expression": "V(xclip:z)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "i_drive": {
+      "expression": "I(R_drive)",
+      "zero_resistance_expression": "I(V_drive)",
+      "unit": "A",
+      "orientation": "drive_end -> clip_out"
+    },
+    "tone_in": {
+      "expression": "V(tone_in)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "tone_minus": {
+      "expression": "V(tone_minus)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "tone_wiper": {
+      "expression": "V(tone_wiper)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "tone_rc": {
+      "expression": "V(tone_rc)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "tone_out": {
+      "expression": "V(tone_out)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "volume_cap": {
+      "expression": "V(volume_cap)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "volume_top": {
+      "expression": "V(volume_top)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "z_tone": {
+      "expression": "V(xtone:z)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "i_tone_low": {
+      "expression": "I(R_tone_low)",
+      "zero_resistance_expression": "I(V_tone_low)",
+      "unit": "A",
+      "orientation": "tone_in -> tone_wiper"
+    },
+    "i_tone_high": {
+      "expression": "I(R_tone_high)",
+      "zero_resistance_expression": "I(V_tone_high)",
+      "unit": "A",
+      "orientation": "tone_wiper -> tone_minus"
+    },
+    "i_volume_high": {
+      "expression": "I(R_volume_high)",
+      "zero_resistance_expression": "I(V_volume_high)",
+      "unit": "A",
+      "orientation": "wet_send -> volume_top"
+    },
+    "switch_common": {
+      "expression": "V(switch_common)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "output_base": {
+      "expression": "V(output_base)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "output_emitter": {
+      "expression": "V(output_emitter)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "output_cap": {
+      "expression": "V(output_cap)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "output": {
+      "expression": "V(output)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "input_emitter": {
+      "expression": "V(input_emitter)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "clip_out": {
+      "expression": "V(clip_out)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "wet_send": {
+      "expression": "V(wet_send)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "vref": {
+      "expression": "V(vref)",
+      "zero_resistance_expression": null,
+      "unit": "V",
+      "orientation": "node relative to gnd"
+    },
+    "i_volume_low": {
+      "expression": "I(R_volume_low)",
+      "zero_resistance_expression": "I(V_volume_low)",
+      "unit": "A",
+      "orientation": "vref -> wet_send"
+    }
+  }
+}

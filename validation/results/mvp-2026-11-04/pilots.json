@@ -1,0 +1,209 @@
+{
+  "pilots": [
+    {
+      "case_id": "tone_center_f1000_a100mv-warmup2s",
+      "measurements": [
+        {
+          "level": "nominal",
+          "native_elapsed_s": 215.3582657,
+          "point_count": 7690011,
+          "bytes": 1968646482,
+          "directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/tone_center_f1000_a100mv-warmup2s-nominal-52517df0a1f640ec84b9fb10b2600324",
+          "import_or_reuse_elapsed_s": 0.009822494000218285
+        },
+        {
+          "level": "refined",
+          "native_elapsed_s": 314.46296559999996,
+          "point_count": 15414911,
+          "bytes": 3946220953,
+          "directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/tone_center_f1000_a100mv-warmup2s-refined-0298d2350e504baba942827dd2088b67",
+          "import_or_reuse_elapsed_s": 0.007772405000196159
+        },
+        {
+          "rate_Hz": 192000,
+          "elapsed_s": 19.847861762999855,
+          "exit_code": 0,
+          "comparison_directory": "runs/mvp-revised-pilots-norm/tone_center_f1000_a100mv-warmup2s/192000/comparison-be2007094f",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "passed",
+            "wav": "pending",
+            "listening": "not_applicable",
+            "combined": "pending"
+          },
+          "bytes": 122889697,
+          "measurement_kind": "monotonic timing replay with bit-identical trace; temporary duplicate payload removed",
+          "evidence_path": "tone_center_f1000_a100mv-warmup2s/192000"
+        },
+        {
+          "rate_Hz": 384000,
+          "elapsed_s": 36.05790773799981,
+          "exit_code": 0,
+          "comparison_directory": "runs/mvp-revised-pilots-norm/tone_center_f1000_a100mv-warmup2s/384000/comparison-be2007094f",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "passed",
+            "wav": "pending",
+            "listening": "not_applicable",
+            "combined": "pending"
+          },
+          "bytes": 245769693,
+          "measurement_kind": "monotonic timing replay with bit-identical trace; temporary duplicate payload removed",
+          "evidence_path": "tone_center_f1000_a100mv-warmup2s/384000"
+        },
+        {
+          "rate_Hz": 768000,
+          "elapsed_s": 69.61807004500042,
+          "exit_code": 0,
+          "comparison_directory": "runs/mvp-revised-pilots-norm/tone_center_f1000_a100mv-warmup2s/768000/comparison",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "passed",
+            "wav": "pending",
+            "listening": "not_applicable",
+            "combined": "pending"
+          },
+          "bytes": 491529697,
+          "measurement_kind": "original monotonic execution timer",
+          "evidence_path": "tone_center_f1000_a100mv-warmup2s/768000"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f1000_a500mv-warmup2s",
+      "measurements": [
+        {
+          "level": "nominal",
+          "native_elapsed_s": 158.86099059999998,
+          "point_count": 7968874,
+          "bytes": 2040035400,
+          "directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/tone_high_f1000_a500mv-warmup2s-nominal-bf1179e7cf54482daa89e8e42b7f61ae",
+          "import_or_reuse_elapsed_s": 223.61967490400002
+        },
+        {
+          "level": "refined",
+          "native_elapsed_s": 293.8624911,
+          "point_count": 16016868,
+          "bytes": 4100321935,
+          "directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/tone_high_f1000_a500mv-warmup2s-refined-3330d07d961e49ec8b824ccb6116a385",
+          "import_or_reuse_elapsed_s": 413.273586112
+        },
+        {
+          "rate_Hz": 192000,
+          "elapsed_s": 20.689113430999896,
+          "exit_code": 0,
+          "comparison_directory": "runs/mvp-revised-pilots-norm/tone_high_f1000_a500mv-warmup2s/192000/comparison",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "passed",
+            "wav": "pending",
+            "listening": "not_applicable",
+            "combined": "pending"
+          },
+          "bytes": 122889693,
+          "measurement_kind": "original monotonic execution timer",
+          "evidence_path": "tone_high_f1000_a500mv-warmup2s/192000"
+        },
+        {
+          "rate_Hz": 384000,
+          "elapsed_s": 37.90056109000034,
+          "exit_code": 0,
+          "comparison_directory": "runs/mvp-revised-pilots-norm/tone_high_f1000_a500mv-warmup2s/384000/comparison",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "passed",
+            "wav": "pending",
+            "listening": "not_applicable",
+            "combined": "pending"
+          },
+          "bytes": 245769690,
+          "measurement_kind": "original monotonic execution timer",
+          "evidence_path": "tone_high_f1000_a500mv-warmup2s/384000"
+        },
+        {
+          "rate_Hz": 768000,
+          "elapsed_s": 71.24131067599956,
+          "exit_code": 0,
+          "comparison_directory": "runs/mvp-revised-pilots-norm/tone_high_f1000_a500mv-warmup2s/768000/comparison",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "passed",
+            "wav": "pending",
+            "listening": "not_applicable",
+            "combined": "pending"
+          },
+          "bytes": 491529691,
+          "measurement_kind": "original monotonic execution timer",
+          "evidence_path": "tone_high_f1000_a500mv-warmup2s/768000"
+        }
+      ]
+    },
+    {
+      "case_id": "overload_high",
+      "measurements": [
+        {
+          "level": "nominal",
+          "native_elapsed_s": 89.56444429999999,
+          "point_count": 4621084,
+          "bytes": 1183000920,
+          "directory": "/mnt/f/ts808-reference/runs/overload-high-alt-guard-nominal-b13ef5849b5d413cbf909a8095debe9b"
+        },
+        {
+          "level": "refined",
+          "native_elapsed_s": 230.2832052,
+          "point_count": 9245799,
+          "bytes": 2366927978,
+          "directory": "/mnt/f/ts808-reference/runs/overload-high-alt-guard-refined-021f63f891bf4878b87bba07567474b7"
+        },
+        {
+          "rate_Hz": 192000,
+          "elapsed_s": 6.476313914000002,
+          "exit_code": 0,
+          "stderr": "",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "failed",
+            "wav": "pending",
+            "listening": "not_applicable",
+            "combined": "failed"
+          },
+          "comparison_directory": "/home/alexandre/projetos/emulador_tube_screamer/runs/mvp-pilots-02/overload_high/192000/comparison-ef36bde59e",
+          "evidence_path": "overload_high/192000"
+        },
+        {
+          "rate_Hz": 384000,
+          "elapsed_s": 12.023755832000006,
+          "exit_code": 0,
+          "stderr": "",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "failed",
+            "wav": "pending",
+            "listening": "not_applicable",
+            "combined": "failed"
+          },
+          "comparison_directory": "/home/alexandre/projetos/emulador_tube_screamer/runs/mvp-pilots-02/overload_high/384000/comparison-ef36bde59e",
+          "evidence_path": "overload_high/384000"
+        },
+        {
+          "rate_Hz": 768000,
+          "elapsed_s": 23.584109479000006,
+          "exit_code": 0,
+          "stderr": "",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "passed",
+            "wav": "pending",
+            "listening": "not_applicable",
+            "combined": "pending"
+          },
+          "comparison_directory": "/home/alexandre/projetos/emulador_tube_screamer/runs/mvp-pilots-02/overload_high/768000/comparison-ef36bde59e",
+          "evidence_path": "overload_high/768000"
+        }
+      ]
+    }
+  ],
+  "completion": "completed",
+  "full_matrix_authorized": false,
+  "scope": "Two explicitly revised settling pilots plus overload; all three rates are retained, 768 kHz is diagnostic only"
+}

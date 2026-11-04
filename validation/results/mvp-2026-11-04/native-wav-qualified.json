@@ -1,0 +1,195 @@
+{
+  "results": [
+    {
+      "rate_Hz": 192000,
+      "source_directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/wav-qualified-pcm192-c381e1f712c249f99027cd1b89fdb2f9",
+      "checks": [
+        {
+          "id": "wav_header_grid",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_header_grid",
+          "value": 0,
+          "unit": "",
+          "limit": 0,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_no_clipping",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_no_clipping",
+          "value": 0,
+          "unit": "",
+          "limit": 0,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_native_rms",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_native_rms",
+          "value": 2.1155218921777177e-09,
+          "unit": "V",
+          "limit": 1e-06,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_native_peak",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_native_peak",
+          "value": 4.224078062158021e-09,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_reference_uncertainty_rms",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_reference_uncertainty_rms",
+          "value": 1.6027974174347238e-10,
+          "unit": "V",
+          "limit": 1e-07,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_reference_uncertainty_peak",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_reference_uncertainty_peak",
+          "value": 2.435519702581601e-10,
+          "unit": "V",
+          "limit": 1e-06,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_local_rms_0",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_local_rms_0",
+          "value": 2.1155218921777177e-09,
+          "unit": "V",
+          "limit": 1e-06,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_local_peak_0",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_local_peak_0",
+          "value": 4.224078062158021e-09,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "rate_Hz": 384000,
+      "source_directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/wav-qualified-pcm384-1b38b18fd5654e4e853e42e6cd2c4c38",
+      "checks": [
+        {
+          "id": "wav_header_grid",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_header_grid",
+          "value": 0,
+          "unit": "",
+          "limit": 0,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_no_clipping",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_no_clipping",
+          "value": 0,
+          "unit": "",
+          "limit": 0,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_native_rms",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_native_rms",
+          "value": 2.0745043480221003e-09,
+          "unit": "V",
+          "limit": 1e-06,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_native_peak",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_native_peak",
+          "value": 4.312787512533722e-09,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_reference_uncertainty_rms",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_reference_uncertainty_rms",
+          "value": 1.6028969063677817e-10,
+          "unit": "V",
+          "limit": 1e-07,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_reference_uncertainty_peak",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_reference_uncertainty_peak",
+          "value": 2.435519702581601e-10,
+          "unit": "V",
+          "limit": 1e-06,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_local_rms_0",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_local_rms_0",
+          "value": 2.0745043480221003e-09,
+          "unit": "V",
+          "limit": 1e-06,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "wav_local_peak_0",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "wav_local_peak_0",
+          "value": 4.312787512533722e-09,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    }
+  ],
+  "refined_directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/wav-qualified-refined-86d3312ec0dd46e0baa128bce57fef53",
+  "nominal_directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/wav-rc-7efa78cb722643a5bcfacd0c3a91d7ec",
+  "scope": "RC native export path; not pedal or listening qualification"
+}

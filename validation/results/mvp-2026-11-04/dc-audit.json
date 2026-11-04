@@ -1,0 +1,40 @@
+{
+  "experiments": [
+    {
+      "directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/audit-opamp-false-7dce88b10bb144d093985c8d6c1e46be",
+      "completion": "completed",
+      "request_sha256": "343893a5cf43301964cc006f2f1af97f944a7d3bb154d8887c1406bec9da6b9a",
+      "log_sha256": "d26011924569261860ca4574fa74fb804a8925a51ca6fc8ead4f37fd289deb2a",
+      "pseudo_transient": true,
+      "direct_newton": false,
+      "maximum_independent_follower_error_V": 1.7763568394002505e-15
+    },
+    {
+      "directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/audit-opamp-true-eaca7bd023e8409480dfd1acf593a992",
+      "completion": "completed",
+      "request_sha256": "401b6504756e6633fe183a1f34d83d69eacdaa7ea13f377b8b03481421289046",
+      "log_sha256": "6175de7e1058a8d28bb5504eb826044ff274cc025ae649e03aecf29afdfffdcf",
+      "pseudo_transient": true,
+      "direct_newton": false,
+      "maximum_independent_follower_error_V": 5.109805911729381e-10
+    },
+    {
+      "directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/audit-pedal-false-afe12084c99143d78c28c08dd84fab79",
+      "completion": "completed",
+      "request_sha256": "e6150af62463af91f61bc78c6b25c6df8b61f5edeb3c6f0b7bc67dd834a02ca1",
+      "log_sha256": "a52040cf63d93c4a4a989e0f86e336ff6e4dbe9dd07b39f581456279e565cc23",
+      "pseudo_transient": true,
+      "direct_newton": false,
+      "maximum_dc_voltage_difference_V": 2.471153059957487e-09,
+      "maximum_dc_current_difference_A": 1.1244516362418533e-15
+    },
+    {
+      "directory": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/audit-pedal-true-4b53d3e8363c4a218033a0ed1082b5c3",
+      "completion": "failed",
+      "request_sha256": "d803a7dbdb08d5a07957c28880c1e504f90e6b519201deb57f4964fbb7188930",
+      "log_sha256": "a4ac376e9b4ee56e5c20ad8c46bb17aad5e974a273c781ad057899305826b408",
+      "pseudo_transient": false,
+      "direct_newton": false
+    }
+  ]
+}

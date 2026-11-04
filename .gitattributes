@@ -1,0 +1,5 @@
+# Preserve exact bytes of hashed scientific inputs, native fixtures and evidence.
+/reference/ts808/** -text
+/tests/fixtures/** -text
+/validation/tests/fixtures/** -text
+/validation/results/** -text

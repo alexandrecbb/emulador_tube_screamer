@@ -1,0 +1,39 @@
+{
+    "schema_version":  1,
+    "physical_case_sha256":  "50bbe9315ca36e1860475a5b27c3e8360e590b943efc74249f5eec90e6aa46e5",
+    "invocation":  {
+                       "exit_code":  0,
+                       "start_utc":  "2026-11-04T02:35:14.9706912Z",
+                       "pid":  11576,
+                       "working_directory":  "F:\\ts808-reference\\runs\\overload-high-alt-guard-refined-021f63f891bf4878b87bba07567474b7",
+                       "argv":  [
+                                    "-b",
+                                    "deck.cir"
+                                ],
+                       "elapsed_s":  230.2832052
+                   },
+    "completion":  "completed",
+    "producer":  {
+                     "version":  "26.1.1.0",
+                     "windows_version":  "Microsoft Windows NT 10.0.26300.0",
+                     "executable_sha256":  "3c144a2b3ec6a30baac6761c502d99b95aaa40b947ff5eca25b8fbd80d68af72",
+                     "executable_path":  "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\ltspice-26.1.1\\LTspice.exe",
+                     "powershell_version":  "5.1.26100.9818",
+                     "execution_profile":  "wsl2-windows-native-v1"
+                 },
+    "files":  [
+                  {
+                      "path":  "deck.raw",
+                      "sha256":  "d9f0cbd512c4613923aba57d0368f16fba1881d91e94f952790798dddffe6b15",
+                      "size_bytes":  2366926918
+                  },
+                  {
+                      "path":  "deck.log",
+                      "sha256":  "0ec2b56fb6bbacd38b653e0efc30862237ec7958c288433bd9135b89fbb87ad8",
+                      "size_bytes":  1060
+                  }
+              ],
+    "request_sha256":  "27dd857882a9bb48950f2d15af16fae07fa6babd3a7ce8e7947eac1874d17739",
+    "reason":  null,
+    "request_id":  "overload-high-alt-guard-refined-021f63f891bf4878b87bba07567474b7"
+}

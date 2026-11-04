@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "errors": [],
+  "qualification": "environment_only",
+  "toolchain_sha256": "d7d61e87d3cfc48ff3176dea0462c629fc21de688a3bf0373d950d25dea329d4"
+}

@@ -1,0 +1,32 @@
+LTspice 26.1.1 for Windows
+Circuit: C:\Users\Alexandre\AppData\Local\ts808-reference\runs\tone_center_f1000_a100mv-warmup2s-refined-0298d2350e504baba942827dd2088b67\deck.cir
+Start Time: Tue Nov  3 23:27:40 2026
+Options:solver=norm tnom=25 plotwinsize=0 numdgt=15 method=trap reltol=1e-7 abstol=1e-13 vntol=1e-10 chgtol=1e-17 trtol=1 gmin=1e-12 gminsteps=0 srcsteps=0
+solver = Normal
+Maximum thread count: 16
+tnom = 25
+temp = 25
+method = trap
+abstol = 1e-13
+reltol = 1e-07
+chgtol = 1e-17
+trtol = 1
+volttol = 1e-10
+Direct Newton iteration failed to find operating point.
+Gmin stepping method for .op point skipped.
+Source stepping method for .op point skipped.
+Gmin stepping method for .op point skipped.
+Source stepping method for .op point skipped.
+Pseudo Transient succeeded in finding the operating point at 7.07961 s
+Changing Tseed to 1.6276e-10
+Changing Tseed to 1.6276e-12
+Changing Tseed to 1.6276e-09
+Changing Tseed to 1.6276e-13
+Changing Tseed to 1.6276e-08
+Total elapsed time: 277.257 seconds.
+Total iterations: 59978148
+
+Files loaded:
+C:\Users\Alexandre\AppData\Local\ts808-reference\runs\tone_center_f1000_a100mv-warmup2s-refined-0298d2350e504baba942827dd2088b67\deck.cir
+C:\Users\Alexandre\AppData\Local\ts808-reference\runs\tone_center_f1000_a100mv-warmup2s-refined-0298d2350e504baba942827dd2088b67\models.lib
+

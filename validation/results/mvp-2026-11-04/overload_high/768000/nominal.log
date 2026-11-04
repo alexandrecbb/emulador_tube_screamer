@@ -1,0 +1,26 @@
+LTspice 26.1.1 for Windows
+Circuit: F:\ts808-reference\runs\overload-high-alt-guard-nominal-b13ef5849b5d413cbf909a8095debe9b\deck.cir
+Start Time: Tue Nov  3 23:33:25 2026
+Options:solver=alt tnom=25 plotwinsize=0 numdgt=15 method=trap reltol=1e-6 abstol=1e-12 vntol=1e-9 chgtol=1e-16 trtol=1 gmin=1e-12 gminsteps=0 srcsteps=0
+solver = Alternate
+Maximum thread count: 16
+tnom = 25
+temp = 25
+method = trap
+reltol = 1e-06
+chgtol = 1e-16
+trtol = 1
+volttol = 1e-09
+Direct Newton iteration failed to find operating point.
+Gmin stepping method for .op point skipped.
+Source stepping method for .op point skipped.
+Gmin stepping method for .op point skipped.
+Source stepping method for .op point skipped.
+Pseudo Transient succeeded in finding the operating point at 10.0551 s
+Total elapsed time: 75.930 seconds.
+Total iterations: 9807701
+
+Files loaded:
+F:\ts808-reference\runs\overload-high-alt-guard-nominal-b13ef5849b5d413cbf909a8095debe9b\deck.cir
+F:\ts808-reference\runs\overload-high-alt-guard-nominal-b13ef5849b5d413cbf909a8095debe9b\models.lib
+

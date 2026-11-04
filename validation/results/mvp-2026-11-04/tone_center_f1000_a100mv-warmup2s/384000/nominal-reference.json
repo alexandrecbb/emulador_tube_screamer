@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "reference_id": "tone_center_f1000_a100mv-warmup2s-nominal-52517df0a1f640ec84b9fb10b2600324",
+  "case_id": "tone_center_f1000_a100mv-warmup2s",
+  "physical_case_sha256": "d8d2cd1cf30722351280881fee24f987af23e2447e8c365dda2abbc36685c09b",
+  "case_input_sha256": "bb9fe6c94c53c97021ff79f0c71f4f8fad55511e9bd8660aad5fe4c098bd0cfc",
+  "analysis_kind": "transient",
+  "source": {
+    "request": {
+      "locator": {
+        "wsl_path": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/tone_center_f1000_a100mv-warmup2s-nominal-52517df0a1f640ec84b9fb10b2600324/request.json",
+        "windows_path": "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\runs\\tone_center_f1000_a100mv-warmup2s-nominal-52517df0a1f640ec84b9fb10b2600324\\request.json"
+      },
+      "size_bytes": 6742,
+      "sha256": "bd846d9645b899a113d212c54ba37ff9cb55fffaba593bb73c88f7357e553c88"
+    },
+    "result": {
+      "locator": {
+        "wsl_path": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/tone_center_f1000_a100mv-warmup2s-nominal-52517df0a1f640ec84b9fb10b2600324/reference_result.json",
+        "windows_path": "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\runs\\tone_center_f1000_a100mv-warmup2s-nominal-52517df0a1f640ec84b9fb10b2600324\\reference_result.json"
+      },
+      "size_bytes": 2007,
+      "sha256": "d11589441a9cec11a46e2aa904135ff680415aed6f7227abe455d3037ad4dc38"
+    },
+    "raw": {
+      "locator": {
+        "wsl_path": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/tone_center_f1000_a100mv-warmup2s-nominal-52517df0a1f640ec84b9fb10b2600324/deck.raw",
+        "windows_path": "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\runs\\tone_center_f1000_a100mv-warmup2s-nominal-52517df0a1f640ec84b9fb10b2600324\\deck.raw"
+      },
+      "size_bytes": 1968645230,
+      "sha256": "862329a01d85ba23aa534a0e4ab8a92390aa77659ea04a1b04001b7aa54b8745"
+    },
+    "log": {
+      "locator": {
+        "wsl_path": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/tone_center_f1000_a100mv-warmup2s-nominal-52517df0a1f640ec84b9fb10b2600324/deck.log",
+        "windows_path": "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\runs\\tone_center_f1000_a100mv-warmup2s-nominal-52517df0a1f640ec84b9fb10b2600324\\deck.log"
+      },
+      "size_bytes": 1252,
+      "sha256": "0f19cb0a263345acbb169b04f9d432a9306b6d983f0b261e5a2137319cebeebb"
+    }
+  },
+  "selection": {
+    "plot_index": 0,
+    "plot_name": "Transient Analysis",
+    "analysis_kind": "transient",
+    "step_index": null,
+    "step_parameters": {},
+    "traces": [
+      {
+        "quantity_id": "input",
+        "native_expression": "V(input)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "input_cap",
+        "native_expression": "V(input_cap)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "input_base",
+        "native_expression": "V(input_base)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "dry_send",
+        "native_expression": "V(dry_send)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "clip_plus",
+        "native_expression": "V(clip_plus)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "clip_minus",
+        "native_expression": "V(clip_minus)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "gain_rc",
+        "native_expression": "V(gain_rc)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "drive_end",
+        "native_expression": "V(drive_end)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "z_clip",
+        "native_expression": "V(xclip:z)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "i_drive",
+        "native_expression": "I(R_drive)",
+        "unit": "A",
+        "orientation": "drive_end -> clip_out"
+      },
+      {
+        "quantity_id": "tone_in",
+        "native_expression": "V(tone_in)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "tone_minus",
+        "native_expression": "V(tone_minus)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "tone_wiper",
+        "native_expression": "V(tone_wiper)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "tone_rc",
+        "native_expression": "V(tone_rc)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "tone_out",
+        "native_expression": "V(tone_out)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "volume_cap",
+        "native_expression": "V(volume_cap)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "volume_top",
+        "native_expression": "V(volume_top)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "z_tone",
+        "native_expression": "V(xtone:z)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "i_tone_low",
+        "native_expression": "I(R_tone_low)",
+        "unit": "A",
+        "orientation": "tone_in -> tone_wiper"
+      },
+      {
+        "quantity_id": "i_tone_high",
+        "native_expression": "I(R_tone_high)",
+        "unit": "A",
+        "orientation": "tone_wiper -> tone_minus"
+      },
+      {
+        "quantity_id": "i_volume_high",
+        "native_expression": "I(R_volume_high)",
+        "unit": "A",
+        "orientation": "wet_send -> volume_top"
+      },
+      {
+        "quantity_id": "switch_common",
+        "native_expression": "V(switch_common)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "output_base",
+        "native_expression": "V(output_base)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "output_emitter",
+        "native_expression": "V(output_emitter)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "output_cap",
+        "native_expression": "V(output_cap)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "output",
+        "native_expression": "V(output)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "input_emitter",
+        "native_expression": "V(input_emitter)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "clip_out",
+        "native_expression": "V(clip_out)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "wet_send",
+        "native_expression": "V(wet_send)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "vref",
+        "native_expression": "V(vref)",
+        "unit": "V",
+        "orientation": "node relative to gnd"
+      },
+      {
+        "quantity_id": "i_volume_low",
+        "native_expression": "I(R_volume_low)",
+        "unit": "A",
+        "orientation": "vref -> wet_send"
+      }
+    ]
+  },
+  "validation": {
+    "encoding": "float64le",
+    "point_count": 7690011,
+    "domain_start": 0.0,
+    "domain_stop": 2.5000000652848127,
+    "checks": [
+      {
+        "id": "producer_completion",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "producer_completion",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      },
+      {
+        "id": "precision",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "precision",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      },
+      {
+        "id": "file_integrity",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "file_integrity",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      },
+      {
+        "id": "selection",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "selection",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      },
+      {
+        "id": "finite_data",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "finite_data",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      },
+      {
+        "id": "axis_grid",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "axis_grid",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      },
+      {
+        "id": "coverage",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "coverage",
+        "value": 0,
+        "unit": "",
+        "limit": 0,
+        "reason": "Verified against original producer bytes"
+      }
+    ]
+  },
+  "completion": "completed",
+  "integrity": "verified"
+}

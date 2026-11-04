@@ -1,0 +1,47 @@
+{
+  "entries": [
+    {
+      "schema_version": 1,
+      "original_wsl_path": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/audit-opamp-transient-700a8e7f0909410a8bed931ae417188f/deck.raw",
+      "original_windows_path": "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\runs\\audit-opamp-transient-700a8e7f0909410a8bed931ae417188f\\deck.raw",
+      "archive_wsl_path": "/mnt/f/ts808-reference/runs/rejected-archive/audit-opamp-transient-700a8e7f0909410a8bed931ae417188f/deck.raw",
+      "archive_windows_path": "F:\\ts808-reference\\runs\\rejected-archive\\audit-opamp-transient-700a8e7f0909410a8bed931ae417188f\\deck.raw",
+      "size_bytes": 2530118602,
+      "sha256": "9e29d550dc3e8582d45a4cb4bbcd80f1a6e4517d949010ec92a2d2912db0849f",
+      "qualification": "rejected_or_cancelled",
+      "reason": "Producer failed/cancelled or ignored invalid solver option; not consumable acceptance evidence",
+      "request_sha256": "61d08a08fc08d2a18b20bcad22a6df688c6c92f9bfb0387ff9e98a2c55024a6f",
+      "result_sha256": "a2af27718e46b26ea54091d3c5e6d567f0e28548b7e5267dc143cc86740ca1d8",
+      "log_sha256": "dd5d62f6416ee8f0ab1683dd9ee5f9289d24326e55a3792ea089258d5aa8b22f"
+    },
+    {
+      "schema_version": 1,
+      "original_wsl_path": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/tone_center_f1000_a100mv-warmup2s-nominal-242924cbf386444dbf0c4faf4a5ad73f/deck.raw",
+      "original_windows_path": "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\runs\\tone_center_f1000_a100mv-warmup2s-nominal-242924cbf386444dbf0c4faf4a5ad73f\\deck.raw",
+      "archive_wsl_path": "/mnt/f/ts808-reference/runs/rejected-archive/tone_center_f1000_a100mv-warmup2s-nominal-242924cbf386444dbf0c4faf4a5ad73f/deck.raw",
+      "archive_windows_path": "F:\\ts808-reference\\runs\\rejected-archive\\tone_center_f1000_a100mv-warmup2s-nominal-242924cbf386444dbf0c4faf4a5ad73f\\deck.raw",
+      "size_bytes": 1968645230,
+      "sha256": "cf1a63e08fcab73b3622b89c44b905192811dd51544fed741dceb0ad46168157",
+      "qualification": "rejected_or_cancelled",
+      "reason": "Producer failed/cancelled or ignored invalid solver option; not consumable acceptance evidence",
+      "request_sha256": "490fa38a2202fafd045449fca7cec3360ce8a9c9a64d8a5de53b13bea559390e",
+      "result_sha256": "793b7e9e8cc2990ec6acc63c8f773a4de68edece0fedfe676939e98964c7ab38",
+      "log_sha256": "4bd0df02e52e7191e1f1e95b488ee481498d336c484ed46ecf385a9396426abd"
+    },
+    {
+      "schema_version": 1,
+      "original_wsl_path": "/mnt/c/Users/Alexandre/AppData/Local/ts808-reference/runs/tone_center_f1000_a100mv-warmup2s-refined-947b60d1d62c40c598205a5917934e8f/deck.raw",
+      "original_windows_path": "C:\\Users\\Alexandre\\AppData\\Local\\ts808-reference\\runs\\tone_center_f1000_a100mv-warmup2s-refined-947b60d1d62c40c598205a5917934e8f\\deck.raw",
+      "archive_wsl_path": "/mnt/f/ts808-reference/runs/rejected-archive/tone_center_f1000_a100mv-warmup2s-refined-947b60d1d62c40c598205a5917934e8f/deck.raw",
+      "archive_windows_path": "F:\\ts808-reference\\runs\\rejected-archive\\tone_center_f1000_a100mv-warmup2s-refined-947b60d1d62c40c598205a5917934e8f\\deck.raw",
+      "size_bytes": 1340365422,
+      "sha256": "1d83c365ce386e5289a42ff26beaf3f0bfc9f9fe402f62135446342e58f641a0",
+      "qualification": "rejected_or_cancelled",
+      "reason": "Producer failed/cancelled or ignored invalid solver option; not consumable acceptance evidence",
+      "request_sha256": "e8f8aa89674aa2ac859b0bdf5744c6a834541cc346ce0853020dd7600f36c806",
+      "result_sha256": "0bea5275a742fa4bd7d1bc1594643026a8d44ef5036fe7d315291bba1e1c76dd",
+      "log_sha256": "20844087be530e034350436d0283112aafc57ac69dd9c6b0dc39b4f586b026b5"
+    }
+  ],
+  "relocated_bytes": 5839129254
+}

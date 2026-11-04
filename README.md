@@ -82,3 +82,28 @@ qualificação nominal/refinada.
 
 O [protocolo](docs/validation_protocol.md) registra medições e gates pendentes.
 Plugin, JUCE, TS9 e tempo real vêm depois da validação offline.
+
+## Resultado medido em 2026-11-04
+
+A aceitação do MVP está bloqueada. Os pilotos de senoide com revisão explícita
+para 2 s de aquecimento passaram; a sobrecarga falhou na recuperação por 33
+amostras em 192 kHz e 7 em 384 kHz (limite: uma amostra). Newton 10x mais apertado
+não resolveu. A matriz completa também excede o armazenamento disponível.
+
+Veja o [relatório](docs/mvp_validation_report.md) e as
+[evidências versionadas](validation/results/mvp-2026-11-04/README.md).
+Os testes Python com LTspice real registraram 39 testes e 30 subtests aprovados;
+CTest checked/release passou. WAV/FIR têm fixtures mecânicos aprovados; pares
+ABX só serão liberados após todos os gates automáticos obrigatórios passarem.
+
+Importação e comparação exigem referências explícitas, preservadas e refinadas:
+
+```sh
+PYTHONPATH=validation .venv/bin/python -m ts808_validation import-reference --case <case.json> --raw <original/deck.raw> --log <original/deck.log> --output <new-reference-directory>
+PYTHONPATH=validation .venv/bin/python -m ts808_validation compare --case <case.json> --run <run-directory> --reference <nominal-directory> --refined-reference <refined-directory> --output <new-report-directory>
+PYTHONPATH=validation .venv/bin/python -m ts808_validation suite --cases reference/ts808/cases.json --toolchain validation/toolchain.json --model-executable build/offline-release/ts808_offline --rates 192000 384000 --pilot-summary validation/results/mvp-2026-11-04/pilots.json --output <new-suite-directory>
+```
+
+O último comando conserva o índice completo mesmo quando o gate dos pilotos
+impede a execução. Os RAWs grandes e a toolchain local não são distribuídos pelo
+Git; os metadados versionados não substituem os payloads originais.
