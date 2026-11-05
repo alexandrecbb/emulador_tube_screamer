@@ -3,7 +3,7 @@ from pathlib import Path
 import hashlib
 import json
 import numpy as np
-from .artifacts import load_json,atomic_json,validate_case
+from .artifacts import load_json,atomic_json,validate_case,integration_config
 from .simulator import sha256,windows_path,confined,native_options
 from .persist import consume_reference,validate_schema,check
 from .reconstruct import pchip
@@ -36,7 +36,7 @@ def reference_id(path,manifest):
                 manifest_sha256=sha256(path/'reference.json'),**{n+'_sha256':manifest['source'][n]['sha256'] for n in ('request','result','raw','log')})
 
 
-def compare(run_dir,nominal_dir,refined_dir,output,config,*,diagnostics=False):
+def compare(run_dir,nominal_dir,refined_dir,output,config,*,diagnostics=False,reference_session=None):
     if output.exists(): raise ValueError('Comparison destination exists')
     run=load_json(run_dir/'run.json');validate_schema('run',run)
     if run['completion']['state']!='completed':raise ValueError('Failed/incomplete C++ run')
@@ -44,7 +44,8 @@ def compare(run_dir,nominal_dir,refined_dir,output,config,*,diagnostics=False):
     if run['trace']['integrity']!='verified' or sha256(confined(run_dir,run['trace']['filename']))!=run['trace']['sha256']: raise ValueError('Pending/changed C++ integrity')
     case=load_json(run_dir.parent/'case.json');validate_case(case)
     if sha256(run_dir.parent/'case.json')!=run['case_input_sha256']:raise ValueError('Changed finalized case bytes')
-    nm,nq,n=consume_reference(nominal_dir,config);rm,rq,r=consume_reference(refined_dir,config)
+    consume=reference_session.consume if reference_session is not None else consume_reference
+    nm,nq,n=consume(nominal_dir,config);rm,rq,r=consume(refined_dir,config)
     if len({nm['physical_case_sha256'],rm['physical_case_sha256'],run['physical_case_sha256']})!=1 or nm['selection']!=rm['selection'] or nq['request_id']==rq['request_id']:
         raise ValueError('Mismatched reference pair')
     for filename in ('models.lib','component_map.json','device_spec.md'):
@@ -69,6 +70,8 @@ def compare(run_dir,nominal_dir,refined_dir,output,config,*,diagnostics=False):
         raise ValueError('Run identity/layout differs from accepted case')
     for key,value in case['execution'].items():
         if run['execution_config'][key]!=value:raise ValueError('Run execution configuration differs from case')
+    if integration_config(run['execution_config'])!=integration_config(case['execution']):
+        raise ValueError('Run integration configuration differs from case')
     shape=run['trace']['shape']; data=np.memmap(run_dir/'traces.f64le',dtype='<f8',mode='r',shape=tuple(shape))
     for start in range(0,count,65536):
         if not np.isfinite(data[start:start+65536]).all():raise ValueError('Nonfinite C++ trace')
@@ -135,6 +138,7 @@ def compare(run_dir,nominal_dir,refined_dir,output,config,*,diagnostics=False):
                 reference_qualification=dict(status='passed' if reference_pass else 'failed',nominal=reference_id(nominal_dir,nm),refined=reference_id(refined_dir,rm),settings=dict(nominal=ns,refined=rs,target_rate_Hz=rate if kind=='transient' else None),checks=uncertainty),
                 reconstruction=dict(method='PCHIP without extrapolation' if kind=='transient' else 'native grid',alignment='physical timestamps; no fitting'),checks=checks,artifacts=[],outcomes=outcomes)
     if kind=='ac':report['reconstruction']['bode_masked_frequencies_Hz']=[float(f) for f,v in zip(n['axis'],nv) if abs(v)<1e-6]
+    if reference_session is not None:reference_session.verify()
     output.mkdir(parents=True)
     if kind=='transient':
         from matplotlib.figure import Figure

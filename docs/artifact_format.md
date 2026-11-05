@@ -2,6 +2,20 @@
 
 Contrato normativo: [especificação de interfaces](designs/ts808_offline_interface_spec.md).
 
+Revisão aprovada em 2026-11-04: [subpassos explícitos](designs/ts808_substep_revision.md).
+`execution.rate_Hz` identifica a grade de saída. Quando presentes,
+`integration_rate_Hz` e `substeps` identificam a integração interna 768 kHz e
+os 4/2 passos por saída 192/384 kHz. Os dois campos são obrigatórios em conjunto.
+Sua ausência conserva um passo por amostra. Configurações inconsistentes ou
+divergentes entre caso e execução são rejeitadas. A resposta AC discreta usa
+a taxa interna. Somente amostras externas completas entram no trace; uma
+falha registra o índice/tempo internos e o subpasso nos diagnósticos.
+
+Os schemas run/failure/report/reference_request/reference_result/imported_reference/
+suite_summary/abx_session já estão implementados; os parágrafos históricos
+abaixo descrevem o estágio inicial. O estado atual de aceitação está no
+[relatório](mvp_validation_report.md).
+
 Cada execução cria uma pasta nova com `run.json` e `traces.f64le`.
 O binário contém linhas de 32 doubles little-endian: tempo e as
 31 incógnitas na ordem canônica. Não há dump de structs/Eigen nem padding.

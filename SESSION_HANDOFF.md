@@ -1,4 +1,660 @@
-## Encerramento desta sessão — 2026-11-04
+## MATRIZ CONCLUÍDA — AVALIAÇÃO REPROVADA — 2026-11-05
+
+Cobertura completa: 91 casos físicos,128 entradas; auditoria de
+3174 arquivos concluída. automatic_qualification=failed;
+assessment_completion=completed; 50 entradas reprovadas por
+cpp_settling_dc/reference_settling_dc (limite10µV), WAV bloqueado nesses casos.
+Não alterar critérios nem promover reprovações. Os demais resultados e
+contagens estão em validation/results/qualification-2026-11-05/README.md.
+Pares lineares/WAV finalizados, originais/hashes preservados. ABX humano já
+realizado10/20,p0.588099,listeningpending; MVP NÃO ACEITO.
+
+Evidência original: /mnt/f/ts808-validation/substeps-20261104/qualification-audit-r12-20261105/qualification/qualification.json
+Partição: /mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json
+Não reexecutar automaticamente. Uma próxima tentativa demanda revisão
+explícita da duração de assentamento e novo orçamento de armazenamento.
+Nenhuma simulação foi repetida para recuperar a importação pausada.
+Testes64passed,28subtests,1nativo opcional skipped; CTest checked/release passou.
+
+Usuário autorizou commit/push de tudo pendente e desligamento do Windows
+hospedeiro via WSL APÓS concluir processos e conferir push. Estado de entrega
+(commit, verificação remota, solicitação de desligamento) será registrado em
+/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/delivery-state.json
+Credenciais .env e artefatos volumosos não entram no Git. Histórico abaixo.
+
+## MATRIZ EXECUTADA; AUDITORIA r12 ATIVA — 2026-11-05
+
+Usuário autorizou continuar e, ao concluir todos processos, fazer commit/push
+completo e desligar o Windows hospedeiro via WSL. Não desligar antes de verificar push.
+Matriz r11 terminou:128relatórios presentes; oito lineares passaram numérico/WAV.
+50tons reprovados exclusivamente cpp_settling_dc/reference_settling_dc nos dois
+produtores; WAV bloqueado nesses. Nenhum critério/equação relaxado.
+Partição final: /mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json
+
+Auditoria r11 parou em74/128: manifesto WAV histórico de piloto omitiu o campo
+derivado native_options; pedido original o contém e deck/hash são auditados.
+Correção r12 aceita somente essa omissão histórica, rejeita qualquer parâmetro
+declarado divergente. Novos WAVs persistem request.reference_settings completo.
+Teste de regressão cobre solver/calibração/maxstep/extra/missing conflitantes.
+64testes+28subtests passaram,1nativo opcional skipped; CTest checks/release passou.
+Métrica validator_sha256 permanece inalterada. Nenhum nativo/WAV regenerado.
+
+Auditor r12: /mnt/f/ts808-validation/substeps-20261104/qualification-audit-r12-20261105/,
+execute.py/log/status.json, qualification/progress.json. Sessão9793.
+NÃO editar qualification.py enquanto ativo. Não iniciar duplicados.
+ABX humano é fora do escopo do auditor; r12 corrige lembrete histórico incorreto.
+ABX já realizado10/20,p0.5881,listeningpending; MVPnãoaceito.
+Após auditoria, adaptar/executar r11/publish.py para registrar snapshot pequeno,
+atualizar docs/handoff, conferir credenciais, gitdiffcheck, commit/pushverificado,
+encerrarprodutores e solicitar shutdown.exe /s do Windows. F:~30GiB livres.
+Histórico abaixo.
+
+## RETOMADA AUTORIZADA APÓS /compact — 2026-11-05
+
+Usuário pediu continuar. Produtor r11 em
+/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/,
+execute.py/log/status.json; sessão31032. Conferência inicial: nenhum produtor
+Linux/LTspice Windows; F:44GiB livres. Não iniciar duplicados.
+Primeiro importa RAW refinado já concluído de tone_high_f5000_a010mv,
+verificando integridade e preservando parciais; depois mede as duas taxas e
+retoma os cinco casos restantes, pares lineares/WAV e auditoria128entradas.
+Reusa r10 com hashes; sem repetir referências concluídas. Critérios intactos.
+Reprovações de assentamento DC serão registradas; conclusão da avaliação
+não implica aprovação. ABX humano já realizado, conforme histórico abaixo.
+Usuário autorizou commit e push de todas as alterações pendentes, seguidos de
+desligamento do Windows hospedeiro via WSL, SOMENTE após concluir os processos.
+Conferir exclusão de credenciais e artefatos volumosos; verificar push antes
+de desligar. Testes r11:63passed,1skipped,28subtests; CTest checks passou.
+Estado histórico de pausa abaixo
+foi revogado pelo pedido explícito de retomada.
+
+## PAUSADO POR PEDIDO DO USUÁRIO PARA /compact — 2026-11-05T00:42:30.452711+00:00
+
+NÃO RETOMAR sem novo pedido explícito. Produtor r10 PID194712 recebeuSIGINT;
+sessão17146 terminou comexit130. O produtor nativo já havia concluído; SIGINT interrompeu a importação do RAW.
+Resultado nativo e parciais preservados. Nenhum LTspiceativo no Windows.
+Estado da pausa: /mnt/f/ts808-validation/substeps-20261104/pause-state-20261105T004230Z.json
+Última partição: /mnt/f/ts808-validation/substeps-20261104/qualification-resume-r10-20261104/matrix/summary.json
+Log: /mnt/f/ts808-validation/substeps-20261104/qualification-resume-r10-20261104/execute.log; status.jsonfailed por cancelamento usuário,
+não confundir com nova reprovação numérica. Nenhum auditor em execução.
+
+60/72relatórios transientes presentes; somados54DC/AC+2hold =
+116/128relatórios. Ponto: tone_high_f5000_a010mv, nominal concluído,
+refined NATIVO CONCLUÍDO, importação interrompida. Reaproveitar RAW válido
+após conferir originais; não repetir simulação semnecessidade.
+Pedido refinado: /mnt/f/ts808-reference/runs/tone_high_f5000_a010mv-refined-2035339bb21c4452b789564d64e22054
+Preservar diretório de importação parcial em nova tentativa.
+Faltam fechar estecaso,5kHz100/500mV,82Hz10/100/500mV, depois pareslineares/WAV
+no fim da suíte e auditoria completa. Não regenerar casos concluídos.
+Referências de100x mantidas nos pilotos/sobrecarga central; próximos casos
+usam tolerânciasoriginais, solveralt+nodesetT22independente (norm no
+caso tone_edge_t000_f5000_a100mv, já medido). Critérios/equações inalterados.
+Falhas medidas nos relatórios: {'cpp_settling_dc': 38, 'reference_settling_dc': 38}.
+Até aqui reprovações por assentamentoDC de ambosprodutores; não promover
+varredura/rejeição a aprovação. WAV fica bloqueado quando numericalfailed.
+Sobrecarga central reparada passoureference/numerical/WAV nasduastaxas.
+Todos pilotos reutilizados. ABXhumano realizado10/20, p0.5881; listeningpending
+pelo protocolo, semprova de equivalência universal. MVPnãoaceito.
+
+Retomada: novo diretório F:, reutilizar esta partição via suite(resume_from=...),
+solveralt, native_topology_nodeset=True, continue_native_failures=True,
+override tone_edge_t000_f5000_a100mv=norm; não sobrescreveroriginais.
+Auditor consolidate(require_passed=False) / CLI --record-rejections registra
+cobertura e reprovações semrelaxar critérios; require_passed padrão continua
+estrito. Só concluir avaliação com128entradas; identity/import continuamgates.
+Últimos testes completos58passed/28subtests,1nativoopcionalpulou; r9/tests.log.
+9testes específicos passaram após continue_native_failures; gitdiffcheckpassou.
+Nãohouvecommit/push/desligamentoWindows. Detalhes anteriores abaixo.
+
+## RETOMADA r10 APÓS TIMEOUT NATIVO — 2026-11-04
+
+Usuário perguntou por que interrompeu. Conferência mostrou r9 failed, PID173461
+ausente; atualização anterior de andamento estava desatualizada e foi corrigida.
+r9 avançou até tone_edge_t000_f5000_a100mv; refined alt+nodeset excedeu timeout.
+Request preservado /mnt/f/ts808-reference/runs/tone_edge_t000_f5000_a100mv-refined-66f9607e9b35430992a4c091671ee7b1/.
+reference_result reason Native producer timeout, elapsed2864.489s; limite
+configurado1800s. Não inferir causa externa ou atribuir a cancelamento usuário.
+RAW parcial847579726bytes preservado.40/72relatórios transientes produzidos;
+com54DC/AC+2hold já há96/128relatórios, ainda semfechamentolineares.
+F:68GiBlivres; nenhum LTspiceativo antesda nova execução.
+
+Novo produtor /mnt/f/ts808-validation/substeps-20261104/qualification-resume-r10-20261104/,
+execute.py/log/status.json. Reutiliza r9 verificando originais, tenta norm no
+caso que teve timeout (parinteiro, semmisturarsolvers); restantealt+nodeset,
+tolerânciasoriginais/maxsteps/critériosiguais. continue_native_failures=True
+registra falha do produtor como NOT_EVALUATED e continua outroscasos; nunca
+promove essa entrada. Identidade/importação continua bloqueante.
+Consolidação só conclui com128entradas presentes; faltantes continuam bloqueio.
+9testes específicos passaram após ajuste, gitdiffcheckpassou. Não duplicar.
+Meta permanece concluir varredura e auditoria, possivelmente REPROVADA:
+assentamento DC falhou em vários tons, WAV bloqueado nesses. ABXhumanorealizado.
+
+## VARREDURA COMPLETA r9 ATIVA — 2026-11-04
+
+Sessão80488; /mnt/f/ts808-validation/substeps-20261104/qualification-resume-r9-20261104/,
+execute.py/log/status.json. Reutiliza todos relatórios r8, inclusive reprovados.
+Próximos casos usam tolerâncias nativas ORIGINAIS da matriz (scale1), alt+nodeset
+T22 independente nos dois níveis; critérios/maxsteps/modelo inalterados.
+Referências100x mantidas nos casos que precisaram; custo medido extrasignificativo
+emtempo/espaço, não repetir em casos novos semnecessidade. F:91GiBlivres.
+r8 interrompido explicitamente no pedido parcial440Hz10mV, cancelamento do helper
+finalizado e retido. Nenhum LTspiceativo na transição; não duplicar produtor.
+
+Meta: CONCLUIR avaliação de128entradas, sem prometer aprovação. Tonscentrais
+1kHz10mV e500mV reprovados nasduastaxas por assentamento; WAV bloqueado.
+Sobrecarga central100x aprovada reference/numerical/WAV nasduastaxas.
+Todos pilotos reaproveitados atécentral1kHz100mVwarmup2s; overload_highambos.
+r9 chama consolidate(require_passed=False) mesmo se suite exit40; gera
+qualification.json com automatic_qualification failed quando houverreprovações,
+assessment_completion completed apenas com cobertura/gatesavaliadosouWAVbloqueados.
+Audita originais/hashes/critérios semrelaxamento. NÃO editar qualification.py
+enquanto r9ativo (auditorhashcapturadonoinício). ABXhumano realizado10/20.
+9testesauditorpassaram; suítePythoncompleta atéantesúltimoteste57/28subtests,
+1nativoopcionalpulando. Nenhum commit/push. Continuar atéfechamentoefetivo.
+
+## r8 CONTINUA — SOBRECARGA CENTRAL APROVADA; REPROVAÇÃO REAL DE ASSENTAMENTO
+
+Produtor r8 ativo, sessão46493, execute.log/status.json em
+/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r8-20261104/.
+Sobrecarga central reparada: reference/numerical/WAV passed em192/384, no seed.
+Par nativo alt+nodesetT22 independente100x apertado; C++r5 reaproveitado intacto.
+Reutilização dos lineares/listen/mute concluída, overload_highpilotoambostambém.
+Primeiro novo tom tone_center_f1000_a010mv passou referência mas FALHOU
+cpp_settling_dc/reference_settling_dc em ambas taxas:~58.738uV contra10uV.
+Ambosprodutoresconcordam; não relaxar limite nem trocar duração da matriz atual.
+WAV pending por bloqueio numérico. Executar toda cobertura e registrar
+qualificação reprovada se necessário: varredura concluída não significa aprovada.
+Em andamento tom central1kHz100mVwarmup2s(pilotoreuso). Não duplicar produtor.
+
+Auditor foi estendido com require_passed=False (CLI --record-rejections) para
+auditar cobertura/integridade completa e emitir automatic_qualification=failed,
+assessment_completion=completed com failed_checks e WAV bloqueados explícitos.
+Modo padrão continua exigindo tudo passed.9testes específicos passaram.
+Após r8 terminar com exit40, executar CLI de consolidação em NOVO diretório
+com --record-rejections --transient-summary r8/matrix/summary.json.
+O execute.py r8 aborta antes de consolidar se código nãozero (esperado pelas
+reprovações); usar novo processo auditor pois hash do auditor mudou.
+Auditor não integra hash das métricas. ABX humano já realizado10/20.
+
+## QUALIFICAÇÃO r8 EM EXECUÇÃO — 2026-11-04
+
+Pasta /mnt/f/ts808-validation/substeps-20261104/qualification-resume-r8-20261104/,
+execute.py/log/status.json; sessão registrada no histórico de ferramentas.
+Primeiro recompõe overload_center com nominal/refined solveralt+nodesetT22
+independente100x mais precisos. Nominal concluído em overload-center-nominal-alt-diagnosis-20261104/;
+refined em overload-center-refined-diagnosis-20261104/. Traces C++r5 intactos.
+r7 foi bloqueado corretamente: parnorm/alt não permite comparar refinamento.
+Novo parmesmosolver. suite.py passa a opção native_topology_nodeset para
+ambosníveis; r8 novoscasos usamalt+nodeset, tol100x e maxstepsoriginais.
+WAV agora preserva .nodeset do produtor nominal, além das .options; nenhuma
+equação/métrica/limite alterado. Hash do validador permanece mesmo: lista de
+fontes em compare.validator_hash não inclui suite.py nem audio_qualification.py;
+pedidos e decks nativos têm identidade própria verificada no relatório.
+57testes/28subtests passaram,1teste nativo opcional pulado; tests.log r8.
+Aguardar r8, não duplicar. Qualificação completa e MVP ainda pendentes.
+ABX humano realizado, resultado10/20, sem prova universal de equivalência.
+
+## QUALIFICAÇÃO r7 EM EXECUÇÃO — 2026-11-04
+
+Pasta /mnt/f/ts808-validation/substeps-20261104/qualification-resume-r7-20261104/,
+execute.py/log/status.json; sessão99651. Primeiro recompara overload_center
+com nominal100x de r6 e refined100x alt+nodeset independente concluído em
+/overload-center-refined-diagnosis-20261104/; reaproveita traces C++ r5 intactos.
+Depois retoma matriz e consolida128entradas. Critérios/circuito inalterados.
+Refined r6 norm ficou no DC sem RAW; tentativa própria WindowsPID16256 foi
+encerrada explicitamente para tentaralt (registro refined-normal-early-stop.json).
+Alt semnodeset falhou. Ambos preservados nos *-attempts.json.
+Diagnóstico alt+nodeset independente T22 passou inicialização e completou.
+Não usar solução C++ para nodeset. suite.py permite explicitamente tolerâncias
+mais apertadas, retry de solver por falha do produtor e nodeset T22 nos refined;
+WAV conserva opções nominais existentes. Importação/identidade continuam gates.
+Alteração apenas orquestração, sem mudança de hash do validador.
+Testes completos em tests.log r7. Nenhum outro produtor ativo. Não duplicar.
+Qualificação matriz e MVP ainda pendentes; ABX humano já realizado (abaixo).
+
+## QUALIFICAÇÃO r6 EM EXECUÇÃO — 2026-11-04
+
+Nova pasta /mnt/f/ts808-validation/substeps-20261104/qualification-resume-r6-20261104/,
+execute.py/log/status.json; sessão29609. Reutiliza r5; overload_center é
+repetido com tolerâncias LTspice100x mais apertadas, maxsteps/critérios iguais.
+r5 passou numerical nas duas taxas, mas WAV uncertainty peak foi1.0104668uV
+contra1uV em192kHz (384tambémfalhou). r5 interrompido por SIGINT durante
+conferência do piloto overload_high, antes de nova produção; originais retidos.
+Nova suíte pode repetir falha do produtor no outro solver, em novo request,
+preservando cada tentativa em *-attempts.json; erros de importação/identidade
+continuam bloqueantes. Apenas orquestração alterada: suite.py não integra
+hash do validador. Sete testes específicos passaram; suíte Python em andamento
+sessão49736, tests.log na nova pasta. Sem mudança física ou relaxamento.
+Consolidação final programada ao fim em qualification/. Ainda pendente.
+Não duplicar produtores. ABX humano já realizado; ver seção própria abaixo.
+
+## RETOMADA r5 APÓS FALHA NATIVA ISOLADA — 2026-11-04
+
+r4 concluiu mute_1000hz_500mv nas duas taxas (reference/numerical/WAV passed),
+mas overload_center solver alt falhou imediatamente com singular clip_minus.
+Original preservado: /mnt/f/ts808-reference/runs/overload_center-nominal-a493fd77a1ba4c8db39629bb201918ed/.
+Nova execução em /mnt/f/ts808-validation/substeps-20261104/qualification-resume-r5-20261104/,
+execute.py/log/status.json; sessão44859. Reutiliza r4 com verificações integrais;
+overload_center agora norm, listen_high alt, demais conforme histórico.
+Não alterou implementação, circuito, passos ou critérios. Consolidação automática
+programada ao fim; pendente até status completed e qualification.json passed.
+
+## QUALIFICAÇÃO COMPLETA RETOMADA POR PEDIDO EXPLÍCITO — 2026-11-04, r4
+
+Usuário: “Conclua a qualificação da matriz”. Preflight: F:109GiB livres,
+nenhum produtor Python/C++ ou LTspice ativo. Nova execução PID138410,
+sessão exec56552, pasta /mnt/f/ts808-validation/substeps-20261104/qualification-resume-r4-20261104/.
+execute.py/log/status.json registram andamento. Não duplicar produtores.
+Seed preserva r3 e importa byte a byte listen_high384000 já aprovado da
+listening-preparation-20261104; parcial384 preservado em novo seed.
+A suíte verifica identidade atual, hashes de traces e originais nativos antes
+reutilizar. Restante: solver norm, listen_high alt e overload alt, conforme
+partições anteriores. Circuito e critérios inalterados. Após suíte aprovada,
+execute.py chama auditor consolidate para 128 entradas na subpasta qualification/.
+Seis testes específicos do auditor/retomada passaram nesta retomada.
+ABX humano realizado (10/20); interpretação e evidências na seção abaixo.
+Qualificação completa e MVP seguem pendentes até fechamento efetivo.
+
+## ABX HUMANO REALIZADO E ANALISADO — 2026-11-04T19:22:53Z
+
+Usuário entregou C:\Users\Alexandre\Desktop\Resultados dos teste e relatou
+não perceber distinção.20JSONs são salvamentos sucessivos da MESMA sessão;
+os dois completos são idênticos. Identidades/schemas, respostas anteriores
+sem alteração, sessão original e22hashes WAV conferidos. Arquivos recebidos
+copiados e preservados; nenhum original sobrescrito. Uma sessão humana real,
+Alexandre, listen_high384000 convertido48kHz,20tentativas.
+Resultado:10/20acertos, binomial unilateral exato p=0.5880985260009766,
+alfa0.05, Holm família primary-alexandre com uma sessão. Não detectada
+discriminação acima do acaso. Não prova equivalência perceptual universal.
+Registro subjetivo: participante relata não perceber distinção nesta sessão.
+
+Evidência: /mnt/f/ts808-validation/substeps-20261104/abx-human-results-20261104T192253Z/
+result.json, resultado.md, received-index.json, received/ e analysis/.
+Chave original permanece separada em listening-preparation-20261104/abx/private.
+ABX humano agora REALIZADO; evaluate_family mantém listening=pending
+por resultado não significativo, conforme protocolo (não transformar em passed).
+Qualificação automática COMPLETA da matriz e aceitação MVP continuam pendentes.
+Nenhum job longo iniciado para esta análise. Não generalizar a todos humanos,
+condições, equipamentos, ou caracterizar os20downloads como20sessões.
+
+## ÁUDIOS E SESSÃO DE ESCUTA PRONTOS — 2026-11-04
+
+Pedido: preparar tudo para ouvir os áudios. Entrega pública Windows:
+F:\ts808-validation\escuta-ts808-20261104\OUVIR.html
+WSL: /mnt/f/ts808-validation/escuta-ts808-20261104/OUVIR.html
+Página local com A/B/X,20 tentativas, confirmação, persistência no navegador
+quando disponível e exportação de respostas JSON. Nenhuma resposta humana
+foi registrada. Não apresentar a chave antes de concluir a escuta.
+
+Nova execução isolada listen_high384000 concluiu reference/numerical/WAV
+passed, validator atual, executável/circuito/critérios inalterados. Job:
+/mnt/f/ts808-validation/substeps-20261104/listening-preparation-20261104/
+report comparison/report.json; prepare.log/status.json completed; delivery.json.
+Referências nominal/refined reutilizadas da r3 após verificação de originais;
+novo WAV nativo: listen_high-wav-384000-7da8d7f086cb487eb598d58a74d85d48.
+Sessão original em abx/blinded; chave em abx/private/key.json, fora da entrega.
+A cópia pública contém22WAVs de48kHz mono float32, hashes conferidos,
+session.json sem respostas, OUVIR.html e LEIA-ME.txt. JS node --check passou;
+fluxo da interface verificado em memória com fixture sintética, sem escuta.
+
+Ao receber JSON humano: validar schema e identidades contra sessão original;
+conferir respostas20/completion e arquivos antes de evaluate_family, usando
+chave privada original e family_id primary-alexandre. Não alterar original
+para fingir conclusão. Guardar retorno humano em novo diretório com os WAVs
+correspondentes (hardlinks/cópias verificadas), pois evaluate_family resolve
+artefatos relativamente ao JSON. A sessão se chama abx.
+Qualificação automática COMPLETA da matriz ainda pendente; r3 perdeu produtor
+sem status final (ver abaixo); esta entrega qualifica só listen_high384000.
+ABX humano e aceitação MVP pendentes. Não há jobs desta preparação ativos.
+
+## PREPARAÇÃO DE ESCUTA SOLICITADA — 2026-11-04
+
+Usuário pediu preparar áudios e ABX. Na inspeção, produtor r3 PID112810
+já não existia, embora status.json ainda dissesse running; consolidador também
+não estava ativo. Causa não determinada. Preservar status/log/saídas originais.
+r3 completou listen_high192000 com reference/numerical/WAV passed; run384000
+ficou incompleto. Não declarar qualificação completa.
+Nova preparação isolada em F: listening-preparation-20261104/, no mesmo root
+substeps-20261104. prepare.py reutiliza referências nominais/refinadas de r3,
+executa C++384000, comparação e WAV completos, depois prepara ABX às cegas.
+Sessão exec74134; log prepare.log e status.json na pasta. Não duplicar.
+create_player.py gera página local OUVIR.html em abx/blinded após preparação.
+Nenhuma resposta humana criada. Chave privada deve ficar fora da apresentação.
+
+## RETOMADA AUTORIZADA — 2026-11-04, r3
+
+Usuário autorizou continuar após /compact. Preflight: F:118GiB livres,
+nenhum produtor da matriz ou LTspice ativo. Novo produtor PID112810,
+sessão39692, preserva e reutiliza a última matrix pausada em
+remaining-transients-resume-20261104/matrix.
+Nova saída: /mnt/f/ts808-validation/substeps-20261104/remaining-transients-resume-r3-20261104/
+Log externo com mesmo prefixo e extensão .log. Consolidador sessão30827
+aguarda o status desta nova partição; saída futura full-qualification-r3-20261104/
+e log full-qualification-r3-20261104.log no mesmo volume. Não duplicar jobs.
+Circuito/critérios inalterados; originais cancelados preservados.
+Testes nesta retomada:56passed+30subtests com TS808_NATIVE_TESTS=1;
+git diff --check passou. Qualificação completa, ABX humano e MVP pendentes.
+A pausa abaixo foi revogada pelo novo pedido explícito do usuário.
+
+## PAUSADO POR SOLICITAÇÃO DO USUÁRIO — 20261104T180532Z
+
+Usuário pediu pausa para usar /compact. Produtor PID108289 recebeu SIGINT;
+helper nativo confirmou cancelamento e preservou resultado. Consolidador em
+espera PID109972 recebeu SIGTERM. Ambos encerraram; consulta Windows confirmou
+nenhum LTspice ativo. Não retomar implementação/validação sem novo pedido.
+Estado desta pausa: /mnt/f/ts808-validation/substeps-20261104/pause-state-20261104T180532Z.json
+
+Última partição: /mnt/f/ts808-validation/substeps-20261104/remaining-transients-resume-20261104/matrix/summary.json.
+Quatro casos lineares (oito relatórios) foram reutilizados após conferir hashes
+e originais; ainda falta fechar pares e WAVs no final da suíte. A pausa ocorreu
+na nova referência nominal listen_high com solver alt. Tentativa nativa:
+/mnt/f/ts808-reference/runs/listen_high-nominal-8f256f56f9884d29819462697b1c9240/
+completion do helper: failed. Não importar referência cancelada.
+status.json do wrapper foi preservado com status failed e mensagem
+Cancelled reference; finalized helper result retained — é cancelamento pelo
+usuário, não reprovação numérica medida. O índice registra interrupção.
+
+Na retomada, usar resume_substep_transients.py com --resume-from apontando para
+a matrix acima e --output NOVO em F:. Não sobrescrever os dois jobs anteriores
+nem rerodar DC/AC/hold ou os quatro casos lineares já processados. O script
+confere manifest/toolchain, hashes de traces/relatórios, executável/validator e
+originais antes do reuso; preserva cópia de diretórios incompletos. listen_high
+permanece override alt após falha norm. Circuito e critérios inalterados.
+
+O consolidador deve ser iniciado novamente com --transient-summary e
+--wait-for-partition apontando para a NOVA retomada. Sua última versão registra
+auditor_sha256 além de validator/executável. Sessão93512 foi interrompida;
+não há auditoria final em execução ou aprovação completa.
+
+Pré-auditoria54DC/AC+2hold passou (1678 arquivos). Seis pilotos atuais passaram
+reference/numerical/WAV. Últimos testes:15 focados; suíte55pass/1skip+28subtests;
+nativa54pass+30subtests antes dos dois testes extras de retomada. MVP e ABX
+humano pendentes. Sem commit/push/desligamento. Há alterações locais sem commit.
+
+## Qualificação completa: retomada após falha nativa — 2026-11-04
+
+A primeira partição remaining-transients-20261104 terminou com falha nativa
+em listen_high: solver norm, pseudo-transiente encontrou OP e matriz singular
+em clip_out. Original preservado em /mnt/f/ts808-reference/runs/
+listen_high-nominal-0dfc29e53eef433fb50d778127662417/. Os quatro casos físicos
+lineares têm oito relatórios numéricos ainda pendentes do fechamento dos pares;
+não repetir simulações já concluídas. PID99696 terminou. Consolidador inicial
+terminou sem aprovação (full-qualification-20261104.log).
+
+RETOMADA ATIVA: PID108289, sessão exec21253; novo job
+/mnt/f/ts808-validation/substeps-20261104/remaining-transients-resume-20261104/.
+Status em status.json, índice matrix/summary.json; log externo
+/mnt/f/ts808-validation/substeps-20261104/remaining-transients-resume-20261104.log.
+Script validation/scripts/resume_substep_transients.py chama suite com
+resume_from da partição anterior, copiando metadados e hardlinkando traces
+(só leitura); confere identidades/hashes e originais antes de reutilizar cada
+caso. Diretórios de tentativas incompletas são preservados na nova cópia.
+Override explícito listen_high=alt; demais norm, overload mantém alt histórico.
+Não se alteraram circuito, tolerâncias ou critérios.
+
+suite.py agora aceita resume_from e native_solver_overrides opcionais; planejamento
+de espaço desconta apenas os casos já completos reutilizados. Validador de métricas
+permanece com hash df57852f796c97448ac180f6fd4050c448b434c5324818ad455ddbed8eb20266.
+Testes:15 focados passaram; suíte sem nativos opcionais55pass/1skip+28subtests.
+Antes dos dois testes extras de retomada, suíte nativa54pass+30subtests passou.
+
+Auditoria preliminar das54DC/AC+2hold PASSOU:1678 arquivos, resultado em
+consolidation-preflight.json. Não equivale à qualificação completa.
+Novo consolidador ativo: sessão exec23023, aguardando status do job acima;
+log full-qualification-r2-20261104.log, saída futura full-qualification-r2-20261104/.
+Comando usa --transient-summary apontando para nova matrix/summary.json.
+Após aprovação da partição, auditará cobertura128, hashes/proveniência e AC384.
+ABX humano e aceitação MVP continuam pendentes. Não duplicar produtores.
+
+## Qualificação completa solicitada — 2026-11-04
+
+Usuário pediu realizar a qualificação completa automática. PID99696 continua
+produzindo a partição de72 transientes restantes (não duplicar). A cobertura
+final prevista é54DC/AC +2hold +72transientes =128 entradas.
+
+Novo módulo validation/ts808_validation/qualification.py e script
+validation/scripts/consolidate_substep_qualification.py reconciliam cobertura
+exata, identidades físicas/executável/validator, relatórios AC secundários384,
+hashes dos traces, referências nativas originais, exportações WAV e artefatos.
+Auditam originais sem mover/retargetar/sobrescrever evidências; arquivos são
+rechecados por stat antes de publicar. ABX humano/MVP permanecem pendentes
+mesmo se a qualificação automática passar.
+
+Consolidador já iniciado (sessão exec13962), aguardando status.json da partição:
+log /mnt/f/ts808-validation/substeps-20261104/full-qualification-20261104.log
+saída futura /mnt/f/ts808-validation/substeps-20261104/full-qualification-20261104/.
+Só audita/publica após status completed/exit0; falha não vira aprovação.
+Preflight independente das56 entradas concluídas ainda rodando (sessão83859):
+consolidation-preflight.log; resultado será consolidation-preflight.json.
+Testes novos:4 passaram. Suíte Python sem TS808_NATIVE_TESTS:53pass/1skip,
+28subtests; testes nativos completos50/30 já passaram antes desta alteração
+somente no consolidator (núcleo e validador histórico inalterados).
+
+## Continuação nesta sessão — 2026-11-04
+
+Usuário pediu continuar nesta própria sessão. Confirmado refresh exit0: seis
+pilotos reference/numerical/WAV passaram sob validator atual. matrix-alt parou
+em hold_center após54 entradas aprovadas (27DC+27AC),74 não avaliadas.
+
+Novo script validation/scripts/diagnose_hold_reference.py executou duas
+inicializações em diretório separado, sem modificar o circuito/tolerâncias:
+solver norm sem nodeset e alt com nodeset independente da solução C++ (guess
+físico T22). Ambos passaram reference/numerical em192/384. Qualificação WAV
+adicional do norm passou nas duas taxas. Resultado hold aprovado separado em
+/mnt/f/ts808-validation/substeps-20261104/hold-diagnosis-20261104/norm/
+(comparison/report.json em cada taxa; audio-diagnosis.json resume). Tentativas
+alt são diagnóstico numérico, sem WAV qualificado. Log principal
+hold-diagnosis-20261104.log; áudio em hold-diagnosis-audio-20261104.log.
+Não promover esses diretórios como se fossem parte da matrix-alt original.
+
+CONTINUAÇÃO ATIVA: PID99696, sessão exec41961, pasta
+/mnt/f/ts808-validation/substeps-20261104/remaining-transients-20261104/.
+status.json e run.log consolidam progresso; matrix/summary.json contém índice.
+Manifesto cases.json seleciona36 casos físicos transientes (72 entradas),
+excluindo hold_center já qualificado, DC e AC já concluídos. suite roda com
+native_solver=norm, overload mantém alt explícito; seis pilotos são reutilizados
+com seus settings/proveniências originais e verificações de integridade.
+Não reiniciar produtores nem repetir as54 entradas anteriores.
+
+resource-gate passou:130051489075 bytes estimados contra136843689984 livres.
+Primeiro caso em andamento:linear_center_a010uv. scope.json vincula hashes dos
+índices anteriores e qualificação hold. Esta partição NÃO é matriz completa:
+ainda será preciso reconciliar54+2+72 entradas e conferir evidências/identidades
+antes de qualquer qualificação combinada. MVP não aceito; ABX humano pendente.
+Sem commit/push ou desligamento autorizado nesta continuação.
+
+## Retomada da matriz-alt — 2026-11-04
+
+A matriz retomada completou os casos DC e AC registrados antes de `hold_center`;
+os resultados concluídos no índice em
+`/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json`
+passaram referência e análise numérica. O job wrapper encerrou com exit1 após
+a falha nativa de `hold_center` (PID original 85456 e observador 90050 não estão
+mais ativos). `status.json` registra refresh exit0 e matrix-alt exit1.
+
+Falha preservada em `/mnt/f/ts808-reference/runs/hold_center-nominal-b8af5c46c9fe460ebeeda60e685306ed/`: LTspice 26.1.1 `solver=alt` informa OP direto encontrado e em seguida
+matriz singular em `clip_minus`; produtor exit1, log/RAW mantidos. O índice da
+matriz marca hold_center e itens não invocados seguintes como não avaliados.
+A matriz anterior `matrix` não contém referência aprovada reutilizável para
+hold_center. A suíte não suporta retomada incremental; relançá-la repetiria
+casos e exige novo diretório. Não alterar solver/circuito/critério nem declarar
+a matriz completa. Diagnóstico ou protocolo alternativo requer decisão técnica
+explícita e identidade de evidência própria.
+
+Próximo passo: ler log e índices; qualquer investigação de convergência fica
+separada da matriz aprovada. Espaço F: permaneceu em cerca de129 GiB após a
+falha. MVP/ABX continuam pendentes.
+
+## Correção dos perfis Jev — 2026-11-04
+
+scripts/codex_jev.py: implementation/numerical agora usam gpt-6-sol medium/high,
+conforme catálogo REAL de codex debug models do CLI0.157.1. Luna/low e Astra/high
+mantidos e conferidos no mesmo catálogo. Antes de --launch, confere presença
+visível do modelo e suporte ao esforço; falha clara sem substituição silenciosa.
+Cinco testes unitários passaram, incluindo bloqueio de lançamento se catálogo
+falhar e rejeição do antigo gpt-6.1-sol. Consulta Jev real retornou numerical/
+gpt-6-sol/high (0,95). Smoke real codex exec efêmero, read-only, em /tmp com
+gpt-6-sol/medium respondeu OK e exit0. Não abriu novo produtor de validação.
+Docs atualizadas; conferência do catálogo não garante acesso futuro no backend.
+Pipeline original permanece no refresh; centro192/384 e alto drive192 já passaram
+reference/numerical/WAV com o leitor atual no log. MVP/ABX continuam pendentes.
+
+## Tentativa de --launch — 2026-11-04
+
+Usuário solicitou executar scripts/codex_jev.py com --launch. Jev selecionou
+implementation/gpt-6.1-sol/medium (confiança0,57). CLI0.157.1 abriu, mas o
+backend rejeitou: model_not_found, modelo não suportado com autenticação ChatGPT.
+Logo: classificação Jev funciona; execução com esse perfil NÃO foi validada.
+Sessão filha interrompida; pipeline de validação existente permanece independente.
+Não substituir modelos silenciosamente; PROFILES precisa refletir acesso real da conta.
+
+## RETOMADA AUTORIZADA — 2026-11-04 17:18 UTC
+
+Usuário pediu retomar implementação/validação e conferir scripts/codex_jev.py.
+Pausa revogada explicitamente. Nenhum LTspice nativo/produtor estava ativo;
+F: com129 GiB livres, toolchain-pilot-f doctor passou. CTest checked/release
+passou (build sem alterações); Python com TS808_NATIVE_TESTS=1:50 testes e30
+subtests passaram novamente nesta retomada.
+
+As duas comparações reader-guard existentes (centro192/384) foram preservadas
+com sufixo -preserved-20261104T171803Z, incluindo a parcial. Não se alteraram
+originais nem se regeneraram referências/WAVs.
+
+Pipeline em execução: PID85456; diretório
+/mnt/f/ts808-validation/substeps-20261104/resume-20261104T171822Z/.
+run.py usa lock exclusivo resume.lock e executa refresh_substep_pilots.py;
+somente exit0 libera run_substep_matrix.py --native-solver alt para matrix-alt.
+Estado consolidado em status.json; logs refresh.log, matrix-alt.log e runner.log.
+Consultar esse estado e processos antes de qualquer nova tentativa; não duplicar.
+Matriz ainda não iniciada no registro desta retomada; qualificação dos seis
+pilotos com identidade atual ainda em execução. MVP/ABX continuam pendentes.
+
+Seletor Jev:3 testes unitários passaram; consulta REAL autenticada selecionou
+numerical, gpt-6.1-sol/high, confiança0,95, Jev1.14.0 (516 tokens entrada/49 saída).
+Script funciona sob demanda, sem daemon/hook de troca automática nesta sessão;
+--launch abre NOVA sessão Codex. Não foi iniciada sessão concorrente.
+
+O restante preserva histórico anterior à retomada.
+
+## PAUSADO POR SOLICITAÇÃO DO USUÁRIO — 2026-11-04
+
+Usuário pediu “Dê uma pausa”. Todos os jobs desta tarefa foram interrompidos;
+nenhum produtor LTspice estava ativo no momento da pausa. Não retomar sem
+pedido do usuário. Estado salvo em
+`/mnt/f/ts808-validation/substeps-20261104/pause-state.json`.
+
+Subpassos incorporados e seis pilotos passaram reference/numerical/WAV após
+refinamentos100x de alto drive e sobrecarga. Matriz inicial `matrix` executou
+14 entradas AC (7 passaram,7 falharam) e foi interrompida para diagnóstico:
+LTspice solver normal declarou sucesso DC com input_base=1e200 V. Diagnóstico
+em ac-bias-diagnosis confirmou alt e/ou nodeset fixo independente recuperam
+DC e AC; alt sem nodeset diferiu do C++ em1,03e-10 V. Não se mudou o circuito.
+
+Leitor agora rejeita magnitudes impossíveis>=1e100; fixture RAW/log real negativo
+foi adicionado. Testes finais:50 Python e30 subtests nativos passaram. Essa
+mudança alterou validator_hash, exigindo revalidar os seis pilotos. Novo helper
+requalify_existing_audio verifica originais WAV/RAW/log e compara WAV já existente
+com referências revalidadas, evitando regenerar simulações aprovadas.
+
+PAUSA interrompeu refresh_substep_pilots.py (PID65514) e o observador
+run_substep_matrix.py (PID67147). A nova `matrix-alt` NÃO começou. O refresh
+foi interrompido durante geração de gráfico de comparação, deixando diretório
+reader-guard parcial; consultar pause-state.json e preservar/renomear esse
+diretório antes de repetir. O índice pilots.json ainda aponta os seis relatórios
+aprovados do leitor anterior; não promover silenciosamente para o leitor novo.
+
+Na retomada: finalizar refresh dos pilotos, então rodar run_substep_matrix.py
+--native-solver alt. Nova suíte processa DC antes de AC, exige DC correspondente
+aprovado e conserva ordem canônica no índice. Reusa runs/relatórios dos pilotos
+após conferir originais, hashes e identidades, sem regeneração. Estimativa de
+espaço da matriz passou; havia cerca de129 GiB livres emF na última medição.
+Não há ABX realizado nem aceitação combinada do MVP.
+
+O restante preserva histórico anterior à pausa.
+
+## Continuação solicitada — 2026-11-04
+
+ATUALIZAÇÃO: o usuário aprovou explicitamente incorporar os subpassos.
+Implementação C++ offline, schemas, finalizador/comparador, AC e diagnósticos
+de falha atualizados. Campos opcionais pareados integration_rate_Hz/substeps;
+saídas192/384 com interna768 e4/2 passos. Sem campos, execução histórica.
+Model::advance continua um passo interno. Contratos aprovados atualizados.
+
+ÚLTIMO ESTADO: os seis pilotos passaram numericamente. Centro192/384 também
+passou WAV. Alto drive WAV falhou por incerteza das referências antigas
+0,924 uV RMS /2,358 uV pico; sobrecarga por pico1,084 uV. Limites0,1 /1 uV.
+O primeiro produtor terminou com exit40; o primeiro observador de matriz
+terminou sem executar a matriz. Não chamar esses resultados de aprovação.
+
+Refinamentos em andamento: refine_substep_pilot_reference.py para
+overload_high --factor100 (PID31799 nesta execução) e para
+tone_high_f1000_a500mv-warmup2s --factor100 --solver alt (PID33304).
+Novo nominal alto drive em norm falhou singular na inicialização e foi
+preservado em reference-tol100; a tentativa alt é distinta em
+reference-tol100-alt. Nominais de sobrecarga e alto drive alt já produzidos;
+refinadas ainda em execução. Tolerâncias100x, maxsteps originais mantidos.
+Logs em /mnt/f/ts808-validation/substep-{high-alt,overload}-refinement-20261104.log.
+
+finish_substep_qualification.py --wait-for-pids31799 33304 está aguardando
+ambos os refinamentos; depois consolida os dois pares/relatórios explicitamente
+e só libera a matriz se todos os seis reference/numerical/WAV passarem.
+Log substep-final-matrix-20261104.log. Esse consolidator também evita perder
+uma linha de índice pela versão antiga do refinador de sobrecarga, iniciada
+antes da adição de lock de atualização. A versão atual do refinador usa flock
+e preserva qualified-pilot.json por refinamento. Não iniciar duplicatas.
+
+Production-overload-equality.json e production-high-equality.json confirmam
+igualdade bit a bit entre produção nova e as linhas dos diagnósticos768.
+verification.json registra49/30 Python nativo, CTest checked/release e doctor F:.
+snapshot_substep_results.py arquivará metadados leves quando concluir.
+
+Teste final atual:49 testes Python e30 subtests nativos passaram; CTest
+checked/release passou. Novo ReferenceSession verifica hashes ao primeiro
+consumo no comando e confere stat de todos os originais/inputs antes de
+reutilizar e publicar. Evita reler12GB para cada uma das fases do mesmo caso;
+comandos independentes não compartilham cache. Teste de mutação passou.
+
+Pilotos rodando via validation/scripts/qualify_substep_pilots.py; output
+/mnt/f/ts808-validation/substeps-20261104, log substep-pilots-20261104.log.
+Reutiliza explicitamente referências antigas com configuração de proveniência
+própria (tons emC, sobrecarga emF), sem mover/retargetar originais. Exportações
+WAV novas vão paraF. Cada taxa terá comparação nova e WAV. Manifesto cases.json
+no output usa as duas revisões de duração existentes e subpassos em todos
+os casos. A suíte foi atualizada para as duas taxas AC, planejamento completo
+de espaço e reuso explícito de referências dos pilotos.
+
+Um segundo processo run_substep_matrix.py aguarda o produtor dos pilotos
+terminar e só executa a matriz se pilotos.json/full_matrix_authorized=true;
+valida hashes do executável, validador e seis relatórios aprovados. Log
+/mnt/f/ts808-validation/substep-matrix-20261104.log. Não iniciar duplicatas.
+Consultar os processos/logs e índices; nenhum resultado humano foi coletado.
+
+O texto abaixo preserva o diagnóstico anterior à aprovação.
+
+Usuário pediu continuar a implementação e definiu F: como único volume com
+disponibilidade para a matriz. Novos payloads em
+`/mnt/f/ts808-validation/continuation-20261104`; usar toolchain-pilot-f.json
+para produtores em `/mnt/f/ts808-reference/runs`. Doctor passou.
+
+Planejamento atual: cerca de 143 GiB livres; estimativa 120,71 GiB para matriz
+com as duas revisões existentes, incluindo overhead observado, export RAW,
+traces/PCM e margem. Hipótese de estender todos os tons ainda excede F:.
+
+Novos scripts `diagnose_overload_convergence.py` e `plan_f_storage.py`;
+alvo CMake opt-in `ts808_substep_diagnostic`, separado da produção. Integração
+768 kHz com saídas192/384 kHz deu recuperação zero amostras de erro e todos
+os critérios locais passaram. Traces iguais bit a bit à seleção de linhas
+do diagnóstico original768. Referências nominal/refinada têm mesmos índices
+nas três grades; saída é quantidade limitante. Não promove execução nas
+taxas originais. Evidências em validation/results/continuation-2026-11-04.
+
+Foi enviada pergunta assíncrona ao usuário sobre aceitar revisão explícita
+do contrato de taxas para permitir subpassos. Aguardar resposta antes de
+alterar produção ou liberar a matriz. Proposta concreta em
+docs/designs/ts808_substep_revision.md. Sem aprovação registrada até aqui.
+Testes Python reais39/30, CTest checked/release e doctor F: passaram.
+
+## Encerramento da sessão anterior — 2026-11-04
 
 Todos os produtores, comparações, arquivamento e testes desta sessão concluíram.
 O pacote versionável é `validation/results/mvp-2026-11-04/`, com nove relatórios,

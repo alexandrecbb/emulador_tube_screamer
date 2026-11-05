@@ -8,6 +8,15 @@ from spicelib import RawRead
 MAPPED_RAW_THRESHOLD = 64*1024*1024
 
 
+def validate_native_values(values):
+    if not np.isfinite(values).all():
+        raise ValueError('Nonfinite native data')
+    # Observed failed native DC solves can report success with finite 1e200 V.
+    # Such magnitudes are impossible for this frozen 9 V circuit and its stimuli.
+    if np.any(np.abs(values)>=1e100):
+        raise ValueError('Unphysical native magnitude: invalid operating point')
+
+
 def read_native(raw_path: Path, log_path: Path, *, analysis_kind: str,
                 trace_names: list[str], plot_index: int = 0, step_index: int | None = None):
     if not log_path.is_file():
@@ -89,12 +98,12 @@ def read_native(raw_path: Path, log_path: Path, *, analysis_kind: str,
                     read=stream.readinto(target[position:position+65536])
                     if not read:raise ValueError('Truncated native row buffer')
                     position+=read
-                if not np.isfinite(block).all():raise ValueError('Nonfinite native data')
+                validate_native_values(block)
                 for name,column in indices.items():cached[name][start:stop]=block[:,column]
                 if cached_axis is not None:cached_axis[start:stop]=np.abs(block[:,0].real) if analysis_kind=='transient' else block[:,0].real
         arrays.update(cached)
-    elif not all(np.isfinite(a).all() for a in arrays.values()):
-        raise ValueError('Nonfinite native data')
+    else:
+        for a in arrays.values():validate_native_values(a)
     axis = None
     if analysis_kind != 'dc':
         axis = cached_axis if cached_axis is not None else np.asarray(reader.get_axis(step)).real

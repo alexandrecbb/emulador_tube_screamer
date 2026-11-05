@@ -11,6 +11,28 @@ from .simulator import confined, sha256
 ROOT = Path(__file__).resolve().parents[2]
 
 
+def integration_config(execution):
+    rate=execution['rate_Hz']
+    if ('substeps' in execution)!=('integration_rate_Hz' in execution):
+        raise ValueError('Both substep execution fields are required')
+    substeps=execution.get('substeps',1)
+    internal=execution.get('integration_rate_Hz',rate)
+    if (rate,substeps,internal) not in ((192000,1,192000),(384000,1,384000),
+                                      (768000,1,768000),(192000,4,768000),(384000,2,768000)):
+        raise ValueError('Unsupported integration/output rate pair')
+    return internal,substeps
+
+
+def configure_substeps(case, rate):
+    """Explicit approved execution variant; physical identity remains unchanged."""
+    if rate not in (192000,384000):
+        raise ValueError('Substep output grid must be a target rate')
+    case['execution'].update(rate_Hz=rate,integration_rate_Hz=768000,substeps=768000//rate)
+    if case['analysis_kind']=='transient':
+        case['analysis']['time']['sample_count']=round(case['analysis']['time']['duration_s']*rate)+1
+    return case
+
+
 def load_json(path: Path):
     def reject(value):
         raise ValueError(f'Nonfinite JSON value: {value}')
@@ -60,6 +82,7 @@ def validate_case(case: dict) -> None:
         if case['circuit'][key] != sha256(ROOT / 'reference/ts808' / filename):
             raise ValueError('Circuit input byte identity mismatch')
     rate = case['execution']['rate_Hz']
+    integration_config(case['execution'])
     if rate == 768000 and case['execution']['purpose'] != 'pilot':
         raise ValueError('768 kHz is pilot only')
     if time and (time['duration_s']*rate != time['sample_count']-1):
@@ -106,6 +129,11 @@ def finalize_run(directory: Path, case_path: Path, executable: Path) -> dict:
         raise ValueError('Failed/incomplete run cannot qualify')
     if run['physical_case_sha256'] != case['physical_case_sha256'] or run['case_id'] != case['case_id']:
         raise ValueError('Run identity mismatch')
+    if integration_config(run['execution_config'])!=integration_config(case['execution']):
+        raise ValueError('Run integration configuration mismatch')
+    for key,value in case['execution'].items():
+        if run['execution_config'].get(key)!=value:
+            raise ValueError('Run execution configuration mismatch')
     trace = run['trace']
     count = case['analysis'].get('time', {}).get('sample_count', 1)
     path = confined(directory, trace['filename'])

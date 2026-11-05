@@ -115,6 +115,46 @@ def consume_reference(directory,config):
     return manifest,request,native
 
 
+class ReferenceSession:
+    """Reuse verified originals within one command, never across commands.
+
+    Every original is hashed on first consumption. Subsequent consumers in
+    the same command check the manifest and source stat identities; a changed
+    file invalidates the session instead of returning stale arrays.
+    """
+    def __init__(self):
+        self._entries={}
+
+    @staticmethod
+    def _fingerprint(directory,manifest):
+        paths=[directory/'reference.json',directory/'case.json']
+        paths.extend(Path(e['locator']['wsl_path']) for e in manifest['source'].values())
+        source=Path(manifest['source']['request']['locator']['wsl_path']).parent
+        request=load_json(source/'request.json')
+        paths.extend(confined(source,e['path']) for e in request['inputs'])
+        return tuple((str(p),p.stat().st_size,p.stat().st_mtime_ns,p.stat().st_ctime_ns,p.stat().st_ino) for p in paths)
+
+    def consume(self,directory,config):
+        import json
+        directory=Path(directory).resolve()
+        key=(str(directory),json.dumps(config,sort_keys=True))
+        if key not in self._entries:
+            before=self._fingerprint(directory,load_json(directory/'reference.json'))
+            value=consume_reference(directory,config)
+            after=self._fingerprint(directory,value[0])
+            if before!=after:raise ValueError('Reference changed during command')
+            self._entries[key]=(value,after)
+        value,fingerprint=self._entries[key]
+        if self._fingerprint(directory,value[0])!=fingerprint:
+            raise ValueError('Reference changed during command')
+        return value
+
+    def verify(self):
+        for (directory,_),(value,fingerprint) in self._entries.items():
+            if self._fingerprint(Path(directory),value[0])!=fingerprint:
+                raise ValueError('Reference changed during command')
+
+
 def publish_report(directory,report):
     """Publish machine truth and its derived human-readable view together."""
     validate_schema('report',report);atomic_json(directory/'report.json',report)

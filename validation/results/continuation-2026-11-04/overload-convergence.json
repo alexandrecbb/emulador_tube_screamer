@@ -1,0 +1,232 @@
+{
+  "scope": "Temporal convergence diagnostic; does not promote finer grids to target-rate acceptance",
+  "measurements": [
+    {
+      "rate_Hz": 192000,
+      "recovery_indices": {
+        "nominal": 61380,
+        "refined": 61380,
+        "cpp": 61347
+      },
+      "recovery_error_samples": 33,
+      "reference_recovery_uncertainty_samples": 0,
+      "output_rms_error_V": 2.624712678973079e-05,
+      "crossings": [
+        {
+          "quantity": "output",
+          "limit_V": 0.001,
+          "cpp": {
+            "last_outside_index": 61346
+          },
+          "nominal": {
+            "last_outside_index": 61379
+          },
+          "refined": {
+            "last_outside_index": 61379
+          }
+        },
+        {
+          "quantity": "vref",
+          "limit_V": 0.01,
+          "cpp": {
+            "last_outside_index": null
+          },
+          "nominal": {
+            "last_outside_index": null
+          },
+          "refined": {
+            "last_outside_index": null
+          }
+        },
+        {
+          "quantity": "input_base",
+          "limit_V": 0.01,
+          "cpp": {
+            "last_outside_index": null
+          },
+          "nominal": {
+            "last_outside_index": null
+          },
+          "refined": {
+            "last_outside_index": null
+          }
+        },
+        {
+          "quantity": "output_base",
+          "limit_V": 0.01,
+          "cpp": {
+            "last_outside_index": 40267
+          },
+          "nominal": {
+            "last_outside_index": 40268
+          },
+          "refined": {
+            "last_outside_index": 40268
+          }
+        }
+      ]
+    },
+    {
+      "rate_Hz": 384000,
+      "recovery_indices": {
+        "nominal": 122759,
+        "refined": 122759,
+        "cpp": 122752
+      },
+      "recovery_error_samples": 7,
+      "reference_recovery_uncertainty_samples": 0,
+      "output_rms_error_V": 6.280655573393817e-06,
+      "crossings": [
+        {
+          "quantity": "output",
+          "limit_V": 0.001,
+          "cpp": {
+            "last_outside_index": 122751
+          },
+          "nominal": {
+            "last_outside_index": 122758
+          },
+          "refined": {
+            "last_outside_index": 122758
+          }
+        },
+        {
+          "quantity": "vref",
+          "limit_V": 0.01,
+          "cpp": {
+            "last_outside_index": null
+          },
+          "nominal": {
+            "last_outside_index": null
+          },
+          "refined": {
+            "last_outside_index": null
+          }
+        },
+        {
+          "quantity": "input_base",
+          "limit_V": 0.01,
+          "cpp": {
+            "last_outside_index": null
+          },
+          "nominal": {
+            "last_outside_index": null
+          },
+          "refined": {
+            "last_outside_index": null
+          }
+        },
+        {
+          "quantity": "output_base",
+          "limit_V": 0.01,
+          "cpp": {
+            "last_outside_index": 80537
+          },
+          "nominal": {
+            "last_outside_index": 80537
+          },
+          "refined": {
+            "last_outside_index": 80537
+          }
+        }
+      ]
+    },
+    {
+      "rate_Hz": 768000,
+      "recovery_indices": {
+        "nominal": 245517,
+        "refined": 245517,
+        "cpp": 245518
+      },
+      "recovery_error_samples": 1,
+      "reference_recovery_uncertainty_samples": 0,
+      "output_rms_error_V": 1.4077091446987908e-06,
+      "crossings": [
+        {
+          "quantity": "output",
+          "limit_V": 0.001,
+          "cpp": {
+            "last_outside_index": 245517
+          },
+          "nominal": {
+            "last_outside_index": 245516
+          },
+          "refined": {
+            "last_outside_index": 245516
+          }
+        },
+        {
+          "quantity": "vref",
+          "limit_V": 0.01,
+          "cpp": {
+            "last_outside_index": null
+          },
+          "nominal": {
+            "last_outside_index": null
+          },
+          "refined": {
+            "last_outside_index": null
+          }
+        },
+        {
+          "quantity": "input_base",
+          "limit_V": 0.01,
+          "cpp": {
+            "last_outside_index": null
+          },
+          "nominal": {
+            "last_outside_index": null
+          },
+          "refined": {
+            "last_outside_index": null
+          }
+        },
+        {
+          "quantity": "output_base",
+          "limit_V": 0.01,
+          "cpp": {
+            "last_outside_index": 161075
+          },
+          "nominal": {
+            "last_outside_index": 161075
+          },
+          "refined": {
+            "last_outside_index": 161075
+          }
+        }
+      ]
+    }
+  ],
+  "grid_differences": [
+    {
+      "coarse_rate_Hz": 192000,
+      "fine_rate_Hz": 384000,
+      "output_rms_V": 2.075129204360625e-05,
+      "output_peak_V": 0.0009681475455072253
+    },
+    {
+      "coarse_rate_Hz": 384000,
+      "fine_rate_Hz": 768000,
+      "output_rms_V": 4.912493282894773e-06,
+      "output_peak_V": 0.00021259263643502724
+    }
+  ],
+  "experiments": [
+    {
+      "output_rate_Hz": 192000,
+      "integration_rate_Hz": 768000,
+      "trace_sha256": "525380b350daa6895f868efe4c189c32c10595eef7d86907c5903df267e32058",
+      "recovery_index": 61380,
+      "recovery_error_samples": 0,
+      "local_failed_checks": []
+    },
+    {
+      "output_rate_Hz": 384000,
+      "integration_rate_Hz": 768000,
+      "trace_sha256": "e6bfe0ea44d8532c92a3be06dfddfb9f6e656722df301b2b29e006eee7266eee",
+      "recovery_index": 122759,
+      "recovery_error_samples": 0,
+      "local_failed_checks": []
+    }
+  ]
+}

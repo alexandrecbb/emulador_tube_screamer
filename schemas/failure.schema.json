@@ -173,6 +173,19 @@
             "value"
           ],
           "additionalProperties": false
+        },
+        "failed_internal_sample_index": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "failed_substep_index": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "failed_internal_time_s": {
+          "type": "number",
+          "exclusiveMinimum": 0
         }
       },
       "required": [

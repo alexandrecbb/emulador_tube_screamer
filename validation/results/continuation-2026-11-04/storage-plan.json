@@ -1,0 +1,42 @@
+{
+  "recorded_at_utc": "2026-11-04T15:24:32.196811+00:00",
+  "native_root": "/mnt/f/ts808-reference/runs",
+  "output_root": "/mnt/f/ts808-validation",
+  "free_bytes": 152429391872,
+  "scenarios": {
+    "original": {
+      "duration_sum_s": 39.7,
+      "minimum_numerical_reference_bytes": 93664051200,
+      "minimum_export_raw_bytes": 5854003200,
+      "model_trace_bytes": 5854022144,
+      "pcm_payload_bytes": 91468800,
+      "observed_adaptive_factor": 1.0410490815904405,
+      "headroom_factor": 1.1,
+      "estimated_required_bytes": 120503537086,
+      "storage_gate": "passed"
+    },
+    "two_explicit_revisions": {
+      "duration_sum_s": 42.7,
+      "minimum_numerical_reference_bytes": 100741939200,
+      "minimum_export_raw_bytes": 6296371200,
+      "model_trace_bytes": 6296390144,
+      "pcm_payload_bytes": 98380800,
+      "observed_adaptive_factor": 1.0410490815904405,
+      "headroom_factor": 1.1,
+      "estimated_required_bytes": 129609596249,
+      "storage_gate": "passed"
+    },
+    "all_tones_warmup2s_hypothesis": {
+      "duration_sum_s": 81.7,
+      "minimum_numerical_reference_bytes": 192754483200,
+      "minimum_export_raw_bytes": 12047155200,
+      "model_trace_bytes": 12047174144,
+      "pcm_payload_bytes": 188236800,
+      "observed_adaptive_factor": 1.0410490815904405,
+      "headroom_factor": 1.1,
+      "estimated_required_bytes": 247988365359,
+      "storage_gate": "failed"
+    }
+  },
+  "scope": "Planning only; no pilot or case acceptance. Assumes all new payloads on F:. Adaptive growth can exceed pilot observations."
+}

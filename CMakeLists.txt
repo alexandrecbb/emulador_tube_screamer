@@ -47,3 +47,9 @@ endif()
 
 add_executable(ts808_offline app/offline_main.cpp app/run_io.cpp)
 target_link_libraries(ts808_offline PRIVATE ts808 ts808_json)
+
+# Explicit opt-in experiment; never used by the acceptance suite.
+add_executable(ts808_substep_diagnostic EXCLUDE_FROM_ALL
+  validation/diagnostics/substep_main.cpp app/run_io.cpp)
+target_include_directories(ts808_substep_diagnostic PRIVATE app)
+target_link_libraries(ts808_substep_diagnostic PRIVATE ts808 ts808_json)

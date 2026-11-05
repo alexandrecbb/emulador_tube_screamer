@@ -1,5 +1,12 @@
 # TS808 circuit model: offline validation and real-time path
 
+**Approved amendment, 2026-11-04:** the owner approved
+[explicit trapezoidal substeps](ts808_substep_revision.md). New acceptance runs
+may integrate at 768 kHz with output grids 192/384 kHz (4/2 substeps), recording
+both rates. This supersedes incompatible internal-rate wording below, including
+the solver/validation sections and milestone 6. Historical strict-rate failures
+remain failures. Accuracy thresholds, physical equations and T3 are unchanged.
+
 * **Author:** Project owner and Codex
 * **Status:** Approved by the owner and finalized locally at `docs/designs/ts808_offline_design.md` on 2026-10-31, including all sections and the API/schema/fixture attachment. T1–T23 remain approved; predecessor reconciliation found no unresolved contradiction. No production implementation or validation has run; actual gate characterization remains outside the MVP and `egm-review` has not started.
 * **Date:** 2026-10-31

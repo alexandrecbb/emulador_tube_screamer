@@ -1,5 +1,14 @@
 # TS808 offline MVP: grouped numerical execution contract
 
+**Approved amendment, 2026-11-04:** the owner approved
+[explicit trapezoidal substeps](ts808_substep_revision.md): fixed internal
+integration768 kHz with output grids192/384 kHz (4/2 steps). The source is
+evaluated at every internal physical time, and each step retains the existing
+31-unknown Newton/Schur solve, work caps and transactional history. No output
+sample is published until its final substep succeeds. `Model::advance` remains
+an internal-step API; this revises artifact rate semantics without introducing
+adaptive steps, integrator fallback or threshold changes.
+
 * **Author:** Project owner and Codex
 * **Date:** 2026-10-31
 * **Status:** T16/T22-A/T23-B and the complete implementation section/interface attachment are approved on 2026-10-31. Use the fixed 31-unknown map and accepted initial settings. Predecessor reconciliation and [final publication](./ts808_offline_design.md) are complete. No performance or numerical acceptance results exist.

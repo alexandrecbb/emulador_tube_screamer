@@ -1,5 +1,14 @@
 # TS808 offline MVP: grouped data and tooling contract
 
+**Approved amendment, 2026-11-04:** the
+[substep revision](ts808_substep_revision.md) separates output-grid
+`execution.rate_Hz` from optional paired `integration_rate_Hz`/`substeps`.
+The new execution identity records both rates (768 kHz internal,192/384 kHz
+output) and4/2 steps; physical-case identity excludes these execution settings.
+Absent fields retain the historical single-step meaning. Case/run/report
+schemas reject inconsistent pairs; finalization and comparison reject
+configuration mismatches. Historical failures remain preserved.
+
 * **Author:** Project owner and Codex
 * **Date:** 2026-10-31
 * **Status:** Owner selected T17's little-endian float64/JSON route and approved the complete implementation section/interface attachment on 2026-10-31. Predecessor reconciliation and [final publication](./ts808_offline_design.md) are complete. No schema/configuration/implementation files have been created.

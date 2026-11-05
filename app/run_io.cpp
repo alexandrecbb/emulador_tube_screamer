@@ -28,8 +28,18 @@ Case read_case(const std::filesystem::path& path){
     if(circuit.at("model_id")!="ts808-cerutti-reduced-v1"||number(circuit,"supply_V")!=9||number(circuit,"temperature_K")!=298.15||number(circuit,"source_Ohm")!=1000||number(circuit,"load_Ohm")!=1e6||number(circuit,"R_on_Ohm")!=383.29731360711594)throw std::invalid_argument("Incompatible circuit");
     const auto& controls=circuit.at("controls");keys(controls,{"drive","tone","volume"});
     c.controls={number(controls,"drive"),number(controls,"tone"),number(controls,"volume")};
-    const auto& execution=d.at("execution");keys(execution,{"rate_Hz","formulation_id","solver","purpose"});
+    const auto& execution=d.at("execution");
+    if(execution.contains("substeps")||execution.contains("integration_rate_Hz"))
+        keys(execution,{"rate_Hz","formulation_id","solver","purpose","substeps","integration_rate_Hz"});
+    else keys(execution,{"rate_Hz","formulation_id","solver","purpose"});
     c.settings.rate_Hz=integer(execution,"rate_Hz");
+    if(execution.contains("substeps")){
+        c.substeps=integer(execution,"substeps");
+        const auto internal=integer(execution,"integration_rate_Hz");
+        if((c.substeps!=1&&c.substeps!=2&&c.substeps!=4)||
+           std::uint64_t(c.settings.rate_Hz)*c.substeps!=internal||
+           (c.substeps!=1&&internal!=768000))throw std::invalid_argument("Invalid substep configuration");
+    }
     if(execution.at("formulation_id")!="control-branch-v1"||(execution.at("purpose")!="target"&&execution.at("purpose")!="pilot")||
         (c.settings.rate_Hz==768000&&execution.at("purpose")!="pilot"))throw std::invalid_argument("Invalid execution");
     const auto& s=execution.at("solver");

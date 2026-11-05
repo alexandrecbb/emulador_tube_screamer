@@ -32,3 +32,18 @@ def test_import_pending_unknown_keys_and_path_escape(tmp_path):
         else:bad['selection']['traces'][0]['native_expression']='V(missing)'
         atomic_json(output/'reference.json',bad)
         with pytest.raises(Exception):consume_reference(output,cfg)
+
+
+def test_reference_session_rejects_mutation_and_never_caches_across_commands(tmp_path):
+    from ts808_validation.persist import ReferenceSession
+    source,cfg=fixture(tmp_path);output=tmp_path/'imported'
+    import_reference(source,output,cfg)
+    session=ReferenceSession()
+    first=session.consume(output,cfg)
+    assert session.consume(output,cfg) is first
+    session.verify()
+    raw=source/'deck.raw';data=raw.read_bytes()
+    raw.write_bytes(data[:-1]+bytes([data[-1]^1]))
+    with pytest.raises(ValueError,match='changed during command'):session.consume(output,cfg)
+    with pytest.raises(ValueError,match='changed during command'):session.verify()
+    with pytest.raises(ValueError,match='Changed original'):ReferenceSession().consume(output,cfg)

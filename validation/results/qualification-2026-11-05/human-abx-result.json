@@ -1,0 +1,27 @@
+{
+  "family_id": "primary-alexandre",
+  "alpha": 0.05,
+  "correction": "Holm",
+  "results": [
+    {
+      "session_id": "abx",
+      "correct": 10,
+      "p_value": 0.5880985260009766,
+      "session_sha256": "0af6b8e06af7dec1a93cbe61651939d1ab9b2158a43f95fdac81de2129a51399",
+      "key_sha256": "95c4480740932e1776e765b545ad9d94174379a7496be79f74acca544ada3695",
+      "above_chance_holm": false
+    }
+  ],
+  "listening": "pending",
+  "reason": "Above chance opens discrepancy; nonsignificance does not establish equivalence",
+  "human_participation": "completed",
+  "listener_count": 1,
+  "independent_sessions": 1,
+  "received_files": 20,
+  "completed_downloads": 2,
+  "completed_downloads_are_identical": true,
+  "condition": "listen_high; 384 kHz-derived 48 kHz WAV; 20 trials",
+  "subjective_listener_report": "O participante relata n\u00e3o perceber distin\u00e7\u00e3o entre as op\u00e7\u00f5es apresentadas.",
+  "full_matrix_qualification": "pending",
+  "mvp_acceptance": "pending"
+}

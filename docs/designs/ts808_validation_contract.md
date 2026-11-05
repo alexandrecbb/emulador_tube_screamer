@@ -14,7 +14,13 @@ Express controls as resistance-track wiper fractions in [0,1], with orientation 
 
 ## Rates and reference reuse
 
-Run the C++ model at 192 kHz and 384 kHz. Use additional separately identified 768 kHz runs on the pilot set for temporal-convergence diagnostics, not as silent replacements for failed target-rate cases. Any required case that fails at a claimed supported rate remains failed at that rate.
+The [owner-approved substep revision of 2026-11-04](ts808_substep_revision.md)
+permits circuit integration at 768 kHz with output grids 192/384 kHz (4/2 explicit
+trapezoidal substeps). Both rates must be recorded. Historical strict-rate
+failures remain failed; new executions have distinct identities and require
+fresh comparisons. Separately identified single-step768 kHz runs remain
+diagnostics. Any required case that fails in the claimed execution configuration
+remains failed in that configuration.
 
 A dense LTspice reference for one continuous physical case may serve both target C++ rates if it satisfies the stricter step/uncertainty requirement and preserves the same physical-case identity. For a shared 8x-qualified nominal reference, maxstep is at most (1/384000)/8, with half-maxstep and tighter-tolerance runs for uncertainty qualification. Preserve rate-specific reconstruction/report identities. Do not rerun an identical reference merely because the target grid changes, or reuse one whose physical stimulus/load/model differs.
 

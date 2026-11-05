@@ -1,5 +1,19 @@
 # Evidência e próximos gates
 
+Atualização2026-11-04: o usuário aprovou a
+[revisão de subpassos](designs/ts808_substep_revision.md). Novas execuções
+registram integração 768 kHz e saídas 192/384 kHz; os gates numéricos e de
+referência permanecem vigentes. A suíte deve requalificar os três pilotos,
+inclusive WAV, antes da matriz completa. Novos payloads e referências vão
+para F:; referências anteriores preservadas em C: podem ser lidas mediante
+seu próprio contrato de proveniência, sem mover/retargetar seus manifestos.
+Uma sessão de comando verifica os hashes originais ao primeiro consumo e
+confere identidades de arquivo antes de cada reutilização e publicação.
+Comandos independentes sempre revalidam os hashes.
+
+Os itens abaixo preservam o histórico de 2026-11-01; consultar o
+[relatório atual](mvp_validation_report.md) para as medições e pendências.
+
 Estado observado em 2026-11-01. T18/T22/T23 continuam normativos, com
 a revisão de equilibração de linhas aprovada pelo usuário.
 

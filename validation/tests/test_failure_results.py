@@ -79,3 +79,11 @@ def test_refinement_checks_actual_options_not_labels():
     for key,value in [('reltol','1e-6'),('method','gear'),('numdgt','6'),('srcsteps','10'),('gshunt','1e-9'),('solver','alternate')]:
         bad=dict(r);bad[key]=value
         with pytest.raises(ValueError):validate_native_refinement(n,bad)
+
+
+def test_native_direct_success_with_unphysical_dc_is_rejected():
+    from ts808_validation.reference import read_native
+    source=ROOT/'validation/tests/fixtures/invalid_dc_operating_point'
+    assert 'Direct Newton iteration succeeded' in (source/'deck.log').read_text()
+    with pytest.raises(ValueError,match='Unphysical native magnitude'):
+        read_native(source/'deck.raw',source/'deck.log',analysis_kind='dc',trace_names=['V(input_base)'])

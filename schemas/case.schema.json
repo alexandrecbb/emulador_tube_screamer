@@ -311,6 +311,22 @@
             "target",
             "pilot"
           ]
+        },
+        "substeps": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            4
+          ]
+        },
+        "integration_rate_Hz": {
+          "type": "integer",
+          "enum": [
+            192000,
+            384000,
+            768000
+          ]
         }
       },
       "required": [
@@ -319,7 +335,93 @@
         "solver",
         "purpose"
       ],
-      "additionalProperties": false
+      "additionalProperties": false,
+      "dependentRequired": {
+        "substeps": [
+          "integration_rate_Hz"
+        ],
+        "integration_rate_Hz": [
+          "substeps"
+        ]
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "substeps"
+            ]
+          },
+          "then": {
+            "anyOf": [
+              {
+                "properties": {
+                  "rate_Hz": {
+                    "const": 192000
+                  },
+                  "substeps": {
+                    "const": 1
+                  },
+                  "integration_rate_Hz": {
+                    "const": 192000
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "rate_Hz": {
+                    "const": 384000
+                  },
+                  "substeps": {
+                    "const": 1
+                  },
+                  "integration_rate_Hz": {
+                    "const": 384000
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "rate_Hz": {
+                    "const": 768000
+                  },
+                  "substeps": {
+                    "const": 1
+                  },
+                  "integration_rate_Hz": {
+                    "const": 768000
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "rate_Hz": {
+                    "const": 192000
+                  },
+                  "substeps": {
+                    "const": 4
+                  },
+                  "integration_rate_Hz": {
+                    "const": 768000
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "rate_Hz": {
+                    "const": 384000
+                  },
+                  "substeps": {
+                    "const": 2
+                  },
+                  "integration_rate_Hz": {
+                    "const": 768000
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
     },
     "trace_columns": {
       "const": [

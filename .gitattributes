@@ -3,3 +3,6 @@
 /tests/fixtures/** -text
 /validation/tests/fixtures/** -text
 /validation/results/** -text
+
+# Preserve the original native LTspice regression log byte for byte.
+validation/tests/fixtures/invalid_dc_operating_point/deck.log -whitespace

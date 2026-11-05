@@ -1,9 +1,27 @@
 # Emulador Tube Screamer TS808
 
+Estado da matriz: avaliação completa (128 entradas), qualificação automática
+reprovada por assentamento DC; MVP não aceito. ABX humano realizado, sem
+distinção acima do acaso nessa sessão. Veja o [registro consolidado](validation/results/qualification-2026-11-05/README.md).
+
 MVP offline em C++20, conforme o [design aprovado](docs/designs/ts808_offline_design.md).
 O núcleo implementa as 31 incógnitas, DC, transientes trapezoidais com
 Newton/Schur e respostas contínua/discreta de pequeno sinal. A revisão de
 T22 com equilibração de linhas está aprovada e aplicada.
+
+Na [continuação de 2026-11-04](validation/results/continuation-2026-11-04/README.md),
+F: passou no planejamento de espaço para a matriz com as duas revisões existentes.
+Um experimento de integração interna em 768 kHz, com saídas em 192/384 kHz,
+eliminou as falhas locais e de recuperação da sobrecarga. A
+[revisão de subpassos](docs/designs/ts808_substep_revision.md) foi aprovada e
+incorporada: novos casos podem declarar `integration_rate_Hz=768000` e
+`substeps=4`/`2` junto à grade de saída de192/384 kHz. Ausência desses campos
+preserva a execução histórica. Novos pilotos, incluindo WAV, estão sendo
+qualificados em `F:\ts808-validation\substeps-20261104`; a matriz só é liberada
+após a aprovação automática dos seis resultados. Isso não promove os
+resultados históricos de integração nas taxas originais. Exemplo de execução
+revisada: `"execution": {"rate_Hz": 192000, "integration_rate_Hz": 768000,
+"substeps": 4, ...}`; os demais campos obrigatórios continuam presentes.
 
 O executável grava traces float64 little-endian e metadados JSON, com
 falhas explícitas. A validação completa de áudio com LTspice, WAV e ABX

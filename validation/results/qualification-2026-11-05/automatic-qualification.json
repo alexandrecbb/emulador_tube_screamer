@@ -1,0 +1,3472 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-11-05T02:40:42.287733+00:00",
+  "scope": "Complete automatic numerical and WAV qualification; human ABX separate",
+  "automatic_qualification": "failed",
+  "listening": "outside_automatic_audit",
+  "mvp_acceptance": "pending",
+  "validator_sha256": "df57852f796c97448ac180f6fd4050c448b434c5324818ad455ddbed8eb20266",
+  "executable_sha256": "5a980894cf03ab2b1f1e7f9b9253c7be5a768617a8acfbe8aaf01c6e4f3c6b08",
+  "auditor_sha256": "6f77e6615055fbcdb30a6048a97238f5362a364d9a978c20c70455e3205aa336",
+  "entries": [
+    {
+      "case_id": "ac_d000_t000_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "b27053e7fef97137575af88ddbb4f46add28fa09ec5b3c1571722c2deb22700e",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d000_t000_v000/192000/comparison/report.json",
+      "report_sha256": "e02fcfb51cc6b904075cb19da134a71aa8849399ab85a86fd14415a7bb5b16a0",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t000_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "233f2c224f8c2d70996a8cb00a0322600e0d94e89d5d5b9c04f197b1f3fb1989",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d000_t000_v050/192000/comparison/report.json",
+      "report_sha256": "ab2b07a347d9d1b9ae8564ad30fd2a0e38f4befb6ae83236bb5b6a0b25b7eafb",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t000_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "aef69f5f446ea76c230b235ed63be8c81f0cd143d5b0066e98781ee1e242816b",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d000_t000_v100/192000/comparison/report.json",
+      "report_sha256": "2b7a7dae9480cb0531629e3c643d9317b9c85d241b9cc551172ae67b63dac1b7",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t050_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "bccda8773a5575757765d88eb7700064dfd1a0c53e34e94fb5a7b346b6eb825c",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d000_t050_v000/192000/comparison/report.json",
+      "report_sha256": "9ef32d44fa4cfe9fef638982103d8617f48e8b1a7fd3dcdadf873e7d42d72656",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t050_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "83299663b85c774a4a26cb3906c11b7bbb6940a1e3ba3160175c2ad8b9760b44",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d000_t050_v050/192000/comparison/report.json",
+      "report_sha256": "69150dc53585e36a1cd399af7cd9bccb7182e183d8c78a6e12b4a95f8193d2d4",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t050_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "b769a10bd566824ee9440d821e3eed0f9ea4e52668297ee00d6ad0a0ed952979",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d000_t050_v100/192000/comparison/report.json",
+      "report_sha256": "257cad075b0215904f5cfe461714292acf968b21b277bc4dcb630a1529e4368c",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t100_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "54fa8b048fe1e89f98ffec0acd97715e0d880134ee5eb195d9328dbd6c670294",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d000_t100_v000/192000/comparison/report.json",
+      "report_sha256": "3d70e8e8bdbbf92f28c97848036c6042f4f5189b7aef0c585a54f62bba416af1",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t100_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "7a078a40393a5d016bb1b26ae9355e27b64248745f9e32dc718140b989d650aa",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d000_t100_v050/192000/comparison/report.json",
+      "report_sha256": "23b31a5f2f9668a99ea1f0eaaa9b563f986fc4a470f8c563c7f1214a42ce8ee1",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t100_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "9e3cb777900ddfb3f914027f395446fd90b0de830c5d41adc15582a0ebc94ced",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d000_t100_v100/192000/comparison/report.json",
+      "report_sha256": "2fa136c146e5c08002b7f85ef3cbb459a58cf59b1da8cd2ef3299b3e72d89c0c",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t000_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "f49a0175e40b0281589727e0bdc3e059780d172eae69ca6782a98a216a61fe5b",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d050_t000_v000/192000/comparison/report.json",
+      "report_sha256": "2c72da9b18c3526a55782861395c090ee27961a3eaf2acede53dd88f4b6e5765",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t000_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "9773c50682a138e7b94c9adf21c4d31d8a714efb44a845886f55c5b136df5d07",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d050_t000_v050/192000/comparison/report.json",
+      "report_sha256": "4fa0ff331418fef497551f68b9593d0cceefb9769613bbbd16ffecc611c2c528",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t000_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "fbe69065aa81fa17a9c5e80169cee3c580ae24b872bf9a29b9d64602110ab5c7",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d050_t000_v100/192000/comparison/report.json",
+      "report_sha256": "525b179fa925d99516d4bdc2862686fbb1595bb7caa914f84c495e739c789ecf",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t050_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "35a63e14cf59b92df3aecd627f0cdcd31cb62dd1adbd8152569ca1b437add9ac",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d050_t050_v000/192000/comparison/report.json",
+      "report_sha256": "9f8773cd1d04a73a7ba577f049ccf43980875b208b603fb386e0ba3ea123b1f4",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t050_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "c8fc741c46d42633dce3dafbcf75a7b054aea4a6fa73ac7951b2aba28bcb9cf9",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d050_t050_v050/192000/comparison/report.json",
+      "report_sha256": "78f0c83faed37562685abd394b41c51b6bea0a0ce5e6a4ce9b56487eccac1d99",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t050_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "ed69ae980d7690af2ea5f09e6d21a06811f70418eb0444ebbac8b3209f973643",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d050_t050_v100/192000/comparison/report.json",
+      "report_sha256": "728272c47185f904db596921c6f882204f16f8a579f9cac0531f750c32e9e703",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t100_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "081a96513d2409201ca07ccb1eb56e71f059e307964d185471f4338de93914d2",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d050_t100_v000/192000/comparison/report.json",
+      "report_sha256": "717eac4a2add6013a9714fa82d4a808ecec3c652e353981159213ad107869e07",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t100_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "3a125ec910dca72286f4583071a65fc06374ee27e4474efc550cbfb067af3d41",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d050_t100_v050/192000/comparison/report.json",
+      "report_sha256": "329508d151757ab72941c3ea6cedd046af2bc6513e7c24c82f7750a63d391c0e",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t100_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "01e1c9c045dbac20ce3cf710060139e58a2572d41a998de326b2e9cea76b5b3e",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d050_t100_v100/192000/comparison/report.json",
+      "report_sha256": "dce83cf4ff76ded702a5e0a40228cecf3b0367aef4c7c9b9e58c3fc4e0eb6d3f",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t000_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "727f20affa110f3a87b59ffc1e9e9b4904a06f2bf5e185eb6f50f95be096aba2",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d100_t000_v000/192000/comparison/report.json",
+      "report_sha256": "1672f832c6bee958cca2d83f51c92cfb57d5e9007d5023f1291ab90cf8b2bad7",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t000_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "fb3fcfc19581e5d579f48b6420634938cf97b69a63e6bde377033a21a8b9f7e3",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d100_t000_v050/192000/comparison/report.json",
+      "report_sha256": "cf2bfa477e9ec9cd858959478d662d101044e5787b6ab0c4d13107c4b934e048",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t000_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "4bdb5f141c687e09d47bdb9b0f59e8dc6dbbbe5f37bde18dbd62b301bf7c13d3",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d100_t000_v100/192000/comparison/report.json",
+      "report_sha256": "81a6f0058548045f04c5f4bb5194f2187d7df68a5480ae07c2cc9811dbb0133a",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t050_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "a52622a18f22a85445387efccd04ed362c8662f94b12c3a30bd610ae69d36b04",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d100_t050_v000/192000/comparison/report.json",
+      "report_sha256": "01f593fb15aa101776c70251ceb6129fe5edea1596440f184387b0aa606dba27",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t050_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "c7380bd5aca724e2f3a28f8bbe87e591f77286e38fc5d12707ad765d54743d53",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d100_t050_v050/192000/comparison/report.json",
+      "report_sha256": "2f24b475105739c0874c4c47013a99c7e5a1c2da73e269d8118ea2471d124759",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t050_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "50dda713cff1cd2563a94f5fa49f62b84451421d8c6266b382d52744a4fbd39a",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d100_t050_v100/192000/comparison/report.json",
+      "report_sha256": "0a7c97012a6d3cb55d60d03701fdf6e8321e0219a4cdcdf4abc1f180baebae06",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t100_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "47e44c42c2725bac1e5ec5e60daf958efc877d32bb6d8a189d8417e8d8811565",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d100_t100_v000/192000/comparison/report.json",
+      "report_sha256": "c8504c9b3b028dd7133f0ef536dfec600164af555d64b467e879be774e65b2a8",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t100_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "d24531a8ad951255f10acab525af2ff11ce7429029c01028ad414329b875d3af",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d100_t100_v050/192000/comparison/report.json",
+      "report_sha256": "af9cf974619bac388df86cd4d77515f380c4e4c61f7bc314dbc966dc78ba89d1",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t100_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "af0052c976d0072925f134a03242548f9268143ae99fb52fb71662ec27512034",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d100_t100_v100/192000/comparison/report.json",
+      "report_sha256": "3885cd65d6a3abcc1e58941d37290723bd57386a9bb504510206bf05414f856e",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t000_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "8701b35bd08b0f48232b10508b521282f0b8cc7645d29afd36afac746b2b0deb",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d000_t000_v000/192000/comparison/report.json",
+      "report_sha256": "ce063e2cffdf649af3cf3934e72c79b8e0c1dcabe759c52b393cfcb2507e459e",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t000_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "bb058f73b6302d50281c1c0585328cf944052850b282c45c610e0aeb1bc02cf6",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d000_t000_v050/192000/comparison/report.json",
+      "report_sha256": "3ab02db928b1f3a4d251ced9eb860e47a2afab18e673509e75c4d886c90f81ce",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t000_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "8baa93fedb90c6119cfa5e684c44cda14b682b13917123cf342b4e3c885860b4",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d000_t000_v100/192000/comparison/report.json",
+      "report_sha256": "00bfb8213b033d81242bc83994fbdbe41845acc43a6c0b6ea8a1203d4f42c244",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t050_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "cf0dd97d3200836b654329b4ad57f42bde1e4ae0ef5adc893d093413dc53bc5a",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d000_t050_v000/192000/comparison/report.json",
+      "report_sha256": "dcd376df6c1e2f3e3d66787aceebea59a93ec9b3d1f6d26519272e720f0c36aa",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t050_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "876b6bf5e2deee4f55d3eacd0025f3b247c68d535bcf7991dadf52ee97de918e",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d000_t050_v050/192000/comparison/report.json",
+      "report_sha256": "e9a2191b757ea2e972b43190b7b3c3af8ffdecafd5f2715a16b1d505be3ad91b",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t050_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "c0d0cfc2975d8bb15d7dfc5277e2573c9aa16d9755df7807f7fe618ee3f4c35a",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d000_t050_v100/192000/comparison/report.json",
+      "report_sha256": "ce880e33bd7b031f29bd2a63fa113398afa0cc694a6185f1218aaa6f1cad93f6",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t100_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "6b558b8eb849ff168c45ee50923333e47c18897cb992e556f85f6ad1305c62ad",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d000_t100_v000/192000/comparison/report.json",
+      "report_sha256": "62ccea8d857893c08d81dc47378d6bf1374d6b9ee9e45cdc84e64e2b5e9c0182",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t100_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "e104d92578e6f8b90e2253d5dce7c541ff701ba73707ff826bf360e9b4f5858d",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d000_t100_v050/192000/comparison/report.json",
+      "report_sha256": "18b36487dd17df952d322fc010038454272f370e5f492e76d012a59d6520661a",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t100_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "d91ce2fc89ed59dbea128749180dcff7128c6b12e9feb6180e1838cd7cd4e60b",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d000_t100_v100/192000/comparison/report.json",
+      "report_sha256": "d4a87b82ee4127f504e8ff8ee837a73a7a183f967e0b7168b046e99c52c38162",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t000_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "c710410a6e9a93cb7ca40180add12291be94ca34b737c0aa2f35c83175f34a47",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d050_t000_v000/192000/comparison/report.json",
+      "report_sha256": "975a9c398214186b54544bf41e1aaa3f99df419357350a96560782362838d117",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t000_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "432e01b66e852d938d0579b97bdc289b8fc6b4e0ed920f9b24fdbb66599fb546",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d050_t000_v050/192000/comparison/report.json",
+      "report_sha256": "95e2ca594c394869a5ae90df02b053a88ac6b4610b6be0c92ffc2640079e8614",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t000_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "db317f93949b201e24e31ea7898612175b2a389e9a7d67e4ea8f8af52f7b7106",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d050_t000_v100/192000/comparison/report.json",
+      "report_sha256": "4bd398e280d70c367a604a6f89b62c6f9ba37e75fcea5f1b809e32546d4e4f56",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t050_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "814265801b93550d0894b7f248a8178d1a8f8d094527b0e1ebef86da6b9e4391",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d050_t050_v000/192000/comparison/report.json",
+      "report_sha256": "bffb7c8cc563c3c835f341dc2f7639aa49698cdbb63c2754d930b6c64442fa5d",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t050_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "40d4bc6784288be8df5194ab869df534c46b84a437112c8c1e94e5a499343896",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d050_t050_v050/192000/comparison/report.json",
+      "report_sha256": "283fde13d11caeb3992bafaf27556d8dab5a0afa97c12e0edf9c6bcc308fc04b",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t050_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "f4bf591b40e76d100bbd5e07b6b9c7844d9ed0dc4166f49530f365fa122110b2",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d050_t050_v100/192000/comparison/report.json",
+      "report_sha256": "b7344628ee6598e9a68b6afd1eea440448ed1d85d2196e5e021325a38e36e6b0",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t100_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "177c5461b78df6f33a71f93a06e2252bc2d2378382156cf799c67b73377b3dc7",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d050_t100_v000/192000/comparison/report.json",
+      "report_sha256": "143bb9b829dba0075db44ea1cda96a8ad05f7d92420792f2900e78fa6b742100",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t100_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "c3814bf1ca984395e11d353125f81521777cfe91915685c1ddb8eebf45786360",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d050_t100_v050/192000/comparison/report.json",
+      "report_sha256": "ac4ae27fb44e5ae1c6f967a9919bab04a432a637dd30479bdc8cfd01f03fca25",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t100_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "db3f1c3e54fe3dc3f7c5ed9dfaabce38d510f061c9b55f5bf35a9b1e28070d6d",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d050_t100_v100/192000/comparison/report.json",
+      "report_sha256": "75dcc5889b907b241738d62eeada7a12c1c35f87ba2ed88b3180f75f1d2414c3",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t000_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "b4631d752f0d6c2bde55a2f683301d75794716ea1214e803ff0ce5aaa9821ef9",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d100_t000_v000/192000/comparison/report.json",
+      "report_sha256": "bd3961cab5bc98a3f774892c0192580a72ad6e61a5800aaf5abfad5385260ab4",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t000_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "726aec734ede0d235bc452bc35ffb24ccf11f0a73769c7aed98b0c5160684d39",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d100_t000_v050/192000/comparison/report.json",
+      "report_sha256": "6022f06b317dd667b7665db6d8cec73966413a1502d0ce0337ca6653f9dd9012",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t000_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "4b45a64b67ab2dd6d57f15d5d1eae8ee33b45cba932f773c2eeec99c7130e1bd",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d100_t000_v100/192000/comparison/report.json",
+      "report_sha256": "ddf5814d215e8d7db3cbd916503b1a3fec90be721e384038968852a05b044aaf",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t050_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "7d4837982071d3a8eae1cdfa33aa19172e903d7c0652f84f7d0d4c9ca2816ee8",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d100_t050_v000/192000/comparison/report.json",
+      "report_sha256": "cad43b8db3caad6b1a5bdaef5e85b5b766fd644b21628b9931836b3b0c6ae06f",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t050_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "0bfb8e314ec9a773a432d68097e4162899913c2f5bdb4be50ec1d05cae7b3222",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d100_t050_v050/192000/comparison/report.json",
+      "report_sha256": "8b82eebd1337cda2b84a33e13566148dbaf13936ed1217745049b07ce13cbd85",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t050_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "074858b18c9cbcc1efd378a4cccaa555dec0df8135649a988a9cc034eef90424",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d100_t050_v100/192000/comparison/report.json",
+      "report_sha256": "44d38525d1e50ba3375e251ae97a5260ab623d23ed423509609bd6896d97a997",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t100_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "5d2f53048c33a34e77585d48a00fc4be1a47cbe828ffbf55c9087d18e3ed9e66",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d100_t100_v000/192000/comparison/report.json",
+      "report_sha256": "591107595660c83a52c17dd1a6444bfb4a1e28155fc754c1241ee5bc467ec2d8",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t100_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "f4a680d04aa11dc42d283e1a56bb2d35d9a6caf08511adc0ffb5f128670b7e16",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d100_t100_v050/192000/comparison/report.json",
+      "report_sha256": "578b721407f71f678c02ce5b29bf73afea051357eb3316f7a8c62fece67da87f",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t100_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "3ec2a1aa86147dbe1405f4f1b363f629c6c8c1d8fc947ec9db050248270649f2",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d100_t100_v100/192000/comparison/report.json",
+      "report_sha256": "4d4b30ce4a9b0b09d0429f8c294d5fb3657616c77bd9e9587dbf2e8ffd5b2c30",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "hold_center",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "3e464480cda5babd210ecb26ad80e73cf5342d12f37e8a8931c5dbcdede22956",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/hold-diagnosis-20261104/norm/192000/comparison/report.json",
+      "report_sha256": "54d88ee3fc7cdcfe031b2e0c46ecf17e0db8a6be75c1d48b2651998ad273a178",
+      "partition": "Independent hold qualification with solver=norm",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "hold_center",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "3e464480cda5babd210ecb26ad80e73cf5342d12f37e8a8931c5dbcdede22956",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/hold-diagnosis-20261104/norm/384000/comparison/report.json",
+      "report_sha256": "5a74eb5fcb7a8e4af7ac1d81e1506273f1bdfaa1c66ebd19efe799d4a51d5a27",
+      "partition": "Independent hold qualification with solver=norm",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_center_a010uv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "180620ddea8370240f7939e93eff87abc6feabe965caadd72217e8a23e35d4b3",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/linear_center_a010uv/192000/comparison/report.json",
+      "report_sha256": "73291bb87ee2ec81b0e6e843d8988df160d9ff2193fd891a7700f04c64397f0c",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_center_a010uv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "180620ddea8370240f7939e93eff87abc6feabe965caadd72217e8a23e35d4b3",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/linear_center_a010uv/384000/comparison/report.json",
+      "report_sha256": "8e8aff09e8cac566ec133c247978ed3b7740b3437f3df595fa5586833080d539",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_center_a020uv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "a95c3a10003886fb10363351490b247fdae36f69609990e09804fd25b1dcdb6f",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/linear_center_a020uv/192000/comparison/report.json",
+      "report_sha256": "9ea34097333de5af6d3aa430f8e60c69bf185208965f230dfcddce4f6071d4c8",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_center_a020uv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "a95c3a10003886fb10363351490b247fdae36f69609990e09804fd25b1dcdb6f",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/linear_center_a020uv/384000/comparison/report.json",
+      "report_sha256": "18854f39e7c071ace146e14282a02b442698944813d3e5662c334766c7c2f137",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_high_a010uv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "e7a4740ed6d4ccec968ca3f0fcd893d25784e93a29437b66d72117f887297917",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/linear_high_a010uv/192000/comparison/report.json",
+      "report_sha256": "4287376bb74c1d31964017702330ee08c6dc55f5929bc427985bc204ccb454e2",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_high_a010uv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "e7a4740ed6d4ccec968ca3f0fcd893d25784e93a29437b66d72117f887297917",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/linear_high_a010uv/384000/comparison/report.json",
+      "report_sha256": "9f5b387256181869a8c639678d0e6acc3a302f6a8cfe29ad7d7f5d89a7a69226",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_high_a020uv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "7deee8539cf09eacb2b17f1843bc1adb7c64be6daf5f7bb58676849a218137c8",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/linear_high_a020uv/192000/comparison/report.json",
+      "report_sha256": "a832a48a1769bbad1b0e2d3e1bd6ec2fefc46c74e7a63788e6c3bfcbb38ab1a5",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_high_a020uv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "7deee8539cf09eacb2b17f1843bc1adb7c64be6daf5f7bb58676849a218137c8",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/linear_high_a020uv/384000/comparison/report.json",
+      "report_sha256": "850b0e1c26625db2a591c5c6554ecedc6f15f63c2df091bad79bb6b99b5513c7",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "listen_high",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "8d30ba9394fd8fb04a925bcdf5007af34a04d2480b3170b4a4ad071eaced1832",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/listen_high/192000/comparison/report.json",
+      "report_sha256": "4e766913725741ee660529c5e08ac35f45078518b05c5ee544209406fa09605f",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "pending",
+        "combined": "pending"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "listen_high",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "8d30ba9394fd8fb04a925bcdf5007af34a04d2480b3170b4a4ad071eaced1832",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/listen_high/384000/comparison/report.json",
+      "report_sha256": "a6e680c317f872837ccc992c3a87402d86fa8e838651fc013e2d010384b9296d",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "pending",
+        "combined": "pending"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "mute_1000hz_500mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "725a9e8e1ff4717c6a9698eff241f6270ea2f6e64ea52464415d1651effb272d",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/mute_1000hz_500mv/192000/comparison/report.json",
+      "report_sha256": "17e59531eb5ef77f4e62c81c9cdf5a3c189177eeb00ef131b168d951b24bcbe6",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "mute_1000hz_500mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "725a9e8e1ff4717c6a9698eff241f6270ea2f6e64ea52464415d1651effb272d",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/mute_1000hz_500mv/384000/comparison/report.json",
+      "report_sha256": "d7f1eef6a14002daf67f19520c9586c2b08104d22ba6383bd4ade63699f0bddf",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "overload_center",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "5191301cdc0db5946d73a33d943ebde3b8d730f4634c33536d6bc1d5ad54be27",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/overload_center/192000/comparison/report.json",
+      "report_sha256": "94b21b35d7f12621ddf1dc72096489bf084d36593db53c2adbdc20b633a20a1e",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "overload_center",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "5191301cdc0db5946d73a33d943ebde3b8d730f4634c33536d6bc1d5ad54be27",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/overload_center/384000/comparison/report.json",
+      "report_sha256": "a66a6e6549c8d79454bc8afe8aa064d46952af0eab1bb33808618c7a72834224",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "overload_high",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "50bbe9315ca36e1860475a5b27c3e8360e590b943efc74249f5eec90e6aa46e5",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/overload_high/192000/comparison/report.json",
+      "report_sha256": "09933364e9cb05a6c9e8d689685babbd1514fccbaed367648b495c5df96a1c25",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "overload_high",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "50bbe9315ca36e1860475a5b27c3e8360e590b943efc74249f5eec90e6aa46e5",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/overload_high/384000/comparison/report.json",
+      "report_sha256": "835e6307fae1cf7ce50273ebee3dc890274cb5c37aa5f9c2ad3dddf61040b701",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f1000_a010mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "0a53231c802a928b7c8512332f3fae1266d4d7237f24b48892172c1ae28d1fe5",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f1000_a010mv/192000/comparison/report.json",
+      "report_sha256": "672a870af4968a0137ba6e78e0ac3e1b17bdce028958f2d55f59213daccc47ff",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 5.873862857183941e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 5.8738556659977484e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f1000_a010mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "0a53231c802a928b7c8512332f3fae1266d4d7237f24b48892172c1ae28d1fe5",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f1000_a010mv/384000/comparison/report.json",
+      "report_sha256": "6a83a804cfd0a362eb4244fb49492af2305b02cf36efbfcd4613b4d2a36cbdeb",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 5.873832339575121e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 5.873825355281783e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f1000_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "d8d2cd1cf30722351280881fee24f987af23e2447e8c365dda2abbc36685c09b",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f1000_a100mv-warmup2s/192000/comparison/report.json",
+      "report_sha256": "5717d7e3c8fe09555bb38f93c15eca5c424076228c9d0d4f0969ad2e2509deea",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f1000_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "d8d2cd1cf30722351280881fee24f987af23e2447e8c365dda2abbc36685c09b",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f1000_a100mv-warmup2s/384000/comparison/report.json",
+      "report_sha256": "f6f8d98f8f21d43ca66ba094e95eb7a2abc7315fa91c33dcb6c2a159e4558df3",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f1000_a500mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "5f46c813f43e9fabd7e8ab30b724f86d72696333b77d27d683aa4b38b84e9fcb",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f1000_a500mv/192000/comparison/report.json",
+      "report_sha256": "e48ebc5dde7e63b2f2c508a1a88dd4eb1c75d50bfca0b99b47e01d35bf6b7330",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.0001066446868157144,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00010664465204961223,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f1000_a500mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "5f46c813f43e9fabd7e8ab30b724f86d72696333b77d27d683aa4b38b84e9fcb",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f1000_a500mv/384000/comparison/report.json",
+      "report_sha256": "a51f45a61762c67d84dec90f2c8cae26e2939b14b8020e37c12fb893a5b0981a",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.0001066441355695086,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00010664409628342358,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f440_a010mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "df9a88fc509a35095e8dfc19f28d890b74d6a5d921f300de9e73f7403bdc59da",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f440_a010mv/192000/comparison/report.json",
+      "report_sha256": "d928b4381edc46a51cdd9b1a4ab3f03847bd9b144b215aee1e4c4bb5c7419362",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 3.8767711246912837e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 3.876767561515752e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f440_a010mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "df9a88fc509a35095e8dfc19f28d890b74d6a5d921f300de9e73f7403bdc59da",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f440_a010mv/384000/comparison/report.json",
+      "report_sha256": "ba8251d9ffd1dccf8d107a4fab11f26d0717560d13a7d16dac3cc41760dbfea8",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 3.8767510113537785e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 3.876747448066109e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f440_a100mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "2b89ad4359f2eeb982627d0d0cc0c674ee972dd9f97fb3a855f27d14e677184f",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f440_a100mv/192000/comparison/report.json",
+      "report_sha256": "12d877a662ad1f301cc64271ed64cc4b4fab0d0fb0f8eb766f01b44fb7b19499",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 9.435880491280787e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 9.435880269357473e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f440_a100mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "2b89ad4359f2eeb982627d0d0cc0c674ee972dd9f97fb3a855f27d14e677184f",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f440_a100mv/384000/comparison/report.json",
+      "report_sha256": "8680b7b97a4c763f4fa9a799a196a801d9c4314082cc7ae07b625b4096a71c2b",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 9.435831421532659e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 9.435831199698576e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f440_a500mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "5ed7ac4e4a10fc75d000cfcb719e2ff2ad90d01e52a3c514969f710c6fdae320",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f440_a500mv/192000/comparison/report.json",
+      "report_sha256": "eb8aa763750c7644a164c6b15bc4b9bd23ed7c402e48c27f0efa9e0876ba7342",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00010498386637209705,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00010498384090757833,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f440_a500mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "5ed7ac4e4a10fc75d000cfcb719e2ff2ad90d01e52a3c514969f710c6fdae320",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f440_a500mv/384000/comparison/report.json",
+      "report_sha256": "f92a2795508084386c799d1661966db80d7b3640a4870809f197f2d9ff38f631",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.000104983326876436,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00010498330307802216,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f5000_a010mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "a8b21096633474c8863fc99f60351c9904a0f30b48c5381ba9bdc29e7174d7eb",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f5000_a010mv/192000/comparison/report.json",
+      "report_sha256": "4eebc0451c935b59551788980a5a65e1ca425ad4468d5690622bc925c0cf8e14",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 6.512835107341322e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 6.512877415357977e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f5000_a010mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "a8b21096633474c8863fc99f60351c9904a0f30b48c5381ba9bdc29e7174d7eb",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f5000_a010mv/384000/comparison/report.json",
+      "report_sha256": "8615cc108aad980d5bd470f67f5d61e077ed270a555f42f9c94f9259a9c85743",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 6.512801231440586e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 6.512843993482871e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f5000_a100mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "95b2f6473ce08a92afcc9aeffa918d10f5375c6635a2055e55da91d513ff4b6f",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f5000_a100mv/192000/comparison/report.json",
+      "report_sha256": "9416450a7ae157bdba5f5d0770c89e73e0a82717e21f4f2b6ff6571ba2523e57",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00010070512884168833,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00010070435051869025,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f5000_a100mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "95b2f6473ce08a92afcc9aeffa918d10f5375c6635a2055e55da91d513ff4b6f",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f5000_a100mv/384000/comparison/report.json",
+      "report_sha256": "49fbd59baa469faa900bd4a43fb04d82a0aac3750559de8d2de40f493b1752c8",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00010070460450785322,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00010070393338941502,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f5000_a500mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "b07870c6e4d8084d87bddfc5a8a4dc9984a90e772271b5beb9c73aef269d4b8c",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f5000_a500mv/192000/comparison/report.json",
+      "report_sha256": "2a34b6de8fa2fc0dd1d0e70f8dfbee8a80dda1b6feb1c0c2abc6aae83e547a73",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00010945970386981188,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00010945891852767267,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f5000_a500mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "b07870c6e4d8084d87bddfc5a8a4dc9984a90e772271b5beb9c73aef269d4b8c",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f5000_a500mv/384000/comparison/report.json",
+      "report_sha256": "fe0d646f64e6dde7fa2c0aca3b34128780610c350c443b02f0225925830a33f9",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.0001094591344617335,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00010945841794941978,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f82_a010mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "2cd216f8d76952f35c2d72b8ffcbef2dd5076e12deee66a108e931dd750ac1d2",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f82_a010mv/192000/comparison/report.json",
+      "report_sha256": "7c2a6fecfbe914f19e5171affb8eacd22dcaed2c7c3acda5f65c94819f2d5f9a",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f82_a010mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "2cd216f8d76952f35c2d72b8ffcbef2dd5076e12deee66a108e931dd750ac1d2",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f82_a010mv/384000/comparison/report.json",
+      "report_sha256": "7029c88213a67886858d67b877ed32ea11b4491a246342d108685291d35ae4a2",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f82_a100mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "5bc82395ac37c05f9d38a2fa58daec046dd9b8becca4b06ac65fb7f7985a372d",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f82_a100mv/192000/comparison/report.json",
+      "report_sha256": "da76800c909dc5072b89b3217ef974cfbfc91711509f25784658276a59fe1ad8",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 7.635636925689299e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 7.635636717085425e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f82_a100mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "5bc82395ac37c05f9d38a2fa58daec046dd9b8becca4b06ac65fb7f7985a372d",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f82_a100mv/384000/comparison/report.json",
+      "report_sha256": "cca129f083c352e48ec09d03de46952406972150bbb4a68451c772a510d707cc",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 7.635598227193418e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 7.635598018575383e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f82_a500mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "f9a086be33ca25f36c04f6d5111d50f13feee94117a2169a5ccb80f9f0b78143",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f82_a500mv/192000/comparison/report.json",
+      "report_sha256": "19defcdca3abdddfc8f623c40a07db5c522efde4ca4ef868edece7b54d7b2c5f",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00011903402114685904,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00011903402083552077,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_center_f82_a500mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "f9a086be33ca25f36c04f6d5111d50f13feee94117a2169a5ccb80f9f0b78143",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_center_f82_a500mv/384000/comparison/report.json",
+      "report_sha256": "96668140787facb35f8ca2a0549f6307e34e6a450efa94941b9020c95ef35a15",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00011903343073606639,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00011903343044386413,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_edge_t000_f5000_a100mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "4ab025f8c92ed57035e3e77041c857784104d50f9aa83b7046cf9eaf773c36e4",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_edge_t000_f5000_a100mv/192000/comparison/report.json",
+      "report_sha256": "be9e2e271d2a17d999ecee2b15a8f3b80cde40b55937d3c12b5aabddb9d664d1",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00018245855582711817,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00018245592813753887,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_edge_t000_f5000_a100mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "4ab025f8c92ed57035e3e77041c857784104d50f9aa83b7046cf9eaf773c36e4",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_edge_t000_f5000_a100mv/384000/comparison/report.json",
+      "report_sha256": "3aa832d0a024c98d0fc48aedb7411e6969b2856ac49ac66f393b337f1807f52e",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00018245760589461325,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00018245541839887643,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_edge_t000_f82_a100mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "af60cf7b1cc9f98b2511ca19a5b5b6e0d6a5147326975905ecab7e878cc9ed54",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_edge_t000_f82_a100mv/192000/comparison/report.json",
+      "report_sha256": "1c809f47a71f662373c6fa319be897b971f396772378a528cb9a403bf3c502ae",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00016260902055187333,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00016260901873836072,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_edge_t000_f82_a100mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "af60cf7b1cc9f98b2511ca19a5b5b6e0d6a5147326975905ecab7e878cc9ed54",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_edge_t000_f82_a100mv/384000/comparison/report.json",
+      "report_sha256": "b808d930fa725ab92c3a81b3c604af78627e69d81cf2c44e92eed3f26d3d7995",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00016260818966388888,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00016260818785044582,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_edge_t100_f5000_a100mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "7380c1d43c8605dc2ab9fdd645f7f8dec53af5af4193aeb12569d10e81e6e108",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_edge_t100_f5000_a100mv/192000/comparison/report.json",
+      "report_sha256": "30f989eab5f64ecf605624d9e90efb8820bd527f1c208910477ba100427aba47",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.0001819806655452272,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.0001819749527862252,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_edge_t100_f5000_a100mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "7380c1d43c8605dc2ab9fdd645f7f8dec53af5af4193aeb12569d10e81e6e108",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_edge_t100_f5000_a100mv/384000/comparison/report.json",
+      "report_sha256": "fbca53e13d8067dde477c6e5d2faa59f97d33dd4c78ad655f3f61e8f62fb01df",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00018197971846446463,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00018197386695156906,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_edge_t100_f82_a100mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "3842f3ef69a87a8b05634b94b7dc26c8c7fae7c53925c8a9d54db69ec86722cb",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_edge_t100_f82_a100mv/192000/comparison/report.json",
+      "report_sha256": "7365bb9bb74a434dfdcffe06efe95b6b7817203bc800826c4aa863e7a000253f",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00016240974532911846,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00016240974366443756,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_edge_t100_f82_a100mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "3842f3ef69a87a8b05634b94b7dc26c8c7fae7c53925c8a9d54db69ec86722cb",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_edge_t100_f82_a100mv/384000/comparison/report.json",
+      "report_sha256": "82983c260c3e5f07ab36c7402b2ec33e965bcb761951f29cf1d7ad8aeed31dfe",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00016240891492092825,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00016240891325715253,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f1000_a010mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "90d6afa0d3f5708b823c16aef1798c6ace596a9e14abd928926216b675dd41e2",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f1000_a010mv/192000/comparison/report.json",
+      "report_sha256": "cca39d3505076887fc69daf06d0cd92103a7daae9458b69376707e2c0949f87b",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00015376005521456246,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.0001537599888431084,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f1000_a010mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "90d6afa0d3f5708b823c16aef1798c6ace596a9e14abd928926216b675dd41e2",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f1000_a010mv/384000/comparison/report.json",
+      "report_sha256": "fb09e9b2189346ce1ba2774bcb0e0d6792deb6b4c634f20899d5afb20b34c710",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00015375922269473085,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00015375915635126055,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f1000_a100mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "d4a79442c0b7513e07250b94ec15b5dcb750c57079c4a98cb5333a2f2cc7973f",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f1000_a100mv/192000/comparison/report.json",
+      "report_sha256": "f6aa33fc93b51ad46ab412666bb3957e57963f7cbef233e0ccead33b2bcd4a1b",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00019718577410112126,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00019718568091107053,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f1000_a100mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "d4a79442c0b7513e07250b94ec15b5dcb750c57079c4a98cb5333a2f2cc7973f",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f1000_a100mv/384000/comparison/report.json",
+      "report_sha256": "900418f0b376cbec6dbe251b40c781de2a6783f1071c471b61722a86e7f3ed40",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00019718470808152767,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.0001971846281971264,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f1000_a500mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "1c8caede0be83d25e4eb543810a66a2da6fadf0555c7f1920505889568e6351a",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f1000_a500mv-warmup2s/192000/comparison/report.json",
+      "report_sha256": "0aac03a9b130849df2bcde4ca96fe53d2e13c6c34cbccdf4122926372e8da351",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f1000_a500mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "1c8caede0be83d25e4eb543810a66a2da6fadf0555c7f1920505889568e6351a",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f1000_a500mv-warmup2s/384000/comparison/report.json",
+      "report_sha256": "01f42d83649cb3a5b2585b4417e25dd7429682a58ac9c2cac95cf7ff076569fd",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f440_a010mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "aacb10cc549236603418876d45eea53be0bd4f54519c8e266fb25a527c6c35cd",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f440_a010mv/192000/comparison/report.json",
+      "report_sha256": "962d5ded14e817f4f274ff716a3e5ae497f2f35055e1dd8cf120f371829b89e1",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00012968175686992853,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.0001296817107598514,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f440_a010mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "aacb10cc549236603418876d45eea53be0bd4f54519c8e266fb25a527c6c35cd",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f440_a010mv/384000/comparison/report.json",
+      "report_sha256": "8b5bfefacd5699868856453d490924796228e94c376e2e743ada1987338eb227",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.0001296810566102358,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00012968101050496905,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f440_a100mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "a89b318e2d869eb06e418ad45102efc53bd3c84dd3fe17a35b398fe359969f15",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f440_a100mv/192000/comparison/report.json",
+      "report_sha256": "b8e074193696aa391ad91df5dae6cecf638c6749d6947643e61d2bb39c4a2952",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00019241265565639868,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00019241265096919246,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f440_a100mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "a89b318e2d869eb06e418ad45102efc53bd3c84dd3fe17a35b398fe359969f15",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f440_a100mv/384000/comparison/report.json",
+      "report_sha256": "ff6aac6857da8f9629f05c39d96bc2f9ccdc7a1840a1fef68ed9bc434efe4d68",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00019241161920400228,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00019241161463623714,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f440_a500mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "a49e1faf254f208e7f5bbf14a1f8e74fb0ec2eed2230fc935a96c4a8f2695100",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f440_a500mv/192000/comparison/report.json",
+      "report_sha256": "81783c80c131d79909d5c00d1d8911826f751fab997bd1d659aad2999fc6179a",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00020161833264909401,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.0002016182214446992,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f440_a500mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "a49e1faf254f208e7f5bbf14a1f8e74fb0ec2eed2230fc935a96c4a8f2695100",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f440_a500mv/384000/comparison/report.json",
+      "report_sha256": "7fb93852358e5f725054fe2addbc24867aa3944c1e9cc18d021bee0dc9c70dce",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.0002016172689567673,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.0002016171572767068,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f5000_a010mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "01b9f43a44e80ac1c1be9053cccf7704c7208d27bde48f2dfddd0532b3f3f8f5",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f5000_a010mv/192000/comparison/report.json",
+      "report_sha256": "3e54abdc4e37f8780b589aeadba8129cf507d5f22bc768d1681128b6624e8e7a",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.0001608376650699209,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.000160838536770044,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f5000_a010mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "01b9f43a44e80ac1c1be9053cccf7704c7208d27bde48f2dfddd0532b3f3f8f5",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f5000_a010mv/384000/comparison/report.json",
+      "report_sha256": "c6a8599b69d2aae654698f5bec3de57d8d890e945cf1ca080521356fa3c7dee1",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00016083679233144945,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.0001608377084600623,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f5000_a100mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "1ed183e3be622e2da036b11736c84628330272a76dcf635da377413a4a250a2c",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f5000_a100mv/192000/comparison/report.json",
+      "report_sha256": "99c8f18c7fe08c803ed9ddf89b8bfad08ad828c2e9616b387b6744659cde5302",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00020000262855354224,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00020000275784398279,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f5000_a100mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "1ed183e3be622e2da036b11736c84628330272a76dcf635da377413a4a250a2c",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f5000_a100mv/384000/comparison/report.json",
+      "report_sha256": "3dba7f7a47a3172ace699993d8e7a98743683b3f3356cad9f1128a2c08e1bb40",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.0002000015423964225,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00020000062375736697,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f5000_a500mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "ca012584d3434080af946d17709e8a3344191104470f2651dc4efaf1da263e4c",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f5000_a500mv/192000/comparison/report.json",
+      "report_sha256": "346655e203de6234212ca544a479fce8f2a56b80199818f6f6d8941cf887a0fc",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00020936589235402502,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.0002093643602357359,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f5000_a500mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "ca012584d3434080af946d17709e8a3344191104470f2651dc4efaf1da263e4c",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f5000_a500mv/384000/comparison/report.json",
+      "report_sha256": "015ea5ad912f155ab2c33f56fd494b2ae77ed796df755f71879259d2e2c33c66",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.0002093647555267662,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.000209363097245085,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f82_a010mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "de35d686f0e9c91ccb0cd1111201e66636965ded4c78ba66336ed44966c555aa",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f82_a010mv/192000/comparison/report.json",
+      "report_sha256": "efddfc48d533f316d1e96b2639dba1cf6ac1e5115d9dbf58c6652137e698d7cc",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 1.6775863442396488e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 1.677586185289389e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f82_a010mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "de35d686f0e9c91ccb0cd1111201e66636965ded4c78ba66336ed44966c555aa",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f82_a010mv/384000/comparison/report.json",
+      "report_sha256": "3a9ff8a0d474984f998c11ca2fec9472a21640f2045c644be828d149507240ee",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 1.677577313855723e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 1.6775771548862934e-05,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f82_a100mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "aa852bfb7d20165e781639b00add6ae832518339a3eefe251e787dc995b8bd09",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f82_a100mv/192000/comparison/report.json",
+      "report_sha256": "bcf432e8d00fb825bf8b2afcdb2976f78e4e2e9763a49128923a36d492c09ea0",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00017807671058756632,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.00017807670869276316,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f82_a100mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "aa852bfb7d20165e781639b00add6ae832518339a3eefe251e787dc995b8bd09",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f82_a100mv/384000/comparison/report.json",
+      "report_sha256": "7787fc52fbcf0e286a43da605a0fd4a975eb28df6e603cb430524941ec189d59",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.0001780757663828807,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.0001780757644856469,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f82_a500mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "962c44890c6ead5a463ee9815663d3e687c5d48c0396a333b8b2f209dd2ced8b",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f82_a500mv/192000/comparison/report.json",
+      "report_sha256": "224ab8d5e5048a53ec8c809ed0f17eaaeb83cfae19304249474b26c50e684453",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.0002208102680837956,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.0002208102658503066,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f82_a500mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "962c44890c6ead5a463ee9815663d3e687c5d48c0396a333b8b2f209dd2ced8b",
+      "report_path": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/tone_high_f82_a500mv/384000/comparison/report.json",
+      "report_sha256": "54b3a0e0dc0249652f03633f194080ff5c795a872657ffcf9b87a2e4c8fa905b",
+      "partition": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/matrix/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "failed",
+        "wav": "pending",
+        "listening": "not_applicable",
+        "combined": "failed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": true,
+      "failed_checks": [
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "cpp_settling_dc",
+          "value": 0.00022080912273940014,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "reference_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "failed",
+          "metric": "reference_settling_dc",
+          "value": 0.0002208091204713454,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ]
+    }
+  ],
+  "assessment_completion": "completed",
+  "failed_entry_count": 50,
+  "entry_count": 128,
+  "physical_case_count": 91,
+  "verified_file_count": 3174
+}

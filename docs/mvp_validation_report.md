@@ -1,5 +1,66 @@
 # Qualificação automática do MVP — resultados e gates de bloqueio
 
+## Estado consolidado após a matriz — 2026-11-05
+
+Avaliação completa: 128 entradas em 91 casos físicos; 50 entradas reprovadas por assentamento DC nos dois produtores.
+Qualificação automática reprovada; MVP não aceito. Nenhum critério foi relaxado.
+ABX humano realizado: 10/20, p=0,588099; listening permanece pendente pelo protocolo.
+Detalhes, contagens, hashes e proveniência: [registro consolidado](../validation/results/qualification-2026-11-05/README.md).
+
+As seções seguintes preservam o histórico e não representam o estado atual.
+
+## Continuação de 2026-11-04
+
+O usuário aprovou incorporar os subpassos. O produtor offline agora registra
+`integration_rate_Hz=768000` e `substeps=4/2` nas saídas de192/384 kHz;
+as respostas AC usam a taxa interna e falhas identificam o subpasso sem
+publicar uma amostra externa incompleta. A execução histórica permanece
+disponível na ausência dos campos novos. Schemas e contratos foram atualizados.
+49 testes Python e30 subtests com produtor real passaram; CTest checked/release
+passou. Os novos traces de alto drive e sobrecarga coincidem bit a bit com
+as linhas correspondentes dos diagnósticos antigos de768 kHz.
+
+O piloto central revisado passou em referência, precisão e WAV nos dois rates.
+Alto drive e sobrecarga passaram numericamente, mas as referências originais
+não cumpriram os limites mais estritos da qualificação WAV. No alto drive192,
+a incerteza nominal/refinada foi0,924 uV RMS /2,358 uV pico, contra0,1 /1 uV.
+Na sobrecarga192, o pico da diferença nominal/refinada foi1,084 uV.
+Estão sendo produzidos pares novos com tolerâncias nativas100x mais apertadas,
+mantendo a matriz física, maxsteps e critérios. Resultados anteriores ficam
+preservados. A matriz completa continua condicionada aos seis pilotos com WAV.
+
+Processos e evidências correntes: `F:\ts808-validation\substeps-20261104`.
+As medições seguintes preservam o diagnóstico anterior à aprovação.
+
+O usuário determinou usar F: para a validação completa. O planejamento atualizado
+mediu aproximadamente 143 GiB livres nessa partição e estimou 120,71 GiB para
+a matriz com as duas revisões de duração existentes, incluindo exportações RAW,
+traces C++, PCM, fator adaptativo observado e margem de 10%. Esse cenário passa
+no gate de espaço; estender todos os tons a 2 s de aquecimento ainda não cabe.
+O planejamento deve ser repetido antes de uma execução e após novas revisões.
+
+O diagnóstico revalidou as referências originais em F: e confirmou que nominal
+e refinada dão exatamente o mesmo índice de recuperação nas três grades. A
+quantidade limitante é `output`. A diferença RMS entre as soluções de 192/384 kHz
+é 20,751 uV, e entre 384/768 kHz é 4,912 uV, compatível com convergência temporal.
+
+Um executável experimental separado integra em 768 kHz e grava somente os
+estados em 192/384 kHz, avaliando a fonte em todos os tempos internos. Nos dois
+casos a recuperação diferiu zero amostras da referência nominal e todos os
+critérios locais RMS/pico passaram. Os traces são bit a bit iguais às linhas
+correspondentes do diagnóstico original de 768 kHz. Não houve ajuste de tempo,
+ganho, interpolação de estados ou filtragem.
+
+Isso não aprova o solver integrando em 192/384 kHz. A
+[revisão de subpassos](designs/ts808_substep_revision.md) foi posteriormente
+aprovada pelo usuário, alterando explicitamente o contrato das taxas de integração.
+Produção, critérios, matriz completa e ABX permanecem no estado anterior.
+Doctor F:, CTest checked/release e testes Python com produtor real passaram
+(39 testes e 30 subtests). As novas evidências estão em
+[continuation-2026-11-04](../validation/results/continuation-2026-11-04/README.md).
+
+O restante deste relatório preserva os resultados da execução anterior.
+
 Atualizado em 2026-11-04. A execução encerrou no gate dos pilotos; a aceitação combinada ainda não foi obtida.
 Os limites T18/T22/T23 permanecem vigentes. Nenhuma resposta humana foi gerada.
 

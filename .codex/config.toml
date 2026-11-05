@@ -1,0 +1,10 @@
+# Configuração exclusiva deste projeto; não altera ~/.codex/config.toml.
+# O emulador usa ferramentas locais de C++/Python/LTspice e pesquisa nativa.
+# Apps externos (Sites, Pets e similares) não são necessários neste fluxo.
+# Uma integração necessária pode ser habilitada por ID em [apps."<id>"].
+[apps._default]
+enabled = false
+
+# Preserva as habilidades locais de design e revisão do projeto.
+[plugins."egm@egm"]
+enabled = true

@@ -193,6 +193,19 @@
             "value"
           ],
           "additionalProperties": false
+        },
+        "failed_internal_sample_index": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "failed_substep_index": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "failed_internal_time_s": {
+          "type": "number",
+          "exclusiveMinimum": 0
         }
       },
       "required": [
@@ -315,6 +328,22 @@
         },
         "unknown_count": {
           "type": "integer"
+        },
+        "substeps": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            4
+          ]
+        },
+        "integration_rate_Hz": {
+          "type": "integer",
+          "enum": [
+            192000,
+            384000,
+            768000
+          ]
         }
       },
       "required": [
@@ -327,7 +356,93 @@
         "solver",
         "unknown_count"
       ],
-      "additionalProperties": false
+      "additionalProperties": false,
+      "dependentRequired": {
+        "substeps": [
+          "integration_rate_Hz"
+        ],
+        "integration_rate_Hz": [
+          "substeps"
+        ]
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "substeps"
+            ]
+          },
+          "then": {
+            "anyOf": [
+              {
+                "properties": {
+                  "rate_Hz": {
+                    "const": 192000
+                  },
+                  "substeps": {
+                    "const": 1
+                  },
+                  "integration_rate_Hz": {
+                    "const": 192000
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "rate_Hz": {
+                    "const": 384000
+                  },
+                  "substeps": {
+                    "const": 1
+                  },
+                  "integration_rate_Hz": {
+                    "const": 384000
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "rate_Hz": {
+                    "const": 768000
+                  },
+                  "substeps": {
+                    "const": 1
+                  },
+                  "integration_rate_Hz": {
+                    "const": 768000
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "rate_Hz": {
+                    "const": 192000
+                  },
+                  "substeps": {
+                    "const": 4
+                  },
+                  "integration_rate_Hz": {
+                    "const": 768000
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "rate_Hz": {
+                    "const": 384000
+                  },
+                  "substeps": {
+                    "const": 2
+                  },
+                  "integration_rate_Hz": {
+                    "const": 768000
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
     },
     "model_id": {
       "type": "string"

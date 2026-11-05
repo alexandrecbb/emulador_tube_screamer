@@ -8,3 +8,6 @@ __pycache__/
 /validation/.pytest_cache/
 /runs/
 /reports/
+.env
+.env.*
+!.env.example

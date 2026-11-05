@@ -1,0 +1,34 @@
+{
+  "automatic-qualification.json": {
+    "source": "/mnt/f/ts808-validation/substeps-20261104/qualification-audit-r12-20261105/qualification/qualification.json",
+    "sha256": "40a3668fee025ccb0399af9c71e060a3e76d5b7e796ffe76af09f59123e2f7dd"
+  },
+  "integrity.json": {
+    "source": "/mnt/f/ts808-validation/substeps-20261104/qualification-audit-r12-20261105/qualification/integrity.json",
+    "sha256": "0d8400cc6f564a62da7ba9fbaaf76e93e5c763a29138870d99eeb13f5bf21362"
+  },
+  "human-abx-result.json": {
+    "source": "/mnt/f/ts808-validation/substeps-20261104/abx-human-results-20261104T192253Z/result.json",
+    "sha256": "5456ddb3ab7210b0107cf56bee8b8ee71c5cc75cceaac6e16beffdc859dd3e01"
+  },
+  "tests.log": {
+    "source": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/tests-after-wav-metadata.log",
+    "sha256": "2108e9e6026974618c68499860fb659c12e347103ce3ad6df34a4d70e3244259"
+  },
+  "ctest-checks.log": {
+    "source": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/ctest-checks.log",
+    "sha256": "11533276cd162e8de184b617142f296a0340d103652ffcaec12bc30ad8206cde"
+  },
+  "ctest-release.log": {
+    "source": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/ctest-release.log",
+    "sha256": "a3d6e30089d74d80fbcc43b61dddbd6d8e092b237cb2998e0ec97461beff0a6b"
+  },
+  "producer-script.py": {
+    "source": "/mnt/f/ts808-validation/substeps-20261104/qualification-resume-r11-20261104/execute.py",
+    "sha256": "2f8fa9b4dd22b22587d289f1ad35eeddcd22070d7e747fafd85fad5f8c31014c"
+  },
+  "auditor-script.py": {
+    "source": "/mnt/f/ts808-validation/substeps-20261104/qualification-audit-r12-20261105/execute.py",
+    "sha256": "86239aa9a4e33071ab6ae29fff7a3aac48d6a9a8432e16fd2a946fd93818a3f3"
+  }
+}

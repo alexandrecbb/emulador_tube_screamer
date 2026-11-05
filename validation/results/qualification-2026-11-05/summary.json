@@ -1,0 +1,36 @@
+{
+  "recorded_at_utc": "2026-11-05T03:04:15.470375+00:00",
+  "assessment_completion": "completed",
+  "automatic_qualification": "failed",
+  "physical_case_count": 91,
+  "entry_count": 128,
+  "failed_entry_count": 50,
+  "outcome_counts": {
+    "reference": {
+      "passed": 128
+    },
+    "numerical": {
+      "passed": 78,
+      "failed": 50
+    },
+    "wav": {
+      "not_applicable": 54,
+      "passed": 24,
+      "pending": 50
+    }
+  },
+  "failed_required_checks": {
+    "cpp_settling_dc": 50,
+    "reference_settling_dc": 50
+  },
+  "verified_file_count": 3174,
+  "human_participation": "completed",
+  "listening": "pending",
+  "human_abx_correct": 10,
+  "human_abx_trials": 20,
+  "human_abx_p_value": 0.5880985260009766,
+  "mvp_acceptance": "pending",
+  "mvp_accepted": false,
+  "validator_sha256": "df57852f796c97448ac180f6fd4050c448b434c5324818ad455ddbed8eb20266",
+  "executable_sha256": "5a980894cf03ab2b1f1e7f9b9253c7be5a768617a8acfbe8aaf01c6e4f3c6b08"
+}

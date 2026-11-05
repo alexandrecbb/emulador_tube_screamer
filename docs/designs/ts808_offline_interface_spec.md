@@ -1,5 +1,17 @@
 # TS808 offline MVP: interface, artifact and fixture specification
 
+**Approved amendment, 2026-11-04:** see the
+[explicit substep contract](ts808_substep_revision.md). Artifact
+`execution.rate_Hz` denotes the output grid. Optional paired fields
+`integration_rate_Hz`/`substeps` explicitly select internal768 kHz with
+output192/384 kHz and4/2 trapezoidal steps. Absence preserves historical
+single-step execution. Core `NumericalSettings.rate_Hz` denotes the internal
+rate and `Model::advance` still commits one globally solved internal step.
+The offline adapter publishes only complete output samples. Failure diagnostics
+add the internal sample index, internal time and substep index. Discrete AC
+uses the internal rate. This amendment supersedes incompatible rate wording
+below; physical identity and error thresholds remain unchanged.
+
 * **Author:** Project owner and Codex
 * **Date:** 2026-10-31
 * **Status:** Approved by the owner with the complete Detailed Implementation Plan on 2026-10-31. It expands T1–T23 into concrete declarations, fields and fixture recipes. Predecessor reconciliation is complete and the [final design](./ts808_offline_design.md) is saved at the owner-selected path. Approval does not implement code, schemas, fixtures or simulator decks.
