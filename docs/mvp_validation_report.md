@@ -1,4 +1,25 @@
+# Resultado da requalificação R4 — 2026-11-06
+
+Avaliação concluída: 91 casos físicos, 128 entradas. Qualificação automática: failed; entradas reprovadas: 22.
+Resultados por categoria: {'reference': {'passed': 128}, 'numerical': {'passed': 128}, 'wav': {'not_applicable': 54, 'passed': 52, 'failed': 22}}.
+Critérios e circuito preservados. MVP não aceito.
+ABX humano anterior: 10/20, p=0,588099; listening permanece pendente pelo protocolo.
+Evidências: /mnt/f/ts808-validation/settling-requalification-20261106-r4/qualification/.
+
+As seções seguintes preservam o histórico.
+
 # Qualificação automática do MVP — resultados e gates de bloqueio
+
+## Correção de duração em preparação — 2026-11-05
+
+Os 25 casos físicos reprovados receberam revisões explícitas com 2 s de
+aquecimento e janela final de 0,5 s. Critérios e circuito preservados.
+Os quatro diagnósticos C++ de dois casos representativos passaram nas duas
+taxas, com deriva de aproximadamente 0,308 e 0,348 µV contra o limite de10µV.
+A requalificação nativa/WAV está bloqueada por armazenamento: aproximadamente
+233 GiB livres necessários em F:, contra cerca de 30 GiB disponíveis.
+Os diagnósticos C++ são evidência parcial; a matriz anterior continua reprovada.
+Detalhes e execução: [revisão de assentamento](designs/ts808_settling_revision.md).
 
 ## Estado consolidado após a matriz — 2026-11-05
 

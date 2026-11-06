@@ -1,0 +1,38 @@
+{
+  "scope": "Consistency diagnostic, not independent native qualification",
+  "vref_resistance_Ohm": 5000.0,
+  "vref_capacitance_F": 4.7e-05,
+  "tau_s": 0.235,
+  "extra_warmup_s": 1.5,
+  "predicted_decay_ratio": 0.0016900811669755722,
+  "entries": [
+    {
+      "case_id": "tone_edge_t000_f5000_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "original_drift_V": 0.00018245855582711817,
+      "revised_drift_V": 3.0766966901492834e-07,
+      "measured_decay_ratio": 0.0016862441315519854
+    },
+    {
+      "case_id": "tone_edge_t000_f5000_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "original_drift_V": 0.00018245760589461325,
+      "revised_drift_V": 3.076679712798545e-07,
+      "measured_decay_ratio": 0.0016862436058574736
+    },
+    {
+      "case_id": "tone_high_f82_a500mv-warmup2s",
+      "rate_Hz": 192000,
+      "original_drift_V": 0.0002208102680837956,
+      "revised_drift_V": 3.47806927946973e-07,
+      "measured_decay_ratio": 0.0015751392857101339
+    },
+    {
+      "case_id": "tone_high_f82_a500mv-warmup2s",
+      "rate_Hz": 384000,
+      "original_drift_V": 0.00022080912273940014,
+      "revised_drift_V": 3.478054926447756e-07,
+      "measured_decay_ratio": 0.001575140955816654
+    }
+  ]
+}

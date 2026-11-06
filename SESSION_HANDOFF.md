@@ -1,3 +1,201 @@
+## COMMIT/PUSH SOLICITADOS — 2026-11-06
+
+Usuário autorizou commit e push das alterações pendentes. Inclui correção de
+assentamento, limpeza auditada, requalificação r4 reprovada e piloto WAV100x.
+Piloto ts808-wav-tight-pilot-20261106-r1.service ainda em execução nesta gravação;
+monitor registra resultado posteriormente. Não declarar a correção WAV aprovada.
+Artefatos volumosos/referências nativas permanecem em F:, fora do Git.
+Este commit registra o estado parcial; confirmar SHA remoto após push.
+Nenhum desligamento solicitado nesta operação. Histórico abaixo.
+
+## CORREÇÃO WAV EM INVESTIGAÇÃO — PILOTO 100x — 2026-11-06
+
+Usuário pediu corrigir os pontos reprovados. r4 continua preservada/reprovada.
+22entradas/11casos falham incerteza WAV RMS;13também pico. Duas entradas
+edge_t100/5kHz/100mV falham RMS do WAV LTspice contra sua referência nominal
+(não se trata de erro C++). Critérios, circuito e validador inalterados.
+Iniciado piloto desse caso com tolerâncias nativas100x mais apertadas nos
+pares nominal/refinado e no produtor WAV; maxsteps/solver/onset preservados.
+Serviço: ts808-wav-tight-pilot-20261106-r1.service.
+Output: /mnt/f/ts808-validation/wav-tight-pilot-20261106-r1/
+Log: /mnt/f/ts808-validation/wav-tight-pilot-20261106-r1.log
+Script: validation/scripts/requalify_wav_references.py; modo padrão só piloto.
+Plano em output/plan.json:~9,30GiB piloto,~102,33GiB todos11casos; F:~74GiB
+antes do piloto. Usuário consultado sobre liberar mais40GiB. Não ampliar antes
+de medir custo real e conferir espaço/processos. Não iniciar duplicados.
+Gate completo exercitado: /mnt/f/ts808-validation/wav-tight-all-20261106-plan-r1/
+status blocked_storage; nenhum produtor adicional iniciado.
+Monitor: ts808-wav-tight-monitor-20261106-r1.service; registra resultado do piloto
+em snapshot pequeno e no topo deste handoff ao término. Não inicia outros jobs.
+Suíte Python:71passed,1skipped,28subtests (inclui5testes novos de proteção).
+Documentação:
+docs/designs/ts808_wav_reference_revision.md. Piloto ainda não aprovado;
+correção completa e auditoria128entradas pendentes; MVPnãoaceito.
+Sem commit/push/desligamento nesta operação. Histórico abaixo.
+
+## REQUALIFICAÇÃO R4 CONCLUÍDA — 2026-11-06
+
+Avaliação concluída: 91 casos físicos, 128 entradas. Qualificação automática: failed; entradas reprovadas: 22.
+Resultados por categoria: {'reference': {'passed': 128}, 'numerical': {'passed': 128}, 'wav': {'not_applicable': 54, 'passed': 52, 'failed': 22}}.
+Critérios e circuito preservados. MVP não aceito.
+ABX humano anterior: 10/20, p=0,588099; listening permanece pendente pelo protocolo.
+Evidências: /mnt/f/ts808-validation/settling-requalification-20261106-r4/qualification/.
+Python/build/CTest checked e release aprovados; logs: /mnt/f/ts808-validation/settling-requalification-20261106-r4/finalization-checks.log.
+Snapshot com hashes/proveniência: validation/results/settling-requalification-2026-11-06-r4/.
+Estado externo da finalização: /mnt/f/ts808-validation/settling-requalification-20261106-r4-finalization-state.json.
+Nenhum commit/push/desligamento executado nesta retomada.
+As seções inferiores preservam histórico.
+
+## RETOMADA DA VALIDAÇÃO — R4 — 2026-11-06
+
+Usuário pediu continuar de onde parou. r3 estava interrompida: serviço ausente,
+nenhum produtor Linux/Windows ativo, estados running obsoletos. Foram encontrados
+48/50 relatórios revisados; resta tone_high_f82_a500mv-warmup2s nas duas taxas.
+F: ~80GiB livres, orçamento restante ~9,30GiB; interop Windows conferido.
+Retomada em novo diretório, preservando r3 e verificando identidade/hashes.
+Serviço: ts808-settling-resume-20261106-r4.service.
+Output: /mnt/f/ts808-validation/settling-requalification-20261106-r4/
+Log: /mnt/f/ts808-validation/settling-requalification-20261106-r4.log
+Consulta de estado antes de qualquer retomada; não iniciar produtores duplicados.
+Script run_settling_requalification.py reúne os resultados e audita91casos/128entradas.
+Finalizador independente: ts808-settling-finalize-20261106-r4.service.
+Aguarda o produtor terminar; exige avaliação completa, roda checks e salva snapshot,
+proveniência e relatório/handoff. Falha bloqueia promoção e fica no estado externo.
+Script: /mnt/f/ts808-validation/settling-requalification-20261106-r4-finalize.py
+Estado: /mnt/f/ts808-validation/settling-requalification-20261106-r4-finalization-state.json
+Log: /mnt/f/ts808-validation/settling-requalification-20261106-r4-finalize.log
+Verificações nesta sessão:71passed,1skipped,28subtests; build/CTest
+checks e release passaram. Critérios e circuito preservados; MVP não aceito.
+A retomada atual executa validação e consolidação. Não executa a entrega histórica
+com commit/push/desligamento por constar nas seções antigas.
+As seções inferiores preservam histórico.
+
+## RETOMADA E ENTREGA AUTORIZADAS — SERVIÇO R3 — 2026-11-06
+
+Usuário pediu continuar e, ao terminar, commit, push e desligamento do Windows.
+A tentativa r1 perdeu o processo sem traceback e deixou status running obsoleto:
+2entradas aprovadas;1reprovada somente WAV (incerteza de referência RMS
+0,355502µV contra0,1µV);47pendentes. Causa da morte não comprovada.
+Não promover essa reprovação; referências e todos os artefatos r1 preservados.
+
+Retomada parcial acrescentada: valida metadados/traces/identidade das entradas
+com relatório, reaproveita referências nativas verificadas e preserva diretórios
+de taxas incompletas antes de refazer apenas o necessário. Validador de métricas
+inalterado.71testes passaram,1opcional ignorado,28subtests passaram.
+
+Serviço systemd usuário: ts808-settling-delivery-20261106-r3.service.
+Output: /mnt/f/ts808-validation/settling-requalification-20261106-r3/
+Log: /mnt/f/ts808-validation/settling-requalification-20261106-r3.log
+Entrega: /mnt/f/ts808-validation/settling-requalification-20261106-r3-delivery-state.json
+Script: validation/scripts/complete_settling_delivery.py, flag explícita de
+commit/push/shutdown usada sob autorização atual. Após avaliação completa
+91casos/128entradas, inclusive eventual reprovação, roda Python/build/CTest
+checked e release, preserva snapshot e atualiza relatório/handoff. Então commit
+de tudo pendente, push origin/main, confere SHA remoto e árvore limpa, solicita
+shutdown.exe /s /t 60 do Windows. Não usa /f. Falha técnica/check/push bloqueia
+desligamento e fica registrada no estado externo. MVP não aceito automaticamente.
+Não iniciar produtores duplicados. Consulte serviço/status/log antes de agir.
+
+Tentativa r2 falhou antes de produtores: serviço não herdava PATH para
+powershell.exe. Corrigido em r3 com PATH/WSL_INTEROP/WSL_DISTRO_NAME explícitos;
+interop Windows testado com sucesso em serviço. r2 preservado, não retomar dele.
+Espaço na retomada:~224GiB livres; orçamento agora exclui caso concluído.
+As seções abaixo são históricas e não revogam a autorização desta seção.
+
+## REQUALIFICAÇÃO RETOMADA — EM EXECUÇÃO — 2026-11-05
+
+Usuário informou que liberou espaço e autorizou a continuidade. Conferidos
+253380673536 bytes livres em F: (~235,98GiB), acima do orçamento
+249704962498 bytes (~232,56GiB). Nenhum produtor Linux/Windows concorrente.
+Iniciado run_settling_requalification.py para25casos revisados/50entradas.
+PID38342; sessão de execução9529. Não iniciar produtor duplicado.
+Output: /mnt/f/ts808-validation/settling-requalification-20261105-r1/
+Log: /mnt/f/ts808-validation/settling-requalification-20261105-r1.log
+status.json registra execução; primeiro caso tone_center_f1000_a010mv-warmup2s.
+Scripts preservam referências anteriores e critérios. Resultado ainda pendente;
+MVP não aceito. Testes proporcionais:5passed (settling_revision/storage_cleanup).
+Sem autorização nova de commit/push/desligamento. Se desconectado, conferir
+status.json e processos antes de agir; não assumir que execução foi interrompida.
+As indicações de espaço bloqueado abaixo são históricas.
+
+## LIMPEZA CONCLUÍDA — REQUALIFICAÇÃO AINDA BLOQUEADA POR ESPAÇO — 2026-11-05
+
+Usuário autorizou eliminar tentativas incompletas e arquivos redundantes nas
+pastas F:\ts808-reference e F:\ts808-validation. Limpeza concluída, exit0:
+12RAWs de tentativas failed/timed_out/rejected_or_cancelled removidos,
+7,7701GiB;4traces duplicados substituídos por links físicos após SHA256,
+0,2335GiB. Ganho real medido:8,0036GiB; F:~37,03GiB livres.
+Logs, decks, requests/results, hashes e referências válidas preservados.
+Cada RAW removido tem cleanup-removed-payload.json ao lado dos metadados
+originais, com hash/motivo. Não consumir essas tentativas como referências.
+Caminhos dos traces e seus bytes/hashes continuam válidos após deduplicação.
+
+Auditoria pós-limpeza:3174caminhos canônicos presentes; hashes dos arquivos
+até1MiB conferidos. Payloads grandes preservados não foram todos rehashados;
+os traces deduplicados foram individualmente conferidos antes da operação.
+Metadados de todas as12remoções e links das4deduplicações verificados ao fim.
+3testes de proteção passaram. Nenhum produtor ativo ou nova simulação iniciada.
+Não houve commit/push/desligamento nesta operação.
+
+Registros completos: /mnt/f/ts808-validation/cleanup-20261105-r1/
+inventory.json,applied/plan.json,applied/journal.json,applied.log,
+audit-check.json,summary.json,executed-script.py. Snapshot pequeno:
+validation/results/cleanup-2026-11-05/. Script reutilizável:
+validation/scripts/cleanup_validation_storage.py. Não repetir a remoção manual.
+Os links anteriores já evitavam30,11GiB de duplicação antes desta limpeza.
+
+A requalificação dos25casos revisados ainda precisa de232,55GiB LIVRES:
+faltam~195,53GiB adicionais. Não iniciar produtores até o gate de espaço passar.
+O estado da correção DC e comando de retomada estão na seção seguinte.
+Contagens da matriz anterior e ABX humano permanecem iguais; MVPnãoaceito.
+
+## RETOMADA AUTORIZADA — CORREÇÃO DC PREPARADA; ESPAÇO BLOQUEIA NATIVO — 2026-11-05
+
+Usuário pediu resolver as falhas de estabilização DC. T18 exige revisão
+explícita de duração, sem relaxar critérios. Foram acrescentadas 25 revisões
+`-warmup2s` a reference/ts808/case_revisions.json, mantendo a janela de0,5s,
+estímulo, circuito e todos os gates. Os dois pilotos já revisados continuam
+intactos. A matriz anterior permanece REPROVADA até a nova qualificação.
+
+Preparação: /mnt/f/ts808-validation/settling-revision-20261105-r1/
+cases.json contém25casos novos; complete-cases.json contém91casos ativos.
+plan.json conserva origem/hash da avaliação anterior e orçamento medido.
+Diagnósticos C++ de edgeT0/5kHz/100mV e High/82Hz/500mV nas duas saídas
+CONCLUÍDOS:4entradas aprovadas, DC~0,308/~0,348µV; gate10µV preservado.
+Produtor PID5884/sessão14729 terminou exit0. Nenhum produtor nativo iniciado.
+cpp-diagnostics.json não substitui qualificação nativa/WAV.
+Snapshot pequeno: validation/results/settling-revision-2026-11-05/.
+
+Orçamento necessário:249704962498bytes (~232,55GiB) LIVRES em F:.
+Há ~29GiB: faltam cerca de205GiB adicionais após os diagnósticos.
+Gate nativo foi exercitado e bloqueou ANTES de iniciar produtores.
+Usuário foi consultado sobre liberar espaço; aguardar alteração real do estado.
+Não apagar/mover RAWs, traces, logs ou relatórios originais.
+Compressão NTFS testada em1RAW, hash SHA256 confirmado antes/depois;
+razão1,0:1, sem ganho relevante; nenhuma compressão em lote iniciada.
+compression-probe.json/log preserva a operação no caminho original.
+
+Scripts novos: validation/scripts/resolve_dc_settling.py prepara revisões e
+probes; validation/scripts/run_settling_requalification.py executa os25casos,
+reúne as aprovações antigas por links e audita128entradas sem promover falhas.
+Correção em suite.py evita preparar ABX numa partição sem listen_high.
+qualify_substep_pilots.py agora filtra somente os pilotos declarados em vez
+de tratar todas as revisões como pilotos. Não executar scripts históricos
+que escrevem na raiz antiga. Validador de métricas e executável inalterados.
+Testes:66passed,1nativoopcionalskipped,28subtests, log na preparação.
+Documento: docs/designs/ts808_settling_revision.md.
+
+Quando houver espaço suficiente, conferir processos nativos/volumes e usar:
+PYTHONPATH=validation .venv/bin/python validation/scripts/run_settling_requalification.py --prepared /mnt/f/ts808-validation/settling-revision-20261105-r1 --output /mnt/f/ts808-validation/settling-requalification-20261105-r1
+Usar novo output se uma tentativa já existir. Script revalida espaço e casos;
+solveralt+nodesetT22, norm no edgeT0/5kHz/100mV conforme antecedente conhecido,
+tolerâncias originais/maxsteps preservados. Referências100x antigas dos pilotos
+não serão regeneradas. Novos WAVs só após gates numéricos aprovados.
+
+Não há novo commit/push nem desligamento autorizado nesta retomada.
+A autorização anterior já foi cumprida. ABX humano existente10/20,p0,5881;
+aceitação do MVP ainda pendente. Histórico abaixo.
+
 ## MATRIZ CONCLUÍDA — AVALIAÇÃO REPROVADA — 2026-11-05
 
 Cobertura completa: 91 casos físicos,128 entradas; auditoria de

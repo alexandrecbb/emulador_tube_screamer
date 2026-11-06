@@ -27,7 +27,7 @@ def main():
     replacements={r['base_case_id']:r['case'] for r in revisions}
     catalog['cases']=[configure_substeps(copy.deepcopy(replacements.get(c['case_id'],c)),192000) for c in catalog['cases']]
     atomic_json(OUTPUT/'cases.json',catalog)
-    jobs=[(r['case'],ROOT/'runs/mvp-revised-pilots-norm'/r['case']['case_id'],'nominal','refined',ROOT/'validation/toolchain.json') for r in revisions]
+    jobs=[(r['case'],ROOT/'runs/mvp-revised-pilots-norm'/r['case']['case_id'],'nominal','refined',ROOT/'validation/toolchain.json') for r in revisions if r['base_case_id'] in catalog['pilot_case_ids']]
     overload=next(c for c in catalog['cases'] if c['case_id']=='overload_high')
     jobs.append((overload,ROOT/'runs/mvp-pilots-02/overload_high','nominal-alt-guard','refined-alt-guard',TOOLCHAIN))
     summary=dict(pilots=[],full_matrix_authorized=False,integration_rate_Hz=768000,

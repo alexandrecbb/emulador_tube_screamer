@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/alexandre/projetos/emulador_tube_screamer/validation/scripts/run_settling_requalification.py", line 98, in <module>
+    main()
+    ~~~~^^
+  File "/home/alexandre/projetos/emulador_tube_screamer/validation/scripts/run_settling_requalification.py", line 66, in main
+    raise RuntimeError(f"F: storage gate blocked: need {budget['estimated_required_bytes']} bytes free, have {free}; no native producer started")
+RuntimeError: F: storage gate blocked: need 249704962498 bytes free, have 31460601856; no native producer started

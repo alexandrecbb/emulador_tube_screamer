@@ -1,0 +1,36 @@
+{
+  "recorded_at_utc": "2026-11-05T23:28:30.908186+00:00",
+  "source_assessment": "/home/alexandre/projetos/emulador_tube_screamer/validation/results/qualification-2026-11-05/automatic-qualification.json",
+  "source_sha256": "40a3668fee025ccb0399af9c71e060a3e76d5b7e796ffe76af09f59123e2f7dd",
+  "revised_physical_cases": 25,
+  "revised_entries": 50,
+  "analytical_plan": {
+    "duration_sum_s": 62.5,
+    "minimum_numerical_reference_bytes": 147456000000,
+    "minimum_export_raw_bytes": 9216000000,
+    "model_trace_bytes": 9216012800,
+    "pcm_payload_bytes": 144000000,
+    "adaptive_factor": 1.05,
+    "headroom_factor": 1.1,
+    "native_required_bytes": 181114560000,
+    "output_required_bytes": 10137614080,
+    "estimated_required_bytes": 191252174080
+  },
+  "measured_growth_plan": {
+    "duration_sum_s": 62.5,
+    "minimum_numerical_reference_bytes": 147456000000,
+    "minimum_export_raw_bytes": 9216000000,
+    "model_trace_bytes": 9216012800,
+    "pcm_payload_bytes": 144000000,
+    "adaptive_factor": 1.3891729125976562,
+    "headroom_factor": 1.1,
+    "native_required_bytes": 239567348418,
+    "output_required_bytes": 10137614080,
+    "estimated_required_bytes": 249704962498
+  },
+  "free_bytes": 31905914880,
+  "additional_free_bytes": 217799047618,
+  "native_storage_gate": "blocked",
+  "automatic_qualification": "pending",
+  "mvp_accepted": false
+}

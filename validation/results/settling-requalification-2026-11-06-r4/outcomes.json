@@ -1,0 +1,13 @@
+{
+  "reference": {
+    "passed": 128
+  },
+  "numerical": {
+    "passed": 128
+  },
+  "wav": {
+    "not_applicable": 54,
+    "passed": 52,
+    "failed": 22
+  }
+}

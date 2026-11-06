@@ -1,0 +1,35 @@
+{
+  "source_directory": "/mnt/f/ts808-validation/settling-revision-20261105-r1",
+  "files": {
+    "plan.json": {
+      "path": "/mnt/f/ts808-validation/settling-revision-20261105-r1/plan.json",
+      "sha256": "3f1fac17565493d1bd6b117e76654ab344f95a965a4bbf6360a058464cb7af66"
+    },
+    "cpp-diagnostics.json": {
+      "path": "/mnt/f/ts808-validation/settling-revision-20261105-r1/cpp-diagnostics.json",
+      "sha256": "1573575a9bf9a098573dc0aa0ff3807bcc0f5b0d5c2a11c7288a858392fb8a25"
+    },
+    "decay-diagnostic.json": {
+      "path": "/mnt/f/ts808-validation/settling-revision-20261105-r1/decay-diagnostic.json",
+      "sha256": "3d408eee8e4f024f8ce1c863666b43be5c8419f7d14faf3337ac0a01790f1491"
+    },
+    "status.json": {
+      "path": "/mnt/f/ts808-validation/settling-revision-20261105-r1/status.json",
+      "sha256": "b6c1792a261ca1550b7ef08647a958bcf341a1111bbcfb25b091bb8d6a160c0a"
+    },
+    "tests.log": {
+      "path": "/mnt/f/ts808-validation/settling-revision-20261105-r1/tests.log",
+      "sha256": "764aeebbdd92d4ff96da9803f452a710e9f3f21f89a4db6eaa67ae3032f1e727"
+    },
+    "compression-probe.json": {
+      "path": "/mnt/f/ts808-validation/settling-revision-20261105-r1/compression-probe.json",
+      "sha256": "f668695bb2febfa874f50086c606fba4899853fcb5db83209cc79dce413b5745"
+    },
+    "native-storage-gate.log": {
+      "path": "/mnt/f/ts808-validation/settling-revision-20261105-r1/native-storage-gate.log",
+      "sha256": "b2316cfebd8b47a122b4fb1ba30d08a0684f4566fa41890d08144f4df31716b3"
+    }
+  },
+  "validator_sha256": "df57852f796c97448ac180f6fd4050c448b434c5324818ad455ddbed8eb20266",
+  "executable_sha256": "5a980894cf03ab2b1f1e7f9b9253c7be5a768617a8acfbe8aaf01c6e4f3c6b08"
+}

@@ -106,6 +106,16 @@ def produce_native_reference(case,base,physical,level,cfg,solver,*,tolerance_sca
         return imported
 
 
+def resumed_reference(directory, case, config, session):
+    """Consume original reference bytes before reusing a partial physical case."""
+    if not (directory/'reference.json').exists():
+        return None
+    session.consume(directory,config)
+    if load_json(directory/'reference.json')['physical_case_sha256']!=case['physical_case_sha256']:
+        raise ValueError('Changed resumed reference case')
+    return directory
+
+
 def suite(cases_path,toolchain_path,executable,rates,output,pilots_path,*,native_solver='norm',resume_from=None,native_solver_overrides=None,native_tolerance_scale=1.,native_solver_fallback=False,native_topology_nodeset=False,continue_native_failures=False):
     if rates!=[192000,384000]:raise ValueError('Required rates are 192000 and 384000')
     if native_solver not in ('norm','alt'):raise ValueError('Invalid native solver')
@@ -180,10 +190,11 @@ def suite(cases_path,toolchain_path,executable,rates,output,pilots_path,*,native
             print('Matrix case',case['case_id'],flush=True)
             session=ReferenceSession()
             existing=[e for e in summary['entries'] if e['case_id']==case['case_id']]
-            if resume_from is not None and all(e['report'] is not None for e in existing):
+            if resume_from is not None and any(e['report'] is not None for e in existing):
                 pilot=next((p for p in pilots.get('pilots',[]) if p['case_id']==case['case_id']),None)
                 provenance=load_json(Path(pilot['reference_toolchain'])) if pilot else cfg
                 for e in existing:
+                    if e['report'] is None:continue
                     for key in ('case','run','nominal','refined','report'):
                         ref=e[key]
                         if sha256(output/ref['path'])!=ref['sha256']:raise ValueError('Changed resumed metadata')
@@ -201,10 +212,13 @@ def suite(cases_path,toolchain_path,executable,rates,output,pilots_path,*,native
                         session.consume(manifest.parent,provenance)
                         if sha256(manifest)!=report['reference_qualification'][level]['manifest_sha256']:
                             raise ValueError('Resumed reference differs from report')
-                session.verify();publish();print('Matrix resumed completed case',case['case_id'],flush=True);continue
-            if resume_from is not None and (output/case['case_id']).exists():
-                (output/case['case_id']).rename(output/(case['case_id']+'-incomplete-preserved-'+uuid.uuid4().hex[:8]))
-            physical=output/case['case_id'];physical.mkdir();base=physical/'case.json';atomic_json(base,case);references={}
+                session.verify();publish()
+                if all(e['report'] is not None for e in existing):
+                    print('Matrix resumed completed case',case['case_id'],flush=True);continue
+            physical=output/case['case_id'];physical.mkdir(exist_ok=resume_from is not None)
+            base=physical/'case.json'
+            if base.exists() and load_json(base)!=case:raise ValueError('Changed resumed physical case')
+            atomic_json(base,case);references={}
             reference_cfg=cfg
             reuse=next((p for p in pilots.get('pilots',[]) if p['case_id']==case['case_id'] and p.get('references')),None)
             if reuse:
@@ -249,6 +263,11 @@ def suite(cases_path,toolchain_path,executable,rates,output,pilots_path,*,native
                 for refined in (() if reuse else (False,True)):
                     level='refined' if refined else 'nominal'
                     solver=overrides.get(case['case_id'],'alt' if case['case_id'].startswith('overload_') else native_solver)
+                    cached=resumed_reference(physical/level,case,cfg,session) if resume_from is not None else None
+                    if cached is not None:
+                        references[level]=cached
+                        print('Reference',case['case_id'],level,'reused after integrity check',flush=True)
+                        continue
                     references[level]=produce_native_reference(case,base,physical,level,cfg,solver,
                         tolerance_scale=native_tolerance_scale,solver_fallback=native_solver_fallback,
                         topology_nodeset=native_topology_nodeset)
@@ -261,6 +280,10 @@ def suite(cases_path,toolchain_path,executable,rates,output,pilots_path,*,native
                 print('Matrix native failure retained; continuing',case['case_id'],str(error),flush=True)
                 publish();continue
             for rate in (rates if case['analysis_kind']=='transient' else (192000,)):
+                prior=next(e for e in existing if e['rate_Hz']==(rate if case['analysis_kind']=='transient' else None))
+                if resume_from is not None and prior['report'] is not None:continue
+                unfinished=physical/str(rate)
+                if unfinished.exists():unfinished.rename(physical/(str(rate)+'-incomplete-preserved-'+uuid.uuid4().hex[:8]))
                 c=copy.deepcopy(case);c['execution']['rate_Hz']=rate
                 if 'substeps' in c['execution']:configure_substeps(c,rate)
                 if c['analysis_kind']=='transient':c['analysis']['time']['sample_count']=round(c['analysis']['time']['duration_s']*rate)+1
@@ -322,7 +345,7 @@ def suite(cases_path,toolchain_path,executable,rates,output,pilots_path,*,native
     reports=[load_json(output/e['report']['path']) for e in summary['entries'] if e['report'] is not None]
     for category in summary['outcomes']:
         summary['outcomes'][category]=aggregate([r['outcomes'][category] for r in reports]+(['pending'] if len(reports)!=len(summary['entries']) else []))
-    if all(summary['outcomes'][k]=='passed' for k in ('reference','numerical','wav')):
+    if any(c['case_id']=='listen_high' for c in cases) and all(summary['outcomes'][k]=='passed' for k in ('reference','numerical','wav')):
         from .abx import prepare_session
         primary=output/'listen_high/384000/comparison';session=prepare_session(primary/'report.json',primary/'listening/cpp.wav',primary/'listening/reference.wav',primary/'abx',None,family_id='primary')
         report=load_json(primary/'report.json');report['artifacts'].append(dict(path='abx/blinded/session.json',sha256=sha256(primary/'abx/blinded/session.json'),status='generated',reason='Twenty blinded trials; human responses pending; key stored separately'))

@@ -1,0 +1,33 @@
+{
+  "source_directory": "/mnt/f/ts808-validation/cleanup-20261105-r1",
+  "files": {
+    "summary.json": {
+      "path": "/mnt/f/ts808-validation/cleanup-20261105-r1/summary.json",
+      "sha256": "b734018aa32cdf91cd08b698435b57fa4b948548363a31a0812a2e1256dd9afb"
+    },
+    "journal.json": {
+      "path": "/mnt/f/ts808-validation/cleanup-20261105-r1/applied/journal.json",
+      "sha256": "eb8a7a96f58722e6cbedd5e3a57e17b03d08f255ff7f089004b67140f0f4b0c0"
+    },
+    "audit-check.json": {
+      "path": "/mnt/f/ts808-validation/cleanup-20261105-r1/audit-check.json",
+      "sha256": "7e2320232cc1844089cadd3bd13640430057e16c38a9ba89bc9428bdd23a7517"
+    },
+    "tests.log": {
+      "path": "/mnt/f/ts808-validation/cleanup-20261105-r1/tests.log",
+      "sha256": "ed0d6c079627b8413ba6fa1e9b0419bf2bb3f2c7f1917b91d9f908f1f9a678d2"
+    }
+  },
+  "plan": {
+    "path": "/mnt/f/ts808-validation/cleanup-20261105-r1/applied/plan.json",
+    "sha256": "583be03d0493204a1b0a1b34be674f2f670287afb29b2111411b8f8ace78e76a"
+  },
+  "inventory": {
+    "path": "/mnt/f/ts808-validation/cleanup-20261105-r1/inventory.json",
+    "sha256": "394ce1cdac49213cab552775ba0d3e6925c87113c5dd0aad6a4c7697a1ffb622"
+  },
+  "script": {
+    "path": "/mnt/f/ts808-validation/cleanup-20261105-r1/executed-script.py",
+    "sha256": "100b9449915e0a0ed9e1c1c5eb03bd5d675811758e6c41dd935293063396cab5"
+  }
+}

@@ -1,0 +1,19 @@
+...........s................................ [ 61%]
+............................                                             [100%]
+71 passed, 1 skipped, 28 subtests passed in 5.99s
+ninja: no work to do.
+Test project /home/alexandre/projetos/emulador_tube_screamer/build/offline-checks
+    Start 1: core
+1/1 Test #1: core .............................   Passed    2.20 sec
+
+100% tests passed out of 1
+
+Total Test time (real) =   2.21 sec
+ninja: no work to do.
+Test project /home/alexandre/projetos/emulador_tube_screamer/build/offline-release
+    Start 1: core
+1/1 Test #1: core .............................   Passed    2.20 sec
+
+100% tests passed out of 1
+
+Total Test time (real) =   2.20 sec

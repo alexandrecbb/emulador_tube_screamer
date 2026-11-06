@@ -1,0 +1,6 @@
+{
+  "scope": "All 3174 canonical audit paths exist; hashes rechecked for files up to 1 MiB. Larger unchanged payloads were not rehashed; duplicate replacements are independently SHA256-verified.",
+  "required_paths": 3174,
+  "status": "passed",
+  "failures": []
+}

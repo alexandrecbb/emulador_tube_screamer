@@ -1,0 +1,172 @@
+{
+  "scope": "C++ settling diagnostic only; native reference and WAV remain mandatory",
+  "executable_sha256": "5a980894cf03ab2b1f1e7f9b9253c7be5a768617a8acfbe8aaf01c6e4f3c6b08",
+  "entries": [
+    {
+      "case_id": "tone_edge_t000_f5000_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "checks": [
+        {
+          "id": "cpp_settling_fundamental",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "cpp_settling_fundamental",
+          "value": 2.7294903070139063e-09,
+          "unit": "relative",
+          "limit": 0.001,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "cpp_settling_dc",
+          "value": 3.0766966901492834e-07,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "cpp_settling_thd",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "cpp_settling_thd",
+          "value": 2.2111697292937244e-09,
+          "unit": "relative",
+          "limit": 0.01,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ],
+      "run": "/mnt/f/ts808-validation/settling-revision-20261105-r1/cpp-diagnostics/tone_edge_t000_f5000_a100mv-warmup2s/192000/run/run.json",
+      "run_sha256": "7763331c344ba0754d7378dd6e5fa4e9091a2868cf3d1a977d449dae1210cdb5"
+    },
+    {
+      "case_id": "tone_edge_t000_f5000_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "checks": [
+        {
+          "id": "cpp_settling_fundamental",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "cpp_settling_fundamental",
+          "value": 2.6854434825128572e-09,
+          "unit": "relative",
+          "limit": 0.001,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "cpp_settling_dc",
+          "value": 3.076679712798545e-07,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "cpp_settling_thd",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "cpp_settling_thd",
+          "value": 1.062826189998271e-09,
+          "unit": "relative",
+          "limit": 0.01,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ],
+      "run": "/mnt/f/ts808-validation/settling-revision-20261105-r1/cpp-diagnostics/tone_edge_t000_f5000_a100mv-warmup2s/384000/run/run.json",
+      "run_sha256": "575a1b5c1d1104a638a8cdf1b6d398cef055e80294bd2b2d5f52f5b24534b220"
+    },
+    {
+      "case_id": "tone_high_f82_a500mv-warmup2s",
+      "rate_Hz": 192000,
+      "checks": [
+        {
+          "id": "cpp_settling_fundamental",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "cpp_settling_fundamental",
+          "value": 2.688507562993008e-09,
+          "unit": "relative",
+          "limit": 0.001,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "cpp_settling_dc",
+          "value": 3.47806927946973e-07,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "cpp_settling_thd",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "cpp_settling_thd",
+          "value": 1.5965843512538683e-09,
+          "unit": "relative",
+          "limit": 0.01,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ],
+      "run": "/mnt/f/ts808-validation/settling-revision-20261105-r1/cpp-diagnostics/tone_high_f82_a500mv-warmup2s/192000/run/run.json",
+      "run_sha256": "00a0f03cdd60d93c3d15a119d2c898f6caf2d1fbe2256ffda849ed2ba2a0e09c"
+    },
+    {
+      "case_id": "tone_high_f82_a500mv-warmup2s",
+      "rate_Hz": 384000,
+      "checks": [
+        {
+          "id": "cpp_settling_fundamental",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "cpp_settling_fundamental",
+          "value": 2.6892024949357713e-09,
+          "unit": "relative",
+          "limit": 0.001,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "cpp_settling_dc",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "cpp_settling_dc",
+          "value": 3.478054926447756e-07,
+          "unit": "V",
+          "limit": 1e-05,
+          "reason": "Measured without gain, delay or DC fitting"
+        },
+        {
+          "id": "cpp_settling_thd",
+          "applicable": true,
+          "required": true,
+          "status": "passed",
+          "metric": "cpp_settling_thd",
+          "value": 1.600531877980263e-09,
+          "unit": "relative",
+          "limit": 0.01,
+          "reason": "Measured without gain, delay or DC fitting"
+        }
+      ],
+      "run": "/mnt/f/ts808-validation/settling-revision-20261105-r1/cpp-diagnostics/tone_high_f82_a500mv-warmup2s/384000/run/run.json",
+      "run_sha256": "ec44dbaec62fade1d118a440f33360a1ba3bb641b0d12ff33769af91b9caa4d5"
+    }
+  ],
+  "status": "passed",
+  "automatic_qualification": "pending"
+}

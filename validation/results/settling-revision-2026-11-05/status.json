@@ -1,0 +1,13 @@
+{
+  "status": "blocked",
+  "blocker": "insufficient_F_storage",
+  "cpp_diagnostics": "completed",
+  "cpp_entries_passed": 4,
+  "new_native_entries_evaluated": 0,
+  "new_wav_entries_evaluated": 0,
+  "automatic_qualification": "pending",
+  "mvp_accepted": false,
+  "free_bytes": 31168532480,
+  "required_free_bytes": 249704962498,
+  "additional_free_bytes": 218536430018
+}

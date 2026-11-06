@@ -1,0 +1,10 @@
+{
+  "path": "/mnt/f/ts808-reference/runs/tone_high_f5000_a500mv-nominal-9e7fd70b2ca344928f9c3cfff7ae1e85/deck.raw",
+  "sha256": "7f53e5c162a6fb6f995148989f1313f7d0fce5fa812b3b9347c1ad17458bff0d",
+  "size_bytes": 974965060,
+  "hash_verified_before_and_after": true,
+  "free_bytes_before": 31563771904,
+  "free_bytes_after": 31529414656,
+  "elapsed_s": 19.93872361800004,
+  "exit_code": 0
+}

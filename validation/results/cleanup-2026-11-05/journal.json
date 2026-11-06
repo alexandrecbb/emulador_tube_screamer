@@ -1,0 +1,152 @@
+{
+  "status": "completed",
+  "free_bytes_before": 31165345792,
+  "operations": [
+    {
+      "operation": "remove_failed_raw",
+      "path": "/mnt/f/ts808-reference/runs/hold_center-nominal-b8af5c46c9fe460ebeeda60e685306ed/deck.raw",
+      "size_bytes": 2606,
+      "sha256": "ab11a53c7342423b3d2aa643630a094621b626187cc0a3ca58cceac2e1db6705",
+      "metadata_path": "/mnt/f/ts808-reference/runs/hold_center-nominal-b8af5c46c9fe460ebeeda60e685306ed/reference_result.json",
+      "metadata_sha256": "d7590a2952ddad368589c9a4a7b29a3d7179f6e2596aabd34740b9e3a2bfe97e",
+      "reason": "Explicitly failed/rejected attempt; no imported or audited consumer",
+      "disposition": "deletion_authorized_by_user"
+    },
+    {
+      "operation": "remove_failed_raw",
+      "path": "/mnt/f/ts808-reference/runs/listen_high-nominal-0dfc29e53eef433fb50d778127662417/deck.raw",
+      "size_bytes": 2822,
+      "sha256": "13b1a600e4d9aa0cc67a737a62fad3e35d9bf678b6cbf386e0acac44a4468b71",
+      "metadata_path": "/mnt/f/ts808-reference/runs/listen_high-nominal-0dfc29e53eef433fb50d778127662417/reference_result.json",
+      "metadata_sha256": "c5b8d0ce42b7ca4b55d176db1e1407184ea31f35445206f4e1e9456d7de9ec9c",
+      "reason": "Explicitly failed/rejected attempt; no imported or audited consumer",
+      "disposition": "deletion_authorized_by_user"
+    },
+    {
+      "operation": "remove_failed_raw",
+      "path": "/mnt/f/ts808-reference/runs/listen_high-nominal-8f256f56f9884d29819462697b1c9240/deck.raw",
+      "size_bytes": 1077203502,
+      "sha256": "f335b1157b5c381283582c63ad0a8b7ba040854b97efdb685a6a13e9433af0d3",
+      "metadata_path": "/mnt/f/ts808-reference/runs/listen_high-nominal-8f256f56f9884d29819462697b1c9240/reference_result.json",
+      "metadata_sha256": "2baf61f5e7715845b27449d92694fea0b5ea5737ea2122ed2ecbecd3b4dcfbe1",
+      "reason": "Explicitly failed/rejected attempt; no imported or audited consumer",
+      "disposition": "deletion_authorized_by_user"
+    },
+    {
+      "operation": "remove_failed_raw",
+      "path": "/mnt/f/ts808-reference/runs/overload_center-nominal-a493fd77a1ba4c8db39629bb201918ed/deck.raw",
+      "size_bytes": 2614,
+      "sha256": "9413b6f2c83ae7773eac1d080e29c67b65428bee888be559b8fcbd5b683fd872",
+      "metadata_path": "/mnt/f/ts808-reference/runs/overload_center-nominal-a493fd77a1ba4c8db39629bb201918ed/reference_result.json",
+      "metadata_sha256": "a1021eaf9c0a7d5688414736d93336d04717e418b3f0d86f58b1b44b7df7c1d2",
+      "reason": "Explicitly failed/rejected attempt; no imported or audited consumer",
+      "disposition": "deletion_authorized_by_user"
+    },
+    {
+      "operation": "remove_failed_raw",
+      "path": "/mnt/f/ts808-reference/runs/overload_center-refined-d6365d88d8e94660a93a1192c8434f3f/deck.raw",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "metadata_path": "/mnt/f/ts808-reference/runs/overload_center-refined-d6365d88d8e94660a93a1192c8434f3f/reference_result.json",
+      "metadata_sha256": "880b56ac17637f02e0d3072507f55e29b6739c79b76d9fb69e6e407c405b449f",
+      "reason": "Explicitly failed/rejected attempt; no imported or audited consumer",
+      "disposition": "deletion_authorized_by_user"
+    },
+    {
+      "operation": "remove_failed_raw",
+      "path": "/mnt/f/ts808-reference/runs/overload_center-refined-e0bf0355812f4953bb49bae30528c44f/deck.raw",
+      "size_bytes": 2614,
+      "sha256": "48a236a326c6569252be2e70e4da2de2fdc3a598aa7a1d1cd8344808448d8749",
+      "metadata_path": "/mnt/f/ts808-reference/runs/overload_center-refined-e0bf0355812f4953bb49bae30528c44f/reference_result.json",
+      "metadata_sha256": "ab008b69ef54107fcf966b2e306a36e49040152580ff35c5f6d331c5f3eabe30",
+      "reason": "Explicitly failed/rejected attempt; no imported or audited consumer",
+      "disposition": "deletion_authorized_by_user"
+    },
+    {
+      "operation": "remove_failed_raw",
+      "path": "/mnt/f/ts808-reference/runs/rejected-archive/audit-opamp-transient-700a8e7f0909410a8bed931ae417188f/deck.raw",
+      "size_bytes": 2530118602,
+      "sha256": "9e29d550dc3e8582d45a4cb4bbcd80f1a6e4517d949010ec92a2d2912db0849f",
+      "metadata_path": "/mnt/f/ts808-reference/runs/rejected-archive/audit-opamp-transient-700a8e7f0909410a8bed931ae417188f/archive.json",
+      "metadata_sha256": "fd0b7e75abe6f47e8db6f01c0fc0e07dd5e08e1df4377925f3a5884ebafe3989",
+      "reason": "Explicitly failed/rejected attempt; no imported or audited consumer",
+      "disposition": "deletion_authorized_by_user"
+    },
+    {
+      "operation": "remove_failed_raw",
+      "path": "/mnt/f/ts808-reference/runs/rejected-archive/tone_center_f1000_a100mv-warmup2s-nominal-242924cbf386444dbf0c4faf4a5ad73f/deck.raw",
+      "size_bytes": 1968645230,
+      "sha256": "cf1a63e08fcab73b3622b89c44b905192811dd51544fed741dceb0ad46168157",
+      "metadata_path": "/mnt/f/ts808-reference/runs/rejected-archive/tone_center_f1000_a100mv-warmup2s-nominal-242924cbf386444dbf0c4faf4a5ad73f/archive.json",
+      "metadata_sha256": "e4721a2bbbd8d874fe0d24345900c679ab103f95773657d714dc8c6d9fac2de4",
+      "reason": "Explicitly failed/rejected attempt; no imported or audited consumer",
+      "disposition": "deletion_authorized_by_user"
+    },
+    {
+      "operation": "remove_failed_raw",
+      "path": "/mnt/f/ts808-reference/runs/rejected-archive/tone_center_f1000_a100mv-warmup2s-refined-947b60d1d62c40c598205a5917934e8f/deck.raw",
+      "size_bytes": 1340365422,
+      "sha256": "1d83c365ce386e5289a42ff26beaf3f0bfc9f9fe402f62135446342e58f641a0",
+      "metadata_path": "/mnt/f/ts808-reference/runs/rejected-archive/tone_center_f1000_a100mv-warmup2s-refined-947b60d1d62c40c598205a5917934e8f/archive.json",
+      "metadata_sha256": "6abd13a3887b8cc93f7edde9469eeceb350da39e3c02f1aed382df910731b806",
+      "reason": "Explicitly failed/rejected attempt; no imported or audited consumer",
+      "disposition": "deletion_authorized_by_user"
+    },
+    {
+      "operation": "remove_failed_raw",
+      "path": "/mnt/f/ts808-reference/runs/tone_center_f440_a010mv-nominal-5893ba0966a04df1ab41120ed18edea5/deck.raw",
+      "size_bytes": 579127878,
+      "sha256": "76e7eea6a7da36710b87c8b9ae9627d78df69fd28bf6a8a7b69a39907ae96b1f",
+      "metadata_path": "/mnt/f/ts808-reference/runs/tone_center_f440_a010mv-nominal-5893ba0966a04df1ab41120ed18edea5/reference_result.json",
+      "metadata_sha256": "d03906ee97e4ef84a800f54a4d6d8ed442711b20ae6a87f209fa27378f94df71",
+      "reason": "Explicitly failed/rejected attempt; no imported or audited consumer",
+      "disposition": "deletion_authorized_by_user"
+    },
+    {
+      "operation": "remove_failed_raw",
+      "path": "/mnt/f/ts808-reference/runs/tone_edge_t000_f5000_a100mv-refined-66f9607e9b35430992a4c091671ee7b1/deck.raw",
+      "size_bytes": 847579726,
+      "sha256": "9c2b3e10954cbc054a3c04d250a2c3b1b29fbc30955191064b7f1700f4b84188",
+      "metadata_path": "/mnt/f/ts808-reference/runs/tone_edge_t000_f5000_a100mv-refined-66f9607e9b35430992a4c091671ee7b1/reference_result.json",
+      "metadata_sha256": "844237de03f5e5ec96848f89dba21002d0a9eaecc2bc5a0923e3d2fb8eef46c1",
+      "reason": "Explicitly failed/rejected attempt; no imported or audited consumer",
+      "disposition": "deletion_authorized_by_user"
+    },
+    {
+      "operation": "remove_failed_raw",
+      "path": "/mnt/f/ts808-reference/runs/tone_high_f1000_a500mv-warmup2s-nominal-tol100-ec88bdf606ec401f89c56535ee9bb133/deck.raw",
+      "size_bytes": 40764,
+      "sha256": "0fe74b656e8e1ef4f110a35360556d9522a1920c93cb7a56375ab89d39b232be",
+      "metadata_path": "/mnt/f/ts808-reference/runs/tone_high_f1000_a500mv-warmup2s-nominal-tol100-ec88bdf606ec401f89c56535ee9bb133/reference_result.json",
+      "metadata_sha256": "b815f109f7ab6050075e35de0855a5c246cd1f36daf730201e6a0e56c805c6db",
+      "reason": "Explicitly failed/rejected attempt; no imported or audited consumer",
+      "disposition": "deletion_authorized_by_user"
+    },
+    {
+      "operation": "hardlink_duplicate",
+      "source": "/mnt/f/ts808-validation/substeps-20261104/hold-diagnosis-20261104/norm/192000/run/traces.f64le",
+      "target": "/mnt/f/ts808-validation/substeps-20261104/hold-diagnosis-20261104/alt-nodeset/192000/run/traces.f64le",
+      "sha256": "f31640a298425db77ceed55a6062e4f666a24ff389359bea2461ba15053ecb7e"
+    },
+    {
+      "operation": "hardlink_duplicate",
+      "source": "/mnt/f/ts808-validation/substeps-20261104/hold-diagnosis-20261104/norm/384000/run/traces.f64le",
+      "target": "/mnt/f/ts808-validation/substeps-20261104/hold-diagnosis-20261104/alt-nodeset/384000/run/traces.f64le",
+      "sha256": "ed5979cbd175164c63a9632770bac349ad1fe46409194c1d8335f038e3211480"
+    },
+    {
+      "operation": "hardlink_duplicate",
+      "source": "/mnt/f/ts808-validation/substeps-20261104/overload_high/192000/run/traces.f64le",
+      "target": "/mnt/f/ts808-validation/continuation-20261104/substeps-192000/traces.f64le",
+      "sha256": "525380b350daa6895f868efe4c189c32c10595eef7d86907c5903df267e32058"
+    },
+    {
+      "operation": "hardlink_duplicate",
+      "source": "/mnt/f/ts808-validation/substeps-20261104/overload_high/384000/run/traces.f64le",
+      "target": "/mnt/f/ts808-validation/continuation-20261104/substeps-384000/traces.f64le",
+      "sha256": "e6bfe0ea44d8532c92a3be06dfddfb9f6e656722df301b2b29e006eee7266eee"
+    }
+  ],
+  "free_bytes_after": 39759130624,
+  "measured_free_increase_bytes": 8593784832
+}

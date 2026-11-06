@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "removed_failed_raw_count": 12,
+  "hardlinked_duplicate_trace_count": 4,
+  "failed_raw_bytes": 8343091780,
+  "measured_free_increase_bytes": 8593784832,
+  "free_bytes_after": 39759130624,
+  "canonical_audit_paths_preserved": 3174,
+  "canonical_small_file_hash_check": "passed",
+  "native_qualification_required_free_bytes": 249704962498,
+  "native_qualification_additional_free_bytes": 209945831874,
+  "native_storage_gate": "blocked",
+  "mvp_accepted": false
+}

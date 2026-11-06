@@ -1,0 +1,26 @@
+{
+  "status.json": {
+    "original": "/mnt/f/ts808-validation/settling-requalification-20261106-r4/status.json",
+    "sha256": "bfbdeaecf44dbda12c9a92f0ff56329630660d138fc0eb9acaa06e7d75043b08"
+  },
+  "qualification.json": {
+    "original": "/mnt/f/ts808-validation/settling-requalification-20261106-r4/qualification/qualification.json",
+    "sha256": "cf018d9d1603f28d96d97c38c14dbe8e361217e47159d5edea566d3876772031"
+  },
+  "qualification.md": {
+    "original": "/mnt/f/ts808-validation/settling-requalification-20261106-r4/qualification/qualification.md",
+    "sha256": "61240efdfe0246c461f778ee35074b2efcb8762b72d2c8dd0482e141c6020d7e"
+  },
+  "integrity.json": {
+    "original": "/mnt/f/ts808-validation/settling-requalification-20261106-r4/qualification/integrity.json",
+    "sha256": "0fdf54287729b64fc653e38f9ee28c91527ab87ea81324a4cd923f3421723614"
+  },
+  "finalization-checks.log": {
+    "original": "/mnt/f/ts808-validation/settling-requalification-20261106-r4/finalization-checks.log",
+    "sha256": "85a36cf120f6bab021012fa6db19cee13c2e2db0449e40a5217b714634453d56"
+  },
+  "settling-requalification-20261106-r4-finalize.py": {
+    "original": "/mnt/f/ts808-validation/settling-requalification-20261106-r4-finalize.py",
+    "sha256": "af55e1fb5ddb944d6ba9484669766f2813362598274ccf0a090e3255f2271cc5"
+  }
+}

@@ -302,6 +302,3781 @@
           "i_volume_low"
         ]
       }
+    },
+    {
+      "base_case_id": "tone_center_f1000_a010mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_center_f1000_a010mv-warmup2s",
+        "physical_case_sha256": "91780ece4fd9974c31d8847440471498a105ff08121a34f8c8bfa189eb0c1ee2",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 0.5,
+              "tone": 0.5,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 1000.0,
+            "peak_V": 0.01,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 0.5,
+            "tone": 0.5,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 1000.0,
+          "peak_V": 0.01,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_center_f1000_a500mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_center_f1000_a500mv-warmup2s",
+        "physical_case_sha256": "544a0b0169e03f273054801e7a8cd30753a7d1b91db9e758d10ce116945d47b2",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 0.5,
+              "tone": 0.5,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 1000.0,
+            "peak_V": 0.5,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 0.5,
+            "tone": 0.5,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 1000.0,
+          "peak_V": 0.5,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_center_f440_a010mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_center_f440_a010mv-warmup2s",
+        "physical_case_sha256": "c0f25f7f9c01937aa89c150eee4a2371de40da79b08a8e56ded057af6ebbd44d",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 0.5,
+              "tone": 0.5,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 440.0,
+            "peak_V": 0.01,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 0.5,
+            "tone": 0.5,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 440.0,
+          "peak_V": 0.01,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_center_f440_a100mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_center_f440_a100mv-warmup2s",
+        "physical_case_sha256": "a088e3cab8ff5212934c2f7345a4a77305a2b142483a9b9c3a0dbbf9aebc8513",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 0.5,
+              "tone": 0.5,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 440.0,
+            "peak_V": 0.1,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 0.5,
+            "tone": 0.5,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 440.0,
+          "peak_V": 0.1,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_center_f440_a500mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_center_f440_a500mv-warmup2s",
+        "physical_case_sha256": "87166d9f5c5d4fd4f1e9f1ad576b9c3ce0302b802518bda6fa50492d609f6c23",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 0.5,
+              "tone": 0.5,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 440.0,
+            "peak_V": 0.5,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 0.5,
+            "tone": 0.5,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 440.0,
+          "peak_V": 0.5,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_center_f5000_a010mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_center_f5000_a010mv-warmup2s",
+        "physical_case_sha256": "2de599fcd8c481b5e5a680a07fcadb818a437895a776b0791907addddecf1695",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 0.5,
+              "tone": 0.5,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 5000.0,
+            "peak_V": 0.01,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 0.5,
+            "tone": 0.5,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 5000.0,
+          "peak_V": 0.01,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_center_f5000_a100mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_center_f5000_a100mv-warmup2s",
+        "physical_case_sha256": "2b248312da00eee28d7a07da59bc14b0d360e042f5f35ff560f4334489d70219",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 0.5,
+              "tone": 0.5,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 5000.0,
+            "peak_V": 0.1,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 0.5,
+            "tone": 0.5,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 5000.0,
+          "peak_V": 0.1,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_center_f5000_a500mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_center_f5000_a500mv-warmup2s",
+        "physical_case_sha256": "3943db6b45b7bc03b5019acb344630fb95b3661ffb48fa798d4cc59e4c32b22e",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 0.5,
+              "tone": 0.5,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 5000.0,
+            "peak_V": 0.5,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 0.5,
+            "tone": 0.5,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 5000.0,
+          "peak_V": 0.5,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_center_f82_a100mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_center_f82_a100mv-warmup2s",
+        "physical_case_sha256": "658023613bb4f8e9b6edc52c711609637fc4030bd03bad8e899a9b8787b8bacb",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 0.5,
+              "tone": 0.5,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 82.0,
+            "peak_V": 0.1,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 0.5,
+            "tone": 0.5,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 82.0,
+          "peak_V": 0.1,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_center_f82_a500mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_center_f82_a500mv-warmup2s",
+        "physical_case_sha256": "2501504a8935c90f65e927b8b5ab6ae56b3ecb56fedf3372d6f2c48156c19245",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 0.5,
+              "tone": 0.5,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 82.0,
+            "peak_V": 0.5,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 0.5,
+            "tone": 0.5,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 82.0,
+          "peak_V": 0.5,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_edge_t000_f5000_a100mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_edge_t000_f5000_a100mv-warmup2s",
+        "physical_case_sha256": "ee0e716f9e1c07e3df6fa76f6d272f44877f8fa0cf8dea974612aa8b2de6959b",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 0.0,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 5000.0,
+            "peak_V": 0.1,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 0.0,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 5000.0,
+          "peak_V": 0.1,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_edge_t000_f82_a100mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_edge_t000_f82_a100mv-warmup2s",
+        "physical_case_sha256": "f5774c515b0d4c619231cc5ca1abfd385cbcf0513efb007f1379445ea0234b3f",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 0.0,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 82.0,
+            "peak_V": 0.1,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 0.0,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 82.0,
+          "peak_V": 0.1,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_edge_t100_f5000_a100mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_edge_t100_f5000_a100mv-warmup2s",
+        "physical_case_sha256": "fe21ac88564d5789c87ef5def1ee42309ed34f6ead394adaacacfcbac5442bc3",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 1.0,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 5000.0,
+            "peak_V": 0.1,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 1.0,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 5000.0,
+          "peak_V": 0.1,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_edge_t100_f82_a100mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_edge_t100_f82_a100mv-warmup2s",
+        "physical_case_sha256": "9e5c36ee7243963d17a09aaef2c26b1b038e8bb8d73212ca513fe00e7430f2ae",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 1.0,
+              "volume": 0.5
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 82.0,
+            "peak_V": 0.1,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 1.0,
+            "volume": 0.5
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 82.0,
+          "peak_V": 0.1,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_high_f1000_a010mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_high_f1000_a010mv-warmup2s",
+        "physical_case_sha256": "7770d33d9c90bc74573af9f90a3550a1c7b011f4548590e4f7bd69c3c0d61995",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 0.5,
+              "volume": 1.0
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 1000.0,
+            "peak_V": 0.01,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 0.5,
+            "volume": 1.0
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 1000.0,
+          "peak_V": 0.01,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_high_f1000_a100mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_high_f1000_a100mv-warmup2s",
+        "physical_case_sha256": "5c389b78791100e8d1c8deb7208e2b4e23bb1469a3f2ad2c5fad99e15d8a5b70",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 0.5,
+              "volume": 1.0
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 1000.0,
+            "peak_V": 0.1,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 0.5,
+            "volume": 1.0
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 1000.0,
+          "peak_V": 0.1,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_high_f440_a010mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_high_f440_a010mv-warmup2s",
+        "physical_case_sha256": "b386a3b976c21aa1296945c2cf3c7ba658e5e889ecc730279bb966530681823f",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 0.5,
+              "volume": 1.0
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 440.0,
+            "peak_V": 0.01,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 0.5,
+            "volume": 1.0
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 440.0,
+          "peak_V": 0.01,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_high_f440_a100mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_high_f440_a100mv-warmup2s",
+        "physical_case_sha256": "1751a6c0088a6a0aefb797f46d4096defd7cad0f24df82da01459305cd32d438",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 0.5,
+              "volume": 1.0
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 440.0,
+            "peak_V": 0.1,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 0.5,
+            "volume": 1.0
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 440.0,
+          "peak_V": 0.1,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_high_f440_a500mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_high_f440_a500mv-warmup2s",
+        "physical_case_sha256": "f813d87120a523ccee2c6e413d78de30a824e47b15b5a70db2bddbc641930976",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 0.5,
+              "volume": 1.0
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 440.0,
+            "peak_V": 0.5,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 0.5,
+            "volume": 1.0
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 440.0,
+          "peak_V": 0.5,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_high_f5000_a010mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_high_f5000_a010mv-warmup2s",
+        "physical_case_sha256": "4247a635d508ca6d7d2ad278be593ede8dc3ac36c46220dd390df510393472c3",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 0.5,
+              "volume": 1.0
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 5000.0,
+            "peak_V": 0.01,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 0.5,
+            "volume": 1.0
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 5000.0,
+          "peak_V": 0.01,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_high_f5000_a100mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_high_f5000_a100mv-warmup2s",
+        "physical_case_sha256": "032fd49070cbafeff09bea2823d5abd02d6933a36b540b10e6a94233e3da9c77",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 0.5,
+              "volume": 1.0
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 5000.0,
+            "peak_V": 0.1,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 0.5,
+            "volume": 1.0
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 5000.0,
+          "peak_V": 0.1,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_high_f5000_a500mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_high_f5000_a500mv-warmup2s",
+        "physical_case_sha256": "a50835c7caf0d1b94cb888ea139b920d2a67cbfaff9d2d6523915818ec4a6719",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 0.5,
+              "volume": 1.0
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 5000.0,
+            "peak_V": 0.5,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 0.5,
+            "volume": 1.0
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 5000.0,
+          "peak_V": 0.5,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_high_f82_a010mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_high_f82_a010mv-warmup2s",
+        "physical_case_sha256": "f09208238259c4de0c75b09dbb3cdbb9aa3700fd19d1cd33cd87c5030c6ae213",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 0.5,
+              "volume": 1.0
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 82.0,
+            "peak_V": 0.01,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 0.5,
+            "volume": 1.0
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 82.0,
+          "peak_V": 0.01,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_high_f82_a100mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_high_f82_a100mv-warmup2s",
+        "physical_case_sha256": "5fcd640631e4dd038c27b8ab1046b91e2bac55e869adf3a5d745b653a0df3c88",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 0.5,
+              "volume": 1.0
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 82.0,
+            "peak_V": 0.1,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 0.5,
+            "volume": 1.0
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 82.0,
+          "peak_V": 0.1,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
+    },
+    {
+      "base_case_id": "tone_high_f82_a500mv",
+      "reason": "T18 explicit duration revision: both C++ and LTspice failed the 10 uV DC settling gate in the original 0.5\u20131 s window; retain all gates, stimulus and circuit, extend warm-up to 2 s based on independently qualified Center/High pilots.",
+      "case": {
+        "schema_version": 1,
+        "case_id": "tone_high_f82_a500mv-warmup2s",
+        "physical_case_sha256": "656517281d1f30c3d39a3ecdcdebe1ada267da98343fabd5acf4375b2af649ae",
+        "physical_descriptor": {
+          "analysis_kind": "transient",
+          "circuit": {
+            "model_id": "ts808-cerutti-reduced-v1",
+            "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+            "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+            "controls": {
+              "drive": 1.0,
+              "tone": 0.5,
+              "volume": 1.0
+            },
+            "supply_V": 9.0,
+            "temperature_K": 298.15,
+            "source_Ohm": 1000.0,
+            "load_Ohm": 1000000.0,
+            "R_on_Ohm": 383.29731360711594
+          },
+          "stimulus": {
+            "type": "tone",
+            "frequency_Hz": 82.0,
+            "peak_V": 0.5,
+            "phase_rad": 0.0,
+            "onset_s": 0.0,
+            "rise_s": 0.005
+          },
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5
+          },
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ]
+        },
+        "analysis_kind": "transient",
+        "circuit": {
+          "model_id": "ts808-cerutti-reduced-v1",
+          "component_map_sha256": "224b027e9295b12380d0ad9967ce1f59bc6138f031398ed2f6045e82e76d3e32",
+          "device_spec_sha256": "0dd75cf264a473ff65673a102955d52eb2e8abd1b35cc3ddcd889f167f2c750e",
+          "controls": {
+            "drive": 1.0,
+            "tone": 0.5,
+            "volume": 1.0
+          },
+          "supply_V": 9.0,
+          "temperature_K": 298.15,
+          "source_Ohm": 1000.0,
+          "load_Ohm": 1000000.0,
+          "R_on_Ohm": 383.29731360711594
+        },
+        "stimulus": {
+          "type": "tone",
+          "frequency_Hz": 82.0,
+          "peak_V": 0.5,
+          "phase_rad": 0.0,
+          "onset_s": 0.0,
+          "rise_s": 0.005
+        },
+        "analysis": {
+          "required_checks": [
+            "null",
+            "harmonics",
+            "thd",
+            "settling",
+            "local_windows"
+          ],
+          "windows": [
+            {
+              "id": "steady",
+              "start_s": 2.0,
+              "stop_s": 2.5,
+              "role": "steady"
+            }
+          ],
+          "time": {
+            "origin_s": 0.0,
+            "duration_s": 2.5,
+            "sample_count": 480001
+          }
+        },
+        "execution": {
+          "rate_Hz": 192000,
+          "formulation_id": "control-branch-v1",
+          "solver": {
+            "atol_current_A": 1e-12,
+            "atol_voltage_V": 1e-09,
+            "rtol_residual": 1e-09,
+            "atol_increment_current_A": 1e-12,
+            "atol_increment_voltage_V": 1e-09,
+            "rtol_increment": 1e-09,
+            "max_newton_dc": 100,
+            "max_newton_transient": 32,
+            "max_line_search": 9,
+            "armijo_c1": 0.0001,
+            "voltage_scale_V": 1.0,
+            "current_scale_A": 0.001,
+            "pivot_epsilon_factor": 64.0,
+            "minimum_rcond": 1e-12,
+            "maximum_backward_error": 1e-10,
+            "maximum_schur_difference": 1e-09,
+            "row_scaling": "max_abs_after_physical"
+          },
+          "purpose": "target"
+        },
+        "trace_columns": [
+          "time",
+          "input",
+          "input_cap",
+          "input_base",
+          "dry_send",
+          "clip_plus",
+          "clip_minus",
+          "gain_rc",
+          "drive_end",
+          "z_clip",
+          "i_drive",
+          "tone_in",
+          "tone_minus",
+          "tone_wiper",
+          "tone_rc",
+          "tone_out",
+          "volume_cap",
+          "volume_top",
+          "z_tone",
+          "i_tone_low",
+          "i_tone_high",
+          "i_volume_high",
+          "switch_common",
+          "output_base",
+          "output_emitter",
+          "output_cap",
+          "output",
+          "input_emitter",
+          "clip_out",
+          "wet_send",
+          "vref",
+          "i_volume_low"
+        ]
+      }
     }
   ]
 }
