@@ -1,0 +1,7 @@
+{
+  "status": "interrupted",
+  "completed_cases": 5,
+  "required_cases": 11,
+  "mvp_accepted": false,
+  "reason": "Incomplete case tone_edge_t000_f5000_a100mv-warmup2s: 1"
+}

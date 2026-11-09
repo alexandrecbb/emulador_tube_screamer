@@ -1,0 +1,37 @@
+{
+  "recorded_at_utc": "2026-11-06T21:59:44.981346+00:00",
+  "source_assessment": "/mnt/f/ts808-validation/settling-requalification-20261106-r4/qualification/qualification.json",
+  "source_sha256": "cf018d9d1603f28d96d97c38c14dbe8e361217e47159d5edea566d3876772031",
+  "tolerance_scale": 0.01,
+  "physical_cases": 1,
+  "entries": 2,
+  "complete_remedy_cases": 11,
+  "budget": {
+    "duration_sum_s": 2.5,
+    "minimum_numerical_reference_bytes": 5898240000,
+    "minimum_export_raw_bytes": 368640000,
+    "model_trace_bytes": 368640512,
+    "pcm_payload_bytes": 5760000,
+    "adaptive_factor": 1.3891729125976562,
+    "headroom_factor": 1.1,
+    "native_required_bytes": 9582693936,
+    "output_required_bytes": 405504563,
+    "estimated_required_bytes": 9988198499
+  },
+  "full_budget": {
+    "duration_sum_s": 27.5,
+    "minimum_numerical_reference_bytes": 64880640000,
+    "minimum_export_raw_bytes": 4055040000,
+    "model_trace_bytes": 4055045632,
+    "pcm_payload_bytes": 63360000,
+    "adaptive_factor": 1.3891729125976562,
+    "headroom_factor": 1.1,
+    "native_required_bytes": 105409633304,
+    "output_required_bytes": 4460550195,
+    "estimated_required_bytes": 109870183499
+  },
+  "free_bytes": 79147982848,
+  "storage_gate": "passed",
+  "scope": "Full WAV duration including onset; unchanged physical cases, maxsteps, circuit and gates",
+  "mvp_accepted": false
+}

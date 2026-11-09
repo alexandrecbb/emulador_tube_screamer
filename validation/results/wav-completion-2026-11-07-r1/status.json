@@ -1,0 +1,7 @@
+{
+  "status": "interrupted",
+  "completed_cases": 4,
+  "required_cases": 11,
+  "mvp_accepted": false,
+  "reason": "Incomplete case tone_center_f5000_a500mv-warmup2s: 1"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "suite_id": "matrix",
+  "manifest": {
+    "path": "cases.json",
+    "sha256": "bcd62c148df815073504aedb8e062ecd81a43a7ccb094b902b9f254da5a7fd6f"
+  },
+  "toolchain": {
+    "path": "toolchain.json",
+    "sha256": "69cb2758125f0f98418675905e529dbd9e7617202344e5a6e4623009a1bcd1c8"
+  },
+  "rates_Hz": [
+    192000,
+    384000
+  ],
+  "completion": "incomplete",
+  "entries": [
+    {
+      "case_id": "tone_edge_t100_f5000_a100mv-warmup2s",
+      "physical_case_sha256": "fe21ac88564d5789c87ef5def1ee42309ed34f6ead394adaacacfcbac5442bc3",
+      "rate_Hz": 192000,
+      "case": null,
+      "run": null,
+      "nominal": null,
+      "refined": null,
+      "report": null,
+      "status": "not_evaluated",
+      "exit_code": null,
+      "reason": "Pending explicit resumed attempt"
+    },
+    {
+      "case_id": "tone_edge_t100_f5000_a100mv-warmup2s",
+      "physical_case_sha256": "fe21ac88564d5789c87ef5def1ee42309ed34f6ead394adaacacfcbac5442bc3",
+      "rate_Hz": 384000,
+      "case": null,
+      "run": null,
+      "nominal": null,
+      "refined": null,
+      "report": null,
+      "status": "not_evaluated",
+      "exit_code": null,
+      "reason": "Pending explicit resumed attempt"
+    }
+  ],
+  "outcomes": {
+    "reference": "pending",
+    "numerical": "pending",
+    "wav": "pending",
+    "listening": "pending",
+    "combined": "pending"
+  },
+  "exit_code": 50
+}

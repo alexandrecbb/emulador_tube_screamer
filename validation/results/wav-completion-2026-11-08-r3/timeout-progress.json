@@ -1,0 +1,10 @@
+{
+  "source": "/mnt/f/ts808-reference/runs/tone_edge_t000_f5000_a100mv-warmup2s-refined-44b2e3c3195c46ab895d5112c3691c4b/deck.raw",
+  "payload_offset": 2360,
+  "complete_records": 156971213,
+  "last_time_s": 0.2849431318758579,
+  "target_time_s": 2.5,
+  "fraction": 0.11397725275034316,
+  "partial_not_qualified": true,
+  "declared_records": 156971101
+}

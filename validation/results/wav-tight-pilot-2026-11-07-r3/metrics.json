@@ -1,0 +1,116 @@
+[
+  {
+    "case_id": "tone_edge_t100_f5000_a100mv-warmup2s",
+    "rate_Hz": 192000,
+    "outcomes": {
+      "reference": "passed",
+      "numerical": "passed",
+      "wav": "passed",
+      "listening": "not_applicable",
+      "combined": "passed"
+    },
+    "metrics": [
+      {
+        "id": "wav_native_rms",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "wav_native_rms",
+        "value": 3.878450972739139e-07,
+        "unit": "V",
+        "limit": 1e-06,
+        "reason": "Measured without gain, delay or DC fitting"
+      },
+      {
+        "id": "wav_native_peak",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "wav_native_peak",
+        "value": 1.1234432062759425e-06,
+        "unit": "V",
+        "limit": 1e-05,
+        "reason": "Measured without gain, delay or DC fitting"
+      },
+      {
+        "id": "wav_reference_uncertainty_rms",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "wav_reference_uncertainty_rms",
+        "value": 7.526342234734558e-08,
+        "unit": "V",
+        "limit": 1e-07,
+        "reason": "Measured without gain, delay or DC fitting"
+      },
+      {
+        "id": "wav_reference_uncertainty_peak",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "wav_reference_uncertainty_peak",
+        "value": 7.529443245279932e-07,
+        "unit": "V",
+        "limit": 1e-06,
+        "reason": "Measured without gain, delay or DC fitting"
+      }
+    ]
+  },
+  {
+    "case_id": "tone_edge_t100_f5000_a100mv-warmup2s",
+    "rate_Hz": 384000,
+    "outcomes": {
+      "reference": "passed",
+      "numerical": "passed",
+      "wav": "passed",
+      "listening": "not_applicable",
+      "combined": "passed"
+    },
+    "metrics": [
+      {
+        "id": "wav_native_rms",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "wav_native_rms",
+        "value": 3.548311439582356e-07,
+        "unit": "V",
+        "limit": 1e-06,
+        "reason": "Measured without gain, delay or DC fitting"
+      },
+      {
+        "id": "wav_native_peak",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "wav_native_peak",
+        "value": 1.0826891117254878e-06,
+        "unit": "V",
+        "limit": 1e-05,
+        "reason": "Measured without gain, delay or DC fitting"
+      },
+      {
+        "id": "wav_reference_uncertainty_rms",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "wav_reference_uncertainty_rms",
+        "value": 7.517238836341993e-08,
+        "unit": "V",
+        "limit": 1e-07,
+        "reason": "Measured without gain, delay or DC fitting"
+      },
+      {
+        "id": "wav_reference_uncertainty_peak",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "wav_reference_uncertainty_peak",
+        "value": 7.529443245279932e-07,
+        "unit": "V",
+        "limit": 1e-06,
+        "reason": "Measured without gain, delay or DC fitting"
+      }
+    ]
+  }
+]

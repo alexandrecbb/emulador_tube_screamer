@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "exit_code": 0,
+  "outcomes": {
+    "reference": "passed",
+    "numerical": "passed",
+    "wav": "passed",
+    "listening": "not_applicable",
+    "combined": "passed"
+  },
+  "scope": "Targeted WAV requalification; full 128-entry audit still required",
+  "mvp_accepted": false
+}

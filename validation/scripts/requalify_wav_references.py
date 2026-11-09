@@ -40,6 +40,7 @@ def main():
     parser.add_argument('--source', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--all', action='store_true', help='Otherwise run only the worst rejected case')
+    parser.add_argument('--resume-from', type=Path, help='Preserved attempt with identical cases and native settings')
     args = parser.parse_args()
     output = args.output.resolve()
     if output.exists() or not output.is_relative_to(Path('/mnt/f/ts808-validation')):
@@ -54,6 +55,12 @@ def main():
     cases = all_cases if args.all else [c for c in all_cases if c['case_id'] == PILOT]
     if not cases:
         raise ValueError('Worst-case pilot is missing')
+    if args.resume_from is not None:
+        previous = load_json(args.resume_from/'plan.json')
+        if (previous['source_sha256'] != sha256(assessment_path)
+                or previous['tolerance_scale'] != .01
+                or load_json(args.resume_from/'cases.json') != dict(manifest, cases=cases)):
+            raise ValueError('Resume source, cases or native tolerances differ')
     output.mkdir(parents=True, exist_ok=False)
     atomic_json(output/'cases.json', dict(manifest, cases=cases))
     # The observed factor from settling runs is a lower bound for this pilot.
@@ -79,6 +86,7 @@ def main():
                      ROOT/'build/offline-release/ts808_offline', [192000,384000],
                      output/'matrix', Path('/mnt/f/ts808-validation/substeps-20261104/pilots.json'),
                      native_solver='alt', native_tolerance_scale=.01,
+                     resume_from=args.resume_from/'matrix' if args.resume_from else None,
                      native_topology_nodeset=True,
                      native_solver_overrides={'tone_edge_t000_f5000_a100mv-warmup2s':'norm'})
         summary = load_json(output/'matrix/summary.json')

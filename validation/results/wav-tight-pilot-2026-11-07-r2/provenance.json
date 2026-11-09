@@ -1,0 +1,18 @@
+{
+  "status.json": {
+    "original": "/mnt/f/ts808-validation/wav-tight-pilot-20261107-r2/status.json",
+    "sha256": "aca801380231e310972cba7ef049473adb084f1ecd5f62f3134b9be5fa872948"
+  },
+  "plan.json": {
+    "original": "/mnt/f/ts808-validation/wav-tight-pilot-20261107-r2/plan.json",
+    "sha256": "9cb6c1fb176594cedb46a221942666d90d165799bc96d25b39411367b261d62b"
+  },
+  "summary.json": {
+    "original": "/mnt/f/ts808-validation/wav-tight-pilot-20261107-r2/matrix/summary.json",
+    "sha256": "04bd5a40f41eed50de7b7b6492b0fd1f0308ad1946eac9140e4afcad78721ec9"
+  },
+  "wav-tight-pilot-20261107-r2-monitor.py": {
+    "original": "/mnt/f/ts808-validation/wav-tight-pilot-20261107-r2-monitor.py",
+    "sha256": "67b7fa1bf63f0abbc63414edeaef7cba026b05c478de7b28a0f1925cd8e04c9c"
+  }
+}

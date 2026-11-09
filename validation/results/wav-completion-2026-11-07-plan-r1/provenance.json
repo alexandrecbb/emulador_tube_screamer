@@ -1,0 +1,10 @@
+{
+  "plan.json": {
+    "original": "/mnt/f/ts808-validation/wav-completion-20261107-plan-r1/plan.json",
+    "sha256": "e871647073228d4d94612227de6e2ac142ac6da279a9d32038237bca18715191"
+  },
+  "status.json": {
+    "original": "/mnt/f/ts808-validation/wav-completion-20261107-plan-r1/status.json",
+    "sha256": "99c6294de96250df93bbe336c264f7e485f14564f656fb126e9f578e1d68ad64"
+  }
+}

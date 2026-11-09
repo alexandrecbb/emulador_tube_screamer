@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "suite_id": "matrix",
+  "manifest": {
+    "path": "cases.json",
+    "sha256": "bcd62c148df815073504aedb8e062ecd81a43a7ccb094b902b9f254da5a7fd6f"
+  },
+  "toolchain": {
+    "path": "toolchain.json",
+    "sha256": "69cb2758125f0f98418675905e529dbd9e7617202344e5a6e4623009a1bcd1c8"
+  },
+  "rates_Hz": [
+    192000,
+    384000
+  ],
+  "completion": "completed",
+  "entries": [
+    {
+      "case_id": "tone_edge_t100_f5000_a100mv-warmup2s",
+      "physical_case_sha256": "fe21ac88564d5789c87ef5def1ee42309ed34f6ead394adaacacfcbac5442bc3",
+      "rate_Hz": 192000,
+      "case": {
+        "path": "tone_edge_t100_f5000_a100mv-warmup2s/192000/case.json",
+        "sha256": "518b11677b0363ec8352cb098b3034bbbf6816cac6b778faec16819a08e8924c"
+      },
+      "run": {
+        "path": "tone_edge_t100_f5000_a100mv-warmup2s/192000/run/run.json",
+        "sha256": "d39df5c7e5166b6e8281da1c073b0e5ee29ccfadc5821e1658d55d2e2572fa1e"
+      },
+      "nominal": {
+        "path": "tone_edge_t100_f5000_a100mv-warmup2s/nominal/reference.json",
+        "sha256": "7b3f61196b6c9e7d76bb290a795c57dd3e481cde302144ff4fe39afc362d855c"
+      },
+      "refined": {
+        "path": "tone_edge_t100_f5000_a100mv-warmup2s/refined/reference.json",
+        "sha256": "c7fa17d4e058543830e3b68ff62b8f67d1ab4031a9f20c0cf70d8ceafba49753"
+      },
+      "report": {
+        "path": "tone_edge_t100_f5000_a100mv-warmup2s/192000/comparison/report.json",
+        "sha256": "901c1899fd60deb52a8b32c17c784ecb3966b40a24470a66c620e225f38ce12d"
+      },
+      "status": "passed",
+      "exit_code": 0,
+      "reason": "Numerical phase completed; WAV/listening outcomes separate"
+    },
+    {
+      "case_id": "tone_edge_t100_f5000_a100mv-warmup2s",
+      "physical_case_sha256": "fe21ac88564d5789c87ef5def1ee42309ed34f6ead394adaacacfcbac5442bc3",
+      "rate_Hz": 384000,
+      "case": {
+        "path": "tone_edge_t100_f5000_a100mv-warmup2s/384000/case.json",
+        "sha256": "12b35601d789d1ac7420a10b954c3856d9dcba936f284b346478718c7e62a957"
+      },
+      "run": {
+        "path": "tone_edge_t100_f5000_a100mv-warmup2s/384000/run/run.json",
+        "sha256": "760dbb19eb7ba97ae4e1de282b8ec980c36a28ee3c7572e4b1ecf81319c8664f"
+      },
+      "nominal": {
+        "path": "tone_edge_t100_f5000_a100mv-warmup2s/nominal/reference.json",
+        "sha256": "7b3f61196b6c9e7d76bb290a795c57dd3e481cde302144ff4fe39afc362d855c"
+      },
+      "refined": {
+        "path": "tone_edge_t100_f5000_a100mv-warmup2s/refined/reference.json",
+        "sha256": "c7fa17d4e058543830e3b68ff62b8f67d1ab4031a9f20c0cf70d8ceafba49753"
+      },
+      "report": {
+        "path": "tone_edge_t100_f5000_a100mv-warmup2s/384000/comparison/report.json",
+        "sha256": "8d6733a0dddea53e99feaf55b736434f0afaf3afa199bfa1894c76e0c9812ae3"
+      },
+      "status": "passed",
+      "exit_code": 0,
+      "reason": "Numerical phase completed; WAV/listening outcomes separate"
+    }
+  ],
+  "outcomes": {
+    "reference": "passed",
+    "numerical": "passed",
+    "wav": "passed",
+    "listening": "not_applicable",
+    "combined": "passed"
+  },
+  "exit_code": 0
+}

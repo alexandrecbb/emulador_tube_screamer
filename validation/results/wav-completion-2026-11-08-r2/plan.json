@@ -1,0 +1,30 @@
+{
+  "source_sha256": "cf018d9d1603f28d96d97c38c14dbe8e361217e47159d5edea566d3876772031",
+  "pilot": "/mnt/f/ts808-validation/wav-tight-pilot-20261107-r3",
+  "measured_growth": {
+    "retained_native_bytes": 19855180677,
+    "adaptive_factor": 3.167352921549479,
+    "original_directories": [
+      "/mnt/f/ts808-reference/runs/tone_edge_t100_f5000_a100mv-warmup2s-nominal-28b941d94f1e405aae3bf20ee5da5e7c",
+      "/mnt/f/ts808-reference/runs/tone_edge_t100_f5000_a100mv-warmup2s-refined-1430f8e827c94831aad2e544f99a9c28",
+      "/mnt/f/ts808-reference/runs/tone_edge_t100_f5000_a100mv-warmup2s-wav-192000-e048504361e641e79eeaadaa9112dc73",
+      "/mnt/f/ts808-reference/runs/tone_edge_t100_f5000_a100mv-warmup2s-wav-384000-f8c7da6f9c7a437bb420137d85ec6e45"
+    ]
+  },
+  "budget": {
+    "duration_sum_s": 17.5,
+    "minimum_numerical_reference_bytes": 41287680000,
+    "minimum_export_raw_bytes": 2580480000,
+    "model_trace_bytes": 2580483584,
+    "pcm_payload_bytes": 40320000,
+    "adaptive_factor": 3.167352921549479,
+    "headroom_factor": 1.1,
+    "native_required_bytes": 152884891212,
+    "output_required_bytes": 2838531942,
+    "estimated_required_bytes": 155723423154
+  },
+  "free_bytes": 217052569600,
+  "remaining_cases": 7,
+  "resume_from": "/mnt/f/ts808-validation/wav-completion-20261107-r1",
+  "mvp_accepted": false
+}

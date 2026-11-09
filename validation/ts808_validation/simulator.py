@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import hashlib
+import os
 import errno
 import time
 import re
@@ -84,6 +85,14 @@ def run_request(request_directory: Path, executable: Path) -> dict:
         return _run_request(request_directory,executable)
 
 
+def native_timeout_seconds() -> int:
+    """Operational wall-clock allowance; never changes simulation settings."""
+    value = int(os.environ.get('TS808_NATIVE_TIMEOUT_S', '1800'))
+    if not 1800 <= value <= 21600:
+        raise ValueError('Native timeout must be between 1800 and 21600 seconds')
+    return value
+
+
 def _run_request(request_directory: Path, executable: Path) -> dict:
     request_path = request_directory / 'request.json'
     request_hash = sha256(request_path)
@@ -93,14 +102,21 @@ def _run_request(request_directory: Path, executable: Path) -> dict:
         if path.stat().st_size != entry['size_bytes'] or sha256(path) != entry['sha256']:
             raise ValueError('Staged input identity mismatch')
     # Native helper owns timeout and PID tree. A launcher failure cannot imply completion.
+    timeout_s = native_timeout_seconds()
+    timeout_args = []
+    if timeout_s != 1800:
+        timeout_args = ['-TimeoutMilliseconds', str(timeout_s * 1000)]
+        (request_directory/'launch-policy.json').write_text(json.dumps(dict(
+            native_timeout_s=timeout_s, caller_timeout_s=timeout_s+30,
+            request_sha256=request_hash), indent=2)+'\n')
     process = subprocess.Popen([
         'powershell.exe', '-NoProfile', '-NonInteractive', '-File',
         windows_path(request_directory / 'run_reference.ps1'),
         '-RequestDirectory', windows_path(request_directory),
-        '-ExecutablePath', windows_path(executable),
+        '-ExecutablePath', windows_path(executable), *timeout_args,
     ], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     try:
-        stdout, stderr = process.communicate(timeout=1830)
+        stdout, stderr = process.communicate(timeout=timeout_s+30)
     except (subprocess.TimeoutExpired, KeyboardInterrupt):
         (request_directory/'cancel.requested').write_text('Caller cancellation; helper owns native PID tree\n')
         stdout, stderr = process.communicate(timeout=30)

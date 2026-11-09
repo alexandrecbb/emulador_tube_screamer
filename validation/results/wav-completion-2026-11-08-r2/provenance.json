@@ -1,0 +1,14 @@
+{
+  "status.json": {
+    "original": "/mnt/f/ts808-validation/wav-completion-20261108-r2/status.json",
+    "sha256": "f0997be97b2826c048ad62fb41e36d8834da32c7b196a1c28eb2ef29fac77b38"
+  },
+  "plan.json": {
+    "original": "/mnt/f/ts808-validation/wav-completion-20261108-r2/plan.json",
+    "sha256": "eab0f9ec99885cfa8662194c35e2afd990823c50c9dfd246b23bb157e9592fc6"
+  },
+  "wav-completion-20261108-r2-monitor.py": {
+    "original": "/mnt/f/ts808-validation/wav-completion-20261108-r2-monitor.py",
+    "sha256": "b1244b83a864fea56ec6353965f0562c20cbfa4fba670a07d18a1cf8eab58636"
+  }
+}

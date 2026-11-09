@@ -1,0 +1,30 @@
+{
+  "status.json": {
+    "original": "/mnt/f/ts808-validation/wav-completion-20261108-r4/status.json",
+    "sha256": "8d28de5579af2a1034563ac08d5ff302edd91157946b8162e1150e1bc3cc1c07"
+  },
+  "plan.json": {
+    "original": "/mnt/f/ts808-validation/wav-completion-20261108-r4/plan.json",
+    "sha256": "6e12a519df942e1f0e67f786950d00d5821fe11d73fe3fe698c634f95e2ef4e3"
+  },
+  "qualification.json": {
+    "original": "/mnt/f/ts808-validation/wav-completion-20261108-r4/qualification/qualification.json",
+    "sha256": "848ee0244366012e4f0b0d2d69d0874ca35d01f4ed00ddda9940c1cf8583a480"
+  },
+  "qualification.md": {
+    "original": "/mnt/f/ts808-validation/wav-completion-20261108-r4/qualification/qualification.md",
+    "sha256": "d4751a28398c9a50001e80e7481c53d8f3b9bee1d2d3031fc0832ac8a195e4ed"
+  },
+  "integrity.json": {
+    "original": "/mnt/f/ts808-validation/wav-completion-20261108-r4/qualification/integrity.json",
+    "sha256": "b303195d6e5d59a11d03a5c32e3adefc5cdf3db2ed7abbab55c11a8b9e599376"
+  },
+  "progress.json": {
+    "original": "/mnt/f/ts808-validation/wav-completion-20261108-r4/qualification/progress.json",
+    "sha256": "fcfaea055198c0a4bb5a2a6c1a51775eb5c45e5e7ac8b266fc45421f0f489d30"
+  },
+  "wav-completion-20261108-r4-monitor.py": {
+    "original": "/mnt/f/ts808-validation/wav-completion-20261108-r4-monitor.py",
+    "sha256": "892d9aa4561fac826f938bae98f3c462f4ac703c411020c91456b90305d9b7e8"
+  }
+}

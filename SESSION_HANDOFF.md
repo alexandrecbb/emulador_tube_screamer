@@ -1,3 +1,271 @@
+## FINALIZAÇÃO AUTORIZADA — 2026-11-07
+
+Auditoria automática concluída: 128 entradas, resultado failed, 2 entradas reprovadas. Testes Python aprovados.
+Usuário pediu commit e push após auditoria mesmo com reprovações registradas.
+Escuta humana/ABX e aceitação do MVP permanecem pendentes.
+Desligamento só se qualificação automática aprovada e push confirmado.
+Registro operacional: /mnt/f/ts808-validation/wav-completion-20261108-r4/finalization.json.
+
+## RESULTADO DA CONCLUSÃO WAV E AUDITORIA — 2026-11-08
+
+Estado final do executor: {'status': 'completed', 'completed_cases': 11, 'required_cases': 11, 'mvp_accepted': False, 'current_case': 'tone_edge_t000_f5000_a100mv-warmup2s', 'automatic_qualification': 'failed', 'assessment_completion': 'completed', 'entry_count': 128}.
+Serviço: Result=success
+ExecMainStatus=0
+
+Evidências: /mnt/f/ts808-validation/wav-completion-20261108-r4/.
+Snapshot: validation/results/wav-completion-2026-11-08-r4/.
+Qualificação automática e aceitação do MVP são distintas; escuta humana permanece sujeita ao protocolo.
+Sem commit/push/desligamento.
+Histórico abaixo.
+
+## COMMIT E PUSH APÓS AUDITORIA, MESMO COM REPROVAÇÕES — 2026-11-09
+
+Usuário pediu commit/push ao terminar auditoria. Finalizador r4 atualizado:
+exige avaliação completa128/128, snapshot e testes aprovados; publica resultados
+verdadeiros mesmo com gates reprovados. Desligamento segue condicionado à
+qualificação automática aprovada e SHA remoto confirmado. Não declarar MVP aceito.
+Serviço ts808-wav-finalize-20261108-r4.service; registro operacional:
+/mnt/f/ts808-validation/wav-completion-20261108-r4/finalization.json.
+Auditoria/produtores não foram interrompidos. Histórico abaixo.
+
+## CASO LENTO ISOLADO; FILA RETOMADA — 2026-11-08 — R4
+
+Usuário aprovou recomendação: executar outros cinco primeiro, diagnosticar
+caso lento e testar solver alternativo. Nenhum produtor ativo antes da partida.
+RAW interrompido r3: só0,2849431318758579s de2,5s (~11,4%) após7200s;
+156.971.101 pontos declarados,37,42GiB. Medição leu cabeçalho e último registro,
+sem importar parcial como referência válida. Evidência pequena:
+validation/results/wav-completion-2026-11-08-r3/timeout-progress.json.
+Nova execução: /mnt/f/ts808-validation/wav-completion-20261108-r4/.
+Serviço ts808-wav-completion-20261108-r4.service; log mesmo caminho + .log.
+--resume-from r3 --isolate-slow: verifica/reaproveita cinco aprovados;
+caso tone_edge_t000_f5000_a100mv-warmup2s vai por último com NOVO par alt,
+sem reutilizar nominal norm. Tolerâncias/maxsteps/circuito/gates intactos.
+Prazo7200s; antes de cada caso novo verifica espaço. Falha individual registra
+incomplete_cases e continua fila; só audita se todos os casos forem concluídos.
+Antes da partida137GiB livres emF:,RAM8,2GiB. Orçamento seis~124GiB.
+80 testes passaram,1 skipped,28 subtests; diff check passou.
+Monitor ts808-wav-completion-monitor-20261108-r4.service; snapshot futuro
+validation/results/wav-completion-2026-11-08-r4/.
+Finalizador ts808-wav-finalize-20261108-r4.service: auditoria128 aprovada e
+testes antes de commit/push/SHA remoto/shutdown Windows autorizado.
+Qualquer falha mantém hospedeiro ligado. Não duplicar serviços/produtores.
+Nenhuma nova aprovação de caso ainda; ABX/aceitação MVP pendentes.
+Histórico abaixo.
+
+## FINALIZAÇÃO AUTORIZADA — 2026-11-07
+
+Finalização interrompida; computador mantido ligado. Motivo: Executor did not complete: {'status': 'interrupted', 'completed_cases': 5, 'required_cases': 11, 'mvp_accepted': False, 'reason': 'Incomplete case tone_edge_t000_f5000_a100mv-warmup2s: 1'}.
+Consulte /mnt/f/ts808-validation/wav-completion-20261108-r3/finalization.json.
+
+## RESULTADO DA CONCLUSÃO WAV E AUDITORIA — 2026-11-08
+
+Estado final do executor: {'status': 'interrupted', 'completed_cases': 5, 'required_cases': 11, 'mvp_accepted': False, 'reason': 'Incomplete case tone_edge_t000_f5000_a100mv-warmup2s: 1'}.
+Serviço: Result=exit-code
+ExecMainStatus=1
+
+Evidências: /mnt/f/ts808-validation/wav-completion-20261108-r3/.
+Snapshot: validation/results/wav-completion-2026-11-08-r3/.
+Qualificação automática e aceitação do MVP são distintas; escuta humana permanece sujeita ao protocolo.
+Sem commit/push/desligamento.
+Histórico abaixo.
+
+## SEIS CASOS E AUDITORIA RETOMADOS COM PRAZO AMPLIADO — 2026-11-08
+
+Usuário pediu terminar seis casos restantes e auditoria128. R2 preservado:
+5/11 aprovados nas duas taxas; timeout real de 1800,9s no refinado
+ tone_edge_t000_f5000_a100mv-warmup2s, solver norm. Nenhum produtor ativo antes.
+Prazo operacional ampliado para7200s via TS808_NATIVE_TIMEOUT_S, propagado ao
+helper nativo (-TimeoutMilliseconds) e ao controlador WSL (+30s). Padrão1800
+preservado; valores fora1800..21600 rejeitados. launch-policy.json nos novos
+pedidos registra prazo e hash do request. Circuito/tolerâncias/gates intactos;
+hash do validador não muda.79 testes passaram,1 skipped,28 subtests.
+Novo output: /mnt/f/ts808-validation/wav-completion-20261108-r3/.
+Serviço: ts808-wav-completion-20261108-r3.service, log mesmo caminho + .log.
+Resume de r2: verifica identidades, reaproveita cinco aprovados e nominal
+concluído do caso interrompido; não importa RAW parcial como referência válida.
+Antes da partida F:175GiB livres,RAM8,2GiB disponíveis; orçamento seis~124GiB.
+Monitor ts808-wav-completion-monitor-20261108-r3.service, snapshot futuro
+validation/results/wav-completion-2026-11-08-r3/.
+Finalizador ts808-wav-finalize-20261108-r3.service aguarda auditoria128 aprovada,
+testes, commit e push verificado; só então shutdown Windows autorizado.
+Status operacional: output/finalization.json. Falha mantém hospedeiro ligado.
+Não duplicar produtores/serviços; evidências anteriores preservadas.
+Escuta humana/ABX e aceitação do MVP permanecem pendentes.
+Histórico abaixo.
+
+## FINALIZAÇÃO AUTORIZADA — 2026-11-07
+
+Finalização interrompida; computador mantido ligado. Motivo: Executor did not complete: {'status': 'interrupted', 'completed_cases': 5, 'required_cases': 11, 'mvp_accepted': False, 'reason': 'Incomplete case tone_edge_t000_f5000_a100mv-warmup2s: 1'}.
+Consulte /mnt/f/ts808-validation/wav-completion-20261108-r2/finalization.json.
+
+## RESULTADO DA CONCLUSÃO WAV E AUDITORIA — 2026-11-08
+
+Estado final do executor: {'status': 'interrupted', 'completed_cases': 5, 'required_cases': 11, 'mvp_accepted': False, 'reason': 'Incomplete case tone_edge_t000_f5000_a100mv-warmup2s: 1'}.
+Serviço: Result=exit-code
+ExecMainStatus=1
+
+Evidências: /mnt/f/ts808-validation/wav-completion-20261108-r2/.
+Snapshot: validation/results/wav-completion-2026-11-08-r2/.
+Qualificação automática e aceitação do MVP são distintas; escuta humana permanece sujeita ao protocolo.
+Sem commit/push/desligamento.
+Histórico abaixo.
+
+## RETOMADA APÓS TIMEOUT NATIVO — 2026-11-08
+
+Usuário autorizou continuidade; autorização de commit/push/desligamento permanece.
+R1 preservado: 4/11 casos aprovados contando piloto; falha na referência refinada
+ tone_center_f5000_a500mv-warmup2s, completion=timed_out no helper Windows.
+Causa operacional do timeout ainda não determinada; sem evidência de falta de RAM/disco.
+Novo diretório: /mnt/f/ts808-validation/wav-completion-20261108-r2/.
+Serviço: ts808-wav-completion-20261108-r2.service; log: mesmo caminho + .log.
+Executor agora aceita --resume-from, confere fonte/piloto/manifesto e delega ao
+resume existente da suíte, que verifica hashes/identidades e reutiliza referências
+concluídas e resultados completos. Não reutiliza saída parcial nativa reprovada.
+Orçamento exclui casos completos; F: 203 GiB livres antes da retomada.
+73 testes passaram, 1 skipped e 28 subtests; git diff --check passou.
+Monitor: ts808-wav-completion-monitor-20261108-r2.service; snapshot futuro:
+validation/results/wav-completion-2026-11-08-r2/.
+Finalizador: ts808-wav-finalize-20261108-r2.service. Aguarda auditoria aprovada
+128/128 e testes, faz commit/push, confirma SHA remoto e só então shutdown Windows.
+Qualquer falha mantém hospedeiro ligado. Não duplicar serviços.
+Circuito, tolerâncias nativas e gates preservados; escuta/MVP pendentes.
+Histórico abaixo.
+
+## FINALIZAÇÃO AUTORIZADA — 2026-11-07
+
+Finalização interrompida; computador mantido ligado. Motivo: [Errno 2] No such file or directory: '/mnt/f/ts808-validation/wav-completion-20261107-r1/qualification/qualification.json'.
+Consulte /mnt/f/ts808-validation/wav-completion-20261107-r1/finalization.json.
+
+## RESULTADO DA CONCLUSÃO WAV E AUDITORIA — 2026-11-07
+
+Estado final do executor: {'status': 'interrupted', 'completed_cases': 4, 'required_cases': 11, 'mvp_accepted': False, 'reason': 'Incomplete case tone_center_f5000_a500mv-warmup2s: 1'}.
+Serviço: Result=exit-code
+ExecMainStatus=1
+
+Evidências: /mnt/f/ts808-validation/wav-completion-20261107-r1/.
+Snapshot: validation/results/wav-completion-2026-11-07-r1/.
+Qualificação automática e aceitação do MVP são distintas; escuta humana permanece sujeita ao protocolo.
+Sem commit/push/desligamento.
+Histórico abaixo.
+
+## COMMIT, PUSH E DESLIGAMENTO AUTORIZADOS — 2026-11-07
+
+Usuário pediu commit, push e desligamento do hospedeiro após todas as etapas.
+Finalizador ativo: ts808-wav-finalize-20261107-r1.service.
+Aguarda executor e monitor; exige auditoria completa de 128 entradas aprovada,
+zero reprovações, snapshot final, testes Python e diff limpo de erros.
+Faz commit dos arquivos previstos e push main; verifica SHA remoto e árvore limpa.
+Só então solicita shutdown Windows com aviso de 120 segundos, sem /f.
+Se qualquer gate falhar, registra bloqueio e mantém computador ligado.
+Status: /mnt/f/ts808-validation/wav-completion-20261107-r1/finalization.json.
+Log: /mnt/f/ts808-validation/wav-completion-20261107-r1-finalize.log.
+Script revisável: validation/results/wav-completion-2026-11-07-plan-r1/finalize_after_audit.py.
+Escuta humana/ABX e aceitação do MVP não são declaradas concluídas.
+Não iniciar finalizador ou produtor duplicado. Histórico abaixo.
+
+## CONCLUSÃO WAV E AUDITORIA RETOMADAS — 2026-11-07
+
+Usuário confirmou mais espaço e autorizou continuidade. F: 259 GiB livres
+antes da execução, orçamento medido 207,18 GiB; RAM 8,1 GiB disponíveis,
+swap 8 GiB. Sem produtores Linux ou LTspice Windows antes da partida.
+Serviço ativo: ts808-wav-completion-20261107-r1.service.
+Saída: /mnt/f/ts808-validation/wav-completion-20261107-r1/.
+Log: /mnt/f/ts808-validation/wav-completion-20261107-r1.log.
+Piloto aprovado reutilizado; 10 casos restantes em processos sequenciais,
+seguidos da auditoria completa de 128 entradas. Primeiro caso iniciado:
+tone_center_f1000_a500mv-warmup2s. Não iniciar produtores duplicados.
+Monitor: ts808-wav-completion-monitor-20261107-r1.service; registrará
+estado final e snapshot em validation/results/wav-completion-2026-11-07-r1/.
+7 testes direcionados passaram nesta retomada. Circuito/critérios intactos.
+Execução em andamento não significa aprovação; MVP e escuta pendentes.
+Sem novo commit/push/desligamento. Histórico abaixo.
+
+## CONCLUSÃO WAV SOLICITADA — BLOQUEIO DE ESPAÇO MEDIDO — 2026-11-07
+
+Usuário pediu concluir demais casos e auditoria128. Piloto r3 aprovado nas
+2 taxas; não há produtor ativo. Medição dos quatro diretórios nativos únicos:
+19.855.180.677 bytes (~18,49 GiB); fator adaptativo 3,1673529, em vez de1,38917.
+Para os10casos restantes: 222.462.033.079 bytes (~207,18 GiB) com margem.
+F: tem ~144,14 GiB; falta ~63 GiB. Solicitado liberar mais80 GiB para folga.
+Não iniciar produtores com orçamento antigo102GiB: medição o superou.
+Gate exercitado e bloqueado sem produtor em:
+/mnt/f/ts808-validation/wav-completion-20261107-plan-r1/.
+Snapshot pequeno: validation/results/wav-completion-2026-11-07-plan-r1/.
+Novo executor: validation/scripts/complete_wav_requalification.py.
+Reaproveita piloto, executa cada caso em processo separado, reúne por IDs
+exatos e chama auditor original para128entradas.7testes direcionados passaram.
+Com espaço liberado, conferir processos/memória e usar NOVO diretório:
+PYTHONPATH=validation .venv/bin/python -u validation/scripts/complete_wav_requalification.py --source /mnt/f/ts808-validation/settling-requalification-20261106-r4 --pilot /mnt/f/ts808-validation/wav-tight-pilot-20261107-r3 --output /mnt/f/ts808-validation/wav-completion-20261107-r1
+Executar por serviço persistente com interop Windows e logs em F:.
+Nenhuma evidência removida; circuito/critérios/validador intactos.
+10casos e nova auditoria pendentes; MVP não aceito. Sem commit/push/desligamento.
+Histórico abaixo.
+
+## RESULTADO DO PILOTO WAV100x — 2026-11-07
+
+Piloto de tolerâncias nativas100x: {'status': 'completed', 'exit_code': 0, 'outcomes': {'reference': 'passed', 'numerical': 'passed', 'wav': 'passed', 'listening': 'not_applicable', 'combined': 'passed'}, 'scope': 'Targeted WAV requalification; full 128-entry audit still required', 'mvp_accepted': False}.
+Métricas: validation/results/wav-tight-pilot-2026-11-07-r3/metrics.json.
+Correção dos11casos e auditoria128entradas ainda pendentes; MVPnãoaceito.
+Espaço liberado pelo usuário; não iniciar novos produtores
+sem reavaliar orçamento real do piloto e espaço em F:.
+Evidências originais: /mnt/f/ts808-validation/wav-tight-pilot-20261107-r3/.
+Histórico abaixo.
+
+## RETOMADA APÓS OOM — 2026-11-07 — R3
+
+Usuário autorizou retomar após ampliar memória do WSL: 9,7 GiB RAM,
+8 GiB swap; 8 GiB disponíveis no início, F: 146 GiB livres.
+R2 terminou por oom-kill confirmado no journal (pico RAM ~6,3 GiB),
+após verificar nominal/refinada e antes de concluir comparação/WAV.
+Nenhum produtor ativo Linux/Windows antes desta retomada.
+Nova tentativa preserva r2 e reaproveita referências com checagem de integridade:
+/mnt/f/ts808-validation/wav-tight-pilot-20261107-r3/.
+Serviço ts808-wav-tight-pilot-20261107-r3.service; log no mesmo caminho + .log.
+Monitor ts808-wav-tight-monitor-20261107-r3.service registra resultado final.
+Não inicia outros produtores. Se houver novo OOM, reduzir consumo da validação
+antes de repetir. Ampliar aos 11 casos só após avaliar piloto e custo real.
+Circuito/critérios preservados; auditoria completa e aceitação pendentes.
+Sem novo commit/push/desligamento. Histórico abaixo.
+
+## RESULTADO DO PILOTO WAV100x — 2026-11-07
+
+Piloto de tolerâncias nativas100x: {'status': 'interrupted', 'reason': 'Producer exited without a final result', 'mvp_accepted': False}.
+Métricas: validation/results/wav-tight-pilot-2026-11-07-r2/metrics.json.
+Correção dos11casos e auditoria128entradas ainda pendentes; MVPnãoaceito.
+Espaço liberado pelo usuário; não iniciar novos produtores
+sem reavaliar orçamento real do piloto e espaço em F:.
+Evidências originais: /mnt/f/ts808-validation/wav-tight-pilot-20261107-r2/.
+Histórico abaixo.
+
+## RETOMADA WAV AUTORIZADA — 2026-11-07
+
+Usuário informou espaço liberado e solicitou continuidade. F: tem 146 GiB
+livres; orçamento inicial dos 11 casos ~102,33 GiB, ainda sujeito ao custo
+real com tolerâncias apertadas. Nenhum produtor Linux/Windows ativo no início.
+Piloto r1 interrompido após referências nominal/refinada; status running
+obsoleto e snapshot sem métricas não constituem conclusão nem aprovação.
+Retomado em novo diretório, com verificação de integridade das referências:
+/mnt/f/ts808-validation/wav-tight-pilot-20261107-r2/.
+Serviço: ts808-wav-tight-pilot-20261107-r2.service; log: mesmo caminho + .log.
+Script agora aceita --resume-from e exige fonte, casos e tolerância idênticos.
+5 testes de seleção/proteção passaram. Circuito, critérios e validador intactos.
+Monitor ts808-wav-tight-monitor-20261107-r2.service registra o resultado;
+não inicia outros produtores. Antes de ampliar aos 11 casos: avaliar piloto,
+medir armazenamento nativo retido e conferir orçamento/processos novamente.
+Correção completa e auditoria 128 entradas continuam pendentes; MVP não aceito.
+Sem novo commit/push/desligamento nesta retomada. Histórico abaixo.
+
+## RESULTADO DO PILOTO WAV100x — 2026-11-06
+
+Piloto de tolerâncias nativas100x: {'status': 'running', 'mvp_accepted': False}.
+Métricas: validation/results/wav-tight-pilot-2026-11-06-r1/metrics.json.
+Correção dos11casos e auditoria128entradas ainda pendentes; MVPnãoaceito.
+Gate da execução completa bloqueado por espaço; não iniciar novos produtores
+sem reavaliar orçamento real do piloto e espaço em F:.
+Evidências originais: /mnt/f/ts808-validation/wav-tight-pilot-20261106-r1/.
+Histórico abaixo.
+
 ## COMMIT/PUSH SOLICITADOS — 2026-11-06
 
 Usuário autorizou commit e push das alterações pendentes. Inclui correção de

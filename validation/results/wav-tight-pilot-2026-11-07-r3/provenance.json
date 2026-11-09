@@ -1,0 +1,26 @@
+{
+  "status.json": {
+    "original": "/mnt/f/ts808-validation/wav-tight-pilot-20261107-r3/status.json",
+    "sha256": "0fa06fe730e898352a217f01e67b2a2caa84ab0ef523a5c5e8c0a5ede9adf2ed"
+  },
+  "plan.json": {
+    "original": "/mnt/f/ts808-validation/wav-tight-pilot-20261107-r3/plan.json",
+    "sha256": "6ee518542b4ab1fbfddbe3bccb0d86774f4e97f8057d104df2cc07354f92d38e"
+  },
+  "summary.json": {
+    "original": "/mnt/f/ts808-validation/wav-tight-pilot-20261107-r3/matrix/summary.json",
+    "sha256": "7d41c92d297011d2251451eef9caab3e14b487e99e4cb6bc4d68f2c4191595bf"
+  },
+  "wav-tight-pilot-20261107-r3-monitor.py": {
+    "original": "/mnt/f/ts808-validation/wav-tight-pilot-20261107-r3-monitor.py",
+    "sha256": "0d320965f3792d6d937f7a6af93ddd97db9586b750895bdfa51ab03bdd4d9249"
+  },
+  "report-192000.json": {
+    "original": "/mnt/f/ts808-validation/wav-tight-pilot-20261107-r3/matrix/tone_edge_t100_f5000_a100mv-warmup2s/192000/comparison/report.json",
+    "sha256": "901c1899fd60deb52a8b32c17c784ecb3966b40a24470a66c620e225f38ce12d"
+  },
+  "report-384000.json": {
+    "original": "/mnt/f/ts808-validation/wav-tight-pilot-20261107-r3/matrix/tone_edge_t100_f5000_a100mv-warmup2s/384000/comparison/report.json",
+    "sha256": "8d6733a0dddea53e99feaf55b736434f0afaf3afa199bfa1894c76e0c9812ae3"
+  }
+}
