@@ -1,3 +1,20 @@
+## AUDITORIA128 CONCLUÍDA; COMMIT E PUSH REALIZADOS — 2026-11-09
+
+Auditoria r4 concluída128/128:126 entradas aprovadas,2 reprovadas WAV do
+caso tone_high_f5000_a500mv-warmup2s em192/384kHz (incerteza RMS ~0,195µV,
+limite0,1µV).10/11 casos da remediação aprovados; circuito/gates preservados.
+Commit fead1f9: Record WAV requalification results and complete 128-entry audit.
+Push automático falhou por credencial ausente no serviço; push da sessão atual
+concluído para origin/main. Este registro será commitado/publicado separadamente.
+Nenhum produtor/auditor ativo. Hospedeiro mantido ligado por reprovação;
+ABX/aceitação MVP pendentes. Resultados: validation/results/wav-completion-2026-11-08-r4/.
+Histórico abaixo.
+
+## FINALIZAÇÃO AUTORIZADA — 2026-11-07
+
+Finalização interrompida; computador mantido ligado. Motivo: Command '['git', 'push', 'origin', 'HEAD:refs/heads/main']' returned non-zero exit status 128..
+Consulte /mnt/f/ts808-validation/wav-completion-20261108-r4/finalization.json.
+
 ## FINALIZAÇÃO AUTORIZADA — 2026-11-07
 
 Auditoria automática concluída: 128 entradas, resultado failed, 2 entradas reprovadas. Testes Python aprovados.
