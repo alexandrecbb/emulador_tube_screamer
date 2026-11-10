@@ -1,0 +1,9 @@
+{
+  "source_points": 5000001,
+  "target_points": 480001,
+  "max_rss_MiB": 197.25,
+  "elapsed_s": 0.738542781007709,
+  "finite": true,
+  "validator_sha256": "6c256ed558bc209b1e07b816a58112f778779669941f3b335f4e838edf3649bc",
+  "scope": "Synthetic memory regression; not native/WAV qualification"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "interrupted",
+  "mvp_accepted": false,
+  "shutdown_authorized": false,
+  "reason": "Service exited without a final result",
+  "service_result": "Result=oom-kill\nExecMainStatus=15\n"
+}

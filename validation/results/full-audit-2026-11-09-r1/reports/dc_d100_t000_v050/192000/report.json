@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "comparison_id": "dc_d100_t000_v050-192000-substeps4",
+  "case_id": "dc_d100_t000_v050",
+  "physical_case_sha256": "726aec734ede0d235bc452bc35ffb24ccf11f0a73769c7aed98b0c5160684d39",
+  "inputs": {
+    "case_sha256": "04401b219b8ab0fceaad7d5426e67255ca94ae8d57bb75f997ba5a118c030154",
+    "run_sha256": "03fb6027a8f21892aeacebc98723978053bcd96ad049c8b05ebdae0b3121fe89",
+    "validator_sha256": "6c256ed558bc209b1e07b816a58112f778779669941f3b335f4e838edf3649bc"
+  },
+  "execution_config": {
+    "boundary_count": 5,
+    "formulation_id": "control-branch-v1",
+    "integration_rate_Hz": 768000,
+    "interior_counts": [
+      4,
+      6,
+      11,
+      5
+    ],
+    "ordered_unknowns": [
+      "input",
+      "input_cap",
+      "input_base",
+      "dry_send",
+      "clip_plus",
+      "clip_minus",
+      "gain_rc",
+      "drive_end",
+      "z_clip",
+      "i_drive",
+      "tone_in",
+      "tone_minus",
+      "tone_wiper",
+      "tone_rc",
+      "tone_out",
+      "volume_cap",
+      "volume_top",
+      "z_tone",
+      "i_tone_low",
+      "i_tone_high",
+      "i_volume_high",
+      "switch_common",
+      "output_base",
+      "output_emitter",
+      "output_cap",
+      "output",
+      "input_emitter",
+      "clip_out",
+      "wet_send",
+      "vref",
+      "i_volume_low"
+    ],
+    "purpose": "target",
+    "rate_Hz": 192000,
+    "solver": {
+      "armijo_c1": 0.0001,
+      "atol_current_A": 1e-12,
+      "atol_increment_current_A": 1e-12,
+      "atol_increment_voltage_V": 1e-09,
+      "atol_voltage_V": 1e-09,
+      "current_scale_A": 0.001,
+      "max_line_search": 9,
+      "max_newton_dc": 100,
+      "max_newton_transient": 32,
+      "maximum_backward_error": 1e-10,
+      "maximum_schur_difference": 1e-09,
+      "minimum_rcond": 1e-12,
+      "pivot_epsilon_factor": 64.0,
+      "row_scaling": "max_abs_after_physical",
+      "rtol_increment": 1e-09,
+      "rtol_residual": 1e-09,
+      "voltage_scale_V": 1.0
+    },
+    "substeps": 4,
+    "unknown_count": 31
+  },
+  "reference_qualification": {
+    "status": "passed",
+    "nominal": {
+      "reference_id": "dc_d100_t000_v050-nominal-3ad59128a6304ed29c203e88b111b84d",
+      "manifest_path": {
+        "wsl_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d100_t000_v050/nominal/reference.json",
+        "windows_path": "F:\\ts808-validation\\substeps-20261104\\matrix-alt\\dc_d100_t000_v050\\nominal\\reference.json"
+      },
+      "manifest_sha256": "fdf1dbcd3455780cfd411557b05e21d594ca1cec2feff40468394a218500fff5",
+      "request_sha256": "b7d3caaaf4dd75e0531e80f9b2e54c5811692e4ca9c5002c05183ccc7760b1d4",
+      "result_sha256": "75d383cc167dd7609a88d325f7dc2b956605b670ffcc5c82a850fe217dd19fd4",
+      "raw_sha256": "e6beee2d05d7f3229fbb05a0db297da15fe0ac2ab8a5e7cde498af21ba67c08c",
+      "log_sha256": "9a350c24228ac767d1af32375bcc6e1aa576580682d417e921d71d7b49776aa6"
+    },
+    "refined": {
+      "reference_id": "dc_d100_t000_v050-refined-43a150e45f18488ab5747e9291396b23",
+      "manifest_path": {
+        "wsl_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/dc_d100_t000_v050/refined/reference.json",
+        "windows_path": "F:\\ts808-validation\\substeps-20261104\\matrix-alt\\dc_d100_t000_v050\\refined\\reference.json"
+      },
+      "manifest_sha256": "336083a6aceef0bdc3e824d3493ab49a2d13f3d756198b7565efafb879074185",
+      "request_sha256": "07ec54d8931e17c472bbfbfa48fdc363bbd4f7391569453910d0d894955de35b",
+      "result_sha256": "eb343e6d885e7b95df01cd87c995b78247d27bc45bc73486b882dda04a01a92b",
+      "raw_sha256": "e9dc67e52963dcbe77a2bf2d8eaf6de31d157e71477c186685b45081b5edb281",
+      "log_sha256": "1c0bb78e81a4424503b8f234ad6ecf2d1e03ae796fcb6e831a916a644221607d"
+    },
+    "settings": {
+      "nominal": {
+        "level": "nominal",
+        "maxstep_s": 3.255208333333333e-07,
+        "dc_protocol": "gminsteps=0 srcsteps=0; pseudo-transient audited",
+        "native_options": {
+          "temp": "25",
+          "solver": "alt",
+          "tnom": "25",
+          "plotwinsize": "0",
+          "numdgt": "15",
+          "method": "trap",
+          "reltol": "1e-6",
+          "abstol": "1e-12",
+          "vntol": "1e-9",
+          "chgtol": "1e-16",
+          "trtol": "1",
+          "gmin": "1e-12",
+          "gminsteps": "0",
+          "srcsteps": "0"
+        }
+      },
+      "refined": {
+        "level": "refined",
+        "maxstep_s": 1.6276041666666666e-07,
+        "dc_protocol": "gminsteps=0 srcsteps=0; pseudo-transient audited",
+        "native_options": {
+          "temp": "25",
+          "solver": "alt",
+          "tnom": "25",
+          "plotwinsize": "0",
+          "numdgt": "15",
+          "method": "trap",
+          "reltol": "1e-7",
+          "abstol": "1e-13",
+          "vntol": "1e-10",
+          "chgtol": "1e-17",
+          "trtol": "1",
+          "gmin": "1e-12",
+          "gminsteps": "0",
+          "srcsteps": "0"
+        }
+      },
+      "target_rate_Hz": null
+    },
+    "checks": [
+      {
+        "id": "dc_reference",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "dc_reference",
+        "value": 1.006812411219471e-10,
+        "unit": "V",
+        "limit": 0.001,
+        "reason": "Measured without gain, delay or DC fitting"
+      }
+    ]
+  },
+  "reconstruction": {
+    "method": "native grid",
+    "alignment": "physical timestamps; no fitting"
+  },
+  "checks": [
+    {
+      "id": "dc_voltages",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "dc_voltages",
+      "value": 1.0655742954668312e-10,
+      "unit": "V",
+      "limit": 0.01,
+      "reason": "Measured without gain, delay or DC fitting"
+    }
+  ],
+  "artifacts": [],
+  "outcomes": {
+    "reference": "passed",
+    "numerical": "passed",
+    "wav": "not_applicable",
+    "listening": "not_applicable",
+    "combined": "passed"
+  }
+}

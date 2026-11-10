@@ -107,12 +107,16 @@ def read_native(raw_path: Path, log_path: Path, *, analysis_kind: str,
     axis = None
     if analysis_kind != 'dc':
         axis = cached_axis if cached_axis is not None else np.asarray(reader.get_axis(step)).real
-        if not np.isfinite(axis).all() or len(axis) < 2 or not np.all(np.diff(axis) > 0):
+        if len(axis) < 2:
             raise ValueError('Nonmonotone native axis')
+        for start in range(0,len(axis),65536):
+            block=axis[max(0,start-1):start+65536]
+            if not np.isfinite(block).all() or not np.all(np.diff(block)>0):
+                raise ValueError('Nonmonotone native axis')
     if mapped:
         # Keep only arrays used for comparison resident; all other views can
         # fault their original read-only bytes back in on explicit diagnostic use.
-        if axis is not None:axis=axis.copy()
+        if axis is not None and cached_axis is None:axis=axis.copy()
         mapping.madvise(mmap.MADV_DONTNEED)
     return dict(axis=axis, traces=arrays, encoding='complex128le' if width == 16 else 'float64le',
                 plot_name=expected, step_index=step_index, point_count=points,

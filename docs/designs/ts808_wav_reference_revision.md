@@ -65,3 +65,30 @@ com solver `alt` em ambos. Os outros cinco casos pendentes são tentados antes;
 falhas individuais são registradas sem bloquear as tentativas seguintes.
 Nenhum RAW parcial é promovido. A auditoria integral só começa com toda a
 fila concluída; aprovação continua sujeita aos mesmos gates.
+
+Correção isolada de 2026-11-09: a auditoria r4 terminou126/128 aprovada,
+com incerteza WAV RMS~0,195µV nas duas taxas do caso
+`tone_high_f5000_a500mv-warmup2s`. A tentativa
+`wav-repair-20261109-r1` diagnostica a diferença por intervalos e produz
+um novo par `norm` (antes `alt`), mantendo tolerâncias .01, maxsteps,
+nodeset, duração e gates. Reúne o resultado aos demais e repete a auditoria
+128. Orçamento medido22,32GiB,51GiB livres antes da partida. Resultados
+novos ainda pendentes; desligamento revogado pelo usuário.
+
+
+## Memória do pós-processamento — 2026-11-09
+
+O par alt r3 concluiu, mas o worker foi encerrado por OOM após atingir
+8,5 GiB de RAM e 7,5 GiB de swap. A interpolação PCHIP passa a usar blocos
+com vizinhos que preservam as derivadas locais e os extremos verdadeiros.
+O diagnóstico de decimação acumula RMS e pico em blocos, com a mesma
+seleção par/ímpar e inclusão do último ponto. Não reduz cobertura nem
+ajusta sinais. A leitura nativa evita duplicar o eixo já materializado.
+
+Testes confrontam a implementação com SciPy integral; resultados interpolados
+são idênticos nos casos exercitados. As reduções RMS podem diferir no último
+bit pela ordem da soma. Benchmark sintético de cinco milhões de pontos teve
+pico de 197,25 MiB; isso não substitui a medição da matriz nativa real.
+A identidade do validador mudou: relatórios anteriores requerem reavaliação,
+sem sobrescrever evidências. A retomada integral depende também de espaço:
+restavam 3,1 GiB livres após r3; preservar e reutilizar os dois originais.

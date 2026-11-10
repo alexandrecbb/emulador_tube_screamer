@@ -1,0 +1,6 @@
+{
+  "status": "interrupted",
+  "mvp_accepted": false,
+  "shutdown_authorized": false,
+  "reason": "Incomplete worker: 1"
+}

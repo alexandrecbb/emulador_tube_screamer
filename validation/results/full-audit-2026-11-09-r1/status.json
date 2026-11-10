@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "completed_entries": 128,
+  "required_entries": 128,
+  "validator_sha256": "6c256ed558bc209b1e07b816a58112f778779669941f3b335f4e838edf3649bc",
+  "shutdown_authorized": false,
+  "mvp_accepted": false,
+  "current_case": "tone_high_f82_a500mv-warmup2s",
+  "rate_Hz": 384000,
+  "automatic_qualification": "passed",
+  "failed_entry_count": 0,
+  "entry_count": 128
+}

@@ -1,3 +1,253 @@
+## ENTREGA APROVADA E DESLIGAMENTO AUTORIZADO — 2026-11-09
+
+Auditoria automática128/128 aprovada, zero reprovações; pilotos verificados
+e testes Python aprovados. Usuário voltou a autorizar desligar o Windows
+após commit e push. Executor validation/scripts/deliver_full_audit.py fará
+commit dos arquivos listados, push main e confirmação do SHA remoto.
+Somente depois agenda desligamento sem /f. Em qualquer falha, não desliga.
+Resultado operacional em /mnt/f/ts808-validation/full-audit-20261109-r1/delivery-status.json.
+Qualificação automática não equivale a ABX humano nem aceitação MVP.
+Histórico abaixo.
+
+## AUDITORIA128 CONCLUÍDA E PILOTOS ATUALIZADOS — 2026-11-09
+
+{'automatic_qualification': 'passed', 'entries': 128, 'failed': 0, 'verified_files': 3774}
+
+Validador 6c256ed558bc209b1e07b816a58112f778779669941f3b335f4e838edf3649bc. Evidências /mnt/f/ts808-validation/full-audit-20261109-r1.
+Snapshot /home/alexandre/projetos/emulador_tube_screamer/validation/results/full-audit-2026-11-09-r1. Referências originais preservadas.
+ABX humano e aceitação MVP permanecem separados; desligamento revogado.
+Histórico abaixo.
+
+## ATUALIZAÇÃO DOS RELATÓRIOS E AUDITORIA128 — 2026-11-09
+
+{'status': 'completed', 'completed_entries': 128, 'required_entries': 128, 'validator_sha256': '6c256ed558bc209b1e07b816a58112f778779669941f3b335f4e838edf3649bc', 'shutdown_authorized': False, 'mvp_accepted': False, 'current_case': 'tone_high_f82_a500mv-warmup2s', 'rate_Hz': 384000, 'automatic_qualification': 'passed', 'failed_entry_count': 0, 'entry_count': 128}
+
+Evidências /mnt/f/ts808-validation/full-audit-20261109-r1.
+Desligamento revogado; ABX/MVP separados. Histórico abaixo.
+
+## ENTREGA E DESLIGAMENTO REAUTORIZADOS — 2026-11-09
+
+Pedido atual do usuário: após auditoria, commit, push e desligar o hospedeiro.
+Esta autorização SUPERA revogação histórica. Serviço
+ ts808-full-audit-delivery-20261109-r1.service aguarda finalização da auditoria.
+Só prossegue com128/128 aprovadas, pilotos verificados e testes Python;
+commit escopado, push main, SHA remoto confirmado e árvore limpa. Agenda
+shutdown Windows sem /f após60s; qualquer falha impede desligamento.
+Script validation/scripts/deliver_full_audit.py; log e delivery-status.json
+em /mnt/f/ts808-validation/full-audit-20261109-r1 (log sufixo-delivery.log).
+Dry-run push funcionou. Não iniciar outro finalizador/commit concorrente.
+Histórico abaixo.
+
+## AUDITORIA128 EM EXECUÇÃO — 2026-11-09
+
+Usuário autorizou atualizar demais relatórios e concluir auditoria128.
+Serviço ts808-full-audit-20261109-r1.service ativo; executor
+validation/scripts/refresh_full_audit.py. Destino novo preservado:
+/mnt/f/ts808-validation/full-audit-20261109-r1; log mesmo caminho+.log.
+status.json registra completed_entries/128 e caso atual; rows.json checkpoints.
+15 primeiras entradas aprovadas na última consulta. Recalcula comparações,
+AC384k, pares de linearidade e WAVs originais; listen_high regenera exportação
+nativa/FIR com PATH Windows e WSL_INTEROP configurados. Par final aprovado
+r3 reutilizado via memory-requalification, sem repetir referências grandes.
+Após128, auditor consolida cobertura, identidades e hashes nativos originais.
+Finalizador ts808-full-audit-finalize-20261109-r1.service aguarda executor;
+validation/scripts/finish_full_audit_refresh.py verifica pilotos novos e
+salva snapshots/relatórios e estado final no handoff, sem desligamento.
+Não iniciar duplicata. Consultar status e logs se interrupted; não declarar
+aprovação global antes qualification.json atual completo. MVP/ABX separados.
+Sem novo commit/push ainda. Histórico abaixo.
+
+## RETOMADA CONCLUÍDA: CASO FINAL APROVADO NAS DUAS TAXAS — 2026-11-09
+
+Serviço ts808-memory-requalification-20261109-r1 terminou com sucesso,
+ExecMainStatus0. Caso tone_high_f5000_a500mv-warmup2s aprovado em192/384kHz:
+reference,numerical,wav,combined passed com validador6c256ed558bc.
+Pico RSS medido7147,95MiB (~6,98GiB), sem nova interrupção por OOM.
+F:27GiB livres; RAM8,5GiB disponível após término. Nenhum job deste
+executor continua ativo. Referências nativas preservadas/reutilizadas.
+Evidências /mnt/f/ts808-validation/memory-requalification-20261109-r1;
+snapshot validation/results/memory-requalification-2026-11-09-r1/.
+Ainda NÃO é aprovação atual das128 entradas: faltam requalificar pilotos,
+relatórios restantes e auditoria consolidada com validador atual. Não
+somar126 históricos aos2 atuais como aprovação global. MVP/ABX pendentes.
+Commit/push final pendente; desligamento revogado. Histórico abaixo.
+
+## RETOMADA COM ESPAÇO LIBERADO — 2026-11-09
+
+Usuário informou mais espaço e autorizou continuidade. F:27GiB livres;
+RAM8,5GiB disponíveis, nenhum produtor anterior ativo. Testes Python:
+89 passed,1 skipped,28 subtests (6,53s); diff check limpo.
+Iniciado serviço ts808-memory-requalification-20261109-r1.service.
+Script validation/scripts/resume_memory_requalification.py reavalia par r3
+concluído, sem produtores nativos, preserva originais e usa validador atual.
+Reutiliza run192k íntegro e produz somente C++384k se ausente; compara e
+requalifica WAVs nativos antigos contra novo par. Não presume aprovação.
+Destino /mnt/f/ts808-validation/memory-requalification-20261109-r1;
+log mesmo caminho+.log; status.json registra resultados e RSS ao terminar.
+Próximo: conferir resultado/memória real; requalificar pilotos e relatórios
+restantes com validador atual antes da auditoria128. Relatórios anteriores
+não podem ser promovidos por troca de hash. Sem commit/push nesta retomada;
+desligamento segue revogado. Histórico abaixo.
+
+## CORREÇÃO DE MEMÓRIA IMPLEMENTADA E TESTADA — 2026-11-09
+
+Usuário pediu corrigir memória. R3 atingiu8,5GiB RAM+7,5GiB swap (journal).
+reconstruct.py agora valida/interpola PCHIP em blocos65536, com vizinhos
+suficientes para preservar derivadas SciPy e fronteiras de descontinuidades.
+compare.py faz diagnóstico leave-out por blocos, mantendo mesmos pontos,
+limites RMS/pico e fórmula; evita índices/cópias/interpolação globais.
+reference.py evita cópia redundante do eixo já materializado e valida eixo
+em blocos. Nenhuma mudança de circuito, gates ou referências nativas.
+89 testes passaram,1 skipped,28 subtests. Testes novos confrontam resultados
+com SciPy integral, múltiplas colunas, fronteiras e leave-out par/ímpar.
+Benchmark sintético5.000.001 pontos/480.001 destinos: pico197,25MiB,0,74s.
+Evidência validation/results/memory-fix-2026-11-09/benchmark.json; não é
+qualificação nativa nem comprovação do pico na matriz real.
+NOVA identidade do validador:6c256ed558bc209b1e07b816a58112f778779669941f3b335f4e838edf3649bc.
+Não promover relatórios antigos com esse hash. Retomada deve reavaliar
+relatórios com código atual, preservando originais/par alt r3 concluído.
+Sem nova simulação/auditoria iniciada: só3,1GiB livresF:. Antes da retomada,
+medir espaço e configurar reutilização verificada, sem repetir produtores.
+Desligamento revogado. Resultado histórico126/128 pertence ao validador
+anterior; aprovação com validador novo ainda pendente. Histórico abaixo.
+
+## R3 INTERROMPIDA POR OOM APÓS REFERÊNCIAS — 2026-11-09
+
+Consulta de estado confirmou Result=oom-kill, ExecMainStatus15.
+Log registra referências nominal E refinada completed; attempts de ambas
+completed. Falha posterior no worker; qualificação WAV/auditoria não concluídas.
+Status /mnt/f/ts808-validation/wav-repair-20261109-r3/status.json.
+F: somente3,1GiB livres (100% arredondado); RAM disponível8,5GiB após saída.
+Não iniciar novos produtores: orçamento anterior subestimou crescimento.
+Preservar RAWs/referências concluídas para retomada validada, sem repeti-las.
+Próximo: diagnosticar pico de memória do pós-processamento e medir espaço
+para retomada com reutilização verificada; nenhuma exclusão autorizada.
+Estado auditado anterior126/128; desligamento revogado. Histórico abaixo.
+
+## RESULTADO DA CONCLUSÃO WAV E AUDITORIA — 2026-11-09
+
+Estado final do executor: {'status': 'interrupted', 'mvp_accepted': False, 'shutdown_authorized': False, 'reason': 'Service exited without a final result', 'service_result': 'Result=oom-kill\nExecMainStatus=15\n'}.
+Serviço: Result=oom-kill
+ExecMainStatus=15
+
+Evidências: /mnt/f/ts808-validation/wav-repair-20261109-r3/.
+Snapshot: validation/results/wav-repair-2026-11-09-r3/.
+Qualificação automática e aceitação do MVP são distintas; escuta humana permanece sujeita ao protocolo.
+Sem novo commit/push; desligamento revogado pelo usuário.
+Histórico abaixo.
+
+## AMBIENTE DO SERVIÇO CORRIGIDO; R3 INICIADA — 2026-11-09
+
+R2 interrompeu antes do produtor: FileNotFoundError powershell.exe no PATH
+do serviço systemd. Sem nova simulação nem auditoria; evidências preservadas.
+R3 mantém alt/tolerance_scale .001/margem1,5 e inclui explicitamente PATH
+Windows PowerShell/System32 e WSL_INTEROP da sessão no ambiente do serviço.
+Serviço ts808-wav-repair-20261109-r3.service; monitor correspondente
+ ts808-wav-repair-monitor-20261109-r3.service.
+Output /mnt/f/ts808-validation/wav-repair-20261109-r3/; log mesmo caminho + .log.
+Antes da partida:44GiB livresF:,8,3GiB RAM; nenhum produtor Linux/Windows.
+Fluxo: diagnóstico, novo par e WAV192/384, reunião e auditoria128 se completo.
+Desligamento revogado; estado validado anterior126/128. Histórico abaixo.
+
+## RESULTADO DA CONCLUSÃO WAV E AUDITORIA — 2026-11-09
+
+Estado final do executor: {'status': 'interrupted', 'mvp_accepted': False, 'shutdown_authorized': False, 'reason': 'Incomplete worker: 1'}.
+Serviço: Result=exit-code
+ExecMainStatus=1
+
+Evidências: /mnt/f/ts808-validation/wav-repair-20261109-r2/.
+Snapshot: validation/results/wav-repair-2026-11-09-r2/.
+Qualificação automática e aceitação do MVP são distintas; escuta humana permanece sujeita ao protocolo.
+Sem novo commit/push; desligamento revogado pelo usuário.
+Histórico abaixo.
+
+## NOVA CORREÇÃO ALT INICIADA — 2026-11-09 — R2
+
+Usuário autorizou executar nova referência, qualificação WAV e auditoria128.
+Serviço: ts808-wav-repair-20261109-r2.service.
+Output: /mnt/f/ts808-validation/wav-repair-20261109-r2/; log mesmo caminho + .log.
+Novo par alt, tolerance_scale .001 (10x mais apertado que o par alt anterior),
+relação nominal/refinado, nodeset, maxsteps, circuito e gates preservados.
+Sem reutilização do par norm falho. Prazo7200s por produtor.
+Orçamento baseado no crescimento medido com margem adicional1,5 (~33GiB);
+antes da partida44GiB livresF:,8,3GiB RAM, nenhum produtor Linux/Windows.
+Executor diagnostica, produz/qualifica as duas taxas e, se a execução concluir,
+reúne com evidências anteriores e chama auditoria integral128, mesmo se
+houver reprovação de gates. Não confundir conclusão com aprovação.
+Monitor: ts808-wav-repair-monitor-20261109-r2.service; preserva snapshot final
+em validation/results/wav-repair-2026-11-09-r2/ e atualiza este handoff.
+81 testes passaram,1 skipped,28 subtests; diff check passou.
+Desligamento revogado; sem finalizador antigo nem commit/push automático.
+Histórico abaixo.
+
+## DIAGNÓSTICO COMPLEMENTAR CONCLUÍDO — 2026-11-09
+
+Serviço ts808-wav-diagnosis-20261109-r2 terminou com sucesso (exit0).
+Diferença nominal/refinada alt: RMS0,195363µV, média−0,000631µV;
+fração de energia DC0,001043%. Portanto a reprovação não é explicada por
+um deslocamento DC: a diferença está essencialmente na forma de onda.
+Snapshot: validation/results/wav-repair-2026-11-09-r1/diagnosis-dc-r2.json.
+Nenhuma nova simulação/auditoria iniciada; estado validado126/128 aprovadas.
+Próximo passo técnico: avaliar novo par alt com tolerâncias mais apertadas,
+medindo orçamento antes de produzir; não reutilizar nominal de outro par.
+Nenhum critério alterado; desligamento revogado. Histórico abaixo.
+
+## DIAGNÓSTICO COMPLEMENTAR INICIADO — 2026-11-09
+
+Usuário autorizou o próximo passo. Nenhum produtor ativo antes da partida;
+F:44GiB livres, RAM8,3GiB disponíveis. Último par norm falhou no refinado
+com matriz singular em clip_minus; não houve nova auditoria.
+Serviço ts808-wav-diagnosis-20261109-r2.service lê somente os dois RAWs alt
+originais da fonte wav-completion-20261108-r4, sem nova simulação.
+Resultado: /mnt/f/ts808-validation/wav-diagnosis-20261109-r2/diagnosis.json;
+log: mesmo diretório + .log. Acrescenta média, desvio padrão e fração de
+energia DC por intervalo para distinguir offset de diferença de forma.
+Métricas diagnósticas não removem DC dos gates nem promovem referências.
+Próximo: consultar resultado/serviço antes de decidir novo par; não duplicar.
+Teste direcionado passou; git diff --check passou. Desligamento revogado.
+Histórico abaixo.
+
+## RESULTADO DA CONCLUSÃO WAV E AUDITORIA — 2026-11-09
+
+Estado final do executor: {'status': 'interrupted', 'mvp_accepted': False, 'shutdown_authorized': False, 'reason': 'Incomplete worker: 1'}.
+Serviço: Result=exit-code
+ExecMainStatus=1
+
+Evidências: /mnt/f/ts808-validation/wav-repair-20261109-r1/.
+Snapshot: validation/results/wav-repair-2026-11-09-r1/.
+Qualificação automática e aceitação do MVP são distintas; escuta humana permanece sujeita ao protocolo.
+Sem novo commit/push; desligamento revogado pelo usuário.
+Histórico abaixo.
+
+## CORREÇÃO DO ÚLTIMO CASO WAV INICIADA — 2026-11-09
+
+Usuário pediu corrigir pontos reprovados; desligamento permanece REVOGADO.
+Fonte auditada r4:126/128 aprovadas;2 WAV reprovadas do mesmo caso
+ tone_high_f5000_a500mv-warmup2s (RMS~0,195µV,limite0,1µV).
+Novo executor validation/scripts/repair_remaining_wav.py: seleciona somente
+esse caso com falhas WAV pareadas e referências/numérica aprovadas; exige
+fonte128 completa e validador atual. Diagnóstico por intervalos da diferença
+nominal/refinada, sem ajustes ou exclusões; depois NOVO par solver norm,
+tolerance_scale .01, nodeset e maxsteps preservados. Sem resume de par alt.
+Ao concluir, reúne com resultados anteriores e audita novamente128 entradas.
+Output: /mnt/f/ts808-validation/wav-repair-20261109-r1/.
+Serviço: ts808-wav-repair-20261109-r1.service; log mesmo caminho + .log.
+Monitor: ts808-wav-repair-monitor-20261109-r1.service; snapshot futuro
+validation/results/wav-repair-2026-11-09-r1/.
+Prazo7200s. Antes de iniciar:nenhum produtorLinux/Windows,51GiB livresF:,
+8,3GiB RAM disponíveis. Orçamento medido22,32GiB. Evidências preservadas.
+81 testes passaram,1 skipped,28 subtests; git diff --check passou.
+Nova tentativa não implica aprovação. Sem novo commit/push automático nesta
+tentativa; NÃO iniciar finalizadores antigos que possam desligar Windows.
+ABX/aceitação MVP pendentes. Histórico abaixo.
+
+## DESLIGAMENTO CANCELADO PELO USUÁRIO — 2026-11-09
+
+Usuário revogou a autorização de desligar o computador hospedeiro.
+Manter Windows ligado; não executar shutdown após futuras etapas sem nova
+autorização explícita. Commit e push anteriores concluídos.
+Histórico abaixo.
+
 ## AUDITORIA128 CONCLUÍDA; COMMIT E PUSH REALIZADOS — 2026-11-09
 
 Auditoria r4 concluída128/128:126 entradas aprovadas,2 reprovadas WAV do

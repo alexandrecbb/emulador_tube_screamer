@@ -1,0 +1,29 @@
+{
+  "status": "completed",
+  "validator_sha256": "6c256ed558bc209b1e07b816a58112f778779669941f3b335f4e838edf3649bc",
+  "shutdown_authorized": false,
+  "mvp_accepted": false,
+  "results": [
+    {
+      "rate_Hz": 192000,
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      }
+    },
+    {
+      "rate_Hz": 384000,
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      }
+    }
+  ],
+  "max_rss_MiB": 7147.94921875
+}

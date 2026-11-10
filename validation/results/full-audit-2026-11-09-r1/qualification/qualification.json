@@ -1,0 +1,2322 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-11-10T01:44:00.977629+00:00",
+  "scope": "Complete automatic numerical and WAV qualification; human ABX separate",
+  "automatic_qualification": "passed",
+  "listening": "outside_automatic_audit",
+  "mvp_acceptance": "pending",
+  "validator_sha256": "6c256ed558bc209b1e07b816a58112f778779669941f3b335f4e838edf3649bc",
+  "executable_sha256": "5a980894cf03ab2b1f1e7f9b9253c7be5a768617a8acfbe8aaf01c6e4f3c6b08",
+  "auditor_sha256": "6f77e6615055fbcdb30a6048a97238f5362a364d9a978c20c70455e3205aa336",
+  "entries": [
+    {
+      "case_id": "ac_d000_t000_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "b27053e7fef97137575af88ddbb4f46add28fa09ec5b3c1571722c2deb22700e",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d000_t000_v000-None/comparison/report.json",
+      "report_sha256": "65ab7d78df7f3e651aa5c753652e5bb887a68a3b6396a6feb5ee2b5a1be5ffa7",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t000_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "233f2c224f8c2d70996a8cb00a0322600e0d94e89d5d5b9c04f197b1f3fb1989",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d000_t000_v050-None/comparison/report.json",
+      "report_sha256": "3fc146eb2f743480cec80d3d5f3b33ce4b7b77b54d583950676270099ac6adfd",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t000_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "aef69f5f446ea76c230b235ed63be8c81f0cd143d5b0066e98781ee1e242816b",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d000_t000_v100-None/comparison/report.json",
+      "report_sha256": "98a20512a8ed6bdc248312f49969d61e5c624fa5cc556fb16a3e4154ee5abae6",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t050_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "bccda8773a5575757765d88eb7700064dfd1a0c53e34e94fb5a7b346b6eb825c",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d000_t050_v000-None/comparison/report.json",
+      "report_sha256": "798b564fb81e767f7e0f0938f5ef57855a910747919a4abdec237e16d9074fa8",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t050_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "83299663b85c774a4a26cb3906c11b7bbb6940a1e3ba3160175c2ad8b9760b44",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d000_t050_v050-None/comparison/report.json",
+      "report_sha256": "5c1e13c1f802e72c8df8b38ae25a3034fc752aa33560dc1c76566f7ee0c4b66d",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t050_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "b769a10bd566824ee9440d821e3eed0f9ea4e52668297ee00d6ad0a0ed952979",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d000_t050_v100-None/comparison/report.json",
+      "report_sha256": "e2cd433837a54a6656faa57d3e7a383c7cee6159736592a90465a470dbf73639",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t100_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "54fa8b048fe1e89f98ffec0acd97715e0d880134ee5eb195d9328dbd6c670294",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d000_t100_v000-None/comparison/report.json",
+      "report_sha256": "2aca6d28de5b3b267485c83e41c0652cfad291381945512bc4ad48bca045865f",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t100_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "7a078a40393a5d016bb1b26ae9355e27b64248745f9e32dc718140b989d650aa",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d000_t100_v050-None/comparison/report.json",
+      "report_sha256": "fc1d31d49439b3b6cd1a27c940accd3e402cbbafac1785d042084e3d618cae46",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d000_t100_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "9e3cb777900ddfb3f914027f395446fd90b0de830c5d41adc15582a0ebc94ced",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d000_t100_v100-None/comparison/report.json",
+      "report_sha256": "088e344f892f481dd83392f2f3c326419c0147ba1ae84c020e2008bac88a03b7",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t000_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "f49a0175e40b0281589727e0bdc3e059780d172eae69ca6782a98a216a61fe5b",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d050_t000_v000-None/comparison/report.json",
+      "report_sha256": "7c6287df6bb10581c3826b9c73d1f8dbe3afc0b0f6fbe00a8129734dde28ba57",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t000_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "9773c50682a138e7b94c9adf21c4d31d8a714efb44a845886f55c5b136df5d07",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d050_t000_v050-None/comparison/report.json",
+      "report_sha256": "20a74850dba5309c0f11d7d926ebd4552c77eda7ea6a6c83d1c4fd239ada0bb3",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t000_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "fbe69065aa81fa17a9c5e80169cee3c580ae24b872bf9a29b9d64602110ab5c7",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d050_t000_v100-None/comparison/report.json",
+      "report_sha256": "6f86af72e77b35c21c60caa8c993067de9da54ddf9399a46f3e0a64d6607c287",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t050_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "35a63e14cf59b92df3aecd627f0cdcd31cb62dd1adbd8152569ca1b437add9ac",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d050_t050_v000-None/comparison/report.json",
+      "report_sha256": "9440cf37ad75210a7cdde37e1928e2e28ff42d49dfe0048dc823e0f7d26dd6cb",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t050_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "c8fc741c46d42633dce3dafbcf75a7b054aea4a6fa73ac7951b2aba28bcb9cf9",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d050_t050_v050-None/comparison/report.json",
+      "report_sha256": "e257b394108f797d1bd3a7bd8f2bac417c532ebf5f50c5ba2dac623cc854c111",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t050_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "ed69ae980d7690af2ea5f09e6d21a06811f70418eb0444ebbac8b3209f973643",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d050_t050_v100-None/comparison/report.json",
+      "report_sha256": "3039184dca02f3e9cead46b5a88545b1aed65ab11efdc959de84210fb3d713b4",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t100_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "081a96513d2409201ca07ccb1eb56e71f059e307964d185471f4338de93914d2",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d050_t100_v000-None/comparison/report.json",
+      "report_sha256": "2417e547302db40e00e2f8c071a9702b215ef4f5c07216351b00bef0e551d781",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t100_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "3a125ec910dca72286f4583071a65fc06374ee27e4474efc550cbfb067af3d41",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d050_t100_v050-None/comparison/report.json",
+      "report_sha256": "94ef3944ffe64417097909ca477adaf414d50f4e6a4e69c12dc8ef3d32188133",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d050_t100_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "01e1c9c045dbac20ce3cf710060139e58a2572d41a998de326b2e9cea76b5b3e",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d050_t100_v100-None/comparison/report.json",
+      "report_sha256": "d4a3dddd64f5d08bbd60f930f506a01f66f57854d6d0d968c643bc80c1cb19f9",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t000_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "727f20affa110f3a87b59ffc1e9e9b4904a06f2bf5e185eb6f50f95be096aba2",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d100_t000_v000-None/comparison/report.json",
+      "report_sha256": "8f83adf98a8eafea27cb1b538c0ac1cacc90808fb21239cac80b26fa34dd6b15",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t000_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "fb3fcfc19581e5d579f48b6420634938cf97b69a63e6bde377033a21a8b9f7e3",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d100_t000_v050-None/comparison/report.json",
+      "report_sha256": "c2826aedc5b9def28e12b731ee808d689a855cce9cc122660a128668d356a647",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t000_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "4bdb5f141c687e09d47bdb9b0f59e8dc6dbbbe5f37bde18dbd62b301bf7c13d3",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d100_t000_v100-None/comparison/report.json",
+      "report_sha256": "ea3b52b27cbe0df452c95e9dd2b8c4bac66c454b759c26387867bef06bc19888",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t050_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "a52622a18f22a85445387efccd04ed362c8662f94b12c3a30bd610ae69d36b04",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d100_t050_v000-None/comparison/report.json",
+      "report_sha256": "e205f58bdacbec091848ca6c4a4e7837ed1217f8c5fd692b5f4f7c5551218cd6",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t050_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "c7380bd5aca724e2f3a28f8bbe87e591f77286e38fc5d12707ad765d54743d53",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d100_t050_v050-None/comparison/report.json",
+      "report_sha256": "22932df8ca145e8a68ec0e97744a0f7ecf8ffd042106895a32ac8dcc7d5db93f",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t050_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "50dda713cff1cd2563a94f5fa49f62b84451421d8c6266b382d52744a4fbd39a",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d100_t050_v100-None/comparison/report.json",
+      "report_sha256": "fcce82c4a0371e9d534b5fb7d6a61c40a2e44b88c5474e00a82f13aa923e257a",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t100_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "47e44c42c2725bac1e5ec5e60daf958efc877d32bb6d8a189d8417e8d8811565",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d100_t100_v000-None/comparison/report.json",
+      "report_sha256": "292f320e07e90daccc0ff2aca5ef5c94cbbfa2878ab821c765a6b74fdf77818e",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t100_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "d24531a8ad951255f10acab525af2ff11ce7429029c01028ad414329b875d3af",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d100_t100_v050-None/comparison/report.json",
+      "report_sha256": "ac26677bd0fc21acdb3472f5b530fe7159177395a035c7f169a0b10312dfaeb1",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "ac_d100_t100_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "af0052c976d0072925f134a03242548f9268143ae99fb52fb71662ec27512034",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/ac_d100_t100_v100-None/comparison/report.json",
+      "report_sha256": "886cc6da0ff1a99a106fe34c8f80609a4d19d60f7f475aa4734fc520f142f9a6",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t000_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "8701b35bd08b0f48232b10508b521282f0b8cc7645d29afd36afac746b2b0deb",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d000_t000_v000-None/comparison/report.json",
+      "report_sha256": "db4604e607a8ef40ed37ae5618fa60b3eac5b80288b0e6af5d7618f43799608b",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t000_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "bb058f73b6302d50281c1c0585328cf944052850b282c45c610e0aeb1bc02cf6",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d000_t000_v050-None/comparison/report.json",
+      "report_sha256": "3149b5ec63298abb32c0fc5b4ca35d7b3672bd49890cba2a627805e1f3c620e9",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t000_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "8baa93fedb90c6119cfa5e684c44cda14b682b13917123cf342b4e3c885860b4",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d000_t000_v100-None/comparison/report.json",
+      "report_sha256": "e41bd0f538e83814ea1c84f034e5dd1a9467ca230bdcb249e6068430f1c20a79",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t050_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "cf0dd97d3200836b654329b4ad57f42bde1e4ae0ef5adc893d093413dc53bc5a",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d000_t050_v000-None/comparison/report.json",
+      "report_sha256": "a55153d9e6fa7fc4122901097b435d9c5f9969b06844fddcbaf614294b40f156",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t050_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "876b6bf5e2deee4f55d3eacd0025f3b247c68d535bcf7991dadf52ee97de918e",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d000_t050_v050-None/comparison/report.json",
+      "report_sha256": "a94341c26c1453a6c67be26dc803489034204f9071800506a0b96344a4d0ef5e",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t050_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "c0d0cfc2975d8bb15d7dfc5277e2573c9aa16d9755df7807f7fe618ee3f4c35a",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d000_t050_v100-None/comparison/report.json",
+      "report_sha256": "cdd7e13e32657fb10ed01bf2477f4d2df9457501b7ac3a87d37176947566e4c8",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t100_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "6b558b8eb849ff168c45ee50923333e47c18897cb992e556f85f6ad1305c62ad",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d000_t100_v000-None/comparison/report.json",
+      "report_sha256": "d5999e5b5a85ff5e23747339240290806da059f3669397962193d8a9fe5a4a10",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t100_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "e104d92578e6f8b90e2253d5dce7c541ff701ba73707ff826bf360e9b4f5858d",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d000_t100_v050-None/comparison/report.json",
+      "report_sha256": "62486784d2481fa1d9cfd5e9183ba993421ad6b6ae960c1b942b2b44e9cb6a03",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d000_t100_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "d91ce2fc89ed59dbea128749180dcff7128c6b12e9feb6180e1838cd7cd4e60b",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d000_t100_v100-None/comparison/report.json",
+      "report_sha256": "247c0ce732e4934385ae8a964df56ca3d665437045bce646c8eb8da8d973d908",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t000_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "c710410a6e9a93cb7ca40180add12291be94ca34b737c0aa2f35c83175f34a47",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d050_t000_v000-None/comparison/report.json",
+      "report_sha256": "38673b2359d61866711f158dcbf6c892c23950b65b25771b4bfbe72068d6e005",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t000_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "432e01b66e852d938d0579b97bdc289b8fc6b4e0ed920f9b24fdbb66599fb546",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d050_t000_v050-None/comparison/report.json",
+      "report_sha256": "3383a3a571319c9d3547470a68073f1a0207267eecef5b7d735e51e201bd6c41",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t000_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "db317f93949b201e24e31ea7898612175b2a389e9a7d67e4ea8f8af52f7b7106",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d050_t000_v100-None/comparison/report.json",
+      "report_sha256": "33b3bbc8fa3b826eaad1c8b4caa5100b19aafa3f8f7f78983d34d3d2e47256c7",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t050_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "814265801b93550d0894b7f248a8178d1a8f8d094527b0e1ebef86da6b9e4391",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d050_t050_v000-None/comparison/report.json",
+      "report_sha256": "02c146d3a479da8a80976c4189fd90e9c1f37a8c81c8dc22d7aee3c1e55ab0b0",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t050_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "40d4bc6784288be8df5194ab869df534c46b84a437112c8c1e94e5a499343896",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d050_t050_v050-None/comparison/report.json",
+      "report_sha256": "15df2e097201a64a262caf3f7f8a9a54ddb78a736406b21bc43f5baff989da80",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t050_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "f4bf591b40e76d100bbd5e07b6b9c7844d9ed0dc4166f49530f365fa122110b2",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d050_t050_v100-None/comparison/report.json",
+      "report_sha256": "55b2db42a314f7e69461ebebad1f9504dbb5d8c28cbf4eb2e684734992887a1a",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t100_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "177c5461b78df6f33a71f93a06e2252bc2d2378382156cf799c67b73377b3dc7",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d050_t100_v000-None/comparison/report.json",
+      "report_sha256": "ca4e295ac32c3d6234b851d5937ba096a1fed0edfde2d5e5bf47be85ca91fe89",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t100_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "c3814bf1ca984395e11d353125f81521777cfe91915685c1ddb8eebf45786360",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d050_t100_v050-None/comparison/report.json",
+      "report_sha256": "83ba06b444e35398890e07b4ebf755e4aa80067cd18dd6dbf19b4630527dcc59",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d050_t100_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "db3f1c3e54fe3dc3f7c5ed9dfaabce38d510f061c9b55f5bf35a9b1e28070d6d",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d050_t100_v100-None/comparison/report.json",
+      "report_sha256": "9484ab425c298979671877298a5af51851c248a116ea8216ef5b0bb76c3d74ff",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t000_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "b4631d752f0d6c2bde55a2f683301d75794716ea1214e803ff0ce5aaa9821ef9",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d100_t000_v000-None/comparison/report.json",
+      "report_sha256": "b639b83ea0a31134bdcfaddd2b3a0dee649ff506c2713bad0cee6b2956de3c3a",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t000_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "726aec734ede0d235bc452bc35ffb24ccf11f0a73769c7aed98b0c5160684d39",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d100_t000_v050-None/comparison/report.json",
+      "report_sha256": "c28dc8fb898637d680d8c9c3f75828bc229d950471d122592d1f4e2988b4ae57",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t000_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "4b45a64b67ab2dd6d57f15d5d1eae8ee33b45cba932f773c2eeec99c7130e1bd",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d100_t000_v100-None/comparison/report.json",
+      "report_sha256": "dc45ded3f38774c59d02de5d0275ca052caa836eaf0dcf60cbb67ef253753a7b",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t050_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "7d4837982071d3a8eae1cdfa33aa19172e903d7c0652f84f7d0d4c9ca2816ee8",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d100_t050_v000-None/comparison/report.json",
+      "report_sha256": "51ef23896f82fdd6bde39c59d7e7e70c4949e4172fc9ab84c1acf6cb80c3e98b",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t050_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "0bfb8e314ec9a773a432d68097e4162899913c2f5bdb4be50ec1d05cae7b3222",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d100_t050_v050-None/comparison/report.json",
+      "report_sha256": "7820f9ac1a38fcb9002443768a01debe7324903d7b0d8db7f042782dde338459",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t050_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "074858b18c9cbcc1efd378a4cccaa555dec0df8135649a988a9cc034eef90424",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d100_t050_v100-None/comparison/report.json",
+      "report_sha256": "d21db543f73d908ae11d446a0a3ba6fe06c0f0b28f7efadeff125c2c17ee8098",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t100_v000",
+      "rate_Hz": null,
+      "physical_case_sha256": "5d2f53048c33a34e77585d48a00fc4be1a47cbe828ffbf55c9087d18e3ed9e66",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d100_t100_v000-None/comparison/report.json",
+      "report_sha256": "3ee83db29a790c8c61124a799203ab4b44eaa6ce4abd8df8588d6f5c3f55e79a",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t100_v050",
+      "rate_Hz": null,
+      "physical_case_sha256": "f4a680d04aa11dc42d283e1a56bb2d35d9a6caf08511adc0ffb5f128670b7e16",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d100_t100_v050-None/comparison/report.json",
+      "report_sha256": "f4a2285da6e566f3540938282e3f7953f2c43e9e25c8daa59aec5eb93c603b9f",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "dc_d100_t100_v100",
+      "rate_Hz": null,
+      "physical_case_sha256": "3ec2a1aa86147dbe1405f4f1b363f629c6c8c1d8fc947ec9db050248270649f2",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/dc_d100_t100_v100-None/comparison/report.json",
+      "report_sha256": "27ce59931f27f419f3357ec9e4cddd0de8e3e7c43814cf94b461325bd8ed3de5",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "not_applicable",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "hold_center",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "3e464480cda5babd210ecb26ad80e73cf5342d12f37e8a8931c5dbcdede22956",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/hold-diagnosis-20261104/norm/192000/comparison/report.json",
+      "report_sha256": "35eadf5b2c05df82524f73bb7a02ef6120c823e855d1cd3789f2e91bae608a49",
+      "partition": "Independent hold qualification with solver=norm",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "hold_center",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "3e464480cda5babd210ecb26ad80e73cf5342d12f37e8a8931c5dbcdede22956",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/hold-diagnosis-20261104/norm/384000/comparison/report.json",
+      "report_sha256": "bc5377f67aab3e84b476d6e272f2a20cfe66d8c8d57a31423578cac722577ad7",
+      "partition": "Independent hold qualification with solver=norm",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_center_a010uv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "180620ddea8370240f7939e93eff87abc6feabe965caadd72217e8a23e35d4b3",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/linear_center_a010uv-192000/comparison/report.json",
+      "report_sha256": "d3b4595ce2b79afc653a59e3533d8c52c972c596e0b0b2ab35c987a80ff6e84c",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_center_a010uv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "180620ddea8370240f7939e93eff87abc6feabe965caadd72217e8a23e35d4b3",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/linear_center_a010uv-384000/comparison/report.json",
+      "report_sha256": "3cddb09937dcd2a81a35410600a0dd17b9b9f82b4391fd9a613a2a89464f3c12",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_center_a020uv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "a95c3a10003886fb10363351490b247fdae36f69609990e09804fd25b1dcdb6f",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/linear_center_a020uv-192000/comparison/report.json",
+      "report_sha256": "277ed50c6b4246035a71109344c3af9c9725e4f00b7da8a886b1143d2f767e1d",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_center_a020uv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "a95c3a10003886fb10363351490b247fdae36f69609990e09804fd25b1dcdb6f",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/linear_center_a020uv-384000/comparison/report.json",
+      "report_sha256": "716f9ab89d7a26f2cfa7d098c7e33dbc2d7c128be67d48825c2c7c6995424501",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_high_a010uv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "e7a4740ed6d4ccec968ca3f0fcd893d25784e93a29437b66d72117f887297917",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/linear_high_a010uv-192000/comparison/report.json",
+      "report_sha256": "435121526e899c7026a1c7fdbada4b3ca6bdf82a8f5bd15f1d5ccaac8d29647d",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_high_a010uv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "e7a4740ed6d4ccec968ca3f0fcd893d25784e93a29437b66d72117f887297917",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/linear_high_a010uv-384000/comparison/report.json",
+      "report_sha256": "36db646306ea0e3419bebb693a4a56914990edb3616d07c649cde6c8b9fd3064",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_high_a020uv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "7deee8539cf09eacb2b17f1843bc1adb7c64be6daf5f7bb58676849a218137c8",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/linear_high_a020uv-192000/comparison/report.json",
+      "report_sha256": "c294a767fe6b70751bba37d4b3870d39c83c75dcc3272c812ac3ed7da836d67a",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "linear_high_a020uv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "7deee8539cf09eacb2b17f1843bc1adb7c64be6daf5f7bb58676849a218137c8",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/linear_high_a020uv-384000/comparison/report.json",
+      "report_sha256": "3f4c8ce6222ec5f2a9e3cd706d3a14b5b8f5ab902928a72c2c53414e582dfd18",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "listen_high",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "8d30ba9394fd8fb04a925bcdf5007af34a04d2480b3170b4a4ad071eaced1832",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/listen_high-192000/comparison/report.json",
+      "report_sha256": "e447fc3050f043611eea93f068c601dcad3ba09355d08ac36a28aee7c4eb1daf",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "pending",
+        "combined": "pending"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "listen_high",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "8d30ba9394fd8fb04a925bcdf5007af34a04d2480b3170b4a4ad071eaced1832",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/listen_high-384000/comparison/report.json",
+      "report_sha256": "b76e2a85b095829908f32f48b72add82263ab2c997b1d2951b771b163ae96cf2",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "pending",
+        "combined": "pending"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "mute_1000hz_500mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "725a9e8e1ff4717c6a9698eff241f6270ea2f6e64ea52464415d1651effb272d",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/mute_1000hz_500mv-192000/comparison/report.json",
+      "report_sha256": "298142a205d0cbea5a2abbeeedab931b72d49024d569640bf342cba829e667f7",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "mute_1000hz_500mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "725a9e8e1ff4717c6a9698eff241f6270ea2f6e64ea52464415d1651effb272d",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/mute_1000hz_500mv-384000/comparison/report.json",
+      "report_sha256": "992b6b29ad81b140674e743e5b8ab63c7deb6419f1cba6f8395109b4c83f12b4",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "overload_center",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "5191301cdc0db5946d73a33d943ebde3b8d730f4634c33536d6bc1d5ad54be27",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/overload_center-192000/comparison/report.json",
+      "report_sha256": "ad33420406ada578a966c8681e44a3c70b6121adc24da3cb8fda804accce36a3",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "overload_center",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "5191301cdc0db5946d73a33d943ebde3b8d730f4634c33536d6bc1d5ad54be27",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/overload_center-384000/comparison/report.json",
+      "report_sha256": "996ebefd5f4f50c3729c0540447ed20f68751138971381d6ee8cdc833b84fe2d",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "overload_high",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "50bbe9315ca36e1860475a5b27c3e8360e590b943efc74249f5eec90e6aa46e5",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/overload_high-192000/comparison/report.json",
+      "report_sha256": "5fd558066610850ebe33c7506b4ecadd9816640259131f3f44ad6cf65cd23062",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "overload_high",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "50bbe9315ca36e1860475a5b27c3e8360e590b943efc74249f5eec90e6aa46e5",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/overload_high-384000/comparison/report.json",
+      "report_sha256": "b85781044c5206b40486f1a3e7ecb8f115c1669f9278ad7a9cd193a9ef53d516",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f1000_a010mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "91780ece4fd9974c31d8847440471498a105ff08121a34f8c8bfa189eb0c1ee2",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f1000_a010mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "7a74faba755d0ee7de733a14e4631f702dbf31c37b3ab6607dd0ea4c3a00d150",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f1000_a010mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "91780ece4fd9974c31d8847440471498a105ff08121a34f8c8bfa189eb0c1ee2",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f1000_a010mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "13457ea8baf8bbbd465506233ae2ccbf6c9108e2747ea0f1f473f0933c69cdca",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f1000_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "d8d2cd1cf30722351280881fee24f987af23e2447e8c365dda2abbc36685c09b",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f1000_a100mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "8c74ee9a8dfa6c40f6acb9d443b0255a37c79fb363442b06fcd29cab00da1c1e",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f1000_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "d8d2cd1cf30722351280881fee24f987af23e2447e8c365dda2abbc36685c09b",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f1000_a100mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "63aae41b38b27724120c7de0b32b9d401061e820fa001cbcaa7afd7378c80f40",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f1000_a500mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "544a0b0169e03f273054801e7a8cd30753a7d1b91db9e758d10ce116945d47b2",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f1000_a500mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "2f91eacb76c197ae6c68d91faac5b19c78d572f20c6465c75c71dc4263009a71",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f1000_a500mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "544a0b0169e03f273054801e7a8cd30753a7d1b91db9e758d10ce116945d47b2",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f1000_a500mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "05290815907d80036acfe1a361d4ffc892239e4665f6abdda26c85bb9180c1b1",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f440_a010mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "c0f25f7f9c01937aa89c150eee4a2371de40da79b08a8e56ded057af6ebbd44d",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f440_a010mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "93ffb3bf763986547e3bb0946309b8d0482a1f1324300c41c1a1909c958fa62a",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f440_a010mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "c0f25f7f9c01937aa89c150eee4a2371de40da79b08a8e56ded057af6ebbd44d",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f440_a010mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "7e89ce041cf8a792f47cd71baee3cebece161e63d0f0b94eed77c808b1ffdcf3",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f440_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "a088e3cab8ff5212934c2f7345a4a77305a2b142483a9b9c3a0dbbf9aebc8513",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f440_a100mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "7a5e5c7b7c7a6be761e721b4a01ccd93e5d598b4c469249c54b1aec2312224d5",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f440_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "a088e3cab8ff5212934c2f7345a4a77305a2b142483a9b9c3a0dbbf9aebc8513",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f440_a100mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "b793ee62e555b5dab4e741b83f3839483b680184dbc245d69d3111f63a918aba",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f440_a500mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "87166d9f5c5d4fd4f1e9f1ad576b9c3ce0302b802518bda6fa50492d609f6c23",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f440_a500mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "09ea29c3b48135fe7bdf389c93009f2c188cfd58c90f8e954f11a16d1e1f8de6",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f440_a500mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "87166d9f5c5d4fd4f1e9f1ad576b9c3ce0302b802518bda6fa50492d609f6c23",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f440_a500mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "3197b2f3ecb71264ca93ba1b62ca5c5bb7c7ceb4daac417321190791e7806b54",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f5000_a010mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "2de599fcd8c481b5e5a680a07fcadb818a437895a776b0791907addddecf1695",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f5000_a010mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "1ab306e73a8bc90df77b98142a78f88684af963831d8e7266f54161622be7926",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f5000_a010mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "2de599fcd8c481b5e5a680a07fcadb818a437895a776b0791907addddecf1695",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f5000_a010mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "d6ec896e3ca89b6e17b3c2d4e8fd03aeb4760f14c2e93ae26f54929a45ee083a",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f5000_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "2b248312da00eee28d7a07da59bc14b0d360e042f5f35ff560f4334489d70219",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f5000_a100mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "bafbe0afc172b1415a3d80f829367d2ae25226bbb78d65398c1edbb88cebfe83",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f5000_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "2b248312da00eee28d7a07da59bc14b0d360e042f5f35ff560f4334489d70219",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f5000_a100mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "f06049a62788a642d5f65288c03ea6d8fb40bf94e6bccdebf1c0759b232bd295",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f5000_a500mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "3943db6b45b7bc03b5019acb344630fb95b3661ffb48fa798d4cc59e4c32b22e",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f5000_a500mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "ccf93139a9517bb853886a500dfaf7c5e66647876b910599c7727be6dea39066",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f5000_a500mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "3943db6b45b7bc03b5019acb344630fb95b3661ffb48fa798d4cc59e4c32b22e",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f5000_a500mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "852f88b501b57351f0f15f088ef0c8ae8eacbeb03b509d6638bc7311fed150e8",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f82_a010mv",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "2cd216f8d76952f35c2d72b8ffcbef2dd5076e12deee66a108e931dd750ac1d2",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f82_a010mv-192000/comparison/report.json",
+      "report_sha256": "3a2c67e01bba69c56d48e79ffbd794d3de2e2b55391ba34c418a23c7acd8d614",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f82_a010mv",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "2cd216f8d76952f35c2d72b8ffcbef2dd5076e12deee66a108e931dd750ac1d2",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f82_a010mv-384000/comparison/report.json",
+      "report_sha256": "16df1fcc186a041265211eb6ea3835bf86c64a3816cf29191061718827284152",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f82_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "658023613bb4f8e9b6edc52c711609637fc4030bd03bad8e899a9b8787b8bacb",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f82_a100mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "2e33dd88a58371d7751acd49528211fcbc00733df1c913ee8859c77a38edfe83",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f82_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "658023613bb4f8e9b6edc52c711609637fc4030bd03bad8e899a9b8787b8bacb",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f82_a100mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "2a45d7a2489c43886c6f18d6f4a52e8d5bc7be6e5bacc9082cd4354f2e7aae9a",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f82_a500mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "2501504a8935c90f65e927b8b5ab6ae56b3ecb56fedf3372d6f2c48156c19245",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f82_a500mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "4b3d11d72adaa1e83d0ab297744f38b3235495bcd248aa16f497f19f504de573",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_center_f82_a500mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "2501504a8935c90f65e927b8b5ab6ae56b3ecb56fedf3372d6f2c48156c19245",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_center_f82_a500mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "2792b2388c4603e07d68c833418d1cfbc4fe8633e63bcc149d72e1b7f65a2d57",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_edge_t000_f5000_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "ee0e716f9e1c07e3df6fa76f6d272f44877f8fa0cf8dea974612aa8b2de6959b",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_edge_t000_f5000_a100mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "b438545ac87dae4f8b768f63f6c20e156e5cdf75ed0f0b33e0b7f3a3b9a779ce",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_edge_t000_f5000_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "ee0e716f9e1c07e3df6fa76f6d272f44877f8fa0cf8dea974612aa8b2de6959b",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_edge_t000_f5000_a100mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "e6a74508dc7c817e2b9925e3dbeac7f375cef83638dbbbdcb4c0fb2eebb160d0",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_edge_t000_f82_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "f5774c515b0d4c619231cc5ca1abfd385cbcf0513efb007f1379445ea0234b3f",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_edge_t000_f82_a100mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "a2dc4afa8319bf6dc337b6a7fdfab61c8b4eed4c0d490159a3e62264d0d89370",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_edge_t000_f82_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "f5774c515b0d4c619231cc5ca1abfd385cbcf0513efb007f1379445ea0234b3f",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_edge_t000_f82_a100mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "db673e3cbacd9e8995faaeafbe6257c2d05dc02d95b85d3cc65b66ae8d22cb25",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_edge_t100_f5000_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "fe21ac88564d5789c87ef5def1ee42309ed34f6ead394adaacacfcbac5442bc3",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_edge_t100_f5000_a100mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "7c0e4710b6ec7f667023f48c6241b4b307d31b33e58b0842ec973aca3b843f88",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_edge_t100_f5000_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "fe21ac88564d5789c87ef5def1ee42309ed34f6ead394adaacacfcbac5442bc3",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_edge_t100_f5000_a100mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "750ae0e44224b8004c8d7dcca9ddf158501fa2c94b994bb0012e4686a4adc2fe",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_edge_t100_f82_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "9e5c36ee7243963d17a09aaef2c26b1b038e8bb8d73212ca513fe00e7430f2ae",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_edge_t100_f82_a100mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "66a9585ca2e00cf3f7f213e047707eb5025e8e0bab2b682e2d6bda5739b4e972",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_edge_t100_f82_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "9e5c36ee7243963d17a09aaef2c26b1b038e8bb8d73212ca513fe00e7430f2ae",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_edge_t100_f82_a100mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "3695f1a24677f4c58a1e47b89194f9ae469d166c6b62d05a2c12cf89f3b37e5b",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f1000_a010mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "7770d33d9c90bc74573af9f90a3550a1c7b011f4548590e4f7bd69c3c0d61995",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f1000_a010mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "30ad1946eb8bf23b2ab04334a8159a5f58a4fa54abe9eceac7576fa8e784f963",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f1000_a010mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "7770d33d9c90bc74573af9f90a3550a1c7b011f4548590e4f7bd69c3c0d61995",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f1000_a010mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "29062ad6de279865eeafefac0cfd8125faa7e795c6754faafc96a7b8ff805221",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f1000_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "5c389b78791100e8d1c8deb7208e2b4e23bb1469a3f2ad2c5fad99e15d8a5b70",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f1000_a100mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "72496a6d8525b466c1be074234dce7a6803bc39a4e8803d0567e7fed35652e6d",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f1000_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "5c389b78791100e8d1c8deb7208e2b4e23bb1469a3f2ad2c5fad99e15d8a5b70",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f1000_a100mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "6a68fcb32722092e8be716ad8dbac8208a76e1f96446d399f94457bc4ca7a34c",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f1000_a500mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "1c8caede0be83d25e4eb543810a66a2da6fadf0555c7f1920505889568e6351a",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f1000_a500mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "536f15e2808da06a87079ecb3ca56e920dd2e5c3a737176b3aace4225ac3e64e",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f1000_a500mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "1c8caede0be83d25e4eb543810a66a2da6fadf0555c7f1920505889568e6351a",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f1000_a500mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "90cb7efabe55eb2a7a7693a3922d2a3891351370341de0368c4d9eb7ad8cf80a",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f440_a010mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "b386a3b976c21aa1296945c2cf3c7ba658e5e889ecc730279bb966530681823f",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f440_a010mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "55776d16993ced44b1b66e25a31a0ce9582b00588804a1cb90e484fa143400cc",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f440_a010mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "b386a3b976c21aa1296945c2cf3c7ba658e5e889ecc730279bb966530681823f",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f440_a010mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "57e6c8ea746bc359f7881bb094010e285408e7736ff99f18dcebe3f47fc882a9",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f440_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "1751a6c0088a6a0aefb797f46d4096defd7cad0f24df82da01459305cd32d438",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f440_a100mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "51f7ae31404942e4e8dababaadc660fed0504c7d1d386efd5f7382d60cad61d9",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f440_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "1751a6c0088a6a0aefb797f46d4096defd7cad0f24df82da01459305cd32d438",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f440_a100mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "f3189c8c0bd273d30fd975b76c70d0fb85f4c3318c90addb48fd37777ce979de",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f440_a500mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "f813d87120a523ccee2c6e413d78de30a824e47b15b5a70db2bddbc641930976",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f440_a500mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "fc3506eecc3d227fea86c1c4c74fac56389fb98cb6755c69e35395f7f65304a0",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f440_a500mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "f813d87120a523ccee2c6e413d78de30a824e47b15b5a70db2bddbc641930976",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f440_a500mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "caa9a1d2e365a15f397b73b85eab99e08e7c3d561268336f01d1873469f8ee8c",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f5000_a010mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "4247a635d508ca6d7d2ad278be593ede8dc3ac36c46220dd390df510393472c3",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f5000_a010mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "05b47a72e883e57834122c9ca457ae4eae2d7fd237c42eb7a65824b45f46af56",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f5000_a010mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "4247a635d508ca6d7d2ad278be593ede8dc3ac36c46220dd390df510393472c3",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f5000_a010mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "9e0db5f0ceb2b425889a5467a02806589076275f5c37629e4d87f79a28d412b5",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f5000_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "032fd49070cbafeff09bea2823d5abd02d6933a36b540b10e6a94233e3da9c77",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f5000_a100mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "3515bfc4987795ab0c1a79e8dd4e14620ba7f9e479d32dfa8a6dbad023bea405",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f5000_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "032fd49070cbafeff09bea2823d5abd02d6933a36b540b10e6a94233e3da9c77",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f5000_a100mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "ac39b7d1d3c54e13257e5c4cda53ded74712cdcdc3658f5d6a48072229fab5a4",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f5000_a500mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "a50835c7caf0d1b94cb888ea139b920d2a67cbfaff9d2d6523915818ec4a6719",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f5000_a500mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "05cf0554523a7404fdee23796e29adbee728830ab0c053ef77c3e57dd6c1e2f7",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f5000_a500mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "a50835c7caf0d1b94cb888ea139b920d2a67cbfaff9d2d6523915818ec4a6719",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f5000_a500mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "e9cd1aa327d600df9ea236abd597df875283e47f22fee6dbb86e687376e3744c",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f82_a010mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "f09208238259c4de0c75b09dbb3cdbb9aa3700fd19d1cd33cd87c5030c6ae213",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f82_a010mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "23efafea34aeae7e1143da6a00ff8a2ea21e443b3b2d8c844f134b46f021a9a9",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f82_a010mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "f09208238259c4de0c75b09dbb3cdbb9aa3700fd19d1cd33cd87c5030c6ae213",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f82_a010mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "cb64ffb1e6fe3c0a247f255a5f1f6d0c631914eef9524c2147002882639180e1",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f82_a100mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "5fcd640631e4dd038c27b8ab1046b91e2bac55e869adf3a5d745b653a0df3c88",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f82_a100mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "368c88a9a4db24e824d6b85650ea4c7fe3c3180548fdeef4f6ecdede0cf5e1f1",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f82_a100mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "5fcd640631e4dd038c27b8ab1046b91e2bac55e869adf3a5d745b653a0df3c88",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f82_a100mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "9b8e911c315080d057d5b6d4fdae10403a7bc19a01cf8b7fe4155806932f4411",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f82_a500mv-warmup2s",
+      "rate_Hz": 192000,
+      "physical_case_sha256": "656517281d1f30c3d39a3ecdcdebe1ada267da98343fabd5acf4375b2af649ae",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f82_a500mv-warmup2s-192000/comparison/report.json",
+      "report_sha256": "915a3a741696799b546b266f328323d1d7e24a349bf3413263423105901cc439",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    },
+    {
+      "case_id": "tone_high_f82_a500mv-warmup2s",
+      "rate_Hz": 384000,
+      "physical_case_sha256": "656517281d1f30c3d39a3ecdcdebe1ada267da98343fabd5acf4375b2af649ae",
+      "report_path": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/tone_high_f82_a500mv-warmup2s-384000/comparison/report.json",
+      "report_sha256": "d11c16f2ceab6027531103f4501819696b90366b0815d3bf0188b44b43a02906",
+      "partition": "/mnt/f/ts808-validation/full-audit-20261109-r1/combined-transients/summary.json",
+      "outcomes": {
+        "reference": "passed",
+        "numerical": "passed",
+        "wav": "passed",
+        "listening": "not_applicable",
+        "combined": "passed"
+      },
+      "evaluated": true,
+      "wav_blocked_by_failed_gate": false,
+      "failed_checks": []
+    }
+  ],
+  "assessment_completion": "completed",
+  "failed_entry_count": 0,
+  "entry_count": 128,
+  "physical_case_count": 91,
+  "verified_file_count": 3774
+}

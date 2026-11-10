@@ -1,0 +1,18 @@
+{
+  "status.json": {
+    "original": "/mnt/f/ts808-validation/wav-repair-20261109-r3/status.json",
+    "sha256": "ec8fcde57982b99a8768dbe41825e6885f72985e397b4941783091a395bf5f41"
+  },
+  "plan.json": {
+    "original": "/mnt/f/ts808-validation/wav-repair-20261109-r3/plan.json",
+    "sha256": "17e222b09729c7fa22d7e2fbc385b022bfe7ffe2dc5c94e1204e7692ea6cf635"
+  },
+  "diagnosis.json": {
+    "original": "/mnt/f/ts808-validation/wav-repair-20261109-r3/diagnosis.json",
+    "sha256": "e13b0bf7e61ebf2be1b218c637ea9c01d4147712e2c17036773359d1d8f7ce9f"
+  },
+  "wav-repair-20261109-r3-monitor.py": {
+    "original": "/mnt/f/ts808-validation/wav-repair-20261109-r3-monitor.py",
+    "sha256": "cab34ef5cf36dc5e96f8faa7513ec71ab60ff05d77e17a00ca433ad6da171299"
+  }
+}

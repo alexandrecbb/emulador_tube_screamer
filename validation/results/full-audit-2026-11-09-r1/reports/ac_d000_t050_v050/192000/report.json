@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "comparison_id": "ac_d000_t050_v050-192000-substeps4",
+  "case_id": "ac_d000_t050_v050",
+  "physical_case_sha256": "83299663b85c774a4a26cb3906c11b7bbb6940a1e3ba3160175c2ad8b9760b44",
+  "inputs": {
+    "case_sha256": "dc3ae567f0bbb0dc2b024285b92ff34a9e8a513a57908fa942d4cac30c89cf12",
+    "run_sha256": "d6529f2adfc8f2b846fa5cb23e108d3e5697e0cacadb945f4e2f1e27c6babb64",
+    "validator_sha256": "6c256ed558bc209b1e07b816a58112f778779669941f3b335f4e838edf3649bc"
+  },
+  "execution_config": {
+    "boundary_count": 5,
+    "formulation_id": "control-branch-v1",
+    "integration_rate_Hz": 768000,
+    "interior_counts": [
+      4,
+      6,
+      11,
+      5
+    ],
+    "ordered_unknowns": [
+      "input",
+      "input_cap",
+      "input_base",
+      "dry_send",
+      "clip_plus",
+      "clip_minus",
+      "gain_rc",
+      "drive_end",
+      "z_clip",
+      "i_drive",
+      "tone_in",
+      "tone_minus",
+      "tone_wiper",
+      "tone_rc",
+      "tone_out",
+      "volume_cap",
+      "volume_top",
+      "z_tone",
+      "i_tone_low",
+      "i_tone_high",
+      "i_volume_high",
+      "switch_common",
+      "output_base",
+      "output_emitter",
+      "output_cap",
+      "output",
+      "input_emitter",
+      "clip_out",
+      "wet_send",
+      "vref",
+      "i_volume_low"
+    ],
+    "purpose": "target",
+    "rate_Hz": 192000,
+    "solver": {
+      "armijo_c1": 0.0001,
+      "atol_current_A": 1e-12,
+      "atol_increment_current_A": 1e-12,
+      "atol_increment_voltage_V": 1e-09,
+      "atol_voltage_V": 1e-09,
+      "current_scale_A": 0.001,
+      "max_line_search": 9,
+      "max_newton_dc": 100,
+      "max_newton_transient": 32,
+      "maximum_backward_error": 1e-10,
+      "maximum_schur_difference": 1e-09,
+      "minimum_rcond": 1e-12,
+      "pivot_epsilon_factor": 64.0,
+      "row_scaling": "max_abs_after_physical",
+      "rtol_increment": 1e-09,
+      "rtol_residual": 1e-09,
+      "voltage_scale_V": 1.0
+    },
+    "substeps": 4,
+    "unknown_count": 31
+  },
+  "reference_qualification": {
+    "status": "passed",
+    "nominal": {
+      "reference_id": "ac_d000_t050_v050-nominal-22fd516c1e2c4f51b6f31786339004f8",
+      "manifest_path": {
+        "wsl_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d000_t050_v050/nominal/reference.json",
+        "windows_path": "F:\\ts808-validation\\substeps-20261104\\matrix-alt\\ac_d000_t050_v050\\nominal\\reference.json"
+      },
+      "manifest_sha256": "3f92210da5ecc0a78a440c87b04089e0a3b7a9fce3d880a42eb4e3d2e7c34010",
+      "request_sha256": "ba48746351a2b44f59f819e98cb67e3e539968b647685b3857fcdd276647122f",
+      "result_sha256": "1d846997ed17cc6e7d21ee3158efa677962f453457d631073c2335b631c0380e",
+      "raw_sha256": "3246ebf68a05f8782791bcba1d0cf7ccf5236c014e325872463461924aba84f6",
+      "log_sha256": "5a74ee603083089af97815cd6e46b208b7d1bfb8c8f45c5f3cb509c95ea0b3f1"
+    },
+    "refined": {
+      "reference_id": "ac_d000_t050_v050-refined-12007c5e2ac44e4b9e5bd25c2b2f88f7",
+      "manifest_path": {
+        "wsl_path": "/mnt/f/ts808-validation/substeps-20261104/matrix-alt/ac_d000_t050_v050/refined/reference.json",
+        "windows_path": "F:\\ts808-validation\\substeps-20261104\\matrix-alt\\ac_d000_t050_v050\\refined\\reference.json"
+      },
+      "manifest_sha256": "ce5e070b41e8da9a8b8b46db0a38c853708d5e0cca69ba1481cf558b14808595",
+      "request_sha256": "238fee745fcee3c0970a4937461dc9b0b02ec871798b859fe6575d73ecbc147b",
+      "result_sha256": "65aec3bf6ac7a96e9a6eb1a236c1f1a61a7ff5592904ed8397a60bda5e04c833",
+      "raw_sha256": "0fdf63fe0774357e65f6aa07945e4ba377f202a03687fd946cd13026db1e6b0f",
+      "log_sha256": "6cf48c639b4de77256a23afc7693868ed89a80962d8b8f62729c7509587ac528"
+    },
+    "settings": {
+      "nominal": {
+        "level": "nominal",
+        "maxstep_s": 3.255208333333333e-07,
+        "dc_protocol": "gminsteps=0 srcsteps=0; pseudo-transient audited",
+        "native_options": {
+          "temp": "25",
+          "solver": "alt",
+          "tnom": "25",
+          "plotwinsize": "0",
+          "numdgt": "15",
+          "method": "trap",
+          "reltol": "1e-6",
+          "abstol": "1e-12",
+          "vntol": "1e-9",
+          "chgtol": "1e-16",
+          "trtol": "1",
+          "gmin": "1e-12",
+          "gminsteps": "0",
+          "srcsteps": "0"
+        }
+      },
+      "refined": {
+        "level": "refined",
+        "maxstep_s": 1.6276041666666666e-07,
+        "dc_protocol": "gminsteps=0 srcsteps=0; pseudo-transient audited",
+        "native_options": {
+          "temp": "25",
+          "solver": "alt",
+          "tnom": "25",
+          "plotwinsize": "0",
+          "numdgt": "15",
+          "method": "trap",
+          "reltol": "1e-7",
+          "abstol": "1e-13",
+          "vntol": "1e-10",
+          "chgtol": "1e-17",
+          "trtol": "1",
+          "gmin": "1e-12",
+          "gminsteps": "0",
+          "srcsteps": "0"
+        }
+      },
+      "target_rate_Hz": null
+    },
+    "checks": [
+      {
+        "id": "ac_reference_magnitude",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "ac_reference_magnitude",
+        "value": 4.189038514706469e-12,
+        "unit": "dB",
+        "limit": 0.020000000000000004,
+        "reason": "Measured without gain, delay or DC fitting"
+      },
+      {
+        "id": "ac_reference_phase",
+        "applicable": true,
+        "required": true,
+        "status": "passed",
+        "metric": "ac_reference_phase",
+        "value": 6.781246683329436e-12,
+        "unit": "deg",
+        "limit": 0.2,
+        "reason": "Measured without gain, delay or DC fitting"
+      }
+    ]
+  },
+  "reconstruction": {
+    "method": "native grid",
+    "alignment": "physical timestamps; no fitting",
+    "bode_masked_frequencies_Hz": []
+  },
+  "checks": [
+    {
+      "id": "bode_discrete_magnitude",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "bode_discrete_magnitude",
+      "value": 0.022181526602572315,
+      "unit": "dB",
+      "limit": 0.2,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "bode_discrete_phase",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "bode_discrete_phase",
+      "value": 0.053668431676128864,
+      "unit": "deg",
+      "limit": 2.0,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "bode_continuous_magnitude",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "bode_continuous_magnitude",
+      "value": 4.889140255426542e-12,
+      "unit": "dB",
+      "limit": 0.2,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "bode_continuous_phase",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "bode_continuous_phase",
+      "value": 7.972599591016139e-12,
+      "unit": "deg",
+      "limit": 2.0,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "bode_discrete_magnitude-384000",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "bode_discrete_magnitude",
+      "value": 0.022181526602572315,
+      "unit": "dB",
+      "limit": 0.2,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "bode_discrete_phase-384000",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "bode_discrete_phase",
+      "value": 0.053668431676128864,
+      "unit": "deg",
+      "limit": 2.0,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "bode_continuous_magnitude-384000",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "bode_continuous_magnitude",
+      "value": 4.889140255426542e-12,
+      "unit": "dB",
+      "limit": 0.2,
+      "reason": "Measured without gain, delay or DC fitting"
+    },
+    {
+      "id": "bode_continuous_phase-384000",
+      "applicable": true,
+      "required": true,
+      "status": "passed",
+      "metric": "bode_continuous_phase",
+      "value": 7.972599591016139e-12,
+      "unit": "deg",
+      "limit": 2.0,
+      "reason": "Measured without gain, delay or DC fitting"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "ac384000/comparison/report.json",
+      "sha256": "8ac9a1e0d2f5b6e0e5dadf0af63bb706008ddca1ff3d47072531c339ab53d7e4",
+      "status": "generated",
+      "reason": "Recomputed independent 384 kHz AC comparison"
+    }
+  ],
+  "outcomes": {
+    "reference": "passed",
+    "numerical": "passed",
+    "wav": "not_applicable",
+    "listening": "not_applicable",
+    "combined": "passed"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "pilots": [
+    {
+      "case_id": "tone_center_f1000_a100mv-warmup2s",
+      "references": {
+        "nominal": "/mnt/f/ts808-validation/substeps-20261104/tone_center_f1000_a100mv-warmup2s/nominal",
+        "refined": "/mnt/f/ts808-validation/substeps-20261104/tone_center_f1000_a100mv-warmup2s/refined"
+      },
+      "reference_toolchain": "/home/alexandre/projetos/emulador_tube_screamer/validation/toolchain.json",
+      "measurements": [
+        {
+          "rate_Hz": 192000,
+          "integration_rate_Hz": 768000,
+          "comparison_directory": "/mnt/f/ts808-validation/full-audit-20261109-r1/reports/tone_center_f1000_a100mv-warmup2s/192000/comparison",
+          "report_sha256": "8c74ee9a8dfa6c40f6acb9d443b0255a37c79fb363442b06fcd29cab00da1c1e",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "passed",
+            "wav": "passed",
+            "listening": "not_applicable",
+            "combined": "passed"
+          }
+        },
+        {
+          "rate_Hz": 384000,
+          "integration_rate_Hz": 768000,
+          "comparison_directory": "/mnt/f/ts808-validation/full-audit-20261109-r1/reports/tone_center_f1000_a100mv-warmup2s/384000/comparison",
+          "report_sha256": "63aae41b38b27724120c7de0b32b9d401061e820fa001cbcaa7afd7378c80f40",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "passed",
+            "wav": "passed",
+            "listening": "not_applicable",
+            "combined": "passed"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "tone_high_f1000_a500mv-warmup2s",
+      "references": {
+        "nominal": "/mnt/f/ts808-validation/substeps-20261104/tone_high_f1000_a500mv-warmup2s/reference-tol100-alt/nominal",
+        "refined": "/mnt/f/ts808-validation/substeps-20261104/tone_high_f1000_a500mv-warmup2s/reference-tol100-alt/refined"
+      },
+      "reference_toolchain": "/home/alexandre/projetos/emulador_tube_screamer/validation/toolchain-pilot-f.json",
+      "measurements": [
+        {
+          "rate_Hz": 192000,
+          "integration_rate_Hz": 768000,
+          "comparison_directory": "/mnt/f/ts808-validation/full-audit-20261109-r1/reports/tone_high_f1000_a500mv-warmup2s/192000/comparison",
+          "report_sha256": "536f15e2808da06a87079ecb3ca56e920dd2e5c3a737176b3aace4225ac3e64e",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "passed",
+            "wav": "passed",
+            "listening": "not_applicable",
+            "combined": "passed"
+          }
+        },
+        {
+          "rate_Hz": 384000,
+          "integration_rate_Hz": 768000,
+          "comparison_directory": "/mnt/f/ts808-validation/full-audit-20261109-r1/reports/tone_high_f1000_a500mv-warmup2s/384000/comparison",
+          "report_sha256": "90cb7efabe55eb2a7a7693a3922d2a3891351370341de0368c4d9eb7ad8cf80a",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "passed",
+            "wav": "passed",
+            "listening": "not_applicable",
+            "combined": "passed"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "overload_high",
+      "references": {
+        "nominal": "/mnt/f/ts808-validation/substeps-20261104/overload_high/reference-tol100/nominal",
+        "refined": "/mnt/f/ts808-validation/substeps-20261104/overload_high/reference-tol100/refined"
+      },
+      "reference_toolchain": "/home/alexandre/projetos/emulador_tube_screamer/validation/toolchain-pilot-f.json",
+      "measurements": [
+        {
+          "rate_Hz": 192000,
+          "integration_rate_Hz": 768000,
+          "comparison_directory": "/mnt/f/ts808-validation/full-audit-20261109-r1/reports/overload_high/192000/comparison",
+          "report_sha256": "5fd558066610850ebe33c7506b4ecadd9816640259131f3f44ad6cf65cd23062",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "passed",
+            "wav": "passed",
+            "listening": "not_applicable",
+            "combined": "passed"
+          }
+        },
+        {
+          "rate_Hz": 384000,
+          "integration_rate_Hz": 768000,
+          "comparison_directory": "/mnt/f/ts808-validation/full-audit-20261109-r1/reports/overload_high/384000/comparison",
+          "report_sha256": "b85781044c5206b40486f1a3e7ecb8f115c1669f9278ad7a9cd193a9ef53d516",
+          "outcomes": {
+            "reference": "passed",
+            "numerical": "passed",
+            "wav": "passed",
+            "listening": "not_applicable",
+            "combined": "passed"
+          }
+        }
+      ]
+    }
+  ],
+  "full_matrix_authorized": true,
+  "integration_rate_Hz": 768000,
+  "executable_sha256": "5a980894cf03ab2b1f1e7f9b9253c7be5a768617a8acfbe8aaf01c6e4f3c6b08",
+  "validator_sha256": "6c256ed558bc209b1e07b816a58112f778779669941f3b335f4e838edf3649bc"
+}

@@ -1,0 +1,15 @@
+{
+  "source": "/mnt/f/ts808-validation/wav-repair-20261109-r3/matrix/tone_high_f5000_a500mv-warmup2s",
+  "references": {
+    "nominal": {
+      "path": "/mnt/f/ts808-validation/wav-repair-20261109-r3/matrix/tone_high_f5000_a500mv-warmup2s/nominal",
+      "manifest_sha256": "bc6676abb152e931483f799fc7f2bf9aadaca7d31dd7419e7aaed4da7baf33e5"
+    },
+    "refined": {
+      "path": "/mnt/f/ts808-validation/wav-repair-20261109-r3/matrix/tone_high_f5000_a500mv-warmup2s/refined",
+      "manifest_sha256": "cc90dd746c46c64e2042d74a6a9f56ca987343b491022d692f78ebac0fcceaf7"
+    }
+  },
+  "executable_sha256": "5a980894cf03ab2b1f1e7f9b9253c7be5a768617a8acfbe8aaf01c6e4f3c6b08",
+  "free_bytes": 28209750016
+}

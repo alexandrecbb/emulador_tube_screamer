@@ -1,0 +1,32 @@
+{
+  "source": "/mnt/f/ts808-validation/wav-completion-20261108-r4",
+  "source_sha256": "848ee0244366012e4f0b0d2d69d0874ca35d01f4ed00ddda9940c1cf8583a480",
+  "solver": "alt",
+  "tolerance_scale": 0.001,
+  "growth_margin": 1.5,
+  "budget": {
+    "duration_sum_s": 2.5,
+    "minimum_numerical_reference_bytes": 5898240000,
+    "minimum_export_raw_bytes": 368640000,
+    "model_trace_bytes": 368640512,
+    "pcm_payload_bytes": 5760000,
+    "adaptive_factor": 5.124660020297181,
+    "headroom_factor": 1.1,
+    "native_required_bytes": 35333528326,
+    "output_required_bytes": 405504563,
+    "estimated_required_bytes": 35739032889
+  },
+  "free_bytes": 47062138880,
+  "measured_growth": {
+    "retained_native_bytes": 21416179592,
+    "adaptive_factor": 3.4164400135314543,
+    "original_directories": [
+      "/mnt/f/ts808-reference/runs/tone_high_f5000_a500mv-warmup2s-nominal-e56b7b6d5e87474092d70da3cbc0abf2",
+      "/mnt/f/ts808-reference/runs/tone_high_f5000_a500mv-warmup2s-refined-ff4bfdab339240a5adfd5a4a0ee95beb",
+      "/mnt/f/ts808-reference/runs/tone_high_f5000_a500mv-warmup2s-wav-192000-f8de18e1ca434b21947227034ccd3263",
+      "/mnt/f/ts808-reference/runs/tone_high_f5000_a500mv-warmup2s-wav-384000-b1ab89de74864990a8432675f9b2428b"
+    ]
+  },
+  "shutdown_authorized": false,
+  "mvp_accepted": false
+}

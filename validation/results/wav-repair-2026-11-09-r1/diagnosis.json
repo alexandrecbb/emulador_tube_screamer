@@ -1,0 +1,52 @@
+{
+  "scope": "Diagnostic only; no fitting or exclusion from gates",
+  "rate_Hz": 192000,
+  "originals": [
+    {
+      "directory": "/mnt/f/ts808-reference/runs/tone_high_f5000_a500mv-warmup2s-nominal-e56b7b6d5e87474092d70da3cbc0abf2",
+      "request_sha256": "cc56f3287cb1356370615f2e47a610a42f416d46020417c7ff5a8a697a5e06a4"
+    },
+    {
+      "directory": "/mnt/f/ts808-reference/runs/tone_high_f5000_a500mv-warmup2s-refined-ff4bfdab339240a5adfd5a4a0ee95beb",
+      "request_sha256": "6ccdacd14490abdffc84b061ea1eb217aeca318cc857462b2e41da226e1023e5"
+    }
+  ],
+  "intervals": [
+    {
+      "start_s": 0,
+      "stop_s": 0.005,
+      "rms_V": 1.3499141351164293e-07,
+      "peak_V": 3.2365220928309846e-07
+    },
+    {
+      "start_s": 0.005,
+      "stop_s": 0.1,
+      "rms_V": 1.9591957247615338e-07,
+      "peak_V": 3.3064331703136496e-07
+    },
+    {
+      "start_s": 0.1,
+      "stop_s": 0.5,
+      "rms_V": 1.9505030616713314e-07,
+      "peak_V": 4.420396007565053e-07
+    },
+    {
+      "start_s": 0.5,
+      "stop_s": 2,
+      "rms_V": 1.9552540661789393e-07,
+      "peak_V": 3.305628979710651e-07
+    },
+    {
+      "start_s": 2,
+      "stop_s": 2.5,
+      "rms_V": 1.955317591933451e-07,
+      "peak_V": 3.2757176460229687e-07
+    },
+    {
+      "start_s": 0,
+      "stop_s": 2.5,
+      "rms_V": 1.9536335280984024e-07,
+      "peak_V": 4.420396007565053e-07
+    }
+  ]
+}

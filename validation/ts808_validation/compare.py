@@ -6,7 +6,7 @@ import numpy as np
 from .artifacts import load_json,atomic_json,validate_case,integration_config
 from .simulator import sha256,windows_path,confined,native_options
 from .persist import consume_reference,validate_schema,check
-from .reconstruct import pchip
+from .reconstruct import pchip, decimation_diagnostic
 from .metrics import null_checks,bode_checks,local_checks,harmonic_checks,settling_checks,recovery_index
 
 
@@ -96,10 +96,11 @@ def compare(run_dir,nominal_dir,refined_dir,output,config,*,diagnostics=False,re
         # Storage binary64 and reconstruction sensitivity are evaluated separately.
         uncertainty.append(check('storage_roundoff_bound',float(np.max(np.spacing(abs(nv)))),1e-7,'V'))
         # Leave-out native sample reconstruction is an independent sensitivity diagnostic.
-        nt=n['axis']; vals=n['traces'][expression];idx=np.arange(1,len(nt)-1,2)
-        keep=np.unique(np.r_[np.arange(0,len(nt),2),len(nt)-1]); interp=pchip(nt[keep],vals[keep],nt[idx])
-        uncertainty.extend(null_checks('reconstruction_decimation',interp,vals[idx],.1))
-        coarse=pchip(nt[keep],vals[keep],times)
+        diagnostic,coarse=decimation_diagnostic(n['axis'],n['traces'][expression],times)
+        rr=diagnostic['reference_rms'];rp=diagnostic['reference_peak']
+        uncertainty.extend([
+            check('reconstruction_decimation_rms',diagnostic['error_rms'],.1*(1e-6 if rr<1e-3 else rr*1e-3),'V'),
+            check('reconstruction_decimation_peak',diagnostic['error_peak'],.1*(1e-5 if rr<1e-3 else rp*1e-2),'V')])
         bound=abs(nv-rv)+abs(coarse-nv)+np.spacing(abs(nv))
         uncertainty.extend(null_checks('reference_aggregate',rv+bound,rv,.1))
         uncertainty.extend(local_checks('reference_local',rv+bound,rv,rate,.1))
